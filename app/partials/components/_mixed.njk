@@ -1,0 +1,63 @@
+{% macro SearchBox(args) %}
+  <div class="search-block">
+      <h6 class="content-title heading-dark">Search Anything</h6>
+      <div class="search-block__form">
+        <div class="search-newsletter-02">
+          <form action="#">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter keywords...">
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Search
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17.5 17.5L13.875 13.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+            </button>
+        </form>
+        </div>
+      </div>
+  </div>
+{% endmacro %}
+{% macro Categories(args) %}
+    <div class="categories-block">
+      <h6 class="content-title heading-dark">Categories</h6>
+      <ul>
+        <li><a href="#"><span class="text">Design</span> <span class="number">(60)</span></a></li>
+        <li><a href="#"><span class="text">Marketing Strategy</span> <span class="number">(05)</span></a></li>
+        <li><a href="#"><span class="text">Web Development</span> <span class="number">(08)</span></a></li>
+        <li><a href="#"><span class="text">Business Startegy</span> <span class="number">(04)</span></a></li>
+        <li><a href="#"><span class="text">Startup</span> <span class="number">(02)</span ></a></li>
+      </ul>
+    </div>
+{% endmacro %}
+{% macro Tags(args) %}
+    <div class="tags-block">
+      <h6 class="content-title heading-dark">Tags</h6>
+      <ul>
+        <li><a href="#">Design</a></li>
+        <li><a href="#">Sass</a></li>
+        <li><a href="#">Landing Page</a></li>
+        <li><a href="#">Website</a></li>
+        <li><a href="#">Agency</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">UI/UX</a></li>
+        <li><a href="#">Development</a></li>
+      </ul>
+    </div>
+{% endmacro %}
+{% macro ApplyCard(args) %}
+    <div class="apply-card">
+      <div class="card-logo">
+        <img src="./image/svg/portfolio.svg" alt="portfolio">
+      </div>
+      <h6 class="title">Apply Today</h6>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipiscing elit. Tellus augue sagittis erat consectetur est. Blandit blandit nec mauris pulvinar.</p>
+      <a href="#" class="btn">
+        Apply Now
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 13L7 7L1 1" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+{% endmacro %}

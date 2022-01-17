@@ -1,0 +1,26 @@
+$white: white;
+$white-lilac:#F7F9FC;
+$azure-radiance: #008AFF;
+$shamrock: #36CD77;
+$black :#222D39;
+$gray : #8492A7;
+$solitude:#EBF6FF;
+$foam:  #F0F9FE;
+$cadet-blue:#ADB7C2;
+$header-link-color: $black;
+$btn-link-color: $black;
+$headingDark: $black;
+$headingLight: $white;
+$textDark: $gray;
+$textLight: $white;
+$custom-colors: (
+  "white-lilac": $white-lilac,
+  "white": $white,
+  "azure-radiance": $azure-radiance,
+  "shamrock": $shamrock,
+  "black": $black,
+  "gray": $gray,
+  "solitude": $solitude,
+  "foam": $foam,
+  "cadet-blue": $cadet-blue,
+);

@@ -1,0 +1,25 @@
+/*********** CSS TABLE OF CONTENTS *******************
+
+|--- 01.Component -> { Header }
+|--- 01.Component -> { Menu }
+|--- 01.Component -> { Button }
+|--- 01.Component -> { Lists }
+|--- 01.Component -> { Background }
+|--- 01.Component -> { Form }
+|--- 01.Component -> { Cards }
+|--- 01.Component -> { Modal }
+|--- 01.Component -> { Tab }
+|--- 01.Component -> { Acccordion }
+|--- 01.Component -> { Sidebar }
+|--- THEME CUSTOM STYLES
+
+******************************************************/
+
+@use "helpers/typography";
+@use "helpers";
+@use "components";
+@use "pages";
+
+/* ---------------------------------
+-------> THEME CUSTOM STYLES 
+---------------------------------*/

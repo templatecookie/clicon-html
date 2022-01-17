@@ -1,0 +1,250 @@
+.card-price-01 {
+  @media (max-width:1400px) {
+      background: var(--bs-white-lilac);
+  }
+    border-radius: 3px;
+    transition: .3s;
+    padding: 40px;
+    padding-top: 47px;
+  $P : &;
+  .js-yearlypricing {
+    display: none;
+  }
+  .price-head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      &__text{
+          h6{
+              transition: .3s;
+              line-height: 1.4;
+              font-size: 24px;
+              font-weight: 600;
+              color: var(--bs-black); 
+              @media (min-width:480px) {
+                  font-size: 30px;
+              }
+          }
+      }
+      &__badge{
+      .badge{
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          border-radius: 3px;
+          padding: 8px;
+          }
+      }
+  }
+  ul {
+    position: relative;
+    li {
+        transition: .3s;
+      display: flex;
+      line-height: 1.555555555555556;
+      font-weight: 500;
+      padding: 10px 0;
+      font-size: 16px;
+      @media (min-width:480px) {
+          font-size: 18px;
+      }
+      &:first-child{
+          padding-top: 0;
+      }
+      svg{
+          path{
+              stroke: var(--bs-secondary);
+          }
+          display: block;
+          margin-top: 6px;
+          margin-right: 10px;
+      }
+      &.disable {
+        color: var(--bs-gray) !important;
+        svg{
+          path{
+              stroke: var(--bs-gray) !important;
+          }
+      }
+      }
+    }
+  }
+  &__highlight {
+      align-items: baseline;
+      line-height: 1.555555555555556;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 0 !important;
+      padding-top: 18px !important;
+      padding-bottom: 25px !important;
+      color: var(--bs-gray);
+      @media (min-width:480px) {
+          font-size: 18px;
+      }
+      span{
+          padding-left: 5px;
+         line-height: 1.4;
+         font-size: 24px;
+         font-weight: 600;
+         transition: .3s;
+         color: var(--bs-black); 
+         @media (min-width:480px) {
+             font-size: 30px;
+         }
+      }
+  }
+  &__btn {
+      padding: 0 !important;
+    .btn{
+        svg{
+            margin-top: 0;
+        }
+    }
+  }
+  &.active{
+      @media (min-width:1400px) {
+          transform: translateY(-40px) !important;
+      }
+      background: var(--bs-black) !important;
+      cursor: default !important;
+      .price-head{
+          &__text{
+              h6{
+                  color: var(--bs-white) !important; 
+              }
+          }
+      }
+      ul{
+          li{
+              color: white !important;
+              span{
+                  color: white !important;
+              }
+          }
+      }
+      .card-price-01__btn{
+          .btn{
+              background: var(--bs-primary) !important;
+              border-color: var(--bs-primary) !important;
+              color: white !important;
+              svg{
+                  path{
+                      stroke: white !important;
+                  }
+              }
+          }
+      }
+  }
+  &:hover{
+      background: var(--bs-white-lilac);
+      .card-price-01__btn{
+          .btn{
+              background: var(--bs-primary);
+              border-color: var(--bs-primary);
+              color: white;
+              svg{
+                  path{
+                      stroke: white !important;
+                  }
+              }
+          }
+      }
+  }
+}
+.card-price-02 {
+    text-align: center;
+    border-radius: 3px;
+    transition: .3s;
+    padding: 50px 30px;
+    padding-top: 47px;
+    background: white;
+    @media (min-width:575px) {
+        padding: 60px 68px;
+    }
+  $P : &;
+  .js-yearlypricing {
+    display: none;
+  }
+  .price-head{
+      border-bottom: 1px solid #DEE7EE;
+      padding-bottom: 47px;
+      &__price{
+          align-items: center;
+          margin: 0;
+          margin-bottom: 15px;
+          li{
+              font-weight: 600;
+              padding: 0;
+              font-size: 40px;
+              line-height: 1.20025;
+              color: var(--bs-black);
+          }
+      }
+      &__text{
+        h6{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--bs-primary);
+        }
+      }
+  }
+  ul {
+      margin-top: 47px;
+    position: relative;
+    align-items: center;
+    li {
+        transition: .3s;
+      display: flex;
+      line-height: 1.555555555555556;
+      font-weight: 500;
+      padding: 10px 0;
+      color: var(--bs-gray);
+      font-size: 16px;
+      @media (min-width:480px) {
+          font-size: 18px;
+      }
+      &:first-child{
+          padding-top: 0;
+      }
+      svg{
+          path{
+              stroke: var(--bs-secondary);
+          }
+          display: block;
+          margin-top: 6px;
+          margin-right: 10px;
+      }
+    }
+  }
+  &__btn {
+      padding: 0 !important;
+      padding-top: 40px !important;
+      .btn{
+        color: var(--bs-black);
+        svg{
+            path{
+                stroke: var(--bs-black) !important;
+            }
+            margin-top: 0;
+        }
+    }
+  }
+  &.active,
+  &:hover{
+    box-shadow: 0px 15px 30px rgba(210, 217, 224, 0.35);
+      .card-price-02__btn{
+          .btn{
+              background: var(--bs-primary);
+              border-color: var(--bs-primary);
+              color: white;
+              svg{
+                  path{
+                      stroke: white !important;
+                  }
+              }
+          }
+      }
+  }
+}

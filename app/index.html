@@ -1,0 +1,11 @@
+{% extends "template.njk" %}
+{% import "pages/home/_features.njk" as FeaturesSection %}
+{% import "components/Footer/_footer.njk" as FooterSection %}
+{% block main %}
+  <!-- Features Section Start -->
+  {{FeaturesSection.render()}}
+  <!-- Features Section End -->
+  <!-- Footer Section Start -->
+  {{FooterSection.render()}}
+  <!-- Footer Section End -->
+{% endblock %}

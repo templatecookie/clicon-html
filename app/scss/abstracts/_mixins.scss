@@ -1,0 +1,29 @@
+@mixin flexAllCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin square($size,$corner){
+    min-width: $size;
+    max-width: $size;
+    min-height: $size;
+    max-height: $size;
+    border-radius: $corner;
+}
+@mixin size($sizeX,$sizeY){
+    min-width: $sizeX;
+    max-width: $sizeX;
+    min-height: $sizeY;
+    max-height: $sizeY;
+}
+@mixin translateCenter($size,$corner){
+    transform: translateX(-50%) translateY(-50%);
+}
+@mixin absolute($x:0,$y:0,$sizeY:100%,$sizeX:100%,$zIndex:unset){
+    position: absolute;
+    top:$x;
+    left:$y;
+    height:$sizeY;
+    width:$sizeX;
+    z-index: $zIndex;
+}

@@ -1,0 +1,70 @@
+@use "../abstracts/colors" as colors;
+
+@each $color, $value in colors.$custom-colors {
+  .text-#{$color} {
+    color: $value;
+  }
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+.heading-dark {
+  color: colors.$headingDark;
+}
+.heading-light {
+  color: colors.$headingLight;
+}
+.text-dark {
+  color: colors.$textDark;
+}
+.text-light {
+  color: colors.$textLight;
+}
+
+.bg-titan-white{
+  background: #EEEBFF !important;
+}
+.bg-solitude{
+  background: #EBF6FF !important;
+}
+.bg-sazerac{
+  background: #FFF6E4 !important;
+}
+.bg-narvik{
+  background: #EAF8F1 !important;
+}
+.bg-purple{
+  background: #7054FF !important;
+}
+.bg-yellow{
+  background: #FFAB2E !important;
+}
+.svg-purple{
+  svg{
+    path{
+      stroke: #7054FF  !important;
+    }
+  }
+}
+.svg-primary{
+  svg{
+    path{
+      stroke: #008AFF !important;
+    }
+  }
+}
+.svg-yellow{
+  svg{
+    path{
+      stroke: #FFAB2E !important;
+    }
+  }
+}
+.svg-secondary{
+  svg{
+    path{
+      stroke: #36CD77 !important;
+    }
+  }
+}

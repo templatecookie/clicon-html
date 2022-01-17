@@ -1,0 +1,18 @@
+@import "colors";
+@import "border";
+@import "fonts";
+@import "form";
+@import "grid";
+@import "size";
+@import "spacings";
+@import "btn";
+@import "card";
+
+$btn-focus-box-shadow: none;
+$btn-box-shadow: none;
+$link-decoration: none;
+$link-hover-decoration: none;
+
+$hr-margin-y: 0;
+
+$card-border-radius: 10px;

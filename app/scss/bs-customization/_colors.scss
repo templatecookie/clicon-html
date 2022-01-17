@@ -1,0 +1,9 @@
+@use "../abstracts/colors" as *;
+$primary: $azure-radiance;
+$secondary: $shamrock;
+$headings-color: $headingDark;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);

@@ -1,0 +1,65 @@
+{
+	"siteHeaderOne": {
+		"additional_header_class": "site-header--menu-center logo-dark mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": true,
+		"header_button": true,
+		"additional_button_classes": "site-header__btns--01",
+		"header_button_class": "header-text",
+		"header_button_text": "<img src='./image/l-1/mail.png' alt='mail'>hi@bestkit.design"
+	},
+	"siteHeaderTwo": {
+		"additional_header_class": "site-header--menu-center logo-dark mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": true,
+		"header_button": true,
+		"additional_button_classes": "site-header__btns--01",
+		"header_button_class": "btn-primary",
+		"header_button_text": "Contact Us <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
+	},
+	"siteHeaderFour": {
+		"additional_header_class": "site-header--menu-right site-header--dark",
+		"header_double_button": false,
+		"absolute_header": true,
+		"header_button": true,
+		"additional_button_classes": "site-header__btns--03",
+		"header_button_class": "btn-outline-secondary",
+		"header_button_text": "Get In Touch <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
+	},
+	"siteHeaderFive": {
+		"additional_header_class": "site-header--menu-right site-header--dark logo-dark-white",
+		"header_double_button": false,
+		"absolute_header": true,
+		"header_button": true,
+		"additional_button_classes": "site-header__btns--04",
+		"header_button_class": "btn text-white svg-white btn-primary ",
+		"header_button_text": "Join For Free <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
+	},
+	"siteHeaderSix": {
+		"additional_header_class": "site-header--menu-center logo-dark mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": false,
+		"header_button": true,
+		"additional_button_classes": "site-header__btns--01",
+		"header_button_class": "btn-primary",
+		"header_button_text": "Download Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
+	},
+	"innerHeader": {
+		"additional_header_class": "site-header--menu-right logo-dark mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": true,
+		"header_button": true,
+		"additional_button_classes": "site-header__btns--01",
+		"header_button_class": "btn-primary",
+		"header_button_text": "Get Started Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
+	},
+	"nonabsoluteHeader": {
+		"additional_header_class": "site-header--menu-right logo-dark mobile-menu-trigger-dark",
+		"header_double_button": false,
+		"absolute_header": false,
+		"header_button": true,
+		"additional_button_classes": "site-header__btns--01",
+		"header_button_class": "btn-primary",
+		"header_button_text": "Get Started Now <img src='./image/svg/arrow.svg' class='make-it-inline' alt='arrow'>"
+	}
+}

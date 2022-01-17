@@ -1,0 +1,17 @@
+{% macro render(option) %}
+    <div class="breadcrumb bg-white-lilac {{option.PaddingClass}}">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="{{'col-xl-6 col-lg-8 col-xs-10' if not option.column else option.column}}">
+                    <div class="page-title-block-two breadcrumb__content text-center">
+                        <h1 class="title">{{option.title}}</h1>
+                        <p class="text-dark">{{option.text}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb__navigation">
+            <p class="breadcrumb__navigation--text"><a class="d-block heading-dark" href="index.html">Home</a><span class="dot"></span><span class="page-text">{{option.pageName}}</span></p>
+        </div>
+    </div>
+{% endmacro %}

@@ -1,0 +1,13 @@
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: ($spacer * .3125),         // 5px
+    2: ($spacer * .625),        // 10px  (now b 3)
+    3: ($spacer *  1.0666),          // 15px  (now b 6)
+    4: ($spacer * 1.25),        // 20px (now b around 8)
+    5: ($spacer * 1.875),         // 30px (now b around 13)
+    6: ($spacer * 2.5),         // 40px (now b around 13)
+    7: ($spacer * 3.125)         // 50px (now b around 13)
+  );
+

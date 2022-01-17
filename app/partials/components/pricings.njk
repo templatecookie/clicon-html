@@ -1,0 +1,22 @@
+
+{% macro One(obj) %}
+   <div class=" card-pricing--01 {{obj.modifier}}">
+    <div class="card-pricing--01__head text-center">
+      <h3 class="card-pricing--01__plan-title{{" " + obj.planTextColor if obj.planTextColor}}">{{obj.plan}} Plan</h3>
+      <h2 class="card-pricing--01__price dynamic-value" data-yearly="{{obj.price.yearly}}" data-monthly="{{obj.price.monthly}}" data-active="{{obj.price.yearly}}"></h2>
+      <span class="card-pricing--01__plan-text">Per Month</span>
+    </div>
+    <div class="d-flex justify-content-center">
+      <ul class="card-pricing--01__list list-unstyled  text-center">
+          {% for item in obj.list %}
+            <li>
+              <span>{{item.text}}</span>
+            </li>  
+          {% endfor %}
+      </ul>
+    </div>
+    <div class="card-pricing--01__button text-center">
+      <a href="#" class="btn btn-60 {{" "+ obj.btnClass if obj.btnClass}}{{" active" if obj.active}}">{{obj.btnText if obj.btnText else "Get Started"}}</a>
+    </div>
+  </div>
+{% endmacro %}

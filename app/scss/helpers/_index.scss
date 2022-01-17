@@ -1,0 +1,20 @@
+/* Common Animations  css Start */
+@forward "animations";
+/* Typography css Start */
+@forward "typography";
+/* Typography css Start */
+@forward "spacings";
+/* Common colors  css Start */
+@forward "colors";
+@forward "mixed";
+
+.transform-origin-top-left {
+  transform-origin: top left;
+}
+.transform-origin-bottom-20p {
+  transform-origin: 100% -20%;
+}
+
+.pointer-none {
+  pointer-events: none;
+}

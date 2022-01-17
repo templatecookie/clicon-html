@@ -1,0 +1,18 @@
+// This variable affects the `.h-*` and `.w-*` classes.
+$responsive-size: true;
+$sizes: () ;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    100: 100%,
+    100vh: 100vh,
+  ),
+  $sizes
+);
+
+
+$paragraph-margin-bottom:   0rem;
+
+$headings-margin-bottom:      0 !default;

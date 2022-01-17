@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>
+      {% if PAGE_INFO.page_title %}{{PAGE_INFO.page_title}}
+      {% else %}Clicon - eCommerce Html Template{% endif %}
+    </title>
+    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon"/>
+
+    <!-- Bootstrap , fonts & icons  -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css"/>
+
+    <!-- Plugin'stylesheets  -->
+    <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+    <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+    <link rel="stylesheet" href="./plugins/slick/slick.min.css">
+
+    {% block plugincss %}{% endblock %}
+    <!-- Vendor stylesheets  -->
+    <link rel="stylesheet" href="./css/main.css"/>
+
+  </head>
+  
+  <body>
+   
+    {# {% include "components/preloader.njk" %} #}
+    <div class="site-wrapper overflow-hidden">
+      {% block main %}{% endblock %}
+    </div>
+
+    <!-- Plugin's Scripts -->
+    <!-- Custom stylesheet -->
+    <script>
+      /**
+     * Replace all SVG images with inline SVG
+     */
+      $(document).ready(function () {
+        $('img[class*="make-it-inline"]').each(function () {
+          var $img = jQuery(this);
+          var imgURL = $img.attr('src');
+          var attributes = $img.prop("attributes");
+
+          $.get(imgURL, function (data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Remove any invalid XML tags
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Loop through IMG attributes and apply on SVG
+            $.each(attributes, function () {
+              $svg.attr(this.name, this.value);
+            });
+
+            // Replace IMG with SVG
+            $img.replaceWith($svg);
+          }, 'xml');
+        });
+      });
+    </script>
+    <script src="./plugins/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+    <script src="./plugins/aos/aos.min.js"></script>
+    <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+    <script src="./plugins/counter-up/waypoints.min.js"></script>
+    <script src="./plugins/slick/slick.min.js"></script>
+    <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+    <!-- Activation Script -->
+    <script src="js/custom.js"></script>
+    <script src="js/slider-activations.js"></script>
+
+    {% block pluginjs %}{% endblock %}
+  </body>
+
+</html>

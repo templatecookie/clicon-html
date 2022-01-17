@@ -1,0 +1,113 @@
+{#
+==========================================
+Available variables
+==========================================
+| root: "./",
+| elmRoot: "./",
+| count: "stringNumber",
+| additional_header_class:"string",
+| absolute_header: bool,
+| sticky_header :bool,
+| mobile_sticky: bool,
+| container_fluid : bool,
+| container_fluid_class : "string",
+| menu_wrapper_class : "string"
+| hideMegamenu : bool,
+| megamenuPosition : string,
+| dropDownStyleTwo : bool,
+| header_button_custom : HTML,
+| header_button : bool",
+| header_button_text : string",
+| header_button_class : string,
+| additional_button_classes : "string",
+| header_double_button : bool,
+| additional_button_classes : "string",
+| additional_db_classes : "string",
+| header_button_class_1 : "string",
+| header_button_text_1 : "string",
+| header_button_class_2 : "string",
+| header_button_text_2 : "string",
+----------------------------------------
+#}
+
+{% macro render(settings, count) %}
+  {% import "components/Header/_menu.njk" as Menu %}
+
+  <!-- Preloader -->
+
+  <!-- <div id="loading">
+    <div class="preloader">
+     <img src="./image/preloader-3.gif" alt="preloader">
+   </div>
+   </div>   -->
+
+  <!-- Header Area -->
+  <header
+  class="site-header{{ ' ' + settings.additional_header_class if settings.additional_header_class }}{{ ' site-header--absolute' if settings.absolute_header}}{{ ' site-header--sticky' if settings.sticky_header}}{{ ' mobile-sticky-enable' if settings.mobile_sticky}}">
+    <div
+    class="container{{ '-fluid' if  settings.container_fluid}}{{' ' + settings.container_fluid_class if  settings.container_fluid_class}}">
+      <nav class="navbar site-navbar">
+        <!-- Brand Logo-->
+        <div class="site-header__brand">
+          <a href="index.html">
+
+            <!-- light version logo (logo must be black)-->
+            <img src="{{ settings.root }}image/logo/logo-dark-white.png" alt="logo" class="logo-white-black">
+
+            <!-- light version logo (logo must be black)-->
+            <img src="{{ settings.root }}image/logo/logo-dark.png" alt="logo" class="logo-white">
+
+            <!-- Dark version logo (logo must be White)-->
+            <img src="{{settings.root}}image/logo/logo-white.png" alt="logo" class="logo-black">
+
+          </a>
+        </div>
+
+        <div class="menu-block-wrapper {{' ' + settings.menu_wrapper_class if  settings.menu_wrapper_class}}">
+          <div class="menu-overlay"></div>
+          <nav class="menu-block menu-block-inner" id="append-menu-header">
+            <div class="mobile-menu-head">
+              <div class="go-back">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            {{Menu.render(settings.root,settings.elmRoot,
+          settings.hideMegamenu,settings.dropDownStyleTwo,settings.megamenuPosition)}}
+          
+          </nav>
+          {% if settings.header_button_custom %}
+          {{ settings.header_button_custom | safe}}
+        {% endif %}
+        {% if settings.header_button %}
+          <div class="header-button header-btn {{  settings.additional_button_classes}}">
+            <a class="btn {{ settings.header_button_class}}" href="{{settings.link | safe }}">
+              {{ settings.header_button_text | safe}}
+            </a>
+          </div>
+        {% endif %}
+        {% if settings.header_double_button %}
+          <div class="header-button site-header__btns {{  settings.additional_db_classes}}">
+            <a class="{{ settings.header_button_class_1}}" href="{{settings.link_one | safe }}">
+              {{ settings.header_button_text_1 | safe}}
+            </a>
+            <a class="{{ settings.header_button_class_2}}" href="{{settings.link_two | safe }}">
+              {{ settings.header_button_text_2 | safe}}
+            </a>
+          </div>
+        {% endif %}
+        </div>
+        
+
+        <!-- mobile menu trigger -->
+        <div class="mobile-menu-trigger">
+          <span></span>
+        </div>
+        <!--/.Mobile Menu Hamburger Ends-->
+
+      </nav>
+    </div>
+  </header>
+  <!-- navbar-{{ settings.navbar_mode}} -->
+{% endmacro %}

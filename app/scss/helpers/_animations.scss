@@ -1,0 +1,350 @@
+
+.floating-Y-animation-02{
+  animation-name: floating-02;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+.floating-Y-animation-reverse-02{
+  animation-name: floating-reverse-02;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+.floating-Y-animation-reverse-03{
+  animation-name: floating-reverse-03;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+.floating-X-animation-reverse-01{
+  animation-name: floating-X-reverse-01;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes floating-02 {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-200px); }
+}
+@keyframes floating-reverse-02 {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(200px); }
+}
+@keyframes floating-reverse-03 {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(100px); }
+}
+@keyframes floating-X-reverse-01 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(150px); }
+}
+.circle-animation{
+  animation: animationShapeCircle 20s infinite linear;
+}
+@keyframes animationShapeCircle{
+  0% {
+    transform:  translate(0px,0px)  rotate(0deg) scale(1) ;
+  }
+  20% {
+    transform:  translate(73px,-1px)  rotate(36deg) scale(0.9);
+  }
+  40% {
+    transform:  translate(141px,72px)  rotate(72deg) scale(1);
+  }
+  60% {
+    transform:  translate(83px,122px)  rotate(108deg) scale(1.2);
+  }
+  80% {
+    transform:  translate(-40px,72px)  rotate(144deg) scale(1.1);
+  }
+  100% {
+    transform:  translate(0px,0px)  rotate(0deg) scale(1);
+  }
+}
+.circle-animation-02{
+  animation: animationShapeCircle-02 20s infinite linear;
+}
+.spin-animation{
+  animation: spin 20s infinite linear;
+}
+@keyframes animationShapeCircle-02{
+  0% {
+    transform:  translate(0px,0px)  rotate(0deg) scale(1) ;
+  }
+  20% {
+    transform:  translate(-73px,1px)  rotate(36deg) scale(0.9);
+  }
+  40% {
+    transform:  translate(-141px,-72px)  rotate(72deg) scale(1);
+  }
+  60% {
+    transform:  translate(-83px,-122px)  rotate(108deg) scale(1.2);
+  }
+  80% {
+    transform:  translate(40px,-72px)  rotate(144deg) scale(1.1);
+  }
+  100% {
+    transform:  translate(0px,0px)  rotate(0deg) scale(1);
+  }
+}
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(-360deg);
+  }
+}
+
+.two-way-circle{
+  .round-1,path:first-child{
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+    transform-origin:center;
+    transform-box: fill-box;
+  }
+  .round-2,path:nth-child(2){
+    -webkit-animation:spin-reverse 5s linear infinite;
+    -moz-animation:spin-reverse 5s linear infinite;
+    animation:spin-reverse 5s linear infinite;
+    transform-origin:center;
+    transform-box: fill-box;
+  }
+}
+
+.particle {
+	position: absolute;
+  z-index: -1;
+}
+
+@for $i from 1 through 30 {
+	@keyframes particle-animation-#{$i} {
+		100% {
+			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+		}
+	}
+	
+	.particle:nth-child(#{$i}){
+		animation: particle-animation-#{$i} 60s infinite;
+		animation-delay: -$i * .2s;
+		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
+	}
+}
+
+@keyframes rotation {
+  0% {
+      transform: scale(.6);
+  }
+
+  50% {
+      transform: scale(.8) rotate(-45deg);
+  }
+
+  100% {
+      transform: scale(1) rotate(180deg);
+  }
+}
+
+@-webkit-keyframes animateMark {
+0% {
+  background-size: 0% 6px;
+}
+
+100% {
+  background-size: 100% 6px;
+}
+}
+
+@keyframes animateMark {
+0% {
+  background-size: 0% 6px;
+}
+
+100% {
+  background-size: 100% 6px;
+}
+}
+
+@keyframes sonarWave {
+  from {
+      opacity: 0.4;
+  }
+
+  to {
+      transform: scale(2.5);
+      opacity: 0;
+  }
+}
+@keyframes sonarWave-02 {
+  from {
+      opacity: 0.4;
+  }
+
+  to {
+      transform: scale(3.5);
+      opacity: 0;
+  }
+}
+
+.transform-origin-top-right{
+  transform-origin: top right;
+}
+
+.shape-x-1{
+  animation-name: shape-x-animation-1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes shape-x-animation-1 {
+  0% { transform: translateX(-8%); }
+  100% { transform: translateX(0); }
+}
+.shape-x-2{
+  animation-name: shape-x-animation-2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes shape-x-animation-2 {
+  0% { transform: translateX(8%); }
+  100% { transform: translateX(0); }
+}
+
+.circle-x{
+  animation-name: circle-x-animation;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes circle-x-animation {
+  0% { transform: translateX(-1270%); }
+  100% { transform: translateX(50%); }
+}
+.circle-x-02{
+  animation-name: circle-x-animation-02;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes circle-x-animation-02 {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(500%); }
+}
+
+
+
+// Start css
+.floating-Y-animation{
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+.floating-Y-animation-reverse{
+  animation-name: floating-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-15px); }
+}
+@keyframes floating-reverse {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(15px); }
+}
+
+.wave {
+  animation-name: wave-animation; 
+  color: unset;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
+.sonar-emitter {
+  position: relative;
+}
+
+.sonar-emitter::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  background-color: var(--bs-primary);
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sonar-emitter::after {
+  animation: sonarWave 2s linear infinite;
+}
+
+.sonar-emitter-2 {
+  position: relative;
+}
+
+.sonar-emitter-2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: "";
+  background-color: white;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sonar-emitter-2::after {
+  animation: sonarWave 2s linear infinite;
+}
+@keyframes logoscroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-220px * 7))}
+}

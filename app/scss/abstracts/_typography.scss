@@ -1,0 +1,137 @@
+$fsize: (
+    8:(
+      font-size:0.5rem,//8px
+      line-height:1,
+      letter-spacing:	"normal"
+    ),
+    11:(
+      font-size:0.6875rem,//11px
+      line-height:1,
+      letter-spacing:	"normal"
+      ),
+    13:(
+      font-size:0.8125rem,//13px
+      line-height:2,
+      letter-spacing:0.26px
+    ), //-0.4
+    14:(
+      font-size:1rem,//16px
+      line-height:1.75,
+      letter-spacing:	"normal"
+    ), // 
+    18:(
+      font-size:1.125rem,//18px
+      line-height:1.66,
+      letter-spacing:	"normal"
+      ),
+    21:(
+      font-size:1.3125rem,//21px
+      line-height:1.62,
+      letter-spacing:	"normal"
+    ),
+    24:(
+      font-size:1.5rem,//24px
+      line-height:1.5,
+      letter-spacing:	"normal"
+      ),
+    42:(
+      font-size:2.625rem,//42px
+      line-height:1.48,
+      letter-spacing:	"normal"
+      ),
+    48:(
+      font-size:3rem,//48px
+      line-height:1.21,
+      letter-spacing:-2px
+      ),
+    52:(
+      font-size:3.25rem,//52px
+      line-height:1.14,
+      letter-spacing:-1px
+      ),
+    58:(
+      font-size:3.625rem,//58px
+      line-height:1.21,
+      letter-spacing:-2px
+      ),
+    60:(
+      font-size:3.75rem,//60px
+      line-height:1.1,
+      letter-spacing:-2px
+      ),
+    70:(
+      font-size:4.375rem,//70px
+      line-height:1.1,
+      letter-spacing:-2px
+      ),
+    80:(
+      font-size:5rem,//80px
+      line-height:1.075,
+      letter-spacing:-1px
+      )
+  );
+ @mixin Main_Heading(){
+        line-height: 1.097222222222222;
+        letter-spacing: -0.5px;
+        font-size:36px;
+        @media (min-width:768px){
+          font-size:41px;
+        }
+        @media(min-width:992px){
+            font-size:54px;
+        }
+        @media (min-width:1200px){
+          font-size:62px;
+        }
+        @media (min-width:1600px){
+          font-size:72px;
+        }
+ }
+ @mixin Section_Heading($lg:"48px",){
+    line-height: 1.20833;
+    letter-spacing: -0.5px;
+    font-size:31px;
+    @media (min-width:576px){
+      font-size:34px;
+    }
+    @media (min-width:768px){
+      font-size:38px;
+    }
+    @media (min-width:1200px){
+      font-size:48px;
+    }
+}
+
+
+@mixin line-height-reset($line-height) {
+    &::before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      margin-top: calc((1 - #{$line-height}) * 0.5em);
+    }
+    &::after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      margin-bottom: calc((1 - #{$line-height}) * 0.5em);
+    }
+  }
+  
+  
+  
+  @mixin fontSize($font-size,$letterSpacing:"initial",$lineHeight: 0){
+    font-size: font-get($font-size,"font-size");
+    @if $lineHeight == 0 {
+      line-height: font-get($font-size,"line-height");
+    } @else {
+      line-height:$lineHeight;
+    }
+    @if $letterSpacing == "initial" {
+      line-height: font-get($font-size,"letter-spacing");
+    } @else {
+      letter-spacing:$letterSpacing;
+    }
+  }
