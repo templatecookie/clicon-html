@@ -1,7 +1,11 @@
 {% extends "template.njk" %}
+{% import "components/Header/_offer-widget.njk" as WidgetSection %}
 {% import "pages/home/_features.njk" as FeaturesSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
+  <!-- Offer Widget Section Start -->
+  {{WidgetSection.render()}}
+  <!-- Offer Widget Section End -->
   <!-- Features Section Start -->
   {{FeaturesSection.render()}}
   <!-- Features Section End -->
