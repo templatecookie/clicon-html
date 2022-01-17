@@ -1,19 +1,17 @@
 @use "../abstracts/mixins" as *;
 @use "../bs-customization/colors" as *;
 .btn {
-  border-radius: 3px !important;
-  font-size: 16px;
-  font-weight: 600;
+  border-radius: 2px !important;
+  font-size: 14px;
+  font-weight: 700;
   display: inline-flex;
-  padding: 1em 1.7em;
+  text-transform: uppercase;
+  padding: .9em 1.6em;
   line-height: 1;
   width: max-content;
   align-items: center;
   justify-content: center;
   transition: .3s;
-  @media (min-width:575px) {
-    font-size: 18px;
-  }
   &:focus{
     box-shadow: none;
     outline: none;
@@ -98,6 +96,50 @@
     transition: .3s;
     svg{
         margin-left: 15px;
+        path{
+            stroke: #222D39;
+            transition: .3s;
+        }
+    }
+    &:hover{
+        background: var(--bs-secondary) !important;
+        border-color:var(--bs-secondary);
+        color: white;
+        svg{
+            path{
+                stroke: white;
+            }
+        }
+    }
+  }
+  &.btn-warning{
+    border: 2px solid var(--bs-warning-500);
+    background: var(--bs-warning-500);
+    color: var(--bs-gray-900);
+    svg{
+      margin-left: 8px;
+      path{
+        transition: .3s;
+        stroke: var(--bs-gray-900);
+      }
+    }
+    &:hover{
+      background: transparent;
+      border-color: var(--bs-warning-500);
+      color: white;
+      svg{
+        path{
+          stroke: white;
+        }
+      }
+    }
+  }
+  &.btn-warning-secondary{
+    border: 2px solid #DEE7EE;
+    color: #222D39;
+    transition: .3s;
+    svg{
+        margin-left: 8px;
         path{
             stroke: #222D39;
             transition: .3s;

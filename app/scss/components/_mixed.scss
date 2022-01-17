@@ -1,1 +1,49 @@
 @use "../abstracts/mixins" as *;
+.offer-widget-01{
+    background: var(--bs-gray-900); 
+    position: relative;
+    z-index: 9;
+    animation: at-banner-slide-in 0.8s ease forwards;
+    &__wrapper{
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:575px) {
+            flex-direction: column;
+        }
+        &--text{
+            @media (max-width:575px) {
+                margin-bottom: 10px;
+            }
+            display: flex;
+            align-items: center;
+            .black{
+                margin-right: 12px;
+                display: block;
+                transform: rotate(-2deg);
+            padding: .5rem .6rem;   
+            }
+        }
+        &--discount-text{
+            @media (max-width:575px) {
+                margin-bottom: 10px;
+            }
+            display: flex;
+            align-items: center;
+            .num{
+                margin: 0 8px;
+            }
+        }
+        &--close-button{
+            position: absolute;
+            @include square(32px,2px);
+            background: var(--bs-gray-800);
+            @include flexAllCenter;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 24px;
+        }
+    }
+}
