@@ -1,15 +1,23 @@
 {% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
 {% import "components/Header/_offer-widget.njk" as OfferWidget %}
 {% import "components/Header/_top-nav.njk" as TopNav %}
+{% import "components/Header/_deskotop-nav.njk" as DeskNav %}
 {% import "pages/home/_features.njk" as FeaturesSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
+  <!-- Header Section Start -->
+  {{Header.render(siteHeaderOne)}}
+  <!-- Header Section End -->
   <!-- Offer Widget Start -->
   {{OfferWidget.render()}}
   <!-- Offer Widget End -->
   <!-- Top Nav Start -->
   {{TopNav.render()}}
   <!-- Top Nav End -->
+  <!-- DeskNav Nav Start -->
+  {{DeskNav.render()}}
+  <!-- DeskNav Nav End -->
   <!-- Features Section Start -->
   {{FeaturesSection.render()}}
   <!-- Features Section End -->

@@ -7,7 +7,10 @@
         padding: 15px 0;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        @media (min-width:1200px) {
+            justify-content: space-between;
+        }
         @media (max-width:575px) {
             flex-direction: column;
         }
@@ -48,6 +51,7 @@
 }
 .top-nav{
     padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255,0.16);
     &__wrapper{
         display: flex;
         align-items: center;
@@ -176,6 +180,72 @@
                         }
                     }  
                 }
+            }
+        }
+    }
+}
+.desk-nav{
+    padding: 20px 0;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &--search{
+            min-width: 500px;
+            @media (min-width:1400px) {
+                min-width: 646px;
+            }
+            .form-group{
+                position: relative;
+                .form-control{
+                    color: var(--bs-gray-900);
+                    font-size: 14px;
+                    padding: 20px;
+                    border: 0;
+                    padding-right: 40px;
+                    height: 48px;
+                    border-radius: 2px;
+                    &::placeholder{
+                        color: var(--bs-gray-500);
+                    }
+                }
+                .icon{
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        &--widget{
+            display: flex;
+            align-items: center;
+            .cart{
+                cursor: pointer;
+                position: relative;
+                margin-right: 24px;
+                .frame{
+                    position: absolute;
+                    top: -3px;
+                    right: -3px;
+                    background: white;
+                    @include square (20px,500px);
+                    @include flexAllCenter;
+                    span{
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: var(--bs-secondary-700); 
+                    }
+                }
+            }
+            .wishlist{
+                cursor: pointer;
+                margin-right: 24px;
+            }
+            .user{
+                cursor: pointer;
             }
         }
     }
