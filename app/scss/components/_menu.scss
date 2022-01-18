@@ -1,8 +1,5 @@
 @use "../abstracts/colors" as * ;
 $primary: inherit;
-// .site-menu-main{
-// 	--nav-link-main : :#555555;
-// }
 .row-lg {
 	@media (min-width:992px) {
 		display: flex;

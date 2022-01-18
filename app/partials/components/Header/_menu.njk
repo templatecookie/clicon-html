@@ -1,0 +1,139 @@
+{% macro render(root, elemroot, hideMegamenu, dropdownStyle2, megamenuPosition) %}
+    <ul class="site-menu-main">
+        <li class="nav-item nav-item-has-children">
+            <a href="index.html" class="nav-link-item drop-trigger">Home</a>
+        </li>
+        <li class="nav-item nav-item-has-children">
+            <a href="#" class="nav-link-item drop-trigger">Pages <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="sub-menu" id="submenu-2">
+                <li class="sub-menu--item">
+                    <a href="about-us.html">About Us</a>
+                </li>
+                <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Case Studies<i class="fas fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu" id="submenu-9">
+                        <li class="sub-menu--item">
+                            <a href="case-study.html">Case Study</a>
+                        </li>
+                        <li class="sub-menu--item">
+                            <a href="case-study-details.html">Case Study Details</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sub-menu--item nav-item-has-children">
+                    <a href="#" data-menu-get="h3" class="drop-trigger">Services<i class="fas fa-angle-right"></i>
+                    </a>
+                    <ul class="sub-menu" id="submenu-10">
+                        <li class="sub-menu--item">
+                            <a href="service.html">Service</a>
+                        </li>
+                        <li class="sub-menu--item">
+                            <a href="service-details.html">Service Details</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        {#{% if not hideMegamenu %}
+            <li class="nav-item nav-item-has-children has-megamenu">
+                <a href="#" class="nav-link-item drop-trigger">Portfolios <i class="fas fa-angle-down"></i>
+                </a>
+                <div class="sub-menu megamenu {% if megamenuPosition %}megadropdown-{{megamenuPosition}} {% else %} megadropdown-center {% endif %} d-lg-flex"
+            id="submenu-100">
+
+                    <ul class="col-lg-12 row-lg list-unstyled py-lg-2">
+                        <li class="col-lg-3">
+                            <div class="single-dropdown-block">
+                                <h3>Gallery Style</h3>
+                                <a href="portfolio-grid-2-container.html" class="mega-drop-menu-item sub-menu--item">Two Column
+                            Grid</a>
+                                <a href="portfolio-grid-3-container.html" class="mega-drop-menu-item sub-menu--item">Three
+                            Column Grid</a>
+                                <a href="portfolio-grid-4-container.html" class="mega-drop-menu-item sub-menu--item">Four Column
+                            Grid</a>
+                                <a href="portfolio-grid-2-container-fluid.html" class="mega-drop-menu-item sub-menu--item">Two
+                            Column Wide</a>
+                                <a href="portfolio-grid-3-container-fluid.html" class="mega-drop-menu-item sub-menu--item">Three
+                            Column Wide</a>
+                                <a href="portfolio-grid-4-container-fluid.html" class="mega-drop-menu-item sub-menu--item">Four
+                            Column Wide</a>
+                            </div>
+                        </li>
+                        <li class="col-lg-3">
+                            <div class="single-dropdown-block">
+                                <h3>Gallery (No Gap)</h3>
+                                <a href="portfolio-grid-2-no-gap.html" class="mega-drop-menu-item sub-menu--item">Two Column
+                            Grid</a>
+                                <a href="portfolio-grid-3-no-gap.html" class="mega-drop-menu-item sub-menu--item">Three Column
+                            Grid</a>
+                                <a href="portfolio-grid-4-no-gap.html" class="mega-drop-menu-item sub-menu--item">Four Column
+                            Grid</a>
+                                <a href="portfolio-grid-2-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Two
+                            Column Wide</a>
+                                <a href="portfolio-grid-3-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Three
+                            Column Wide</a>
+                                <a href="portfolio-grid-4-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Four
+                            Column Wide</a>
+
+                            </div>
+                        </li>
+                        <li class="col-lg-3">
+                            <div class="single-dropdown-block">
+                                <h3>Masonry Style</h3>
+                                <a href="portfolio-masonary-2-no-gap.html" class="mega-drop-menu-item sub-menu--item">Two Column
+                            Masonary</a>
+                                <a href="portfolio-masonary-3-no-gap.html" class="mega-drop-menu-item sub-menu--item">Three
+                            Column Masonary</a>
+                                <a href="portfolio-masonary-4-no-gap.html" class="mega-drop-menu-item sub-menu--item">Four
+                            Column Masonary</a>
+                                <a href="portfolio-masonary-2-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Two
+                            Column Wide</a>
+                                <a href="portfolio-masonary-3-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Three
+                            Column Wide</a>
+                                <a href="portfolio-masonary-4-no-gap-full.html" class="mega-drop-menu-item sub-menu--item">Four
+                            Column Wide</a>
+
+                            </div>
+                        </li>
+                        <li class="col-lg-3">
+                            <div class="single-dropdown-block">
+                                <h3>Portfolio Details</h3>
+                                <a href="portfolio-details-1.html" class="mega-drop-menu-item sub-menu--item">Portfolio Details
+                            1</a>
+                                <a href="portfolio-details-2.html" class="mega-drop-menu-item sub-menu--item">Portfolio Details
+                            2</a>
+                                <a href="portfolio-details-3.html" class="mega-drop-menu-item sub-menu--item">Portfolio Details
+                            3</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        {% endif %}#}
+        <li class="nav-item nav-item-has-children">
+            <a href="#" class="nav-link-item drop-trigger">Blogs <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="sub-menu" id="submenu-11">
+                <li class="sub-menu--item">
+                    <a href="blog-1.html">Blog One</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="blog-2.html">Blog Two</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="blog-details-1.html">Blog Details One</a>
+                </li>
+                <li class="sub-menu--item">
+                    <a href="blog-details-2.html">Blog Details Two</a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-item nav-item-has-children">
+            <a href="contact.html" class="nav-link-item drop-trigger">Contact
+            </a>
+        </li>
+    </ul>
+
+{% endmacro %}

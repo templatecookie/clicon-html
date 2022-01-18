@@ -1,3 +1,41 @@
 {% macro render(args) %}
-    
+    <div class="top-nav bg-secondary-700 d-none d-lg-block">
+        <div class="container">
+            <div class="top-nav__wrapper">
+                <div class="top-nav__wrapper--text">
+                    <p class="text-white text-white text-14">Welcome to Clicon online eCommerce store. </p>
+                </div>
+                <div class="top-nav__wrapper--content">
+                    <div class="social-content">
+                        <ul class="list-unstyled list-group">
+                            <li class="text-white text-14">Follow us:</li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fab fa-reddit"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="switcher">
+                        <div class="switcher__language">
+                            <select class="selector">
+                                <option data-display="Eng" value="1">
+                                    English
+                                </option>
+                                <option data-display="Man" value="2">Mandarin </option>
+                                <option data-display="Russ" value="3">Russian</option>
+                            </select>
+                        </div>
+                        <div class="switcher__currency">
+                            <select class="selector">
+                                <option data-display="USD" value="1">Dollar (USD)</option>
+                                <option data-display="EUR" value="2">Euro (EUR)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endmacro %}

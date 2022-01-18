@@ -3,7 +3,6 @@
     background: var(--bs-gray-900); 
     position: relative;
     z-index: 9;
-    animation: at-banner-slide-in 0.8s ease forwards;
     &__wrapper{
         padding: 15px 0;
         display: flex;
@@ -46,4 +45,141 @@
             right: 24px;
         }
     }
+}
+.top-nav{
+    padding: 14px 0;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:575px) {
+            flex-direction: column;
+        }
+        &--content{
+            display: flex;
+            align-items: center;
+            @media (max-width:575px) {
+                flex-direction: column;
+            }
+            .social-content{
+                border-right: 1px solid rgba(255, 255, 255,0.16);
+                .list-group{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    li{
+                        padding-right: 12px;
+                        a{
+                            font-size: 16px;
+                            color: white;
+                        }
+                        &:last-child{
+                            padding-right: 24;
+                        }
+                    }
+                }
+            }
+            .switcher{
+                display: flex;
+                align-items: center;
+                .selector{
+                   &.nice-select{
+                     background: transparent;
+                     border: 0;
+                     padding-left: 24px;
+                     height: auto; 
+                     line-height: 1.6;
+                     font-weight: 400;
+                     .current{
+                         color: white;
+                     }
+                     &::after{
+                        border-color: white;
+                        width: 8px;
+                        height:  8px;
+                        margin-top: -5px;
+                     }
+                     .list{
+                        border: 1px solid #E4E7E9;
+                         padding:8px 16px;
+                         margin: 0;
+                         box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
+                        border-radius: 3px;
+                        top: 120%;
+                        li{
+                            font-weight: 500;
+                            min-height: auto;
+                            padding:8px 0;
+                            font-size: 14px;
+                            line-height: 1;
+                            display: flex;
+                            align-items: center;
+                            &.selected {
+                                background: transparent;
+                                &::after{
+                                    padding-left: 51px;
+                                   content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 4.5L6.5 11.5L3 8' stroke='%23FA8232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                                }
+                            }
+                            &:hover{
+                                background: transparent;
+                            }
+                        }
+                     }
+                   } 
+                }
+                &__language{
+                    .selector{
+                        &.nice-select{
+                          .list{
+                            left: -132%;
+                            li{
+                                  color: var(--bs-gray-600);
+                                &:nth-child(1){
+                                    &::before{
+                                    content: url(../../image/logo/usa.png);
+                                    margin-right: 12px;
+                                    }
+                                }
+                                &:nth-child(2){
+                                    &::before{
+                                    content: url(../../image/logo/man.png);
+                                    margin-right: 12px;
+                                    }
+                                }
+                                &:nth-child(3){
+                                    &::before{
+                                    content: url(../../image/logo/rus.png);
+                                    margin-right: 12px;
+                                    }
+                                }
+                                &.selected {
+                                    color: var(--bs-gray-900);
+                                }
+                              }
+                          }  
+                        }
+                    }  
+                }
+                &__currency{
+                    .selector{
+                        &.nice-select{
+                          .list{
+                            left: 28%;
+                              li{
+                                  color: var(--bs-gray-600);
+                                &.selected {
+                                    color: var(--bs-primary-500);
+                                }
+                              }
+                          }  
+                        }
+                    }  
+                }
+            }
+        }
+    }
+}
+.pb-100{
+    padding-bottom: 100px;
 }

@@ -75,7 +75,9 @@
     <!-- Activation Script -->
     <script src="js/custom.js"></script>
     <script src="js/slider-activations.js"></script>
-
+    {% if not PAGE_INFO.menuHide %}
+      <script src="js/menu.js"></script>
+    {% endif %}
     {% block pluginjs %}{% endblock %}
   </body>
 

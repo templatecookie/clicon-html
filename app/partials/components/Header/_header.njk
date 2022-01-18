@@ -1,3 +1,5 @@
+{# #}
+
 {#
 ==========================================
 Available variables
@@ -52,9 +54,6 @@ Available variables
           <a href="index.html">
 
             <!-- light version logo (logo must be black)-->
-            <img src="{{ settings.root }}image/logo/logo-dark-white.png" alt="logo" class="logo-white-black">
-
-            <!-- light version logo (logo must be black)-->
             <img src="{{ settings.root }}image/logo/logo-dark.png" alt="logo" class="logo-white">
 
             <!-- Dark version logo (logo must be White)-->
@@ -82,18 +81,22 @@ Available variables
         {% endif %}
         {% if settings.header_button %}
           <div class="header-button header-btn {{  settings.additional_button_classes}}">
-            <a class="btn {{ settings.header_button_class}}" href="{{settings.link | safe }}">
-              {{ settings.header_button_text | safe}}
+            <a class="btn {{ settings.header_button_class}}" href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#008AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 6L12 13L2 6" stroke="#008AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              {{ settings.header_button_text}}
             </a>
           </div>
         {% endif %}
         {% if settings.header_double_button %}
-          <div class="header-button site-header__btns {{  settings.additional_db_classes}}">
-            <a class="{{ settings.header_button_class_1}}" href="{{settings.link_one | safe }}">
-              {{ settings.header_button_text_1 | safe}}
+          <div class="header-button site-header__btns  {{  settings.additional_db_classes}}">
+            <a class="{{ settings.header_button_class_1}}" href="#">
+              {{ settings.header_button_text_1}}
             </a>
-            <a class="{{ settings.header_button_class_2}}" href="{{settings.link_two | safe }}">
-              {{ settings.header_button_text_2 | safe}}
+            <a class="{{ settings.header_button_class_2}}" href="#">
+              {{ settings.header_button_text_2}}
             </a>
           </div>
         {% endif %}

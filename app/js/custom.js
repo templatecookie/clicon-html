@@ -373,7 +373,3 @@ $('.service-category').on('click', 'li', function() {
   $('.service-category li.active').removeClass('active');
   $(this).addClass('active');
 });
-
-$('.offer-widget-01__wrapper--close-button').on('click', function() {
-  $(this).parent().remove();
-});
