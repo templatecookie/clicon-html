@@ -1,0 +1,200 @@
+{% macro render(args) %}
+<div class="bottom-nav">
+    <div class="container">
+        <div class="row">
+            <div class="bottom-nav__wrapper">
+                <div class="left-sidebar">
+                    <div class="category">
+                        <nav class="mainnav">
+                            <ul>
+                            <li class="hasDD category-nav bg-gray-50">
+                                <a href="#">All Category</a>
+                                <ul class="sub-one">
+                                    <li><a href="#">Computer & Laptop</a></li>
+                                    <li><a href="#">Computer Accessories</a></li>
+                                    <li class="hasDD hasDDtwo"><a class="c-one" href="#">SmartPhone</a>
+                                        <ul class="sub-two">
+                                            <li class="text-14 text">All</li>
+                                            <li><a href="#">iPhone</a>
+                                                <div class="featured-itme-01">
+                                                    <div class="featured-list">
+                                                        <h6 class="title">FEATURED PHONES</h6>
+                                                        <div class="single-featured">
+                                                            <div class="card-image">
+                                                                <img src="./image/featured-itme/f-i-1.png" alt="accessories">
+                                                            </div>
+                                                            <div class="card-contetn">
+                                                                <p>Samsung Electronics <br> Samsung Galexy S21 5G</p>
+                                                                <span>$160</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-featured">
+                                                            <div class="card-image">
+                                                                <img src="./image/featured-itme/f-i-2.png" alt="accessories">
+                                                            </div>
+                                                            <div class="card-contetn">
+                                                                <p>Simple Mobile 5G LTE Galexy <br> 12 Mini 512GB Gaming Phone</p>
+                                                                <span>$1,500</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-featured">
+                                                            <div class="card-image">
+                                                                <img src="./image/featured-itme/f-i-3.png" alt="accessories">
+                                                            </div>
+                                                            <div class="card-contetn">
+                                                                <p>Sony DSCHX8 High Zoom <br> Point & Shoot Camera</p>
+                                                                <span><del class="text-gray-400">$3200</del> $2,300</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="discount-add">
+                                                        <div class="card-img">
+                                                            <img src="./image/featured-itme/d-mobile.png" alt="accessories">
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <h4>21% Discount</h4>
+                                                            <p>Escape the noise, It’s time to hear the magic with Xiaomi Earbuds.</p>
+                                                            <div class="price-tag">
+                                                                <span class="text">Starting price:</span>
+                                                                <span class="price">$99 USD</span>
+                                                            </div>
+                                                            <a class="btn w-100" href="#">
+                                                                Shop now
+                                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                  <path d="M3.625 10H17.375" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                  <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                              </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">Sansung</a></li>
+                                            <li><a href="#">Realme</a></li>
+                                            <li><a href="#">Xiaomi</a></li>
+                                            <li><a href="#">Oppo</a></li>
+                                            <li><a href="#">Vivo</a></li>
+                                            <li><a href="#">OnePlus</a></li>
+                                            <li><a href="#">Huawei</a></li>
+                                            <li><a href="#">Infinix</a></li>
+                                            <li><a href="#">Tecno</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Headphone</a></li>
+                                    <li><a href="#">Mobile Accessories</a></li>
+                                    <li><a href="#">Gaming Console</a></li>
+                                    <li><a href="#">Camera & Photo</a></li>
+                                    <li><a href="#">TV & Homes Appliances</a></li>
+                                    <li><a href="#">Watchs & Accessories</a></li>
+                                    <li><a href="#">GPS & Navigation</a></li>
+                                    <li><a href="#">Warable Technology</a></li>
+                                </ul>
+                            </li>
+                            <li class="single-list">
+                                <a href="#">
+                                    <span class="d-block me-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.25 21.75H18.75" stroke="#5F6C72" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M12 12.75C13.6569 12.75 15 11.4069 15 9.75C15 8.09315 13.6569 6.75 12 6.75C10.3431 6.75 9 8.09315 9 9.75C9 11.4069 10.3431 12.75 12 12.75Z"
+                                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M19.5 9.75C19.5 16.5 12 21.75 12 21.75C12 21.75 4.5 16.5 4.5 9.75C4.5 7.76088 5.29018 5.85322 6.6967 4.4467C8.10322 3.04018 10.0109 2.25 12 2.25C13.9891 2.25 15.8968 3.04018 17.3033 4.4467C18.7098 5.85322 19.5 7.76088 19.5 9.75V9.75Z"
+                                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-14">
+                                        Track Order
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="single-list">
+                                <a href="#">
+                                    <span class="d-block me-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.48125 9.34668H2.98125V4.84668" stroke="#5F6C72"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M17.8312 6.16885C17.0659 5.40236 16.1569 4.79429 15.1563 4.37941C14.1557 3.96453 13.0832 3.75098 12 3.75098C10.9168 3.75098 9.84425 3.96453 8.84367 4.37941C7.84309 4.79429 6.93412 5.40236 6.16875 6.16885L2.98125 9.34698"
+                                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16.5188 14.6533H21.0188V19.1533" stroke="#5F6C72"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M6.16875 17.8314C6.93412 18.5979 7.84309 19.206 8.84367 19.6209C9.84425 20.0358 10.9168 20.2493 12 20.2493C13.0832 20.2493 14.1557 20.0358 15.1563 19.6209C16.1569 19.206 17.0659 18.5979 17.8312 17.8314L21.0187 14.6533"
+                                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-14">
+                                        Compare
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="single-list">
+                                <a href="#">
+                                    <span class="d-block me-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21.1406 12.7503H18.1406C17.7428 12.7503 17.3613 12.9083 17.08 13.1897C16.7987 13.471 16.6406 13.8525 16.6406 14.2503V18.0003C16.6406 18.3981 16.7987 18.7797 17.08 19.061C17.3613 19.3423 17.7428 19.5003 18.1406 19.5003H19.6406C20.0384 19.5003 20.42 19.3423 20.7013 19.061C20.9826 18.7797 21.1406 18.3981 21.1406 18.0003V12.7503ZM21.1406 12.7503C21.1407 11.5621 20.9054 10.3856 20.4484 9.28875C19.9915 8.1919 19.3218 7.1964 18.4781 6.35969C17.6344 5.52297 16.6334 4.86161 15.5328 4.41375C14.4322 3.96589 13.2538 3.74041 12.0656 3.75031C10.8782 3.74165 9.70083 3.96805 8.60132 4.41647C7.5018 4.86488 6.50189 5.52645 5.6592 6.36304C4.81651 7.19963 4.1477 8.19471 3.69131 9.29094C3.23492 10.3872 2.99997 11.5629 3 12.7503V18.0003C3 18.3981 3.15804 18.7797 3.43934 19.061C3.72064 19.3423 4.10218 19.5003 4.5 19.5003H6C6.39782 19.5003 6.77936 19.3423 7.06066 19.061C7.34196 18.7797 7.5 18.3981 7.5 18.0003V14.2503C7.5 13.8525 7.34196 13.471 7.06066 13.1897C6.77936 12.9083 6.39782 12.7503 6 12.7503H3"
+                                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-14">
+                                        Customer Support
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="single-list">
+                                <a href="#">
+                                    <span class="d-block me-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M11.25 11.25H12V16.5H12.75" stroke="#5F6C72" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                            <path
+                                                d="M12.1875 7.875C12.1875 8.08211 12.0196 8.25 11.8125 8.25C11.6054 8.25 11.4375 8.08211 11.4375 7.875C11.4375 7.66789 11.6054 7.5 11.8125 7.5C12.0196 7.5 12.1875 7.66789 12.1875 7.875Z"
+                                                fill="#191C1F" stroke="#5F6C72" stroke-width="1.5" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-14">
+                                        Need Help
+                                    </span>
+                                </a>
+                            </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="tell">
+                    <span>
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.4343 4.375C18.9185 4.77332 20.2718 5.55499 21.3584 6.64159C22.445 7.72818 23.2266 9.08147 23.625 10.5656"
+                                stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M16.5266 7.75488C17.4192 7.99195 18.2333 8.46077 18.8864 9.11384C19.5395 9.7669 20.0083 10.581 20.2454 11.4736"
+                                stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.1172 13.6504C11.0176 15.5098 12.5211 17.0095 14.3828 17.9051C14.5201 17.9701 14.672 17.9983 14.8235 17.9868C14.975 17.9752 15.1209 17.9245 15.2469 17.8395L17.9812 16.0129C18.1021 15.931 18.2417 15.881 18.387 15.8676C18.5324 15.8542 18.6788 15.8778 18.8125 15.9363L23.9312 18.1348C24.1062 18.2076 24.2524 18.3359 24.3472 18.4999C24.4421 18.664 24.4804 18.8546 24.4562 19.0426C24.294 20.3089 23.6759 21.4726 22.7177 22.3162C21.7594 23.1597 20.5266 23.6251 19.25 23.6254C15.3049 23.6254 11.5214 22.0582 8.73179 19.2686C5.94218 16.479 4.375 12.6955 4.375 8.7504C4.37529 7.47377 4.84073 6.24099 5.68425 5.28273C6.52776 4.32447 7.69153 3.70639 8.95781 3.54415C9.14576 3.52001 9.33643 3.55832 9.50047 3.65319C9.66451 3.74805 9.79281 3.89421 9.86562 4.06915L12.0641 9.19884C12.1212 9.33047 12.1451 9.47414 12.1337 9.61719C12.1223 9.76024 12.0758 9.89829 11.9984 10.0192L10.1719 12.7973C10.0906 12.9229 10.0428 13.0673 10.0333 13.2167C10.0237 13.3661 10.0526 13.5154 10.1172 13.6504V13.6504Z"
+                                stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    +1-202-555-0104
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

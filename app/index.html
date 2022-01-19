@@ -1,5 +1,6 @@
 {% extends "template.njk" %}
 {% import "components/Header/_header.njk" as Header %}
+{% import "components/Header/_bottom-nav.njk" as BottomNav %}
 {% import "components/Header/_offer-widget.njk" as OfferWidget %}
 {% import "components/Header/_top-nav.njk" as TopNav %}
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
@@ -15,9 +16,12 @@
   <!-- Top Nav Start -->
   {{TopNav.render()}}
   <!-- Top Nav End -->
-  <!-- DeskNav Nav Start -->
+  <!-- Desk Nav Start -->
   {{DeskNav.render()}}
-  <!-- DeskNav Nav End -->
+  <!-- Desk Nav End -->
+  <!-- Bottom Nav Start -->
+  {{BottomNav.render()}}
+  <!-- Bottom Nav End -->
   <!-- Features Section Start -->
   {{FeaturesSection.render()}}
   <!-- Features Section End -->

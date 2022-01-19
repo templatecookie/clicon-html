@@ -23,9 +23,9 @@
     }
   }
   &.btn-primary{
-    border: 2px solid var(--bs-primary);
-    background: var(--bs-primary);
-    color: white;
+    border: 2px solid var(--bs-primary-500) !important;
+    background: var(--bs-primary-500) !important;
+    color: white !important;
     svg{
       margin-left: 15px;
       path{
