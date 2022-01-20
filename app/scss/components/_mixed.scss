@@ -572,6 +572,96 @@ box-shadow: inset 0px -1px 0px #E4E7E9;
     }
 }
 }
-.pb-100{
-    padding-bottom: 1000px;
+.add-block-01{
+    overflow: hidden;
+    position:relative;
+    padding: 40px 46px;
+    background: var(--bs-gray-900);
+    border-radius: 6px;
+    .add-content{
+        .subtitle{
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px; 
+            padding-bottom: 5px; 
+        }
+        .title{
+            color: white;
+            font-weight: 600;
+            font-size: 18px;
+            padding-bottom: 10px;
+            line-height: 1.333333333333333;
+            @media (min-width:575px) {
+                font-size: 20px;
+            }  
+            @media (min-width:992px) {
+                font-size: 24px;
+                padding-bottom: 18px;
+            }  
+        }
+        .btn{
+            color: white !important;
+            svg{
+                path{
+                    stroke: white !important;
+                }
+            }
+        }
+    }
+    .add-image{
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        .badge{
+            position: absolute;
+            top: -20px;
+            right: 50px;
+            padding: 8px 16px;
+            font-weight: 600;
+            line-height: 24px;
+            font-size: 16px;
+            background: var(--bs-warning-400);
+            border-radius: 2px; 
+            color: var(--bs-gray-900);
+        }
+    }
+}
+.add-block-02{
+    padding: 40px 40px 40px 32px;
+    background: var(--bs-gray-50);
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    border-radius: 6px;
+   .add-content{
+      .title{
+        color: var(--bs-gray-900);
+        font-weight: 600;
+        font-size: 18px;
+        padding-bottom: 10px;
+        padding-bottom: 8px;
+        line-height: 1.333333333333333;
+        @media (min-width:575px) {
+            font-size: 20px;
+        }  
+        @media (min-width:992px) {
+            font-size: 24px;
+            padding-bottom: 12px;
+        } 
+      } 
+      .price{
+          display: block;
+          padding-bottom: 15px;
+          color: var(--bs-secondary-500);
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 1.333333333333333;
+          @media (min-width:480px) {
+            padding-bottom: 20px;
+            font-size: 18px;
+        }
+      }
+
+   } 
 }

@@ -1,7 +1,8 @@
+{% import "components/_mixed.njk" as MixtComponent %}
 {% macro render(args) %}
     <div class="banner-area">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-stretch">
                 <div class="col-xl-8">
                     <div class="banner-area__slider">
                         <div class="product-slider">
@@ -28,6 +29,14 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="banner-area__add-one">
+                        {{MixtComponent.AddOne()}}
+                    </div>
+                    <div class="banner-area__add-two">
+                        {{MixtComponent.AddTwo()}}
                     </div>
                 </div>
             </div>

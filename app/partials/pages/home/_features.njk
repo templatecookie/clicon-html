@@ -1,3 +1,47 @@
 {% macro render(args) %}
-    <p class="pb-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis voluptas velit veritatis quas iste autem aperiam repudiandae deserunt. Dolorum aliquid ipsum modi officiis molestias nisi qui perspiciatis pariatur velit excepturi.</p>
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/features/package.png",
+        title:"Fasted Delivery",
+        text:"Delivery in 24/H"
+        },
+        {
+        id:2,
+        img:"./image/features/trophy.png",
+        title:"24 Hours Return",
+        text:"100% money-back guarantee"
+        },
+        {
+        id:3,
+        img:"./image/features/creditcard.png",
+        title:"Secure Payment",
+        text:"Your money is safe"
+        },
+        {
+        id:4,
+        img:"./image/features/headphones.png",
+        title:"Support 24/7",
+        text:"Live contact/message"
+        }
+
+
+]%}
+<div class="features-section-01">
+    <div class="container">
+        <div class="features-section-01__wrapper">
+        {% for item in cardData%}
+            <div class="single-item">
+                {{Card.FeaturesCard({
+                    img:item.img,
+                    title:item.title,
+                    text:item.text
+                })}}
+            </div>
+        {% endfor %}
+        </div>
+    </div>              
+</div>
 {% endmacro %}

@@ -4,7 +4,10 @@
     &__slider{
         background: var(--bs-gray-50);
         border-radius: 6px;
-        padding: 56px;
+        padding: 51px 56px;
+    }
+    &__add-one{
+        margin-bottom: 24px;
     }
 }
 .banner-slider-content-01{
