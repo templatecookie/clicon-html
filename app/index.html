@@ -5,6 +5,7 @@
 {% import "components/Header/_top-nav.njk" as TopNav %}
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
 {% import "pages/home/_features.njk" as FeaturesSection %}
+{% import "pages/home/_banner.njk" as BannerSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
@@ -22,6 +23,9 @@
   <!-- Bottom Nav Start -->
   {{BottomNav.render()}}
   <!-- Bottom Nav End -->
+  <!-- Banner Section Start -->
+  {{BannerSection.render()}}
+  <!-- Banner Section End -->
   <!-- Features Section Start -->
   {{FeaturesSection.render()}}
   <!-- Features Section End -->

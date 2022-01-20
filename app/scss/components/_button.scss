@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as *;
 @use "../bs-customization/colors" as *;
 .btn {
-  border-radius: 2px !important;
+  border-radius: 3px !important;
   font-size: 14px;
   font-weight: 700;
   display: inline-flex;
@@ -27,20 +27,19 @@
     background: var(--bs-primary-500) !important;
     color: white !important;
     svg{
-      margin-left: 15px;
+      margin-left: 12px;
       path{
         transition: .3s;
         stroke: white;
       }
     }
     &:hover{
-      background: transparent;
-      border-color: #DEE7EE ;
-      color: #222D39;
+      background: transparent !important;
+      border-color: var(--bs-primary-500);
+      color: var(--bs-gray-900) !important;
       svg{
-        margin-left: 15px;
         path{
-          stroke: #222D39;
+          stroke: var(--bs-gray-900);
         }
       }
     }

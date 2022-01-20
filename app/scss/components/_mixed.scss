@@ -251,6 +251,10 @@
     }
 }
 .bottom-nav{
+    padding: 16px 0;
+    background: #FFFFFF;
+box-shadow: inset 0px -1px 0px #E4E7E9;
+    border-bottom: 1px solid rgba(255, 255, 255,0.16);
     &__wrapper{
         display: flex;
         align-items: center;
@@ -363,7 +367,7 @@
                                     visibility: hidden;
                                 }
                                 a{
-                                    padding: 8px 16px !important;
+                                    padding: 8px 16px ;
                                     background: white !important;
                                     color: var(--bs-gray-600) !important;
                                     transition: .3s;
@@ -463,6 +467,8 @@
     }
 }
 .featured-itme-01{
+    z-index: 999;
+    position: relative;
     background: #FFFFFF;
     border: 1px solid #E4E7E9;
     padding: 20px;
@@ -473,6 +479,14 @@
     grid-template-columns:1fr 1fr;
     gap: 0 20px;
 .featured-list{
+    a{
+        padding: 0 !important;
+        background: transparent !important;
+        margin-bottom: 16px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
     
     .title{
         font-weight: 600;
@@ -488,10 +502,6 @@
         border: 1px solid #E4E7E9;
         background: white;
         border-radius: 3px;
-        margin-bottom: 16px;
-        &:last-child{
-            margin-bottom: 0;
-        }
         .card-contetn{
             margin-left: 12px;
             p{
