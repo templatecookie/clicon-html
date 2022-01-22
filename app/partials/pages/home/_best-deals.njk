@@ -1,0 +1,32 @@
+{% macro render(args) %}
+    <div class="best-deal-section-01">
+        <div class="container">
+            <div class="best-deal-section-01__top-content">
+                <div class="section-content">
+                    <h2 class="title">Best Deals</h2>
+                </div>
+                <div class="deals-timer">
+                    <div class="deals-timer__content">
+                        <h6 class="title">Deals ends in</h6>
+                    </div>
+                    <div class="timer-block"  id="countdown-01"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+{% block pluginjs %}
+  <script src="./plugins/countdown/jquery.countdown.min.js"></script>
+  <script>
+  
+    $('#countdown-01').countdown({
+      year: 2023, // YYYY Format
+      month: 2, // 1-12
+      day: 28, // 1-31
+      hour: 0, // 24 hour format 0-23
+      minute: 0, // 0-59
+      second: 0, // 0-59
+    });
+  
+  </script>
+{% endblock %}

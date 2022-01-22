@@ -5,6 +5,7 @@
 {% import "components/Header/_top-nav.njk" as TopNav %}
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
 {% import "pages/home/_features.njk" as FeaturesSection %}
+{% import "pages/home/_best-deals.njk" as BestDealsSection %}
 {% import "pages/home/_banner.njk" as BannerSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
@@ -29,6 +30,9 @@
   <!-- Features Section Start -->
   {{FeaturesSection.render()}}
   <!-- Features Section End -->
+  <!-- BestDeals Section Start -->
+  {{BestDealsSection.render()}}
+  <!-- BestDeals Section End -->
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
   <!-- Footer Section End -->
