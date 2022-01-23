@@ -10,6 +10,7 @@
 {% import "pages/home/_category.njk" as CategorySection %}
 {% import "pages/home/_products.njk" as ProductSection %}
 {% import "pages/home/_banner-02.njk" as BannerTwoSection %}
+{% import "pages/home/_cta.njk" as CtaSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
@@ -45,6 +46,9 @@
   <!-- Banner Two Section Start -->
   {{BannerTwoSection.render()}}
   <!-- Banner Two Section End -->
+  <!-- Cta Two Section Start -->
+  {{CtaSection.render()}}
+  <!-- Cta Two Section End -->
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
   <!-- Footer Section End -->

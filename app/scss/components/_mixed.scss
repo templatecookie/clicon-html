@@ -809,6 +809,14 @@ box-shadow: inset 0px -1px 0px #E4E7E9;
             line-height: 24px;
             padding-bottom: 20px;
         }
+        .btn{
+            color: white !important;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
     }
     .add-image{
         position: absolute;
