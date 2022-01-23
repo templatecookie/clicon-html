@@ -728,3 +728,97 @@ box-shadow: inset 0px -1px 0px #E4E7E9;
         }
     }
 }
+.add-block-04{
+    background: var(--bs-gray-50);
+    padding: 44px 30px;
+    border-radius: 4px;
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    @media (min-width:768px) {
+        padding: 44px;
+        grid-template-columns: auto auto;
+    }
+    .add-content{
+        .subtitle{
+            display: inline-block;
+            color: white;
+            padding: 6px 12px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 2px;
+            background: var(--bs-secondary-500);
+        }
+        .title{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            padding: 8px 0 12px;
+            color: var(--bs-gray-900);
+            @media (min-width:768px) {
+                
+            }
+        }
+        .text{
+            color: var(--bs-gray-700);
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 20px;
+        }
+    }
+}
+.add-block-05{
+    @media (max-width:1200px) {
+        margin-top: 24px;
+    }
+    border-radius: 4px;
+    background: var(--bs-gray-900);
+    padding: 44px 30px; 
+    width: 100%;
+    position: relative;
+    display: grid;
+    gap: 40px;
+    align-items: center;
+    @media (min-width:768px) {
+        padding: 44px;
+        grid-template-columns: auto auto;
+    }
+    .add-content{
+        .subtitle{
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--bs-warning-400);
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            border-radius: 2px;
+        }
+        .title{
+            color: white;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            padding: 8px 0 12px;
+        }
+        .text{
+            color: var(--bs-gray-300);
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            padding-bottom: 20px;
+        }
+    }
+    .add-image{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @media (min-width:1200px) {
+            width: 44%;
+        }
+        @media (min-width:1400px) {
+            width: auto
+        }
+    }
+}

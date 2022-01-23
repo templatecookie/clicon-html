@@ -1,0 +1,19 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+    <div class="banner-area-02">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="banner-area-02__add-one">
+                        {{MixtComponent.AddFour()}}
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="banner-area-02__add-two">
+                        {{MixtComponent.AddFive()}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
