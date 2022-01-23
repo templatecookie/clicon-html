@@ -34,6 +34,60 @@ $(".counter").counterUp({
         fade: true,
       });
   }
+  if (jQuery(".product-slider-02").length > 0) {
+    $(".product-slider-02")
+      .not(".slick-initialized")
+      .slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        prevArrow: $(".product-slider-02__control-buttons .button--prev"),
+        nextArrow: $(".product-slider-02__control-buttons .button--next"),
+        responsive: [
+          {
+            breakpoint: 1399,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              dots:true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 379,
+            settings: {
+              dots:true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+  }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Price Deck Trigger
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

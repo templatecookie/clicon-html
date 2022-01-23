@@ -157,4 +157,24 @@
       color: var(--bs-secondary-500);
     }
   }
+  &--02{
+    text-align: center;
+    padding: 24px 12px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #E4E7E9;
+    .card-image{
+      margin-bottom: 10px;
+      img{
+        margin: auto;
+      }
+    }
+    .card-body{
+      .title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
 }

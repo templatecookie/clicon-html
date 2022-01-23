@@ -20,3 +20,13 @@
     </div>
 </div>
 {% endmacro %}
+{% macro ProductCardTwo(obj) %}
+<div class="card-product card-product--02 {{obj.modifier}}">
+    <div class="card-image {{obj.bgWrapper}}">
+        <img src="{{obj.img}}" alt="card" class="mw-100">
+    </div>
+    <div class="card-body p-0">
+        <h6 class="title">{{obj.title | safe}}</h6>
+    </div>
+</div>
+{% endmacro %}

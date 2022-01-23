@@ -1,0 +1,73 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/product/product-9.png",
+        title:"Computer & Laptop"
+        },
+        {
+        id:2,
+        img:"./image/product/product-10.png",
+        title:"SmartPhone"
+        },
+        {
+        id:3,
+        img:"./image/product/product-11.png",
+        title:"Headphones"
+        },
+        {
+        id:4,
+        img:"./image/product/product-12.png",
+        title:"Accessories"
+        },
+        {
+        id:5,
+        img:"./image/product/product-13.png",
+        title:"Camera & Photo"
+        },
+        {
+        id:6,
+        img:"./image/product/product-14.png",
+        title:"TV & Homes"
+        },
+        {
+        id:7,
+        img:"./image/product/product-12.png",
+        title:"Accessories"
+        }
+
+
+]%}
+    <div class="shop-category-section-01">
+        <div class="container">
+            <div class="shop-category-section-01__slider">
+                <div class="product-slider-02">
+                    {% for item in cardData %}
+                        <div class="single-item">
+                            {{Card.ProductCardTwo({
+                                img:item.img,
+                                title:item.title
+                            })}}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="product-slider-02__control-buttons">
+                    <button class="button button--prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.25 12H3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="button button--next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

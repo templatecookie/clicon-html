@@ -1,0 +1,41 @@
+@use "../../abstracts/mixins" as *;
+.shop-category-section-01{
+    &__slider{
+        @media (max-width:480px) {
+            margin: 0 30px;
+        }
+        position: relative;
+        .product-slider-02{
+            &__control-buttons{
+                @media (max-width:575px) {
+                    display: none;
+                }
+                .button{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: transparent;
+                    border: 0;
+                    padding: 0;
+                    @include square(48px,500px);
+                    @include flexAllCenter;
+                    background: var(--bs-primary-500);
+                    &--prev{
+                        left: -24px;
+                        cursor: pointer;
+                    }
+                    &--next{
+                        right: -24px;
+                        cursor: pointer;           
+                    }
+               } 
+            }
+        }
+        .slick-slide {
+        margin: 0 9px;
+        }
+        .slick-list {
+        margin: 0 -9px;
+        }
+    }
+}
