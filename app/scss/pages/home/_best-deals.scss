@@ -86,10 +86,32 @@
     &__product-area{
         display: flex;
         align-items: stretch;
+        flex-direction: column;
+        @media (min-width:1400px) {
+        flex-direction: row;
+        }
         &--big-product{
             display: none;
-            @media (min-width:1400px) {
+            @media (min-width:768px) {
                 display: block;
+            }
+            .big-product-card-01{
+                @media (max-width:1400px) {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    .card-image{
+                        margin: 0;
+                        margin-right: 10px;
+                    }
+                    .card-body{
+                        padding: 0;
+                        margin-right: 10px;
+                    }
+                } 
+            }
+            @media (min-width:1400px) {
+                width: 328px;
             }
         }
         &--small-product{
