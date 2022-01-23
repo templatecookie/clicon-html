@@ -1,3 +1,116 @@
 .best-deal-section-01{
     padding: 72px 0;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+    &__top-content{
+        display: flex;
+        align-items: center;
+        @media (max-width:575px) {
+            flex-direction: column;
+        }
+        .section-content{
+            margin-right: 24px;
+            @media (max-width:575px) {
+                margin: 0;
+            }
+            .title{
+                color: var(--bs-gray-900);
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.333333333333333;
+                @media (min-width:575px) {
+                    font-size: 24px;
+                }  
+            }
+        }
+        .deals-timer{
+            display: flex;
+            align-items: center;
+            @media (max-width:575px) {
+                flex-direction: column;
+            }
+            &__content{
+                margin-right: 12px;
+                @media (max-width:575px) {
+                    margin: 8px 0;
+                }
+                .title{
+                    color: var(--bs-gray-900);
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .timer-block{
+                border-radius: 2px;
+                background: var(--bs-warning-300);
+                padding: 6px 12px;
+                display: inline-flex;
+                align-items: center;
+                .single-timer{
+                    &:not(&:last-child){
+                        margin-right: 16px;
+                    }
+                    .timer-title-block{
+                        span{
+                        color: var(--bs-gray-900);
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 24px;  
+                       } 
+                    }
+                }
+            }
+        }
+    }
+    &__top-button{
+        @media (max-width:768px) {
+            margin-top: 15px;
+        }
+        .btn-text{
+           display: flex;
+           align-items: center;
+           color: var(--bs-secondary-500);
+           svg{
+            margin-left: 8px;
+           } 
+        }
+    }
+    &__product-area{
+        display: flex;
+        align-items: stretch;
+        &--big-product{
+            display: none;
+            @media (min-width:1400px) {
+                display: block;
+            }
+        }
+        &--small-product{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            @media (min-width:380px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (min-width:768px) {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .card-product {
+                @media (max-width:380px) {
+                    margin: 0 30px;
+                    margin-bottom: 24px;
+                    text-align: center;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }

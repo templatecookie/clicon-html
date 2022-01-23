@@ -22,3 +22,140 @@
     }
   }
 }
+.big-product-card-01{
+  background: white;
+  border: 1px solid var(--bs-gray-100);
+  width: 328px;
+  height: 100%;
+  padding: 24px 20px;
+  .card-image{
+    margin-bottom: 24px;
+  }
+  .card-body{
+    padding: 0;
+    padding-bottom: 24px;
+    .rating{
+      margin: 0;
+      padding: 0;
+      margin-bottom: 6px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        &:not(&:last-child){
+          margin-right: 2px;
+        }
+        svg{
+          display: block;
+        }
+      }
+    }
+    .title{
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--bs-gray-900);
+      padding: 6px 0 12px;
+    }
+    .price-valu{
+      del{
+        margin-right: 4px;
+        font-weight: normal;
+        color: var(--bs-gray-300);
+      }
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--bs-secondary-500); 
+    }
+    .text{
+      padding-top: 12px;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-600);
+    }
+  }
+  .card-button-group{
+    display: flex;
+    align-items: center;
+      .wishlist-btn{
+        @include square(48px,2px);
+        @include flexAllCenter;
+        background: var(--bs-primary-100);
+        transition: .3s;
+        svg{
+          path{
+            transition: .3s;
+          }
+        }
+        &:hover{
+          border: 1.5px solid var(--bs-primary-500);
+          svg{
+            path{
+              stroke: var(--bs-primary-500)
+            }
+          }
+        }
+      }
+      .addtocard-btn{
+        margin: 0 8px;
+        height: 48px;
+        white-space: nowrap;
+        svg{
+          margin: 0;
+          margin-right: 8px;
+        }
+      }
+      .action-btn{
+        @include square(48px,2px);
+        @include flexAllCenter;
+        background: var(--bs-primary-100);
+        transition: .3s;
+        svg{
+          path{
+            transition: .3s;
+          }
+        }
+        &:hover{
+          border: 1.5px solid var(--bs-primary-500);
+          svg{
+            path{
+              stroke: var(--bs-primary-500)
+            }
+          }
+        }
+      }
+  }
+}
+.card-product{
+  padding: 16px;
+  background: white;
+  border: 1px solid var(--bs-gray-100);
+  .card-image{
+    margin-bottom: 8px;
+  }
+  .card-body{
+    .title{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-900);
+      padding-bottom: 8px;
+    }
+    .price-valu{
+      del{
+        margin-right: 4px;
+       font-weight: normal;
+       color: var(--bs-gray-400); 
+      }
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-secondary-500);
+    }
+  }
+}

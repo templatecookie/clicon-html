@@ -1,13 +1,3 @@
-$gray-50: #F2F4F5;
-$gray-100: #E4E7E9;
-$gray-200: #C9CFD2;
-$gray-300: #ADB7BC;
-$gray-400: #929FA5;
-$gray-500: #77878F;
-$gray-600: #5F6C72;
-$gray-700: #475156;
-$gray-800: #303639;
-$gray-900: #191C1F;
 
 $primary-50:#FFF3EB;
 $primary-100:#FFE7D6;
@@ -64,8 +54,21 @@ $danger-700:#8F3535;
 $danger-800:#5F2323;
 $danger-900:#301212;
 
+$gray-50: #F2F4F5;
+$gray-100: #E4E7E9 !important;
+$gray-200: #C9CFD2 !important;
+$gray-300: #ADB7BC !important;
+$gray-400: #929FA5 !important;
+$gray-500: #77878F !important;
+$gray-600: #5F6C72 !important;
+$gray-700: #475156 !important;
+$gray-800: #303639 !important;
+$gray-900: #191C1F !important;
+
+
 $btn-link-color: $secondary-500;
 $custom-colors: (
+
 "gray-50":$gray-50,
 "gray-100":$gray-100,
 "gray-200":$gray-200,

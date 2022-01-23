@@ -112,3 +112,11 @@ $(".hasDD").click(function(e) {
   $(this).toggleClass("on");
   e.stopPropagation();
 });
+$('#countdown-01').countdown({
+  year: 2022, // YYYY Format
+  month: 3, // 1-12
+  d: 28, // 1-31
+  h: 0, // 24 hour format 0-23
+  m: 0, // 0-59
+  s: 0, // 0-59
+});

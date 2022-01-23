@@ -16,5 +16,28 @@
           grid-template-columns: auto auto auto auto;
           justify-content: space-around;
       }
+      .single-item{
+          position: relative;
+          &:first-child{
+              &::before{
+                  display: none;
+              }
+          }
+          @media (min-width:1200px) {
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 115%;
+                height: 56px;
+                width: 1px;
+                transform: translate(-50%, -50%);
+                background: var(--bs-gray-100);
+                @media (min-width:1400px) {
+                    right: 130%;
+                }
+            }
+          }
+      }
     }
 }
