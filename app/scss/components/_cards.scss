@@ -177,4 +177,27 @@
       }
     }
   }
+  &--03{
+    border-radius: 3px;
+    .card-image {
+      margin-bottom: 24px;
+    }
+    .rating{
+      margin: 0;
+      padding: 0;
+      margin-bottom: 8px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      &:last-child{
+        margin-left: 4px;
+        color: var(--bs-gray-400);
+      }
+      }
+    }
+  }
 }

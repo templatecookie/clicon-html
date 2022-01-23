@@ -8,6 +8,7 @@
 {% import "pages/home/_best-deals.njk" as BestDealsSection %}
 {% import "pages/home/_banner.njk" as BannerSection %}
 {% import "pages/home/_category.njk" as CategorySection %}
+{% import "pages/home/_products.njk" as ProductSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
   <!-- Header Section Start -->
@@ -37,6 +38,9 @@
   <!-- Categorys Section Start -->
   {{CategorySection.render()}}
   <!-- Categorys Section End -->
+  <!-- Product Section Start -->
+  {{ProductSection.render()}}
+  <!-- Product Section End -->
   <!-- Footer Section Start -->
   {{FooterSection.render()}}
   <!-- Footer Section End -->
