@@ -200,4 +200,29 @@
       }
     }
   }
+  &--04{
+    padding: 12px 9px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    .card-image{
+      margin: 0;
+      margin-right: 12px;
+    }
+    .card-body{
+      .title{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900);
+      }
+      .price{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-secondary-500);
+      }
+    }
+  }
 }

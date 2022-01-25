@@ -1,0 +1,19 @@
+.products-section-03{
+  padding: 72px 0;
+  .section-title{
+      .title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--bs-gray-900);
+        margin-bottom: 16px;
+      }
+  }
+  &__widget{
+      .single-item{
+          &:not(&:last-child){
+              margin-bottom: 16px;
+          }
+      }
+  }
+}

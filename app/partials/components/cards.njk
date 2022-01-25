@@ -69,3 +69,14 @@
     </div>
 </div>
 {% endmacro %}
+{% macro ProductCardFour(obj) %}
+<div class="card-product card-product--04 {{obj.modifier}}">
+    <div class="card-image {{obj.bgWrapper}}">
+        <img src="{{obj.img}}" alt="card">
+    </div>
+    <div class="card-body p-0">
+        <h6 class="title">{{obj.title | safe}}</h6>
+        <span class="price">{{obj.price}}</span>
+    </div>
+</div>
+{% endmacro %}

@@ -10,6 +10,7 @@
 {% import "pages/home/_category.njk" as CategorySection %}
 {% import "pages/home/_products-01.njk" as ProductSectionOne %}
 {% import "pages/home/_products-02.njk" as ProductSectionTwo %}
+{% import "pages/home/_products-03.njk" as ProductSectionThree %}
 {% import "pages/home/_banner-02.njk" as BannerTwoSection %}
 {% import "pages/home/_cta.njk" as CtaSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
@@ -47,9 +48,12 @@
   <!-- Banner Two Section Start -->
   {{BannerTwoSection.render()}}
   <!-- Banner Two Section End -->
-    <!-- Product Section Two Start -->
+  <!-- Product Section Two Start -->
   {{ProductSectionTwo.render()}}
   <!-- Product Section Two End -->
+  <!-- Product Section Three Start -->
+  {{ProductSectionThree.render()}}
+  <!-- Product Section Three End -->
   <!-- Cta Two Section Start -->
   {{CtaSection.render()}}
   <!-- Cta Two Section End -->
