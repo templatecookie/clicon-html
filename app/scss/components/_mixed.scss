@@ -933,3 +933,43 @@ box-shadow: inset 0px -1px 0px #E4E7E9;
         }
     }
 }
+.newsletter-form-01{
+    .form-control{
+        padding: 12px;
+        border-radius: 3px;
+        height: 60px;
+        font-weight: normal;
+        font-size: 16px;
+        color: var(--bs-gray-900);
+        line-height: 24px;
+        &::placeholder{
+            color: var(--bs-gray-500);
+        }
+        @media (min-width:1200px) {
+            height: 72px;
+        }
+    }
+}
+.logo-slider {
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+    width: auto;
+    
+    &__track {
+        display: flex;
+        align-items: center;
+        animation: logoscroll 40s linear infinite;
+        width: calc(150px * 14);
+        @media (min-width:575px) {
+            width: calc(220px * 14);
+        }
+        .slide {
+            width: 150px;
+            margin: auto;
+            @media (min-width:575px) {
+                width: 220px;
+            }
+        }
+    }
+}
