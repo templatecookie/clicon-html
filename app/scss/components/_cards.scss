@@ -226,3 +226,70 @@
     }
   }
 }
+.card-news{
+  background: white;
+  border: 1px solid #E4E7E9;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 30px 20px;
+  @media (min-width:992px) {
+    padding: 32px;
+  }
+  .card-image{
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 24px;
+    img{
+      overflow: hidden;
+      border-radius: 3px;
+      transition: .3s;
+    }
+  }
+  .card-body{
+    &__meta{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .user-block,.date-block,.comment-block{
+        margin-right: 16px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        span{
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          color: var(--bs-gray-700);
+        }
+        svg{
+          display: block;
+          margin-right: 6px;
+        }
+      }
+    }
+    .title{
+      padding-bottom: 12px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--bs-gray-900);
+    }
+    .text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--bs-gray-500);
+    }
+    .btn{
+      margin-top: 24px;
+      border-color:var(--bs-primary-500) !important;
+    }
+  }
+  &:hover{
+    .card-image{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+}

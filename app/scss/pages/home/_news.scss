@@ -1,0 +1,16 @@
+.news-section-01{
+    padding: 72px 0;
+    &__title-block{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 40px;
+        }
+        .title{
+            text-align: center;
+            font-weight: 600;
+            color: var(--bs-gray-900);
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+}

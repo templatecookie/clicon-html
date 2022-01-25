@@ -1,0 +1,56 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/news/1.png",
+        name:"Kristin",
+        date:"19Dec, 2013",
+        comment:"453",
+        title:"Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.",
+        text:"Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem. "
+        },
+        {
+        id:2,
+        img:"./image/news/2.png",
+        name:"Robert",
+        date:"28 Nov, 2015",
+        comment:"738",
+        title:"Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. ",
+        text:"Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem. "
+        },
+        {
+        id:3,
+        img:"./image/news/3.png",
+        name:"Kristin",
+        date:"9 May, 2014",
+        comment:"826",
+        title:"Curabitur massa orci, consectetur et blandit ac, auctor et tellus.",
+        text:"Pellentesque vestibulum lorem vel gravida aliquam. Morbi porta, odio id suscipit mattis, risus augue condimentum purus."
+        }
+
+
+]%}
+    <div class="news-section-01 bg-gray-50">
+        <div class="container">
+            <div class="news-section-01__title-block">
+                <h2 class="title">Latest News</h2>
+            </div>
+            <div class="row card-row justify-content-center">
+                {% for item in cardData%}
+                <div class="col-xl-4 col-lg-6 col-md-8 col-xs-11">
+                    {{Card.NewsCardOne({
+                    img:item.img,
+                    name:item.name,
+                    date:item.date,
+                    comment:item.comment,
+                    title:item.title,
+                    text:item.text
+                    })}}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
