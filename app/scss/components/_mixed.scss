@@ -830,3 +830,106 @@ box-shadow: inset 0px -1px 0px #E4E7E9;
         }
     }
 }
+.add-block-06{
+    padding: 30px 20px;
+    text-align: center;
+    background: var(--bs-warning-200);
+    border-radius: 4px;
+    @media (min-width:575px) {
+        padding: 32px 28px;
+    }
+    .add-image{
+        img{
+            filter: drop-shadow(0px 12px 24px rgba(0, 0, 0, 0.24));
+        }
+    }
+    .add-content{
+        .title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 1.333333333333333;
+            padding-bottom: 8px;
+            color: var(--bs-gray-900);
+            @media (minw-width:992px) {
+                font-size: 28px;
+            }  
+        }
+        .text{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--bs-gray-700);
+        }
+        .content-wrapper{
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .text-one{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                white-space: nowrap;
+                margin-right: 8px;
+                color: var(--bs-gray-700);
+            }
+            .text-two{
+                font-weight: 600;
+                border-radius: 3px;
+                font-size: 14px;
+                line-height: 20px;
+                background: white;
+                padding: 6px 12px;
+                white-space: nowrap;
+                color: var(--bs-gray-900);
+            }
+        }
+        .btn{
+            margin-top: 24px;
+            width: 100%;
+        }
+    }
+}
+.add-block-07{
+    background: #124261;
+    border-radius: 4px; 
+    padding: 40px 24px;
+    text-align: center;
+    .subtile{
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.12);
+        font-weight: 600;
+        color: white;
+        font-size: 14px;
+        padding: 6px 12px;
+        line-height: 20px;
+        border-radius: 2px;
+        text-transform: uppercase;
+    }
+    .title{
+        color: white;
+        font-weight: 600;
+        padding: 12px 0;
+        font-size: 24px;
+        line-height: 1.142857142857143;
+        @media (min-width:992px) {
+            font-size: 28px;
+        }
+    }
+    p{
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px; 
+    }
+    .btn{
+        margin-top: 24px;
+        width: 100%;
+        color: white !important;
+        svg{
+            path{
+                stroke: white !important;
+            }
+        }
+    }
+}

@@ -8,7 +8,8 @@
 {% import "pages/home/_best-deals.njk" as BestDealsSection %}
 {% import "pages/home/_banner.njk" as BannerSection %}
 {% import "pages/home/_category.njk" as CategorySection %}
-{% import "pages/home/_products.njk" as ProductSection %}
+{% import "pages/home/_products-01.njk" as ProductSectionOne %}
+{% import "pages/home/_products-02.njk" as ProductSectionTwo %}
 {% import "pages/home/_banner-02.njk" as BannerTwoSection %}
 {% import "pages/home/_cta.njk" as CtaSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
@@ -40,12 +41,15 @@
   <!-- Categorys Section Start -->
   {{CategorySection.render()}}
   <!-- Categorys Section End -->
-  <!-- Product Section Start -->
-  {{ProductSection.render()}}
-  <!-- Product Section End -->
+  <!-- Product Section One Start -->
+  {{ProductSectionOne.render()}}
+  <!-- Product Section One End -->
   <!-- Banner Two Section Start -->
   {{BannerTwoSection.render()}}
   <!-- Banner Two Section End -->
+    <!-- Product Section Two Start -->
+  {{ProductSectionTwo.render()}}
+  <!-- Product Section Two End -->
   <!-- Cta Two Section Start -->
   {{CtaSection.render()}}
   <!-- Cta Two Section End -->

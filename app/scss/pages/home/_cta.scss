@@ -60,6 +60,9 @@
 
                 }
                 span{
+                    font-weight: 600;
+                    font-size: 20px;
+                    color: var(--bs-gray-900);
                     background: var(--bs-primary-200);
                     border: 5px solid white;
                     @include square (80px, 500px);
