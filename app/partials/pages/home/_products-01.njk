@@ -23,14 +23,15 @@
         title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
         del:"$865",
         price:"$1,50",
-         count:"423"
+        count:"423"
         },
         {
         id:4,
         img:"./image/product/product-18.png",
         title:"Portable Wshing Machine, 11lbs capacity Model 18NMF...",
         price:"$1,200",
-        count:"816"
+        count:"816",
+        sOne:true
         },
         {
         id:5,
@@ -45,7 +46,8 @@
         title:"Polaroid 57-Inch Photo/Video Tripod Deluxe Tripod Ca...",
         del:"$865.99",
         price:"$70",
-        count:"877"
+        count:"877",
+        sOne:true
         },
         {
         id:7,
@@ -106,7 +108,8 @@
                                     title:item.title,
                                     del:item.del,
                                     count:item.count,
-                                    price:item.price
+                                    price:item.price,
+                                    sOne:item.sOne
                                 })}}
                             {% endfor %}
                         </div>
