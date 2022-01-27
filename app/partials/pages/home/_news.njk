@@ -32,15 +32,15 @@
 
 
 ]%}
-    <div class="news-section-01 bg-gray-50">
-        <div class="container">
-            <div class="news-section-01__title-block">
-                <h2 class="title">Latest News</h2>
-            </div>
-            <div class="row card-row justify-content-center">
-                {% for item in cardData%}
-                <div class="col-xl-4 col-lg-6 col-md-8 col-xs-11">
-                    {{Card.NewsCardOne({
+<div class="news-section-01 bg-gray-50">
+    <div class="container">
+        <div class="news-section-01__title-block">
+            <h2 class="title">Latest News</h2>
+        </div>
+        <div class="row card-row justify-content-center">
+            {% for item in cardData%}
+            <div class="col-xl-4 col-lg-6 col-md-8 col-xs-11">
+                {{Card.NewsCardOne({
                     img:item.img,
                     name:item.name,
                     date:item.date,
@@ -48,9 +48,9 @@
                     title:item.title,
                     text:item.text
                     })}}
-                </div>
-                {% endfor %}
             </div>
+            {% endfor %}
         </div>
     </div>
+</div>
 {% endmacro %}

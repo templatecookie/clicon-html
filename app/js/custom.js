@@ -88,22 +88,33 @@ $(".counter").counterUp({
         ],
       });
   }
-// /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//       Price Deck Trigger
-// <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-$("#js-contcheckbox").change(function() {
-  if(this.checked) {
-    $('.js-montlypricing').css('display', 'none');
-$('.js-yearlypricing').css('display', 'flex');
-    $('.afterinput').addClass('text-primary');
-    $('.beforeinput').removeClass('text-primary');
-  } else {
-    $('.js-montlypricing').css('display', 'flex');
-    $('.js-yearlypricing').css('display', 'none');
-    $('.afterinput').removeClass('text-primary');
-    $('.beforeinput').addClass('text-primary');
+
+if (jQuery(".product-slider--01").length > 0) {
+  $(".product-slider--01").not(".slick-initialized").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    swipe: false,
+    drag: false,
+    dots: false,
+    fade: true,
+    asNavFor: ".product-slider--01__nav",
+  });
 }
-});
+if (jQuery(".product-slider--01__nav").length > 0) {
+  $(".product-slider--01__nav").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    asNavFor: ".product-slider--01",
+    dots: false,
+    centerMode: true,
+    centerPadding: 0,
+    focusOnSelect: true,
+    arrows: true,
+    prevArrow: $(".product-slider--01__control-buttons .button--prev"),
+    nextArrow: $(".product-slider--01__control-buttons .button--next"),
+  });
+}
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Preloader Activation
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -117,36 +128,7 @@ $(window).load(function () {
   }, 2000);
 });
 
-//***ISOTOPE***
-// Portfolio-01
-$(window).load(function () {
-  $(".portfolio-active").isotope({
-    itemSelector: ".grid-item",
-    layoutMode: "fitRows",
-  });
-});
 
-// filter items on button click
-$(".portfolio-filter-menu").on("click", "button", function () {
-  var filterValue = $(this).attr("data-filter");
-  $(".portfolio-active").isotope({ filter: filterValue });
-});
-
-$(".slider-arrow-click-active .slick-arrow").on("click", function (e) {
-  if (!$(this).hasClass("active")) {
-    $(this).addClass("active");
-    $(this).siblings().removeClass("active");
-  }
-});
-
-$('.portfolio-filter-menu').on('click', 'button', function() {
-  $('.portfolio-filter-menu button.active').removeClass('active');
-  $(this).addClass('active');
-});
-$('.service-category').on('click', 'li', function() {
-  $('.service-category li.active').removeClass('active');
-  $(this).addClass('active');
-});
 
 $(".mainnav div").click(function() {
   $("ul").slideToggle();
@@ -173,4 +155,7 @@ $('#countdown-01').countdown({
   h: 0, // 24 hour format 0-23
   m: 0, // 0-59
   s: 0, // 0-59
+});
+$(document).ready(function(){
+  $("#myModal").modal('show');
 });

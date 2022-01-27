@@ -81,75 +81,74 @@
         price:"$1,500"
         }
 ]%}
-    <div class="products-section-03">
-        <div class="container">
-            <div class="row card-row">
-                    <div class="col-xl-3 col-md-6">
-                        <div class="section-title">
-                            <h2 class="title">FLASH SALE TODAY</h2>
-                        </div>
-                        <div class="products-section-03__widget">
-                        {% for item in cardDataOne %}
-                                <div class="single-item">
-                                    {{Card.ProductCardFour({
+<div class="products-section-03">
+    <div class="container">
+        <div class="row card-row">
+            <div class="col-xl-3 col-md-6">
+                <div class="section-title">
+                    <h2 class="title">FLASH SALE TODAY</h2>
+                </div>
+                <div class="products-section-03__widget">
+                    {% for item in cardDataOne %}
+                    <div class="single-item">
+                        {{Card.ProductCardFour({
                                         img:item.img,
                                         title:item.title,
                                         price:item.price
                                     })}}
-                                </div>
-                            {% endfor %}
-                        </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="section-title">
-                            <h2 class="title">BEST SELLERS</h2>
-                        </div>
-                        <div class="products-section-03__widget">
-                        {% for item in cardDataTwo %}
-                                <div class="single-item">
-                                    {{Card.ProductCardFour({
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="section-title">
+                    <h2 class="title">BEST SELLERS</h2>
+                </div>
+                <div class="products-section-03__widget">
+                    {% for item in cardDataTwo %}
+                    <div class="single-item">
+                        {{Card.ProductCardFour({
                                         img:item.img,
                                         title:item.title,
                                         price:item.price
                                     })}}
-                                </div>
-                            {% endfor %}
-                        </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="section-title">
-                            <h2 class="title">FLASH SALE TODAY</h2>
-                        </div>
-                        <div class="products-section-03__widget">
-                        {% for item in cardDataThree %}
-                                <div class="single-item">
-                                    {{Card.ProductCardFour({
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="section-title">
+                    <h2 class="title">FLASH SALE TODAY</h2>
+                </div>
+                <div class="products-section-03__widget">
+                    {% for item in cardDataThree %}
+                    <div class="single-item">
+                        {{Card.ProductCardFour({
                                         img:item.img,
                                         title:item.title,
                                         price:item.price
                                     })}}
-                                </div>
-                            {% endfor %}
-                        </div>
                     </div>
-                    <div class="col-xl-3 col-md-6">
-                        <div class="section-title">
-                            <h2 class="title">FLASH SALE TODAY</h2>
-                        </div>
-                        <div class="products-section-03__widget">
-                        {% for item in cardDataFour %}
-                                <div class="single-item">
-                                    {{Card.ProductCardFour({
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="section-title">
+                    <h2 class="title">FLASH SALE TODAY</h2>
+                </div>
+                <div class="products-section-03__widget">
+                    {% for item in cardDataFour %}
+                    <div class="single-item">
+                        {{Card.ProductCardFour({
                                         img:item.img,
                                         title:item.title,
                                         price:item.price
                                     })}}
-                                </div>
-                            {% endfor %}
-                        </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endmacro %}
