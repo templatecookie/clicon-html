@@ -119,15 +119,33 @@ if (jQuery(".product-slider--01__nav").length > 0) {
 //       Preloader Activation
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-$(window).load(function () {
-  setTimeout(function () {
-    $("#loader").fadeOut(500);
-  }, 1000);
-  setTimeout(function () {
-    $("#loader").remove();
-  }, 2000);
-});
+// $(window).load(function () {
+//   setTimeout(function () {
+//     $("#loader").fadeOut(500);
+//   }, 1000);
+//   setTimeout(function () {
+//     $("#loader").remove();
+//   }, 2000);
+// });
+function passowrdVisibility(passwrodField, button) {
+  let passField = document.querySelector(passwrodField);
+  let icon = document.querySelector(button);
+  if (icon !== null && passField !== null) {
+    icon.addEventListener("click", () => {
+      if (passField.type === "password") {
+        passField.type = "text";
+        icon.classList.add("fa-eye");
+        icon.classList.remove("fa-eye-slash");
+      } else {
+        passField.type = "password";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+      }
+    });
+  }
+}
 
+passowrdVisibility("#passField", "#eye");
 
 
 $(".mainnav div").click(function() {
@@ -158,4 +176,14 @@ $('#countdown-01').countdown({
 });
 $(document).ready(function(){
   $("#myModal").modal('show');
+});
+$(document).ready(function() {
+  $('#showHiddenMenuOne').click(function() {
+    $('#hiddenWidgetOne').slideToggle("slow");
+  });
+});
+$(document).ready(function() {
+  $('#showHiddenMenuTwo').click(function() {
+    $('#hiddenWidgetTwo').slideToggle("slow");
+  });
 });

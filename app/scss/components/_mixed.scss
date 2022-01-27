@@ -245,6 +245,7 @@
                 margin-right: 24px;
             }
             .user{
+                position: relative;
                 cursor: pointer;
             }
         }
@@ -969,6 +970,190 @@ box-shadow: inset 0px -1px 0px #E4E7E9;
             margin: auto;
             @media (min-width:575px) {
                 width: 220px;
+            }
+        }
+    }
+}
+.shopping-cart-popup{
+    position: absolute;
+    top: 45px;
+    right: 50%;
+    background: #FFFFFF;
+    transform: translateX(4%);
+    border: 1px solid #E4E7E9;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    width: 424px;
+    z-index: 99;
+    .card-header{
+        padding: 16px 24px;
+        background: white;
+        box-shadow: inset 0px -1px 0px #E4E7E9;
+       .title{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--bs-gray-900);
+        .count{
+         color: var(--bs-gray-600) !important;
+        }
+       } 
+    }
+    .card-body{
+        border-bottom: 1px solid #E4E7E9;
+        padding: 24px 20px;
+        .product-todo{
+            display: flex;
+            align-items: center;
+            &:not(&:last-child){
+                margin-bottom: 16px;
+            }
+            .card-image{
+                border: 1px solid #E4E7E9;
+                margin-right: 16px;
+            }
+            .card-content{
+                .text{
+                    padding-right: 50px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--bs-gray-900);
+                }
+                .price-box{
+                    .count{
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--bs-gray-600);
+                    }
+                    .price{
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--bs-secondary-500);    
+                    }
+                }
+            }
+            .close-btn{
+                margin-left: 16px;
+                button{
+                    border: 0;
+                    padding: 0;
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .card-subtototal{
+        padding: 24px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .price{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900);
+        }
+    }
+    .card-button-group{
+        padding: 24px;
+        padding-top: 0;
+        .btn-outline-primary{
+            border-color: var(--bs-primary-100);
+            &:hover{
+                border-color: var(--bs-primary-500);
+            }
+        }
+    }
+}
+.signin-popup{
+    position: absolute;
+    top: 45px;
+    right: 50%;
+    background: #FFFFFF;
+    transform: translateX(4%);
+    border: 1px solid #E4E7E9;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    width: 424px;
+    z-index: 99;
+    padding: 32px;
+    .title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--bs-gray-900);   
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .signin-form{
+        .form-group{
+           .form-label{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+           } 
+           .form-control{
+            margin-top: 8px;
+            background: #FFFFFF;
+            border: 1px solid #E4E7E9;
+            box-sizing: border-box;
+            border-radius: 2px; 
+            height: 44px;
+           }
+           .forgot-btn{
+               font-weight: 500;
+               color: var(--bs-secondary-500);
+           }
+           .pass-box {
+            position: relative;
+            &--eye {
+                position: absolute;
+                right: 30px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+            }
+        }
+        }
+        .form-button{
+            margin-top: 20px;
+            margin-bottom: 24px;
+        }
+        .from-text{
+            .texts{
+                margin-bottom: 12px;
+                position: relative;
+                text-align: center;
+                .text{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    background: white;
+                    color: var(--bs-gray-500);
+                    display: inline-block;
+                }
+                &::before{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background: #E4E7E9;
+                    z-index: -1;
+                }
+            }
+            .btn{
+                border: 2px solid #FFE7D6;  
+                &:hover{
+                    border-color: var(--bs-primary-500);
+                }
             }
         }
     }
