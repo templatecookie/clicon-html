@@ -214,3 +214,72 @@
     </form>
   </div>
 {% endmacro %}
+
+{% macro PriceRange(args) %}
+  <div class="price-range-block">
+    <h6 class="title">Price Range</h6>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div class="progress"></div>
+        </div>
+        <div class="range-input">
+          <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+          <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+        </div>
+        <div class="price-input">
+          <div class="field">
+            <input type="text" class="input-min form-control" placeholder="Min price">
+          </div>
+          <div class="field">
+            <input type="text" class="input-max form-control" placeholder="Max price">
+          </div>
+        </div>
+      </div>
+      <div class="price-box">
+        <form action="#">
+          <div class="form-check">
+            <input class="form-check-input selectall" type="checkbox" id="select-all">
+            <label class="form-check-label" for="select-all">
+              All Price
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input individual" type="checkbox" id="l">
+            <label class="form-check-label" for="l">
+              Under $20
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input individual" type="checkbox" id="m">
+            <label class="form-check-label" for="m">
+              $25 to $100
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input individual" type="checkbox" id="n">
+            <label class="form-check-label" for="n">
+              $100 to $300
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input individual" type="checkbox" id="o">
+            <label class="form-check-label" for="o">
+              $300 to $500
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input individual" type="checkbox" id="o">
+            <label class="form-check-label" for="o">
+              $500 to $1,000
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input individual" type="checkbox" id="p">
+            <label class="form-check-label" for="p">
+              $1,000 to $10,000
+            </label>
+          </div>
+        </form>
+      </div>
+  </div>
+{% endmacro %}

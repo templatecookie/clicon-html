@@ -187,3 +187,8 @@ $(document).ready(function() {
     $('#hiddenWidgetTwo').slideToggle("slow");
   });
 });
+
+
+$(".selectall").click(function(){
+  $(".individual").prop("checked",$(this).prop("checked"));
+  });
