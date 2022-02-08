@@ -1,0 +1,37 @@
+{% extends "template.njk" %}
+{% import "components/Header/_header.njk" as Header %}
+{% import "components/Header/_bottom-nav.njk" as BottomNav %}
+{% import "components/Header/_top-nav.njk" as TopNav %}
+{% import "components/Header/_deskotop-nav.njk" as DeskNav %}
+{% import "components/Breadcrumb/_breadcrumb.njk" as BreadrumbSection %}
+{% import "pages/shop/_shop-body.njk" as ShopBody %}
+{% import "components/Footer/_footer.njk" as FooterSection %}
+{% block main %}
+<!-- Header Section Start -->
+{{Header.render(siteHeaderOne)}}
+<!-- Header Section End -->
+<!-- Top Nav Start -->
+{{TopNav.render()}}
+<!-- Top Nav End -->
+<!-- Desk Nav Start -->
+{{DeskNav.render()}}
+<!-- Desk Nav End -->
+<!-- Bottom Nav Start -->
+{{BottomNav.render()}}
+<!-- Bottom Nav End -->
+<!-- Breadrumb Section Start -->
+{{BreadrumbSection.render({
+    "pageNameOne":"Shop",
+    "pageNameTwo":"Shop Grid",
+    "pageNameThree":"Electronics Devices",
+    "ColorCode":"text-secondary-500"
+})}}
+<!-- Breadrumb Section End -->
+
+<!-- Shop Body Start -->
+{{ShopBody.render()}}
+<!-- Shop Body End -->
+<!-- Footer Section Start -->
+{{FooterSection.render()}}
+<!-- Footer Section End -->
+{% endblock %}

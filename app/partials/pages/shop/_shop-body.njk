@@ -1,0 +1,153 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/product/product-23.png",
+        title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+        price:"$36",
+        count:"994",
+        sOne:true
+        },
+        {
+        id:2,
+        img:"./image/product/product-24.png",
+        title:"Samsung Electronics Samsung Galexy S21 5G",
+        price:"$80",
+        count:"798"
+        },
+        {
+        id:3,
+        img:"./image/product/product-25.png",
+        title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+        price:"$70",
+         count:"600"
+        },
+        {
+        id:4,
+        img:"./image/product/product-26.png",
+        title:"Portable Wshing Machine, 11lbs capacity Model 18NMF...",
+        price:"$250",
+        count:"492"
+        },
+        {
+        id:5,
+        img:"./image/product/product-27.png",
+        title:"Wired Over-Ear Gaming Headphones with USB",
+        price:"$2300",
+        count:"740",
+        sOne:true
+        },
+        {
+        id:6,
+        img:"./image/product/product-28.png",
+        title:"Polaroid 57-Inch Photo/Video Tripod Deluxe Tripod Ca...",
+        price:"$220",
+        count:"556",
+        sOne:true
+        },
+        {
+        id:7,
+        img:"./image/product/product-29.png",
+        title:"Dell Optiplex 7000x7480 All-in-One Computer Monitor",
+        price:"$1,50",
+        count:"426",
+        sOne:true
+        },
+        {
+        id:8,
+        img:"./image/product/product-30.png",
+        title:"4K UHD LED Smart TV with Chromecast Built-in",
+        del:"$360",
+        price:"$250",
+        count:"583",
+        sOne:true
+        }
+
+
+]%}
+    <div class="shop-body-01">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <div class="shop-body-01__filter">
+                        <div class="shop-body-01__filter--catagory">
+                            {{MixtComponent.CategoryOne()}}
+                        </div>
+                        <div class="shop-body-01__filter--line"></div>
+                    </div>
+                </div>
+                <div class="col-xl-9">
+                    <div class="shop-body-01__searchsortbox">
+                        <div class="search-box">
+                            <form action="#">
+                            <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search for anything...">
+                            <div class="icon">
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5625 15.625C13.1869 15.625 16.125 12.6869 16.125 9.0625C16.125 5.43813 13.1869 2.5 9.5625 2.5C5.93813 2.5 3 5.43813 3 9.0625C3 12.6869 5.93813 15.625 9.5625 15.625Z" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M14.2031 13.7031L18 17.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            </div>
+                            </div>
+                            </form>
+                        </div>
+                        <div class="sort-box">
+                            <p>Sort by:</p>
+                            <div class="selectbox">
+                                <select class="nice-select">
+                                    <option data-display="Most Popular">Most Popular</option>
+                                    <option value="1">Some option</option>
+                                    <option value="2">Some option</option>
+                                    <option value="3">Some option</option>
+                                    <option value="4">Some option</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-body-01__active-result">
+                        <ul class="keyword">
+                            <li class="key-text">Active Filters:</li>
+                            <li>
+                                <span>Electronics Devices</span>
+                                <button>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.375 2.625L2.625 9.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.375 9.375L2.625 2.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li>
+                                <span>5 Star Rating</span>
+                                <button>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.375 2.625L2.625 9.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.375 9.375L2.625 2.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="results-found">
+                            <span class="number">65,867</span>
+                            <span class="text">Results found.</span>
+                        </div>
+                    </div>
+                    <div class="shop-body-01__product">
+                        {% for item in cardData%}
+                        {{Card.ProductCardThree({
+                            img:item.img,
+                            title:item.title,
+                            del:item.del,
+                            count:item.count,
+                            price:item.price,
+                            sOne:item.sOne
+                        })}}
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
