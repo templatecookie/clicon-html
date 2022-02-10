@@ -6,8 +6,18 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width:768px) {
+          flex-direction: column;
+          justify-content: center;
+      }
         .search-box{
-            min-width: 424px;
+            width: 100%;
+            margin-bottom: 15px;
+            @media (min-width:768px) {
+                width: auto;
+                margin-bottom: 0px;
+                min-width: 424px;
+            }
             .form-group{
                 position: relative;
                 .form-control{
@@ -71,6 +81,7 @@
         background: #F2F4F5;
         border-radius: 4px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         .keyword{
@@ -79,6 +90,7 @@
             list-style: none;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             li{
                 margin-right: 16px;
                 display: flex;
@@ -86,6 +98,10 @@
                 font-weight: normal;
                 font-size: 14px;
                 line-height: 20px;
+                @media (max-width:768px) {
+                    padding: 5px;
+                    margin-right: 0;
+                }
                 &:last-child{
                     margin-right: 0;
                 }
@@ -103,6 +119,9 @@
             }
         }
         .results-found{
+            @media (max-width:768px) {
+                padding: 5px;
+            }
            .number{
             font-weight: 600;
             font-size: 14px;
@@ -118,10 +137,23 @@
         }
     }
     &__product{
+        @media (max-width:480px) {
+            width: 90%;
+            margin: auto;
+        }
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         row-gap: 16px;
         column-gap: 16px;
+        @media (min-width:480px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width:768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width:992px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
     &__pagination{
         margin-top: 40px;

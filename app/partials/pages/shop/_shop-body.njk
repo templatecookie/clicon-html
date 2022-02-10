@@ -68,89 +68,137 @@
 
 
 ]%}
-    <div class="shop-body-01">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3">
-                    <div class="shop-body-01__filter">
-                        <div class="shop-body-01__filter--catagory">
-                            {{MixtComponent.CategoryOne()}}
+<div class="shop-body-01">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3">
+                <div class="shop-body-01__filter d-none d-xl-block">
+                    <div class="shop-body-01__filter--catagory">
+                        {{MixtComponent.CategoryOne()}}
+                    </div>
+                    <div class="shop-body-01__filter--line"></div>
+                    <div class="shop-body-01__filter--pricerange">
+                        {{MixtComponent.PriceRange()}}
+                    </div>
+                    <div class="shop-body-01__filter--line"></div>
+                    <div class="shop-body-01__filter--popularbrands">
+                        {{MixtComponent.PopularBrands()}}
+                    </div>
+                    <div class="shop-body-01__filter--line"></div>
+                    <div class="shop-body-01__filter--populartag">
+                        {{MixtComponent.PopularTagTwo()}}
+                    </div>
+                    <div class="shop-body-01__filter--add">
+                        {{MixtComponent.AddEight()}}
+                    </div>
+                </div>
+                <div class="shop-body-01__offcanvas offcanvas-01 d-block d-xl-none">
+                    <a class="offcanvas-btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z" />
+                          </svg> Filter
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
-                        <div class="shop-body-01__filter--line"></div>
-                        <div class="shop-body-01__filter--pricerange">
-                            {{MixtComponent.PriceRange()}}
-                        </div>
-                        <div class="shop-body-01__filter--line"></div>
-                        <div class="shop-body-01__filter--popularbrands">
-                            {{MixtComponent.PopularBrands()}}
-                        </div>
-                        <div class="shop-body-01__filter--line"></div>
-                        <div class="shop-body-01__filter--populartag">
-                            {{MixtComponent.PopularTagTwo()}}
-                        </div>
-                        <div class="shop-body-01__filter--add">
-                            {{MixtComponent.AddEight()}}
+                        <div class="offcanvas-body">
+                            <div class="shop-body-01__filter">
+                                <div class="shop-body-01__filter--catagory">
+                                    {{MixtComponent.CategoryOne()}}
+                                </div>
+                                <div class="shop-body-01__filter--line"></div>
+                                <div class="shop-body-01__filter--pricerange">
+                                    {{MixtComponent.PriceRange()}}
+                                </div>
+                                <div class="shop-body-01__filter--line"></div>
+                                <div class="shop-body-01__filter--popularbrands">
+                                    {{MixtComponent.PopularBrands()}}
+                                </div>
+                                <div class="shop-body-01__filter--line"></div>
+                                <div class="shop-body-01__filter--populartag">
+                                    {{MixtComponent.PopularTagTwo()}}
+                                </div>
+                                <div class="shop-body-01__filter--add">
+                                    {{MixtComponent.AddEight()}}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-9">
-                    <div class="shop-body-01__searchsortbox">
-                        <div class="search-box">
-                            <form action="#">
+            </div>
+            <div class="col-xl-9">
+                <div class="shop-body-01__searchsortbox">
+                    <div class="search-box">
+                        <form action="#">
                             <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search for anything...">
-                            <div class="icon">
-                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.5625 15.625C13.1869 15.625 16.125 12.6869 16.125 9.0625C16.125 5.43813 13.1869 2.5 9.5625 2.5C5.93813 2.5 3 5.43813 3 9.0625C3 12.6869 5.93813 15.625 9.5625 15.625Z" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M14.2031 13.7031L18 17.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
+                                <input type="text" class="form-control" placeholder="Search for anything...">
+                                <div class="icon">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.5625 15.625C13.1869 15.625 16.125 12.6869 16.125 9.0625C16.125 5.43813 13.1869 2.5 9.5625 2.5C5.93813 2.5 3 5.43813 3 9.0625C3 12.6869 5.93813 15.625 9.5625 15.625Z"
+                                            stroke="#191C1F" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M14.2031 13.7031L18 17.5" stroke="#191C1F" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
                             </div>
-                            </div>
-                            </form>
-                        </div>
-                        <div class="sort-box">
-                            <p>Sort by:</p>
-                            <div class="selectbox">
-                                <select class="nice-select">
-                                    <option data-display="Most Popular">Most Popular</option>
-                                    <option value="1">Some option</option>
-                                    <option value="2">Some option</option>
-                                    <option value="3">Some option</option>
-                                    <option value="4">Some option</option>
-                                </select>
-                            </div>
+                        </form>
+                    </div>
+                    <div class="sort-box">
+                        <p>Sort by:</p>
+                        <div class="selectbox">
+                            <select class="nice-select">
+                                <option data-display="Most Popular">Most Popular</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Some option</option>
+                                <option value="3">Some option</option>
+                                <option value="4">Some option</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="shop-body-01__active-result">
-                        <ul class="keyword">
-                            <li class="key-text">Active Filters:</li>
-                            <li>
-                                <span>Electronics Devices</span>
-                                <button>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.375 2.625L2.625 9.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.375 9.375L2.625 2.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </li>
-                            <li>
-                                <span>5 Star Rating</span>
-                                <button>
-                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9.375 2.625L2.625 9.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.375 9.375L2.625 2.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </li>
-                        </ul>
-                        <div class="results-found">
-                            <span class="number">65,867</span>
-                            <span class="text">Results found.</span>
-                        </div>
+                </div>
+                <div class="shop-body-01__active-result">
+                    <ul class="keyword">
+                        <li class="key-text">Active Filters:</li>
+                        <li>
+                            <span>Electronics Devices</span>
+                            <button>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.375 2.625L2.625 9.375" stroke="#929FA5" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.375 9.375L2.625 2.625" stroke="#929FA5" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <span>5 Star Rating</span>
+                            <button>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.375 2.625L2.625 9.375" stroke="#929FA5" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M9.375 9.375L2.625 2.625" stroke="#929FA5" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="results-found">
+                        <span class="number">65,867</span>
+                        <span class="text">Results found.</span>
                     </div>
-                    <div class="shop-body-01__product">
-                        {% for item in cardData%}
-                        {{Card.ProductCardThree({
+                </div>
+                <div class="shop-body-01__product">
+                    {% for item in cardData%}
+                    {{Card.ProductCardThree({
                             img:item.img,
                             title:item.title,
                             del:item.del,
@@ -159,12 +207,12 @@
                             sOne:item.sOne
                         })}}
                     {% endfor %}
-                    </div>
-                    <div class="shop-body-01__pagination">
-                        {{MixtComponent.PaginationOne()}}
-                    </div>
+                </div>
+                <div class="shop-body-01__pagination">
+                    {{MixtComponent.PaginationOne()}}
                 </div>
             </div>
         </div>
     </div>
+</div>
 {% endmacro %}

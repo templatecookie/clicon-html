@@ -1673,12 +1673,14 @@
             margin-right: 20px;
             .page-link{
                 margin: 0;
+                border-color: var(--bs-primary-500);
             }
         }
         &.next{
             margin-left: 20px;
             .page-link{
                 margin: 0;
+                border-color: var(--bs-primary-500);
             }
         }
         .page-link{
@@ -1709,4 +1711,32 @@
             }
         }
     }
+}
+.offcanvas-01{
+    margin-bottom: 25px;
+   .offcanvas-btn{
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 18px;
+        background-color: #F2F4F5;
+        color: var(--bs-gray-900);
+       svg{
+           margin-right: 15px;
+           width: 20px;
+           height: 20px;
+           path{
+               fill: var(--bs-gray-900);;
+           }
+       }
+   } 
+   .offcanvas-header{
+       position: relative;
+       justify-content: end;
+     .btn-close{
+         opacity: 1;
+     }  
+   }
 }
