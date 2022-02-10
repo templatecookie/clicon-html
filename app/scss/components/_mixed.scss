@@ -1576,3 +1576,89 @@
         }
     }
 }
+.populartag-block-02{
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--bs-gray-900);
+    } 
+    .tag-wrapper{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px 8px;
+        li{
+            a{
+                transition: .3s;
+                display: inline-block;
+                font-weight: 500;
+                padding: 6px 10px;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--bs-gray-900);
+                border: 1px solid #E4E7E9;
+                border-radius: 2px;
+                &:hover{
+                    border-color: var(--bs-primary-500);
+                    background: var(--bs-primary-50);
+                    color: var(--bs-primary-500);
+                }
+            }
+        }
+    }
+}
+.add-block-08{
+    text-align: center;
+    padding: 32px;
+    border-radius: 4px;
+    margin-top: 24px;
+    border: 4px solid var(--bs-primary-100);
+    .content-wrapper{
+        .title{
+            margin-top: 8px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            color: var(--bs-gray-900);  
+        }
+        .price-block{
+            margin-top: 16px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            .text{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px; 
+                color: var(--bs-gray-700);
+                margin-right: 8px;
+            }
+            .price{
+                padding: 6px 12px;
+                background: var(--bs-warning-300);
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--bs-gray-900);
+            }
+        }
+    }
+    .button-group{
+        margin-top: 24px;
+        .btn-1{
+            margin-bottom: 12px;
+            svg{
+                margin-right: 15px;
+            }
+        }
+        .btn-2{
+            border-color: var(--bs-primary-500);
+        }
+    }
+}

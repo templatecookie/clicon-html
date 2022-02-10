@@ -199,10 +199,10 @@
             padding: 0;
             list-style: none;
             display: flex;
+            align-items: center;
             flex-wrap: wrap;
+            gap: 8px 8px;
             li{
-                margin-bottom: 8px;
-                margin-right: 8px;
                 a{
                     transition: .3s;
                     display: inline-block;
@@ -210,7 +210,7 @@
                     font-size: 14px;
                     line-height: 20px;
                     color: white;
-                    padding: 6px 12px;  
+                    padding: 6px 10px;  
                     border-radius: 2px;
                     border: 1px solid var(--bs-gray-800);
                     &:hover{
