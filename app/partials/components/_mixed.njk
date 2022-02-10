@@ -425,3 +425,28 @@
     </div>
   </div>
 {% endmacro %}
+
+{% macro PaginationOne(args) %}
+  <ul class="pagination-block-01">
+    <li class="previous"><a class="page-link" href="#">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.25 12H3.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a></li>
+    <li><a class="page-link" href="#">01</a></li>
+    <li><a class="page-link" href="#">02</a></li>
+    <li><a class="page-link" href="#">03</a></li>
+    <li><a class="page-link" href="#">04</a></li>
+    <li><a class="page-link" href="#">05</a></li>
+    <li><a class="page-link" href="#">06</a></li>
+    <li class="next"><a class="page-link" href="#">
+    
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.75 12H20.25" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+
+    </a></li>
+  </ul>
+{% endmacro %}

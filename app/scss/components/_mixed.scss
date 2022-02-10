@@ -1662,3 +1662,51 @@
         }
     }
 }
+.pagination-block-01{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    li{
+        &.previous{
+            margin-right: 20px;
+            .page-link{
+                margin: 0;
+            }
+        }
+        &.next{
+            margin-left: 20px;
+            .page-link{
+                margin: 0;
+            }
+        }
+        .page-link{
+            margin: 0 4px;
+            padding: 0;
+            @include square(40px,500px);
+            @include flexAllCenter;
+            border: 1px solid #E4E7E9;
+            transition: .3s;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-900);
+            svg{
+                path{
+                    transition: .3s;
+                }
+            }
+            &:hover{
+                border-color: var(--bs-primary-500);
+                background: var(--bs-primary-500);
+                color: white;
+                svg{
+                    path{
+                        stroke: white;
+                    }
+                }
+            }
+        }
+    }
+}

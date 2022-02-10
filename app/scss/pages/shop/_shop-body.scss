@@ -123,12 +123,13 @@
         row-gap: 16px;
         column-gap: 16px;
     }
+    &__pagination{
+        margin-top: 40px;
+    }
     &__filter{
         &--line{
             margin: 24px 0;
             border-top: 1px solid var(--bs-gray-100);  
-        }
-        &--add{
         }
     }
 }
