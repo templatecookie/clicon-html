@@ -4,7 +4,7 @@
 {% import "components/Header/_top-nav.njk" as TopNav %}
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as BreadrumbSection %}
-{% import "pages/account/_signup-body.njk" as SignUpBody %}
+{% import "pages/account/_forgot-body.njk" as ForgotBody %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -22,14 +22,17 @@
 <!-- Breadrumb Section Start -->
 {{BreadrumbSection.render({
     "pageTextOne":true,
+    "pageTextTwo":true,
     "pageNameOne":"User Account",
-    "pageNameThree":"Sign In",
+    "pageNameTwo":"Sign In",
+    "pageNameThree":"Forget Password",
     "ColorCode":"text-secondary-500"
 })}}
 <!-- Breadrumb Section End -->
-<!-- Sign Up Body Start -->
-{{SignUpBody.render()}}
-<!-- Sign Up Body End -->
+
+<!-- Forgot Body Start -->
+{{ForgotBody.render()}}
+<!-- Forgot Body End -->
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End -->

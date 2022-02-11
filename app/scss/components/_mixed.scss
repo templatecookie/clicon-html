@@ -1830,6 +1830,23 @@
                 z-index: -1;
             }
         }
+        .link-text{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-600);
+            a{
+                font-weight: 500 !important;
+                color: var(--bs-secondary-500) !important;  
+            }
+            &:not(&:last-child){
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .form-line{
+        margin: 24px 0;
+        border-top: 1px solid var(--bs-gray-100);
     }
     .form-otherlogin{
         .btn{
@@ -1870,7 +1887,34 @@
             line-height: 20px;
             a{
                 color: var(--bs-secondary-500) !important;
+                &.text-primary-500{
+                    color: var(--bs-primary-500) !important;
+                }
             }
         }
+    }
+    &.forgot-wrapper{
+       .account-head-text{
+           text-align: center;
+           padding: 32px;
+           padding-bottom: 0;
+           @media (max-width:480) {
+               padding: 24px;
+               padding-bottom: 0;
+           }
+           .title{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+            color: var(--bs-gray-900);
+            margin-bottom: 12px;
+           }
+           .text{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-600);
+           }
+       } 
     }
 }
