@@ -1,0 +1,61 @@
+{% macro render(args) %}
+<div class="signup-body-01">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-4 col-lg-5 col-md-7 col-xs-10">
+                <div class="accout-wrapper">
+                    <div class="account-head">
+                        <a class="head-btn text-gray-500" href="sign-in.html">Sign In</a>
+                        <a class="head-btn border-b-4 text-gray-900" href="#">Sign Up</a>
+                    </div>
+                    <div class="accout-wrapper__form">
+                        <form action="#">
+                            <div class="form-group">
+                                <label class=" form-label" for="email">Email Address</label>
+                                <input type="email" id="email" class=" form-control">
+                            </div>
+                            <div class="form-group">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                    <a href="#" class="forgot-btn">Forget Password</a>
+                                </div>
+                                <div class="pass-box">
+                                    <input class="form-control" id="passField" type="password">
+                                    <i id="eye" class="pass-box--eye far fa-eye-slash"></i>
+                                </div>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn btn-primary w-100">
+                                    Login
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.625 10H17.375" stroke="#191C1F" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="#191C1F"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="from-text">
+                                <div class="texts">
+                                    <p class="text">or</p>
+                                </div>
+                            </div>
+                            <div class="form-otherlogin">
+                                <button class="btn w-100">
+                                    <img src="./image/logo/google-min.png" alt="google">
+                                    <span>Login with Google</span>
+                                </button>
+                                <button class="btn w-100">
+                                    <img src="./image/logo/apple-min.png" alt="google">
+                                    <span>Login with Apple</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

@@ -4,7 +4,7 @@
 {% import "components/Header/_top-nav.njk" as TopNav %}
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as BreadrumbSection %}
-{% import "pages/shop/_shop-body.njk" as ShopBody %}
+{% import "pages/account/_signup-body.njk" as SignInBody %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -22,21 +22,16 @@
 <!-- Breadrumb Section Start -->
 {{BreadrumbSection.render({
     "pageTextOne":true,
-    "pageTextTwo":true,
-    "pageNameOne":"Shop",
-    "pageNameTwo":"Shop Grid",
-    "pageNameThree":"Electronics Devices",
+    "pageNameOne":"User Account",
+    "pageNameThree":"Sign In",
     "ColorCode":"text-secondary-500"
 })}}
 <!-- Breadrumb Section End -->
 
-<!-- Shop Body Start -->
-{{ShopBody.render()}}
-<!-- Shop Body End -->
+<!-- Sign In Body Start -->
+{{SignInBody.render()}}
+<!-- Sign In Body End -->
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End -->
-{% endblock %}
-{% block pluginjs %}
-    <script src="./plugins/range-slider/jquery-ui.js"></script>
 {% endblock %}
