@@ -1918,3 +1918,129 @@
        } 
     }
 }
+.support-form-01{
+    background: var(--bs-warning-100);
+    padding: 32px;
+    border-radius: 4px;
+    @media (max-width:480px) {
+        padding: 24px;
+    }
+    .support-head{
+       margin-bottom: 24px;
+       .title{
+           padding-bottom: 12px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--bs-gray-900);
+       } 
+       .text{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-700);  
+       }
+    }
+    .support-form{
+        .form-group{
+            margin-bottom: 12px;
+            .form-control{
+                background:white;
+                border: 1px solid var(--bs-warning-200);
+                border-radius: 2px; 
+                font-weight: normal;
+                font-size: 14px;
+                padding: 16px;
+                height: 44px;
+                line-height: 20px;
+                color: var(--bs-gray-900);
+                &::placeholder{
+                    color: var(--bs-gray-500);
+                }  
+            }
+        }
+        .form-textarea{
+            textarea{
+                width: 100%;
+                padding: 16px;
+                height: 88px;
+                border-radius: 2px; 
+                background:white;
+                border: 1px solid var(--bs-warning-200);
+                border-radius: 2px; 
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--bs-gray-900);
+                &::placeholder{
+                    color: var(--bs-gray-500);
+                }  
+                &:focus{
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+        }
+        .form-button{
+            margin-top: 24px;
+        }
+    }
+}
+.accordion-01{
+    .accordion{
+        &-item{
+            border: 1px solid var(--bs-gray-100);
+            border-radius: 4px;  
+            &:not(&:last-child){
+                margin-bottom: 20px;
+            }
+        }
+        &-button{
+            padding:20px 24px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.333333333333333;
+            color: var(--bs-gray-900);
+            @media (max-width:575px) {
+                font-size: 16px;
+            }
+            &:not(.collapsed) {
+                border: 1px solid var(--bs-primary-500);
+                box-shadow: none;
+                background: var(--bs-primary-500);
+                color: white;
+                &::after{
+                    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.125 10H16.875' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+                }
+            }  
+            &::after{
+                background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.125 10H16.875' stroke='%2377878F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 3.125V16.875' stroke='%2377878F' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            }
+        }
+        &-body{
+            padding: 24px;
+            .text-list{
+                margin: 0;
+                padding: 0;
+                margin-top: 16px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--bs-gray-700);
+                    .dot{
+                        margin-right: 10px;
+                        display: block;
+                      @include square(5px,500px);
+                      background: var(--bs-gray-700);   
+                    }
+                    &:not(&:last-child){
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+    <div class="faq-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7">
+                   <div class="faq-body__faq">
+                       <h2 class="title">
+                        Frequently Asked Questions 
+                       </h2>
+                       {{MixtComponent.FaqAccordion()}}
+                    </div> 
+                </div>
+                <div class="col-xl-4 offset-xl-1">
+                    <div class="faq-body__support">
+                        {{MixtComponent.SupportFormOne()}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

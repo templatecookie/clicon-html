@@ -1,0 +1,23 @@
+
+.faq-body{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 72px 0;
+    }
+    &__faq{
+        @media (max-width:1200px) {
+            margin-bottom: 30px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 1.25;
+            color: var(--bs-gray-900);  
+            margin-bottom: 25px;
+            @media (min-width:575px) {
+                margin-bottom: 40px;
+                font-size: 32px;
+            }
+        }
+    }
+}
