@@ -1851,4 +1851,26 @@
             }
         }
     }
+    .form-check{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-bottom: 32px;
+        &-input{
+           margin: 0;
+           padding: 0;
+           margin-top: 3px;
+            @include square(20px,4px)
+        }
+        &-label{
+            margin-left: 8px;
+            font-weight: normal;
+            font-size: 14px;
+            color: var(--bs-gray-900);
+            line-height: 20px;
+            a{
+                color: var(--bs-secondary-500) !important;
+            }
+        }
+    }
 }

@@ -11,20 +11,34 @@
                     <div class="accout-wrapper__form">
                         <form action="#">
                             <div class="form-group">
+                                <label class=" form-label" for="name">Name</label>
+                                <input type="text" id="name" class=" form-control">
+                            </div>
+                            <div class="form-group">
                                 <label class=" form-label" for="email">Email Address</label>
                                 <input type="email" id="email" class=" form-control">
                             </div>
                             <div class="form-group">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                    <a href="#" class="forgot-btn">Forget Password</a>
+                                <label class="form-label">Password</label>
+                                <div class="pass-box">
+                                    <input class="form-control" id="passField" type="password" placeholder="8+ characters">
+                                    <i id="eye" class="pass-box--eye far fa-eye-slash"></i>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password</label>
                                 <div class="pass-box">
                                     <input class="form-control" id="passField" type="password">
                                     <i id="eye" class="pass-box--eye far fa-eye-slash"></i>
                                 </div>
                             </div>
-                            <div class="form-button">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Are you agree to Clicon <a href="#">Terms of Condition</a> and <a href="#">Privacy Policy</a>.
+                                </label>
+                              </div>
+                            <div class="form-button mt-0">
                                 <button class="btn btn-primary w-100">
                                     Login
                                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
@@ -44,11 +58,11 @@
                             <div class="form-otherlogin">
                                 <button class="btn w-100">
                                     <img src="./image/logo/google-min.png" alt="google">
-                                    <span>Login with Google</span>
+                                    <span>Sign Up with Google</span>
                                 </button>
                                 <button class="btn w-100">
                                     <img src="./image/logo/apple-min.png" alt="google">
-                                    <span>Login with Apple</span>
+                                    <span>Sign Up with Apple</span>
                                 </button>
                             </div>
                         </form>
