@@ -1,0 +1,43 @@
+{% macro render(args) %}
+<div class="reset-body-01">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-4 col-lg-5 col-md-7 col-xs-10">
+                <div class="accout-wrapper forgot-wrapper">
+                    <div class="account-head-text">
+                        <h2 class="title">Reset Password</h2>
+                        <p class="text">Duis sagittis molestie tellus, eleifend sapien pellque quis. Fusce lorem nunc, fringilla sit amet nunc.</p>
+                    </div>
+                    <div class="accout-wrapper__form">
+                        <form action="#">
+                            <div class="form-group">
+                                <label class="form-label">Password</label>
+                                <div class="pass-box">
+                                <input class="form-control" id="passField" type="password" placeholder="8+ characters">
+                                <i id="eye" class="pass-box--eye far fa-eye-slash"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Confirm Password</label>
+                                <div class="pass-box">
+                                <input class="form-control" id="passField" type="password">
+                                <i id="eye" class="pass-box--eye far fa-eye-slash"></i>
+                                </div>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn btn-primary w-100">
+                                    Reset Password
+                                  <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.625 10H17.375" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                  </svg>
+                                </button>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
