@@ -1,0 +1,74 @@
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/about/team-1.png",
+        title:"Kevin Gilbert",
+        text:"Chief Executive Officer"
+        },
+        {
+        id:2,
+        img:"./image/about/team-2.png",
+        title:"Kevin Gilbert",
+        text:"Assistant of CEO"
+        },
+        {
+        id:3,
+        img:"./image/about/team-3.png",
+        title:"Kevin Gilbert",
+        text:"Head of Designer"
+        },
+        {
+        id:4,
+        img:"./image/about/team-4.png",
+        title:"Kevin Gilbert",
+        text:"UX Designer"
+        },
+        {
+        id:5,
+        img:"./image/about/team-5.png",
+        title:"Kevin Gilbert",
+        text:"Chief Executive Officer"
+        },
+        {
+        id:6,
+        img:"./image/about/team-6.png",
+        title:"Kevin Gilbert",
+        text:"Assistant of CEO"
+        },
+        {
+        id:7,
+        img:"./image/about/team-7.png",
+        title:"Kevin Gilbert",
+        text:"Head of Designer"
+        },
+        {
+        id:8,
+        img:"./image/about/team-8.png",
+        title:"Kevin Gilbert",
+        text:"UX Designer"
+        }
+
+
+]%}
+    <div class="team-sectiton-01">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="title">Our core team member</h2>
+            </div>
+            <div class="row card-row justify-content-center">
+                {% for item in cardData%}
+                <div class="col-xl-3 col-lg-4 col-sm-6 col-xs-10 col-11">
+                    {{Card.TeamOne({
+                        img:item.img,
+                        title:item.title,
+                        text:item.text
+                    })}}
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}

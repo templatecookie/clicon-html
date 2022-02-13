@@ -3,8 +3,8 @@
 {% import "components/Header/_bottom-nav.njk" as BottomNav %}
 {% import "components/Header/_top-nav.njk" as TopNav %}
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
-{% import "components/Breadcrumb/_breadcrumb.njk" as BreadrumbSection %}
 {% import "pages/about/_content-1.njk" as ContentSection %}
+{% import "pages/about/_team.njk" as TeamSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -19,17 +19,12 @@
 <!-- Bottom Nav Start -->
 {{BottomNav.render()}}
 <!-- Bottom Nav End -->
-<!-- Breadrumb Section Start -->
-{{BreadrumbSection.render({
-    "pageTextOne":true,
-    "pageNameOne":"Sign Up",
-    "currentPage":"Email Verification",
-    "ColorCode":"text-secondary-500"
-})}}
-<!-- Breadrumb Section End -->
 <!-- Content Section Start -->
 {{ContentSection.render()}}
 <!-- Content Section End -->
+<!-- Team Section Start -->
+{{TeamSection.render()}}
+<!-- Team Section End -->
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End -->

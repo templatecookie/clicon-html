@@ -1,3 +1,14 @@
+{% macro TeamOne(obj) %}
+    <div class="card-team {{obj.modifier}}">
+    <div class="card-image {{obj.bgWrapper}}">
+        <img src="{{obj.img}}" alt="card" class="w-100">
+    </div>
+    <div class="card-body p-0">
+        <h4 class="title heading-dark">{{obj.title | safe}}</h4>
+        <p class="text">{{obj.text}}</p>
+    </div>
+</div>
+{% endmacro %}
 {% macro FeaturesCard(obj) %}
 <div class="card-features {{obj.modifier}}">
     <div class="card-image {{obj.bgWrapper}}">
