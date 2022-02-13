@@ -6,6 +6,8 @@
 {% import "components/Breadcrumb/_breadcrumb.njk" as BreadrumbSection %}
 {% import "pages/support/_banner.njk" as BannerSection %}
 {% import "pages/support/_features.njk" as FeatureSection %}
+{% import "pages/support/_content.njk" as ContentSection %}
+{% import "pages/support/_contact.njk" as ContactSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -32,6 +34,12 @@
 <!-- Feature Section End -->
 {{FeatureSection.render()}}
 <!-- Feature Section End -->
+<!-- Content Section End -->
+{{ContentSection.render()}}
+<!-- Content Section End -->
+<!-- Contact Section End -->
+{{ContactSection.render()}}
+<!-- Contact Section End -->
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End -->
