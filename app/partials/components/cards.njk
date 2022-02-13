@@ -179,3 +179,14 @@
         </div>
     </div>
 {% endmacro %}
+{% macro BlogListOne(obj) %}
+  <div class="caard-block-list">
+      <div class="card-image">
+        <img src="{{obj.img}}" alt="img">
+      </div>
+      <div class="card-body">
+        <h3 class="title">{{obj.title}} </h3>
+        <span class="meta">{{obj.meta}}</span>
+      </div>
+  </div>
+{% endmacro %}

@@ -451,3 +451,29 @@ border-radius: 3px;
     }
   }
 }
+.caard-block-list{
+  display: flex;
+  align-items: center;
+  .card-image{
+    margin-right: 16px;
+    img{
+      border-radius: 2px;
+    }
+  }
+  .card-body{
+    padding: 0;
+    .title{
+      font-weight: 500;
+      font-size: 14px;
+      padding-bottom: 8px;
+      line-height: 20px;
+      color: var(--bs-gray-900);
+    }
+    .meta{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-500);
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/news/1.png",
+        name:"Kristin",
+        date:"19Dec, 2013",
+        comment:"453",
+        title:"Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.",
+        text:"Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem. "
+        },
+        {
+        id:2,
+        img:"./image/news/2.png",
+        name:"Robert",
+        date:"28 Nov, 2015",
+        comment:"738",
+        title:"Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. ",
+        text:"Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem. "
+        },
+        {
+        id:3,
+        img:"./image/news/3.png",
+        name:"Kristin",
+        date:"9 May, 2014",
+        comment:"826",
+        title:"Curabitur massa orci, consectetur et blandit ac, auctor et tellus.",
+        text:"Pellentesque vestibulum lorem vel gravida aliquam. Morbi porta, odio id suscipit mattis, risus augue condimentum purus."
+        },
+        {
+        id:4,
+        img:"./image/news/1.png",
+        name:"Kristin",
+        date:"19Dec, 2013",
+        comment:"453",
+        title:"Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.",
+        text:"Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem. "
+        },
+        {
+        id:5,
+        img:"./image/news/2.png",
+        name:"Robert",
+        date:"28 Nov, 2015",
+        comment:"738",
+        title:"Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. ",
+        text:"Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem. "
+        },
+        {
+        id:6,
+        img:"./image/news/3.png",
+        name:"Kristin",
+        date:"9 May, 2014",
+        comment:"826",
+        title:"Curabitur massa orci, consectetur et blandit ac, auctor et tellus.",
+        text:"Pellentesque vestibulum lorem vel gravida aliquam. Morbi porta, odio id suscipit mattis, risus augue condimentum purus."
+        },
+        {
+        id:7,
+        img:"./image/news/2.png",
+        name:"Robert",
+        date:"28 Nov, 2015",
+        comment:"738",
+        title:"Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. ",
+        text:"Mauris scelerisque odio id rutrum volutpat. Pellentesque urna odio, vulputate at tortor vitae, hendrerit blandit lorem. "
+        },
+        {
+        id:8,
+        img:"./image/news/3.png",
+        name:"Kristin",
+        date:"9 May, 2014",
+        comment:"826",
+        title:"Curabitur massa orci, consectetur et blandit ac, auctor et tellus.",
+        text:"Pellentesque vestibulum lorem vel gravida aliquam. Morbi porta, odio id suscipit mattis, risus augue condimentum purus."
+        }
+
+
+]%}
+{% set cardDataTwo =[
+        {
+        id:1,
+        img:"./image/news/small-blog.png",
+        title:"Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. ",
+        meta:"28 Nov, 2015"
+        },
+        {
+        id:2,
+        img:"./image/news/small-blog.png",
+        title:"Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. ",
+        meta:"28 Nov, 2015"
+        },
+        {
+        id:3,
+        img:"./image/news/small-blog.png",
+        title:"Curabitur pulvinar aliquam lectus, non blandit erat mattis vitae. ",
+        meta:"28 Nov, 2015"
+        }
+]%}
+<div class="blog-body">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-10">
+                <div class="blog-body__filter">
+                    <div class="blog-body__filter--catagory">
+                        {{MixtComponent.CategoryTwo()}}
+                    </div>
+                    <div class="blog-body__filter--bloglist">
+                        <h2>Latest Blog</h2>
+                            {% for item in cardDataTwo%}
+                                <div class="single-item">
+                                {{Card.BlogListOne({
+                                    img:item.img,
+                                    title:item.title,
+                                    meta:item.meta
+                                })}}
+                                </div>
+                            {% endfor %}
+                    </div>
+                    <div class="blog-body__filter--gallery">
+                        <h2 class="title">Gallery</h2>
+                        <div class="gallery-group">
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-1.png" alt="gallery">
+                            </div>
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-2.png" alt="gallery">
+                            </div>
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-3.png" alt="gallery">
+                            </div>
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-4.png" alt="gallery">
+                            </div>
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-5.png" alt="gallery">
+                            </div>
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-6.png" alt="gallery">
+                            </div>
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-7.png" alt="gallery">
+                            </div>
+                            <div class="single-item">
+                                <img src="./image/blog/gallery-8.png" alt="gallery">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-body__filter--populartag">
+                        {{MixtComponent.PopularTagTwo()}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-10">
+                <div class="blog-body__searchsortbox">
+                    <div class="search-box">
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search for anything...">
+                                <div class="icon">
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.5625 15.625C13.1869 15.625 16.125 12.6869 16.125 9.0625C16.125 5.43813 13.1869 2.5 9.5625 2.5C5.93813 2.5 3 5.43813 3 9.0625C3 12.6869 5.93813 15.625 9.5625 15.625Z"
+                                            stroke="#191C1F" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round"></path>
+                                        <path d="M14.2031 13.7031L18 17.5" stroke="#191C1F" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sort-box">
+                        <p>Sort by:</p>
+                        <div class="selectbox">
+                            <select class="nice-select">
+                                <option data-display="Most Popular">Most Popular</option>
+                                <option value="1">Some option</option>
+                                <option value="2">Some option</option>
+                                <option value="3">Some option</option>
+                                <option value="4">Some option</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-body__card">
+                    <div class="row card-row">
+                        {% for item in cardData%}
+                        <div class="col-xl-6">
+                        {{Card.NewsCardOne({
+                            img:item.img,
+                            name:item.name,
+                            date:item.date,
+                            comment:item.comment,
+                            title:item.title,
+                            text:item.text
+                        })}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="blog-body__pagination">
+                    {{MixtComponent.PaginationOne()}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+

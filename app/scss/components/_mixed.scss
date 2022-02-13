@@ -1415,6 +1415,59 @@
         }
     }
 }
+.category-block-02 {
+    padding: 24px;
+    border: 1px solid #E4E7E9;
+    border-radius: 4px;
+    .title {
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--bs-gray-900);
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+        &:not(&:last-child) {
+            margin-bottom: 12px;
+        }
+
+        &-input {
+            padding: 0;
+            margin: 0;
+            width: 20px;
+            border-radius: 500px;
+            height: 20px;
+
+            &:checked[type=checkbox] {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        &-label {
+            margin-left: 8px;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-700);
+
+            &.fontcheck {
+                font-weight: 500;
+                color: var(--bs-gray-900);
+            }
+        }
+    }
+}
 
 .price-range-block {
     .title {
