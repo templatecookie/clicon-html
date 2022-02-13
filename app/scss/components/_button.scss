@@ -35,7 +35,27 @@
     }
     &:hover{
       background: transparent !important;
-      border-color: var(--bs-primary-500);
+      color: var(--bs-gray-900) !important;
+      svg{
+        path{
+          stroke: var(--bs-gray-900);
+        }
+      }
+    }
+  }
+  &.btn-success{
+    border: 2px solid var(--bs-success-500) !important;
+    background: var(--bs-success-500) !important;
+    color: white !important;
+    svg{
+      margin-left: 12px;
+      path{
+        transition: .3s;
+        stroke: white;
+      }
+    }
+    &:hover{
+      background: transparent !important;
       color: var(--bs-gray-900) !important;
       svg{
         path{
@@ -67,8 +87,8 @@
     }
   }
   &.btn-secondary{
-    border: 2px solid var(--bs-secondary);
-    background: var(--bs-secondary);
+    border: 2px solid var(--bs-secondary-500);
+    background: var(--bs-secondary-500);
     color: white;
     svg{
       margin-left: 15px;
@@ -79,7 +99,6 @@
     }
     &:hover{
       background: transparent;
-      border-color: #DEE7EE ;
       color: #222D39;
       svg{
         margin-left: 15px;

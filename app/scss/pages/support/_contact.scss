@@ -1,0 +1,23 @@
+.contact-section-01{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 72px 0;
+    }
+    .section-title-block{
+        .subtitle{
+            display: inline-block;
+            color: white;
+            background: var(--bs-secondary-500);
+            padding: 8px 16px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 2px;
+            line-height: 20px;  
+        }
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 40px;
+        }
+    }
+}

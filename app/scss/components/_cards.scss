@@ -401,3 +401,53 @@ border-radius: 3px;
     }
   }
 }
+.contact-card{
+  display: flex;
+  align-items: flex-start;
+  padding: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 24px 32px rgba(25, 28, 31, 0.08);
+  border-radius: 4px;
+  @media (max-width:480px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  .card-icon{
+    @include square(96px,4px);
+    @include flexAllCenter; 
+    margin-right: 24px;
+    @media (max-width:480px) {
+      @include square(86px,4px);
+      margin-right: 0;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+  .card-body{
+    padding: 0;
+    .title{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      color: var(--bs-gray-900);
+      padding-bottom: 8px;
+    }
+    .text{
+      font-weight: normal;
+      padding-bottom: 16px;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-600);
+    }
+    .info{
+      display: block;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 32px;
+      color: var(--bs-gray-900);
+    }
+    .btn{
+      margin-top: 24px;
+    }
+  }
+}
