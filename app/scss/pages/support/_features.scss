@@ -1,0 +1,18 @@
+.features-section-02{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 72px 0;
+    }
+    .section-title{
+        margin-bottom: 30px;
+        @media (min-width:992px) {
+            margin-bottom: 40px;
+        }
+        .title{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            color: var(--bs-gray-900);  
+        }
+    }
+}

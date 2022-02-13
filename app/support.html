@@ -5,6 +5,7 @@
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as BreadrumbSection %}
 {% import "pages/support/_banner.njk" as BannerSection %}
+{% import "pages/support/_features.njk" as FeatureSection %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
 {% block main %}
 <!-- Header Section Start -->
@@ -28,6 +29,9 @@
 <!-- Banner Section End -->
 {{BannerSection.render()}}
 <!-- Banner Section End -->
+<!-- Feature Section End -->
+{{FeatureSection.render()}}
+<!-- Feature Section End -->
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End -->
