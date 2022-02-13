@@ -1,0 +1,49 @@
+.banner-secton-02{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    padding: 60px 0;
+    z-index: 1;
+    @media (min-width:575px) {
+        padding: 88px 0;
+    }
+    &::after{
+        @media (max-width:768px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255,.7);
+            z-index: -1;
+        }
+    }
+    .section-title{
+        .title{
+            margin-bottom: 16px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 40px;
+            color: var(--bs-gray-900);
+        }
+        .text{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 1.333333333333333;
+            color: var(--bs-gray-900);
+            @media (min-width:575px) {
+            font-size: 18px;
+            }
+        }
+        .video-button{
+            margin-top: 24px;
+            .video-btn {
+                @media (max-width:768px) {
+                    margin: auto;
+                }
+            }
+        }
+    }
+}
