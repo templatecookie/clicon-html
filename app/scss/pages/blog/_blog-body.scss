@@ -1,6 +1,9 @@
 
 .blog-body{
-    padding: 40px 0 72px;
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 72px 0;
+    }
     &__searchsortbox{
     margin-bottom: 24px;
       display: flex;

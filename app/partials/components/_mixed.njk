@@ -636,3 +636,118 @@
       </div>
   </div>
 {% endmacro %}
+
+{% macro CommentBox(args) %}
+    <div class="comment-form-01">
+      <h6 class="title">Leave a Commends</h6>
+      <form>
+        <div class="row">
+          <div class="col-sm-6">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input id="name" type="text" class="form-control" >
+          </div>
+          </div>
+          <div class="col-sm-6">
+          <div class="form-group">
+            <label class="form-label" for="address">Email Address</label>
+            <input id="address" type="text" class="form-control">
+          </div>
+          </div>
+          <div class="col-12">
+            <div class="form-textarea">
+              <label class="form-label" for="descripi">Descripi</label>
+              <textarea id="descripi" cols="30" rows="10" placeholder="What’s your thought about this blog..."></textarea>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-button">
+              <button type="submit" class="btn btn-primary">post Commends</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+{% endmacro %}
+{% macro CommentText(args) %}
+  <div class="comment-block-01">
+    <h6 class="title">Commends</h6>
+      <div class="comment-block-01__wrapper">
+        <div class="comment-area">
+          <div class="avatar">
+            <img src="./image/blog/avatar-1.png" alt="avatar">
+          </div>
+          <div class="content">
+            <div class="content__doc">
+              <h6 class="name">Annette Black</h6>
+              <span class="dot"></span>
+              <p class="date">26 Apr, 2021</p>
+            </div>
+            <p class="text">In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.</p>
+          </div>
+        </div>
+        <div class="comment-area">
+          <div class="avatar">
+            <img src="./image/blog/avatar-2.png" alt="avatar">
+          </div>
+          <div class="content">
+            <div class="content__doc">
+              <h6 class="name">Devon Lane</h6>
+              <span class="dot"></span>
+              <p class="date">24 Apr, 2021</p>
+            </div>
+            <p class="text">Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.</p>
+          </div>
+        </div>
+        <div class="comment-area">
+          <div class="avatar">
+            <img src="./image/blog/avatar-3.png" alt="avatar">
+          </div>
+          <div class="content">
+            <div class="content__doc">
+              <h6 class="name">Jacob Jones</h6>
+              <span class="dot"></span>
+              <p class="date">20 Apr, 2021</p>
+            </div>
+            <p class="text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+          </div>
+        </div>
+        <div class="comment-area">
+          <div class="avatar">
+            <img src="./image/blog/avatar-4.png" alt="avatar">
+          </div>
+          <div class="content">
+            <div class="content__doc">
+              <h6 class="name">Jane Cooper</h6>
+              <span class="dot"></span>
+              <p class="date">18 Apr, 2021</p>
+            </div>
+            <p class="text">Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.</p>
+          </div>
+        </div>
+        <div class="comment-area">
+          <div class="avatar">
+            <img src="./image/blog/avatar-5.png" alt="avatar">
+          </div>
+          <div class="content">
+            <div class="content__doc">
+              <h6 class="name">Darrell Steward</h6>
+              <span class="dot"></span>
+              <p class="date">7 Apr, 2021</p>
+            </div>
+            <p class="text">Nulla molestie interdum ultricies. </p>
+          </div>
+        </div>
+      </div>
+      <div class="comment-btn">
+        <button class=" btn btn-outline-primary">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.7656 7.78906H17.5156V4.03906" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5.14062 5.14087C5.77843 4.50213 6.53591 3.9954 7.36973 3.64967C8.20355 3.30393 9.09734 3.12598 10 3.12598C10.9027 3.12598 11.7965 3.30393 12.6303 3.64967C13.4641 3.9954 14.2216 4.50213 14.8594 5.14087L17.5156 7.78931" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.23438 12.2109H2.48438V15.9609" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.8594 14.8594C14.2216 15.4981 13.4641 16.0048 12.6303 16.3506C11.7965 16.6963 10.9027 16.8743 10 16.8743C9.09735 16.8743 8.20355 16.6963 7.36973 16.3506C6.53591 16.0048 5.77843 15.4981 5.14063 14.8594L2.48438 12.2109" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>  
+          Load More</button>
+      </div>
+  </div>
+{% endmacro %}
