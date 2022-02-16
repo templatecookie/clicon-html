@@ -15,7 +15,9 @@ $(".counter").counterUp({
   delay: 10,
   time: 1000,
 });
-
+$(document).ready(function(){
+  $("#myModal").modal('show');
+});
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       Slick Slider Activation
@@ -89,8 +91,8 @@ $(".counter").counterUp({
       });
   }
 
-if (jQuery(".product-slider--01").length > 0) {
-  $(".product-slider--01").not(".slick-initialized").slick({
+if (jQuery(".product-slider--03").length > 0) {
+  $(".product-slider--03").not(".slick-initialized").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -98,21 +100,45 @@ if (jQuery(".product-slider--01").length > 0) {
     drag: false,
     dots: false,
     fade: true,
-    asNavFor: ".product-slider--01__nav",
+    asNavFor: ".product-slider--03__nav",
   });
 }
-if (jQuery(".product-slider--01__nav").length > 0) {
-  $(".product-slider--01__nav").slick({
+if (jQuery(".product-slider--03__nav").length > 0) {
+  $(".product-slider--03__nav").slick({
     slidesToShow: 6,
     slidesToScroll: 1,
-    asNavFor: ".product-slider--01",
+    asNavFor: ".product-slider--03",
     dots: false,
     centerMode: true,
     centerPadding: 0,
     focusOnSelect: true,
     arrows: true,
-    prevArrow: $(".product-slider--01__control-buttons .button--prev"),
-    nextArrow: $(".product-slider--01__control-buttons .button--next"),
+    prevArrow: $(".product-slider--03__control-buttons .button--prev"),
+    nextArrow: $(".product-slider--03__control-buttons .button--next"),
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          arrows: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      }
+    ],
   });
 }
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -144,9 +170,7 @@ function passowrdVisibility(passwrodField, button) {
     });
   }
 }
-
 passowrdVisibility("#passField", "#eye");
-
 
 $(".mainnav div").click(function() {
   $("ul").slideToggle();
@@ -173,9 +197,6 @@ $('#countdown-01').countdown({
   h: 0, // 24 hour format 0-23
   m: 0, // 0-59
   s: 0, // 0-59
-});
-$(document).ready(function(){
-  $("#myModal").modal('show');
 });
 $(document).ready(function() {
   $('#showHiddenMenuOne').click(function() {

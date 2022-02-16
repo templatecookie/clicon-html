@@ -1,4 +1,5 @@
 {% extends "template.njk" %}
+{% import "components/_mixed.njk" as MixtComponent %}
 {% import "components/Header/_header.njk" as Header %}
 {% import "components/Header/_bottom-nav.njk" as BottomNav %}
 {% import "components/Header/_offer-widget.njk" as OfferWidget %}
@@ -68,64 +69,18 @@
 <!-- Footer Section Start -->
 {{FooterSection.render()}}
 <!-- Footer Section End -->
-<!-- Product Modal-->
-{# <div class="modal fade products" id="productView" tabindex="-1" aria-labelledby="productViewLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-xl-6">
-                        <!-- Product View Slider -->
-                        <div class="product-slider--01">
-                            <div class="single-slider">
-                                <div class="product-slider-01">
-                                    <img src="./image/modal/slider.png" alt="slider" class="mw-100">
-                                </div>
-                            </div>
-                            <div class="single-slider">
-                                <div class="product-slider-01">
-                                    <img src="./image/modal/slider.png" alt="slider" class="mw-100">
-                                </div>
-                            </div>
-                            <div class="single-slider">
-                                <div class="product-slider-01">
-                                    <img src="./image/modal/slider.png" alt="slider" class="mw-100">
-                                </div>
-                            </div>
-                            <div class="single-slider">
-                                <div class="product-slider-01">
-                                    <img src="./image/modal/slider.png" alt="slider" class="mw-100">
-                                </div>
-                            </div>
-                            <div class="single-slider">
-                                <div class="product-slider-01">
-                                    <img src="./image/modal/slider.png" alt="slider" class="mw-100">
-                                </div>
-                            </div>
-                            <div class="single-slider">
-                                <div class="product-slider-01">
-                                    <img src="./image/modal/slider.png" alt="slider" class="mw-100">
-                                </div>
-                            </div>
-                            <div class="single-slider">
-                                <div class="product-slider-01">
-                                    <img src="./image/modal/slider.png" alt="slider" class="mw-100">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6">
-                        <!-- Products information -->
-                    </div>
-                </div>
-            </div>
-        </div>
+{# <!-- Product Modal-->
+<div class="modal modal-one fade" id="productView" tabindex="-1" role="dialog" aria-labelledby="productViewLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+          {{MixtComponent.ProductDetailSlider()}}  
     </div>
+  </div>
 </div>
 <!-- Newsletter Modal-->
 <div id="myModal" class="modal fade">
-    <div class="modal-dialog modal-one">
-        <div class="modal-one__wrapper">
+    <div class="modal-dialog modal-two">
+        <div class="modal-two__wrapper">
             <div class="modal-image d-none d-lg-block">
                 <img src="./image/modal/newsleter-1.png" alt="newsleter" class="mw-100">
             </div>

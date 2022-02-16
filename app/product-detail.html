@@ -4,6 +4,7 @@
 {% import "components/Header/_top-nav.njk" as TopNav %}
 {% import "components/Header/_deskotop-nav.njk" as DeskNav %}
 {% import "components/Breadcrumb/_breadcrumb.njk" as BreadrumbSection %}
+{% import "pages/product/_product-detail.njk" as ProductDetail %}
 {% import "pages/product/_product-information.njk" as ProductInformation %}
 {% import "pages/home/_products-03.njk" as ProductSectionThree %}
 {% import "components/Footer/_footer.njk" as FooterSection %}
@@ -24,12 +25,17 @@
 {{BreadrumbSection.render({
     "pageTextOne":true,
     "pageTextTwo":true,
+    "pageTextThree":true,
     "pageNameOne":"Shop",
     "pageNameTwo":"Shop Grid",
-    "currentPage":"Electronics Devices",
+    "pageNameThree":"Electronics Devices",
+    "currentPage":"Macbook Pro",
     "ColorCode":"text-secondary-500"
 })}}
 <!-- Breadrumb Section End -->
+<!-- Product Detail Section Start -->
+{{ProductDetail.render()}}
+<!-- Product Detail Section End -->
 <!-- Product Information Section Start -->
 {{ProductInformation.render()}}
 <!-- Product Information Section End -->

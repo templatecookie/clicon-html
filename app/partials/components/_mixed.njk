@@ -1,753 +1,1082 @@
 {% macro AddOne(args) %}
-  <div class="add-block-01">
-    <div class="add-content">
-      <h6 class="subtitle text-warning-500">Summer Sales</h6>
-      <h2 class="title">New Google <br> Pixel 6 Pro</h2>
-        <a class="btn btn-primary" href="#">
-          Shop now
-          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </a>
-    </div>
-    <div class="add-image">
-      <img src="./image/add/add-mobile-1.png" alt="mobile">
-      <span class="badge">29% OFF</span>
-    </div>
-  </div>
-{% endmacro %}
-{% macro AddTwo(args) %}
-  <div class="add-block-02">
-    <div class="add-image">
-      <img src="./image/add/airpods.png" alt="mobile">
-    </div>
-    <div class="add-content">
-      <h2 class="title">Xiaomi <br> FlipBuds Pro</h2>
-      <span class="price">$229 USD</span>
-      <a class="btn btn-primary" href="#">
-        Shop now
-        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-    </div>
-  </div>
-{% endmacro %}
-{% macro AddThree(args) %}
-  <div class="add-block-03">
-    <div class="add-block-03__content">
-      <h6 class="subtitle">COMPUTER & ACCESSORIES</h6>
-      <h2 class="title">32% Discount</h2>
-      <p class="text">For all ellectronics products</p>
-      <div class="content-wrapper">
-        <p class="text-one">Offers ends in:</p>
-        <p class="text-two">ENDS OF CHRISTMAS</p>
-      </div>
-      <a class="btn btn-primary" href="#">
-        Shop now
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.75 12H20.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </a>
-    </div>
-    <div class="add-block-03__image d-none d-md-block">
-      <img src="./image/add/apple-accessories.png" alt="accessories" class="w-100">
-    </div>
-  </div>
-{% endmacro %}
-{% macro AddFour(args) %}
-  <div class="add-block-04">
-    <div class="add-content">
-        <h6 class="subtitle">INTRODUCING</h6>
-        <h2 class="title">New Apple <br>
-          Homepod Mini</h2>
-          <p class="text">Jam-packed with innovation, <br> HomePod mini delivers unexpectedly.</p>
-          <a class="btn btn-primary" href="#">
-            Shop now
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </a>
-    </div>
-    <div class="add-image d-none d-md-block">
-      <img src="./image/add/soundbox.png" alt="soundbox" class="w-100">
-    </div>
-  </div>
-{% endmacro %}
-{% macro AddFive(args) %}
-    <div class="add-block-05">
-      <div class="add-content">
-        <h6 class="subtitle">INTRODUCING</h6>
-        <h2 class="title">Xiaomi Mi 11 Ultra <br>
-          12GB+256GB</h2>
-          <p class="text">*Data provided by internal <br> laboratories. Industry measurment.</p>
-          <a class="btn btn-primary" href="#">
-            Shop now
-            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-            </svg>
-          </a>
-    </div>
-    <div class="add-image d-none d-md-block">
-      <img src="./image/add/mobile.png" alt="soundbox" class="w-100">
-    </div>
-  </div>
-{% endmacro %}
-{% macro AddSix(args) %}
-  <div class="add-block-06">
-    <div class="add-image">
-      <img src="./image/add/airpod-02.png" alt="airpod">
-    </div>
-    <div class="add-content">
-      <h2 class="title">Xiaomi True <br> Wireless Earbuds</h2>
-      <p class="text">Escape the noise, It’s time to hear the magic with Xiaomi Earbuds.</p>
-      <div class="content-wrapper">
-        <p class="text-one">Only for:</p>
-        <p class="text-two">$299 USD</p>
-      </div>
-        <a class="btn btn-primary" href="#">
-          Shop now
-          <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </a>
-    </div>
-
-  </div>
-{% endmacro %}
-{% macro AddSeven(args) %}
-  <div class="add-block-07">
-    <h6 class="subtile">SUMMER SALES</h6>
-    <h2 class="title">37% DISCOUNT</h2>
-    <p>only for <span class="text-warning-500">SmartPhone</span> product.</p>
-    <a class="btn btn-secondary" href="#">
+<div class="add-block-01">
+  <div class="add-content">
+    <h6 class="subtitle text-warning-500">Summer Sales</h6>
+    <h2 class="title">New Google <br> Pixel 6 Pro</h2>
+    <a class="btn btn-primary" href="#">
       Shop now
       <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-      <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round"></path>
       </svg>
     </a>
   </div>
+  <div class="add-image">
+    <img src="./image/add/add-mobile-1.png" alt="mobile">
+    <span class="badge">29% OFF</span>
+  </div>
+</div>
+{% endmacro %}
+{% macro AddTwo(args) %}
+<div class="add-block-02">
+  <div class="add-image">
+    <img src="./image/add/airpods.png" alt="mobile">
+  </div>
+  <div class="add-content">
+    <h2 class="title">Xiaomi <br> FlipBuds Pro</h2>
+    <span class="price">$229 USD</span>
+    <a class="btn btn-primary" href="#">
+      Shop now
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </a>
+  </div>
+</div>
+{% endmacro %}
+{% macro AddThree(args) %}
+<div class="add-block-03">
+  <div class="add-block-03__content">
+    <h6 class="subtitle">COMPUTER & ACCESSORIES</h6>
+    <h2 class="title">32% Discount</h2>
+    <p class="text">For all ellectronics products</p>
+    <div class="content-wrapper">
+      <p class="text-one">Offers ends in:</p>
+      <p class="text-two">ENDS OF CHRISTMAS</p>
+    </div>
+    <a class="btn btn-primary" href="#">
+      Shop now
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.75 12H20.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
+    </a>
+  </div>
+  <div class="add-block-03__image d-none d-md-block">
+    <img src="./image/add/apple-accessories.png" alt="accessories" class="w-100">
+  </div>
+</div>
+{% endmacro %}
+{% macro AddFour(args) %}
+<div class="add-block-04">
+  <div class="add-content">
+    <h6 class="subtitle">INTRODUCING</h6>
+    <h2 class="title">New Apple <br>
+      Homepod Mini</h2>
+    <p class="text">Jam-packed with innovation, <br> HomePod mini delivers unexpectedly.</p>
+    <a class="btn btn-primary" href="#">
+      Shop now
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="add-image d-none d-md-block">
+    <img src="./image/add/soundbox.png" alt="soundbox" class="w-100">
+  </div>
+</div>
+{% endmacro %}
+{% macro AddFive(args) %}
+<div class="add-block-05">
+  <div class="add-content">
+    <h6 class="subtitle">INTRODUCING</h6>
+    <h2 class="title">Xiaomi Mi 11 Ultra <br>
+      12GB+256GB</h2>
+    <p class="text">*Data provided by internal <br> laboratories. Industry measurment.</p>
+    <a class="btn btn-primary" href="#">
+      Shop now
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="add-image d-none d-md-block">
+    <img src="./image/add/mobile.png" alt="soundbox" class="w-100">
+  </div>
+</div>
+{% endmacro %}
+{% macro AddSix(args) %}
+<div class="add-block-06">
+  <div class="add-image">
+    <img src="./image/add/airpod-02.png" alt="airpod">
+  </div>
+  <div class="add-content">
+    <h2 class="title">Xiaomi True <br> Wireless Earbuds</h2>
+    <p class="text">Escape the noise, It’s time to hear the magic with Xiaomi Earbuds.</p>
+    <div class="content-wrapper">
+      <p class="text-one">Only for:</p>
+      <p class="text-two">$299 USD</p>
+    </div>
+    <a class="btn btn-primary" href="#">
+      Shop now
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </a>
+  </div>
+
+</div>
+{% endmacro %}
+{% macro AddSeven(args) %}
+<div class="add-block-07">
+  <h6 class="subtile">SUMMER SALES</h6>
+  <h2 class="title">37% DISCOUNT</h2>
+  <p>only for <span class="text-warning-500">SmartPhone</span> product.</p>
+  <a class="btn btn-secondary" href="#">
+    Shop now
+    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+        stroke-linejoin="round"></path>
+    </svg>
+  </a>
+</div>
 {% endmacro %}
 {% macro CategoryOne(args) %}
-  <div class="category-block-01">
-    <h6 class="title">Category</h6>
-    <form action="#">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
-        <label class="form-check-label fontcheck" for="flexCheckChecked">
-          Electronics Devices
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="a">
-        <label class="form-check-label" for="a">
-          Computer & Laptop
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="b">
-        <label class="form-check-label" for="b">
-          Computer Accessories
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="c">
-        <label class="form-check-label" for="c">
-          SmartPhone
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="d">
-        <label class="form-check-label" for="d">
-          Headphone
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="e">
-        <label class="form-check-label" for="e">
-          Mobile Accessories
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="f">
-        <label class="form-check-label" for="f">
-          Gaming Console
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="g">
-        <label class="form-check-label" for="g">
-          Camera & Photo
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="h">
-        <label class="form-check-label" for="h">
-          TV & Homes Appliances
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="i">
-        <label class="form-check-label" for="i">
-          Watchs & Accessories
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="j">
-        <label class="form-check-label" for="j">
-          GPS & Navigation
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="k">
-        <label class="form-check-label" for="k">
-          Warable Technology
-        </label>
-      </div>
-    </form>
-  </div>
+<div class="category-block-01">
+  <h6 class="title">Category</h6>
+  <form action="#">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="flexCheckChecked" checked>
+      <label class="form-check-label fontcheck" for="flexCheckChecked">
+        Electronics Devices
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="a">
+      <label class="form-check-label" for="a">
+        Computer & Laptop
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="b">
+      <label class="form-check-label" for="b">
+        Computer Accessories
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="c">
+      <label class="form-check-label" for="c">
+        SmartPhone
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="d">
+      <label class="form-check-label" for="d">
+        Headphone
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="e">
+      <label class="form-check-label" for="e">
+        Mobile Accessories
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="f">
+      <label class="form-check-label" for="f">
+        Gaming Console
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="g">
+      <label class="form-check-label" for="g">
+        Camera & Photo
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="h">
+      <label class="form-check-label" for="h">
+        TV & Homes Appliances
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="i">
+      <label class="form-check-label" for="i">
+        Watchs & Accessories
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="j">
+      <label class="form-check-label" for="j">
+        GPS & Navigation
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="k">
+      <label class="form-check-label" for="k">
+        Warable Technology
+      </label>
+    </div>
+  </form>
+</div>
 {% endmacro %}
 {% macro CategoryTwo(args) %}
-  <div class="category-block-02">
-    <h6 class="title">Category</h6>
+<div class="category-block-02">
+  <h6 class="title">Category</h6>
+  <form action="#">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="flexCheckChecked8" checked>
+      <label class="form-check-label fontcheck" for="flexCheckChecked8">
+        All
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="flexCheckChecked5">
+      <label class="form-check-label individual" for="flexCheckChecked5">
+        Electronics Devices
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="a1">
+      <label class="form-check-label individual" for="a1">
+        Computer & Laptop
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input individual" type="checkbox" id="b1">
+      <label class="form-check-label" for="b1">
+        Computer Accessories
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input individual" type="checkbox" id="c1">
+      <label class="form-check-label" for="c1">
+        SmartPhone
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input individual" type="checkbox" id="d1">
+      <label class="form-check-label" for="d1">
+        Headphone
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input individual" type="checkbox" id="e1">
+      <label class="form-check-label" for="e1">
+        Mobile Accessories
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input individual" type="checkbox" id="f1">
+      <label class="form-check-label" for="f1">
+        Gaming Console
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input individual" type="checkbox" id="g1">
+      <label class="form-check-label" for="g1">
+        Camera & Photo
+      </label>
+    </div>
+  </form>
+</div>
+{% endmacro %}
+{% macro PriceRange(args) %}
+<div class="price-range-block">
+  <h6 class="title">Price Range</h6>
+  <div class="slider-wrapper">
+    <div class="slider">
+      <div class="progress"></div>
+    </div>
+    <div class="range-input">
+      <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+      <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+    </div>
+    <div class="price-input">
+      <div class="field">
+        <input type="text" class="input-min form-control" placeholder="Min price">
+      </div>
+      <div class="field">
+        <input type="text" class="input-max form-control" placeholder="Max price">
+      </div>
+    </div>
+  </div>
+  <div class="price-box">
     <form action="#">
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="flexCheckChecked8" checked>
-        <label class="form-check-label fontcheck" for="flexCheckChecked8">
-          All
+        <input class="form-check-input selectall" type="checkbox" id="select-all">
+        <label class="form-check-label" for="select-all">
+          All Price
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="flexCheckChecked5">
-        <label class="form-check-label individual" for="flexCheckChecked5">
-          Electronics Devices
+        <input class="form-check-input individual" type="checkbox" id="l">
+        <label class="form-check-label" for="l">
+          Under $20
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="a1">
-        <label class="form-check-label individual" for="a1">
-          Computer & Laptop
+        <input class="form-check-input individual" type="checkbox" id="m">
+        <label class="form-check-label" for="m">
+          $25 to $100
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input individual" type="checkbox" id="b1">
-        <label class="form-check-label" for="b1">
-          Computer Accessories
+        <input class="form-check-input individual" type="checkbox" id="n">
+        <label class="form-check-label" for="n">
+          $100 to $300
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input individual" type="checkbox" id="c1">
-        <label class="form-check-label" for="c1">
-          SmartPhone
+        <input class="form-check-input individual" type="checkbox" id="o" checked>
+        <label class="form-check-label" for="o">
+          $300 to $500
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input individual" type="checkbox" id="d1">
-        <label class="form-check-label" for="d1">
-          Headphone
+        <input class="form-check-input individual" type="checkbox" id="o">
+        <label class="form-check-label" for="o">
+          $500 to $1,000
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input individual" type="checkbox" id="e1">
-        <label class="form-check-label" for="e1">
-          Mobile Accessories
+        <input class="form-check-input individual" type="checkbox" id="p">
+        <label class="form-check-label" for="p">
+          $1,000 to $10,000
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+{% endmacro %}
+{% macro PopularBrands(args) %}
+<div class="popularbrands-block-01">
+  <h6 class="title">popular Brands</h6>
+  <form action="#">
+    <div class="form-chek-wrapper">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="flexCheckChecked4" checked>
+        <label class="form-check-label" for="flexCheckChecked4">
+          Apple
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input individual" type="checkbox" id="f1">
-        <label class="form-check-label" for="f1">
-          Gaming Console
+        <input class="form-check-input" type="checkbox" id="aa" checked>
+        <label class="form-check-label" for="aa">
+          Google
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input individual" type="checkbox" id="g1">
-        <label class="form-check-label" for="g1">
+        <input class="form-check-input" type="checkbox" id="bb">
+        <label class="form-check-label" for="bb">
+          Microsoft
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="cc">
+        <label class="form-check-label" for="cc">
+          Dell
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="dd" checked>
+        <label class="form-check-label" for="dd">
+          Symphony
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="ee">
+        <label class="form-check-label" for="ee">
+          Sony
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="ff">
+        <label class="form-check-label" for="ff">
+          LG
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gg">
+        <label class="form-check-label" for="gg">
           Camera & Photo
         </label>
       </div>
-    </form>
-  </div>
-{% endmacro %}
-{% macro PriceRange(args) %}
-  <div class="price-range-block">
-    <h6 class="title">Price Range</h6>
-      <div class="slider-wrapper">
-        <div class="slider">
-          <div class="progress"></div>
-        </div>
-        <div class="range-input">
-          <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-          <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-        </div>
-        <div class="price-input">
-          <div class="field">
-            <input type="text" class="input-min form-control" placeholder="Min price">
-          </div>
-          <div class="field">
-            <input type="text" class="input-max form-control" placeholder="Max price">
-          </div>
-        </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="hh" checked>
+        <label class="form-check-label" for="hh">
+          One Plus
+        </label>
       </div>
-      <div class="price-box">
-        <form action="#">
-          <div class="form-check">
-            <input class="form-check-input selectall" type="checkbox" id="select-all">
-            <label class="form-check-label" for="select-all">
-              All Price
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input individual" type="checkbox" id="l">
-            <label class="form-check-label" for="l">
-              Under $20
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input individual" type="checkbox" id="m">
-            <label class="form-check-label" for="m">
-              $25 to $100
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input individual" type="checkbox" id="n">
-            <label class="form-check-label" for="n">
-              $100 to $300
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input individual" type="checkbox" id="o" checked>
-            <label class="form-check-label" for="o">
-              $300 to $500
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input individual" type="checkbox" id="o">
-            <label class="form-check-label" for="o">
-              $500 to $1,000
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input individual" type="checkbox" id="p">
-            <label class="form-check-label" for="p">
-              $1,000 to $10,000
-            </label>
-          </div>
-        </form>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="ii">
+        <label class="form-check-label" for="ii">
+          Google
+        </label>
       </div>
-  </div>
-{% endmacro %}
-{% macro PopularBrands(args) %}
-    <div class="popularbrands-block-01">
-    <h6 class="title">popular Brands</h6>
-    <form action="#">
-      <div class="form-chek-wrapper">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="flexCheckChecked4" checked>
-          <label class="form-check-label" for="flexCheckChecked4">
-            Apple
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="aa" checked>
-          <label class="form-check-label" for="aa">
-            Google
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="bb">
-          <label class="form-check-label" for="bb">
-          Microsoft
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="cc">
-          <label class="form-check-label" for="cc">
-            Dell
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="dd" checked>
-          <label class="form-check-label" for="dd">
-            Symphony
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="ee">
-          <label class="form-check-label" for="ee">
-            Sony
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="ff">
-          <label class="form-check-label" for="ff">
-            LG
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gg">
-          <label class="form-check-label" for="gg">
-            Camera & Photo
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="hh" checked>
-          <label class="form-check-label" for="hh">
-            One Plus
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="ii">
-          <label class="form-check-label" for="ii">
-            Google
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="jj">
-          <label class="form-check-label" for="jj">
-            Samsung
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="kk" checked>
-          <label class="form-check-label" for="kk">
-            HP
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="ll">
-          <label class="form-check-label" for="ll">
-            Xiaomi
-          </label>
-        </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="jj">
+        <label class="form-check-label" for="jj">
+          Samsung
+        </label>
       </div>
-    </form>
-  </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="kk" checked>
+        <label class="form-check-label" for="kk">
+          HP
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="ll">
+        <label class="form-check-label" for="ll">
+          Xiaomi
+        </label>
+      </div>
+    </div>
+  </form>
+</div>
 {% endmacro %}
 {% macro PopularTagTwo(args) %}
-  <div class="populartag-block-02">
-    <h6 class="title">Popular Tag</h6>
-    <ul class="tag-wrapper">
-      <li><a href="#">Game</a></li>
-      <li><a href="#">iPhone</a></li>
-      <li><a href="#">TV</a></li>
-      <li><a href="#">Asus Laptops</a></li>
-      <li><a href="#">Macbook </a></li>
-      <li><a href="#">SSD</a></li>
-      <li><a href="#">Graphics Card </a></li>
-      <li><a href="#">Power Bank </a></li>
-      <li><a href="#">Smart TV</a></li>
-      <li><a href="#">Speaker</a></li>
-      <li><a href="#">Tablet</a></li>
-      <li><a href="#">Microwave</a></li>
-      <li><a href="#">Samsung</a></li>
-    </ul>
-  </div>
+<div class="populartag-block-02">
+  <h6 class="title">Popular Tag</h6>
+  <ul class="tag-wrapper">
+    <li><a href="#">Game</a></li>
+    <li><a href="#">iPhone</a></li>
+    <li><a href="#">TV</a></li>
+    <li><a href="#">Asus Laptops</a></li>
+    <li><a href="#">Macbook </a></li>
+    <li><a href="#">SSD</a></li>
+    <li><a href="#">Graphics Card </a></li>
+    <li><a href="#">Power Bank </a></li>
+    <li><a href="#">Smart TV</a></li>
+    <li><a href="#">Speaker</a></li>
+    <li><a href="#">Tablet</a></li>
+    <li><a href="#">Microwave</a></li>
+    <li><a href="#">Samsung</a></li>
+  </ul>
+</div>
 {% endmacro %}
 {% macro AddEight(args) %}
-  <div class="add-block-08">
-    <div class="image-group">
-      <img src="./image/add/apple-watch.png" alt="apple-watch">
-    </div>
-    <div class="content-wrapper">
-      <div class="content-image">
-        <img src="./image/add/watch-7.png" alt="watch-7">
-        <h2 class="title">Heavy on Features.
-          Light on Price.</h2>
-          <div class="price-block">
-            <span class="text">Only for:</span>
-            <span class="price">$299 USD</span>
-          </div>
+<div class="add-block-08">
+  <div class="image-group">
+    <img src="./image/add/apple-watch.png" alt="apple-watch">
+  </div>
+  <div class="content-wrapper">
+    <div class="content-image">
+      <img src="./image/add/watch-7.png" alt="watch-7">
+      <h2 class="title">Heavy on Features.
+        Light on Price.</h2>
+      <div class="price-block">
+        <span class="text">Only for:</span>
+        <span class="price">$299 USD</span>
       </div>
     </div>
-    <div class="button-group">
-      <a class="btn btn-1 w-100 btn-primary" href="#">
-        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.75 16.875C7.75 17.1511 7.52614 17.375 7.25 17.375C6.97386 17.375 6.75 17.1511 6.75 16.875C6.75 16.5989 6.97386 16.375 7.25 16.375C7.52614 16.375 7.75 16.5989 7.75 16.875Z" fill="white" stroke="white" stroke-width="1.5"/>
-        <path d="M15.375 18.125C16.0654 18.125 16.625 17.5654 16.625 16.875C16.625 16.1846 16.0654 15.625 15.375 15.625C14.6846 15.625 14.125 16.1846 14.125 16.875C14.125 17.5654 14.6846 18.125 15.375 18.125Z" fill="white"/>
-        <path d="M4.30469 5.625H18.3203L16.2578 12.8437C16.1842 13.1057 16.0266 13.3363 15.8093 13.5C15.5919 13.6638 15.3268 13.7516 15.0547 13.75H7.57031C7.29819 13.7516 7.03308 13.6638 6.81572 13.5C6.59836 13.3363 6.44078 13.1057 6.36719 12.8437L3.53906 2.95313C3.50169 2.82246 3.42275 2.70754 3.3142 2.62578C3.20565 2.54401 3.0734 2.49986 2.9375 2.5H1.625" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        </svg>
-        Add to Cart
-      </a>
-      <a class="btn btn-2 w-100 btn-outline-primary" href="#">
-        View Details
-        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-    </div>
   </div>
+  <div class="button-group">
+    <a class="btn btn-1 w-100 btn-primary" href="#">
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.75 16.875C7.75 17.1511 7.52614 17.375 7.25 17.375C6.97386 17.375 6.75 17.1511 6.75 16.875C6.75 16.5989 6.97386 16.375 7.25 16.375C7.52614 16.375 7.75 16.5989 7.75 16.875Z"
+          fill="white" stroke="white" stroke-width="1.5" />
+        <path
+          d="M15.375 18.125C16.0654 18.125 16.625 17.5654 16.625 16.875C16.625 16.1846 16.0654 15.625 15.375 15.625C14.6846 15.625 14.125 16.1846 14.125 16.875C14.125 17.5654 14.6846 18.125 15.375 18.125Z"
+          fill="white" />
+        <path
+          d="M4.30469 5.625H18.3203L16.2578 12.8437C16.1842 13.1057 16.0266 13.3363 15.8093 13.5C15.5919 13.6638 15.3268 13.7516 15.0547 13.75H7.57031C7.29819 13.7516 7.03308 13.6638 6.81572 13.5C6.59836 13.3363 6.44078 13.1057 6.36719 12.8437L3.53906 2.95313C3.50169 2.82246 3.42275 2.70754 3.3142 2.62578C3.20565 2.54401 3.0734 2.49986 2.9375 2.5H1.625"
+          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      </svg>
+      Add to Cart
+    </a>
+    <a class="btn btn-2 w-100 btn-outline-primary" href="#">
+      View Details
+      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </a>
+  </div>
+</div>
 {% endmacro %}
 
 {% macro PaginationOne(args) %}
-  <ul class="pagination-block-01">
-    <li class="previous"><a class="page-link" href="#">
+<ul class="pagination-block-01">
+  <li class="previous"><a class="page-link" href="#">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20.25 12H3.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20.25 12H3.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
       </svg>
     </a></li>
-    <li><a class="page-link" href="#">01</a></li>
-    <li><a class="page-link" href="#">02</a></li>
-    <li><a class="page-link" href="#">03</a></li>
-    <li><a class="page-link" href="#">04</a></li>
-    <li><a class="page-link" href="#">05</a></li>
-    <li><a class="page-link" href="#">06</a></li>
-    <li class="next"><a class="page-link" href="#">
-    
+  <li><a class="page-link" href="#">01</a></li>
+  <li><a class="page-link" href="#">02</a></li>
+  <li><a class="page-link" href="#">03</a></li>
+  <li><a class="page-link" href="#">04</a></li>
+  <li><a class="page-link" href="#">05</a></li>
+  <li><a class="page-link" href="#">06</a></li>
+  <li class="next"><a class="page-link" href="#">
+
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M3.75 12H20.25" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M3.75 12H20.25" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
       </svg>
 
     </a></li>
-  </ul>
+</ul>
 {% endmacro %}
 {% macro FaqAccordion(args) %}
-  <div class="accordion-01">
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Suspendisse ultrices pharetra libero sed interdum.
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-              <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
-              <ul class="text-list">
-                <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
-                <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
-                <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
-                <li><span class="dot"></span>Quisque ut dolor erat.</li>
-              </ul>
-          </div>
+<div class="accordion-01">
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne">
+          Suspendisse ultrices pharetra libero sed interdum.
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet
+            pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra
+            euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
+          <ul class="text-list">
+            <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
+            <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
+            <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
+            <li><span class="dot"></span>Quisque ut dolor erat.</li>
+          </ul>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Fusce molestie condimentum facilisis.
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
-            <ul class="text-list">
-              <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
-              <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
-              <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
-              <li><span class="dot"></span>Quisque ut dolor erat.</li>
-            </ul>
-        </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Quisque quis nunc quis urna tempor lobortis vel non orci. 
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
-            <ul class="text-list">
-              <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
-              <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
-              <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
-              <li><span class="dot"></span>Quisque ut dolor erat.</li>
-            </ul>
-        </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo">
+          Fusce molestie condimentum facilisis.
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet
+            pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra
+            euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
+          <ul class="text-list">
+            <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
+            <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
+            <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
+            <li><span class="dot"></span>Quisque ut dolor erat.</li>
+          </ul>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            Donec rutrum ultrices ante nec malesuada. In accumsan eget nisi a rhoncus.
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
-            <ul class="text-list">
-              <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
-              <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
-              <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
-              <li><span class="dot"></span>Quisque ut dolor erat.</li>
-            </ul>
-        </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Quisque quis nunc quis urna tempor lobortis vel non orci.
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet
+            pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra
+            euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
+          <ul class="text-list">
+            <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
+            <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
+            <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
+            <li><span class="dot"></span>Quisque ut dolor erat.</li>
+          </ul>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            Nulla sed sapien maximus, faucibus massa vitae.
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
-            <ul class="text-list">
-              <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
-              <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
-              <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
-              <li><span class="dot"></span>Quisque ut dolor erat.</li>
-            </ul>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Donec rutrum ultrices ante nec malesuada. In accumsan eget nisi a rhoncus.
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet
+            pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra
+            euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
+          <ul class="text-list">
+            <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
+            <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
+            <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
+            <li><span class="dot"></span>Quisque ut dolor erat.</li>
+          </ul>
         </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Nulla sed sapien maximus, faucibus massa vitae.
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <p class=" text-14 text-gray-700">Nulla malesuada iaculis nisi, vitae sagittis lacus laoreet in. Morbi aliquet
+            pulvinar orci non vulputate. Donec aliquet ullamcorper gravida. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Sed molestie accumsan dui, non iaculis magna mattis id. Ut consectetur massa at viverra
+            euismod. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent eget sem purus.</p>
+          <ul class="text-list">
+            <li><span class="dot"></span>Vivamus sed est non arcu porta aliquet et vitae nulla.</li>
+            <li><span class="dot"></span>Integer et lacus vitae justo fermentum rutrum. In nec ultrices massa.</li>
+            <li><span class="dot"></span>Proin blandit nunc risus, at semper turpis sagittis nec.</li>
+            <li><span class="dot"></span>Quisque ut dolor erat.</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
+</div>
 {% endmacro %}
 
 {% macro SupportFormOne(args) %}
-  <div class="support-form-01">
-      <div class="support-head">
-        <h2 class="title">Don’t find your answer, Ask for support.</h2>
-        <p class="text">Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis primis in faucibu raesent eget sem purus.</p>
-      </div>
-      <div class="support-form">
-        <div class="form-group">
-          <input class="form-control" type="email" placeholder="Email address">
-        </div>
-        <div class="form-group">
-          <input class="form-control" type="text" placeholder="Subject">
-        </div>
-        <div class="form-textarea">
-          <textarea cols="30" rows="10" placeholder="Message (Optional)"></textarea>
-        </div>
-        <div class="form-button">
-          <button type="submit" class="btn btn-primary">
-            Send message
-              <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-          </button>
-        </div>
-      </div>
+<div class="support-form-01">
+  <div class="support-head">
+    <h2 class="title">Don’t find your answer, Ask for support.</h2>
+    <p class="text">Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed molestie accumsan dui, non iaculis
+      primis in faucibu raesent eget sem purus.</p>
   </div>
+  <div class="support-form">
+    <div class="form-group">
+      <input class="form-control" type="email" placeholder="Email address">
+    </div>
+    <div class="form-group">
+      <input class="form-control" type="text" placeholder="Subject">
+    </div>
+    <div class="form-textarea">
+      <textarea cols="30" rows="10" placeholder="Message (Optional)"></textarea>
+    </div>
+    <div class="form-button">
+      <button type="submit" class="btn btn-primary">
+        Send message
+        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
 {% endmacro %}
 
 {% macro CommentBox(args) %}
-    <div class="comment-form-01">
-      <h6 class="title">Leave a Commends</h6>
-      <form>
-        <div class="row">
-          <div class="col-sm-6">
-          <div class="form-group">
-            <label class="form-label" for="name">Full Name</label>
-            <input id="name" type="text" class="form-control" >
-          </div>
-          </div>
-          <div class="col-sm-6">
-          <div class="form-group">
-            <label class="form-label" for="address">Email Address</label>
-            <input id="address" type="text" class="form-control">
-          </div>
-          </div>
-          <div class="col-12">
-            <div class="form-textarea">
-              <label class="form-label" for="descripi">Descripi</label>
-              <textarea id="descripi" cols="30" rows="10" placeholder="What’s your thought about this blog..."></textarea>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-button">
-              <button type="submit" class="btn btn-primary">post Commends</button>
-            </div>
-          </div>
+<div class="comment-form-01">
+  <h6 class="title">Leave a Commends</h6>
+  <form>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="form-label" for="name">Full Name</label>
+          <input id="name" type="text" class="form-control">
         </div>
-      </form>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label class="form-label" for="address">Email Address</label>
+          <input id="address" type="text" class="form-control">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-textarea">
+          <label class="form-label" for="descripi">Descripi</label>
+          <textarea id="descripi" cols="30" rows="10" placeholder="What’s your thought about this blog..."></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-button">
+          <button type="submit" class="btn btn-primary">post Commends</button>
+        </div>
+      </div>
     </div>
+  </form>
+</div>
 {% endmacro %}
 {% macro CommentText(args) %}
-  <div class="comment-block-01">
-    <h6 class="title">Commends</h6>
-      <div class="comment-block-01__wrapper">
-        <div class="comment-area">
-          <div class="avatar">
-            <img src="./image/blog/avatar-1.png" alt="avatar">
-          </div>
-          <div class="content">
-            <div class="content__doc">
-              <h6 class="name">Annette Black</h6>
-              <span class="dot"></span>
-              <p class="date">26 Apr, 2021</p>
-            </div>
-            <p class="text">In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.</p>
-          </div>
-        </div>
-        <div class="comment-area">
-          <div class="avatar">
-            <img src="./image/blog/avatar-2.png" alt="avatar">
-          </div>
-          <div class="content">
-            <div class="content__doc">
-              <h6 class="name">Devon Lane</h6>
-              <span class="dot"></span>
-              <p class="date">24 Apr, 2021</p>
-            </div>
-            <p class="text">Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.</p>
-          </div>
-        </div>
-        <div class="comment-area">
-          <div class="avatar">
-            <img src="./image/blog/avatar-3.png" alt="avatar">
-          </div>
-          <div class="content">
-            <div class="content__doc">
-              <h6 class="name">Jacob Jones</h6>
-              <span class="dot"></span>
-              <p class="date">20 Apr, 2021</p>
-            </div>
-            <p class="text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-          </div>
-        </div>
-        <div class="comment-area">
-          <div class="avatar">
-            <img src="./image/blog/avatar-4.png" alt="avatar">
-          </div>
-          <div class="content">
-            <div class="content__doc">
-              <h6 class="name">Jane Cooper</h6>
-              <span class="dot"></span>
-              <p class="date">18 Apr, 2021</p>
-            </div>
-            <p class="text">Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.</p>
-          </div>
-        </div>
-        <div class="comment-area">
-          <div class="avatar">
-            <img src="./image/blog/avatar-5.png" alt="avatar">
-          </div>
-          <div class="content">
-            <div class="content__doc">
-              <h6 class="name">Darrell Steward</h6>
-              <span class="dot"></span>
-              <p class="date">7 Apr, 2021</p>
-            </div>
-            <p class="text">Nulla molestie interdum ultricies. </p>
-          </div>
-        </div>
+<div class="comment-block-01">
+  <h6 class="title">Commends</h6>
+  <div class="comment-block-01__wrapper">
+    <div class="comment-area">
+      <div class="avatar">
+        <img src="./image/blog/avatar-1.png" alt="avatar">
       </div>
-      <div class="comment-btn">
-        <button class=" btn btn-outline-primary">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.7656 7.78906H17.5156V4.03906" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M5.14062 5.14087C5.77843 4.50213 6.53591 3.9954 7.36973 3.64967C8.20355 3.30393 9.09734 3.12598 10 3.12598C10.9027 3.12598 11.7965 3.30393 12.6303 3.64967C13.4641 3.9954 14.2216 4.50213 14.8594 5.14087L17.5156 7.78931" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M6.23438 12.2109H2.48438V15.9609" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.8594 14.8594C14.2216 15.4981 13.4641 16.0048 12.6303 16.3506C11.7965 16.6963 10.9027 16.8743 10 16.8743C9.09735 16.8743 8.20355 16.6963 7.36973 16.3506C6.53591 16.0048 5.77843 15.4981 5.14063 14.8594L2.48438 12.2109" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>  
-          Load More</button>
+      <div class="content">
+        <div class="content__doc">
+          <h6 class="name">Annette Black</h6>
+          <span class="dot"></span>
+          <p class="date">26 Apr, 2021</p>
+        </div>
+        <p class="text">In a nisi commodo, porttitor ligula consequat, tincidunt dui. Nulla volutpat, metus eu aliquam
+          malesuada, elit libero venenatis urna, consequat maximus arcu diam non diam.</p>
       </div>
+    </div>
+    <div class="comment-area">
+      <div class="avatar">
+        <img src="./image/blog/avatar-2.png" alt="avatar">
+      </div>
+      <div class="content">
+        <div class="content__doc">
+          <h6 class="name">Devon Lane</h6>
+          <span class="dot"></span>
+          <p class="date">24 Apr, 2021</p>
+        </div>
+        <p class="text">Quisque eget tortor lobortis, facilisis metus eu, elementum est. Nunc sit amet erat quis ex
+          convallis suscipit. Nam hendrerit, velit ut aliquam euismod, nibh tortor rutrum nisi, ac sodales nunc eros
+          porta nisi. Sed scelerisque, est eget aliquam venenatis, est sem tempor eros.</p>
+      </div>
+    </div>
+    <div class="comment-area">
+      <div class="avatar">
+        <img src="./image/blog/avatar-3.png" alt="avatar">
+      </div>
+      <div class="content">
+        <div class="content__doc">
+          <h6 class="name">Jacob Jones</h6>
+          <span class="dot"></span>
+          <p class="date">20 Apr, 2021</p>
+        </div>
+        <p class="text">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+      </div>
+    </div>
+    <div class="comment-area">
+      <div class="avatar">
+        <img src="./image/blog/avatar-4.png" alt="avatar">
+      </div>
+      <div class="content">
+        <div class="content__doc">
+          <h6 class="name">Jane Cooper</h6>
+          <span class="dot"></span>
+          <p class="date">18 Apr, 2021</p>
+        </div>
+        <p class="text">Pellentesque feugiat, nibh vel vehicula pretium, nibh nibh bibendum elit, a volutpat arcu dui
+          nec orci. Aenean dui odio, ullamcorper quis turpis ac, volutpat imperdiet ex.</p>
+      </div>
+    </div>
+    <div class="comment-area">
+      <div class="avatar">
+        <img src="./image/blog/avatar-5.png" alt="avatar">
+      </div>
+      <div class="content">
+        <div class="content__doc">
+          <h6 class="name">Darrell Steward</h6>
+          <span class="dot"></span>
+          <p class="date">7 Apr, 2021</p>
+        </div>
+        <p class="text">Nulla molestie interdum ultricies. </p>
+      </div>
+    </div>
   </div>
+  <div class="comment-btn">
+    <button class=" btn btn-outline-primary">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.7656 7.78906H17.5156V4.03906" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path
+          d="M5.14062 5.14087C5.77843 4.50213 6.53591 3.9954 7.36973 3.64967C8.20355 3.30393 9.09734 3.12598 10 3.12598C10.9027 3.12598 11.7965 3.30393 12.6303 3.64967C13.4641 3.9954 14.2216 4.50213 14.8594 5.14087L17.5156 7.78931"
+          stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M6.23438 12.2109H2.48438V15.9609" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+          stroke-linejoin="round" />
+        <path
+          d="M14.8594 14.8594C14.2216 15.4981 13.4641 16.0048 12.6303 16.3506C11.7965 16.6963 10.9027 16.8743 10 16.8743C9.09735 16.8743 8.20355 16.6963 7.36973 16.3506C6.53591 16.0048 5.77843 15.4981 5.14063 14.8594L2.48438 12.2109"
+          stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      Load More</button>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro ProductDetailSlider(args) %}
+<div class="product-detail-slider">
+  <div class="row">
+    <div class="col-xl-6">
+      <div class="slider-area">
+        <div class="product-slider--03">
+          <div class="single-slider">
+            <img src="./image/product/mac.png" alt="mac">
+          </div>
+          <div class="single-slider">
+            <img src="./image/product/mac.png" alt="mac">
+          </div>
+          <div class="single-slider">
+            <img src="./image/product/mac.png" alt="mac">
+          </div>
+          <div class="single-slider">
+            <img src="./image/product/mac.png" alt="mac">
+          </div>
+          <div class="single-slider">
+            <img src="./image/product/mac.png" alt="mac">
+          </div>
+          <div class="single-slider">
+            <img src="./image/product/mac.png" alt="mac">
+          </div>
+          <div class="single-slider">
+            <img src="./image/product/mac.png" alt="mac">
+          </div>
+        </div>
+        <div class="silde-wrap">
+          <div class="product-slider--03__nav">
+            <div class="single-slide">
+              <div class="small-prduct">
+                <img src="./image/product/gallery/01.png" alt="product">
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="small-prduct">
+                <img src="./image/product/gallery/02.png" alt="product">
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="small-prduct">
+                <img src="./image/product/gallery/03.png" alt="product">
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="small-prduct">
+                <img src="./image/product/gallery/04.png" alt="product">
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="small-prduct">
+                <img src="./image/product/gallery/05.png" alt="product">
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="small-prduct">
+                <img src="./image/product/gallery/06.png" alt="product">
+              </div>
+            </div>
+            <div class="single-slide">
+              <div class="small-prduct">
+                <img src="./image/product/gallery/02.png" alt="product">
+              </div>
+            </div>
+          </div>
+          <div class="product-slider--03__control-buttons">
+            <button class="button button--prev">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.25 12H3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+            </button>
+            <button class="button button--next">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="slider-content">
+        <div class="slider-content__ratting">
+          <ul>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z"
+                  fill="#FA8232" />
+              </svg>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z"
+                  fill="#FA8232" />
+              </svg>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z"
+                  fill="#FA8232" />
+              </svg>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z"
+                  fill="#FA8232" />
+              </svg>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z"
+                  fill="#FA8232" />
+              </svg>
+            </li>
+            <li class="rating-text">4.7 Star Rating</li>
+            <li class="feedback-text">(21,671 User feedback)</li>
+          </ul>
+        </div>
+        <div class="slider-content__title">
+          <h6>2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray</h6>
+        </div>
+        <div class="slider-content__fact">
+          <ul>
+            <li>Sku: <span>A264671</span></li>
+            <li>Availability: <span class="stock">In Stock</span></li>
+            <li>Brand: <span>Apple</span></li>
+            <li>Category: <span>Electronics Devices</span></li>
+          </ul>
+        </div>
+        <div class="slider-content__price-block">
+          <div class="price">
+            <span>$1699</span>
+            <del>$1999.00</del>
+          </div>
+          <div class="offer-badge">
+            <span class="badge">21% OFF</span>
+          </div>
+        </div>
+        <div class="slider-content__form">
+          <div class="slider-content__form--color">
+            <h6 class="title">Color</h6>
+            <div class="choose-color">
+              <div class="form-check">
+                <input class="form-check-input space-gray" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input sliver" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              </div>
+            </div>
+          </div>
+          <div class="slider-content__form--size">
+            <h6 class="title">Size</h6>
+            <div class="selectbox">
+              <select class="nice-select">
+                <option data-display="14-inch Liquid Retina XDR display">14-inch Liquid Retina XDR display</option>
+                <option value="1">13-inch Liquid Retina XDR display</option>
+                <option value="2">16-inch Liquid Retina XDR display</option>
+              </select>
+            </div>
+          </div>
+          <div class="slider-content__form--memory">
+            <h6 class="title">Memory</h6>
+            <div class="selectbox">
+              <select class="nice-select">
+                <option data-display="16GB unified memory">16GB unified memory</option>
+                <option value="1">32GB unified memory</option>
+                <option value="2">64GB unified memory</option>
+              </select>
+            </div>
+          </div>
+          <div class="slider-content__form--storage">
+            <h6 class="title">Storage</h6>
+            <div class="selectbox">
+              <select class="nice-select">
+                <option data-display="1TV SSD Storage">1TV SSD Storage</option>
+                <option value="1">2TV SSD Storage</option>
+                <option value="2">4TV SSD Storage</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="slider-content__button-group">
+          <div class="product-count">
+            <button class="button-count"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </button>
+            <input type="text" class="number-product" value="01">
+            <button class="button-count"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 2.5V13.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </button>
+          </div>
+          <div class="product-add-button">
+            <a class="btn btn-primary" href="#">Add to card<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.75 20.25C8.75 20.6642 8.41421 21 8 21C7.58579 21 7.25 20.6642 7.25 20.25C7.25 19.8358 7.58579 19.5 8 19.5C8.41421 19.5 8.75 19.8358 8.75 20.25Z" fill="white" stroke="white" stroke-width="1.5"/>
+              <path d="M18.5 20.25C18.5 20.6642 18.1642 21 17.75 21C17.3358 21 17 20.6642 17 20.25C17 19.8358 17.3358 19.5 17.75 19.5C18.1642 19.5 18.5 19.8358 18.5 20.25Z" fill="white" stroke="white" stroke-width="1.5"/>
+              <path d="M4.46562 6.75H21.2844L18.8094 15.4125C18.7211 15.7269 18.532 16.0036 18.2711 16.2C18.0103 16.3965 17.6922 16.5019 17.3656 16.5H8.38437C8.05783 16.5019 7.7397 16.3965 7.47886 16.2C7.21803 16.0036 7.02893 15.7269 6.94062 15.4125L3.54688 3.54375C3.50203 3.38696 3.4073 3.24905 3.27704 3.15093C3.14677 3.05282 2.98808 2.99983 2.825 3H1.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              </a>
+          </div>
+          <div class="product-buy-button">
+            <a class="btn btn-outline-primary" href="#">Buy now
+              </a>
+          </div>
+        </div>
+        <div class="slider-content__content">
+          <div class="content-one">
+            <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.625 7.49803 3.01546 6.40585 3.72996 5.53431C4.44445 4.66277 5.43884 4.0657 6.54393 3.84468C7.64903 3.62366 8.79657 3.79235 9.79131 4.32204C10.7861 4.85174 11.5665 5.70972 12 6.75001C12.4335 5.70972 13.2139 4.85174 14.2087 4.32204C15.2034 3.79235 16.351 3.62366 17.4561 3.84468C18.5612 4.0657 19.5555 4.66277 20.27 5.53431C20.9845 6.40585 21.375 7.49803 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Add to Wishlist</a>
+            <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.5186 9.34692H21.0186V4.84692" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6.16895 6.16885C6.93431 5.40236 7.84329 4.79429 8.84387 4.37941C9.84445 3.96453 10.917 3.75098 12.0002 3.75098C13.0834 3.75098 14.1559 3.96453 15.1565 4.37941C16.1571 4.79429 17.0661 5.40236 17.8314 6.16885L21.0189 9.34698" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M7.48145 14.6531H2.98145V19.1531" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M17.8314 17.8312C17.0661 18.5977 16.1571 19.2058 15.1565 19.6206C14.1559 20.0355 13.0834 20.2491 12.0002 20.2491C10.917 20.2491 9.84445 20.0355 8.84387 19.6206C7.84329 19.2058 6.93431 18.5977 6.16895 17.8312L2.98145 14.6531" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Add to Compare</a>
+          </div>
+          <div class="content-two">
+            <ul>
+              <li class="text">Share product:</li>
+              <li><a href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.75 15.75H20.25V3.75H8.25V8.25" stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.75 8.25H3.75V20.25H15.75V8.25Z" stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+              </a></li>
+              <li><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C12.4183 0 16 3.58173 16 8C16 12.4183 12.4183 16 8 16C3.58173 16 0 12.4183 0 8C0 3.58173 3.58173 0 8 0Z" fill="#5F6C72"/>
+                <path d="M9.04119 15.933V9.75237H10.7847L11.0158 7.5771H9.04119L9.04412 6.48827C9.04412 5.92091 9.09805 5.61705 9.91348 5.61705H11.0035V3.44141H9.25968C7.16499 3.44141 6.42783 4.4966 6.42783 6.27136V7.57726H5.12207V9.75274H6.42783V15.8453C6.93653 15.9466 7.46243 16.0001 8.00089 16.0001C8.34875 16.0001 8.69623 15.9777 9.04119 15.933Z" fill="white"/>
+                </svg>
+                </a></li>
+              <li><a href="#">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.03184 14.5024C11.0699 14.5024 14.3718 9.49713 14.3718 5.15673C14.3718 5.01458 14.3689 4.87308 14.3625 4.73217C15.005 4.26699 15.5595 3.69103 16 3.03128C15.4118 3.29294 14.7789 3.46904 14.1149 3.54844C14.7926 3.14181 15.3129 2.49851 15.5584 1.73169C14.914 2.11419 14.2091 2.38382 13.4739 2.52898C12.8749 1.89052 12.0221 1.49121 11.0778 1.49121C9.26494 1.49121 7.79489 2.96219 7.79489 4.7754C7.79489 5.03319 7.82374 5.28385 7.88006 5.52436C5.15177 5.38699 2.73252 4.07995 1.11343 2.09252C0.821818 2.59379 0.668434 3.16349 0.668943 3.74345C0.668943 4.88304 1.24846 5.88903 2.12976 6.47759C1.60846 6.46166 1.0986 6.32077 0.643057 6.06676C0.642569 6.08055 0.642569 6.09399 0.642569 6.10872C0.642569 7.69944 1.77408 9.02759 3.27613 9.32854C2.99402 9.40542 2.70292 9.44428 2.41054 9.44411C2.19938 9.44411 1.99359 9.42333 1.79359 9.38491C2.21151 10.69 3.42335 11.6397 4.86013 11.6663C3.73659 12.5474 2.32127 13.0723 0.783024 13.0723C0.521349 13.0725 0.259888 13.0573 0 13.0267C1.45281 13.9585 3.17789 14.5022 5.032 14.5022" fill="#5F6C72"/>
+                  </svg>
+                  
+              </a></li>
+              <li><a href="#">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_678_19086)">
+                  <path d="M7.02406 0.0530204C4.3652 0.349837 1.71572 2.50098 1.60636 5.57382C1.53762 7.45001 2.07033 8.85755 3.85592 9.25278C4.63077 7.88586 3.60597 7.58436 3.44663 6.59549C2.79207 2.54316 8.12072 -0.220364 10.9092 2.60877C12.8386 4.56776 11.5685 10.5947 8.45659 9.96827C5.47592 9.36995 9.91568 4.57245 7.53646 3.63045C5.60246 2.86497 4.57453 5.97218 5.49154 7.51563C4.95415 10.1698 3.79656 12.6709 4.26522 15.9999C5.78524 14.897 6.29764 12.7849 6.71787 10.5822C7.48178 11.0462 7.88951 11.5289 8.86432 11.6039C12.4589 11.882 14.4664 8.01553 13.9758 4.44904C13.54 1.28715 10.3843 -0.321906 7.02406 0.0530204Z" fill="#5F6C72"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_678_19086">
+                  <rect width="16" height="16" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  
+              </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="slider-content__payment-method">
+          <p>100% Guarantee Safe Checkout</p>
+          <img src="./image/payment-method.png" alt="payment-method.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endmacro %}

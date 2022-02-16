@@ -5,6 +5,19 @@
     }
 }
 .modal-one{
+   .modal-content{
+       display: unset;
+       border: 0;
+       padding: 30px 10px;
+       flex-direction: unset;
+       outline: none;
+       background-clip: unset;
+       @media (min-width:992px) {
+           padding: 40px;
+       }
+   } 
+}
+.modal-two{
   display: flex;
   align-items: center;
   justify-content: center;

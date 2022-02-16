@@ -1,0 +1,10 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+    <div class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-section__slider">
+                {{MixtComponent.ProductDetailSlider()}}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
