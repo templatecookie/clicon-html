@@ -1,0 +1,230 @@
+@use "../../abstracts/mixins" as *;
+.wishlist-body{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 72px 0;
+    }
+    .title{
+        text-align: center;
+        padding: 20px 24px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: var(--bs-gray-900);
+        @media (min-width:992px) {
+            text-align: start;
+            border: 1px solid var(--bs-gray-100);   
+            border-bottom: 0; 
+        }
+    }
+    &__wrapper{
+        position: relative;
+        .close-button{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            .close-btn{
+                border: 0;
+                padding: 0;
+                background: none;
+            }
+        }
+        table {
+            border: 1px solid var(--bs-gray-100);
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            table-layout: fixed;
+            @media (max-width:992px) {
+                width: 100%;
+            }
+          }
+          
+          table thead tr {
+            background-color: var(--bs-gray-50);
+            border: 1px solid var(--bs-gray-100);
+            th{
+                    padding: 10px 24px;
+                    font-weight: 500;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: var(--bs-gray-700);
+            }
+        }
+          tbody{
+              tr{
+                  position: relative;
+                  &:not(&:last-child){
+                      @media (max-width:992px) {
+                          margin-bottom: 24px;
+                      }
+                  }
+                  td{
+                      &.products{
+                          @media (min-width:992px) {
+                              width: 579px;
+                          }
+                          &::before{
+                            @media (max-width:480px) {
+                                padding: 20px !important;
+                                padding-right: 0 !important;
+                            }
+                            @media (max-width:992px) {
+                                padding: 24px;
+                                padding-right: 0;
+                            }
+                          }
+                      }
+                      &.price{
+                          padding: 12px 24px;
+                          @media (max-width:480px) {
+                            padding: 12px 20px;
+                        }
+                          @media (min-width:992px) {
+                              width: 236px;
+                          }
+                          .price-wraper{
+                              .del-price{
+                                 margin-right: 4px; 
+                              }
+                          }
+                        }
+                        &.stock-status{
+                            padding: 12px 24px;
+                            @media (max-width:480px) {
+                                padding: 12px 20px;
+                            }
+                            @media (min-width:992px) {
+                                width: 224px;
+                            }
+                            span{
+                                text-transform: uppercase;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 20px;
+                            }
+                        }
+                        &.actions{
+                          padding: 12px 24px;
+                          .close-btn{
+                            margin-left: 15px;
+                            border: 0;
+                            padding: 0;
+                           background: transparent;
+                           @media (max-width:992px) {
+                            position: absolute;
+                            top: 5px;
+                            right: 10px;
+                           }
+                        }
+                          .button-wrappr{
+                              .disable{
+                                  border-color:white !important ;
+                                  cursor: auto;
+                                  color: white !important;
+                                  background: var(--bs-gray-300) !important;
+                                  svg{
+                                      path{
+                                          stroke: white !important;
+                                      }
+                                  }
+                              }
+                          }
+                          @media (max-width:480px) {
+                              padding: 12px 20px;
+                          }
+                          @media (min-width:992px) {
+
+                            width: 266px;
+                            .button-wrappr{
+                                display: flex;
+                                align-items: center;
+
+                            }
+                        }
+                      }
+                      .product-wrapper{
+                          padding: 24px;
+                          padding-bottom: 16px;
+                          display: flex;
+                          align-items: center;
+                          @media (max-width:480px) {
+                              padding: 20px;
+                              flex-direction: column !important
+                        }
+                          @media (max-width:992px) {
+                              flex-direction: row-reverse;
+                              align-items: flex-start;
+                              img{
+                                  margin-right: 0;
+                                  margin-left: 16px;
+                              }
+                          }
+                          img{
+                              @include square(72px,2px);
+                              object-fit: cover;
+                              @media (max-width:480px) {
+                                  margin: 0 !important;
+                                  margin-bottom: 10px !important;
+                              }
+                              @media (min-width:992px) {
+                                  margin-right: 16px;
+                              }
+                          }
+                          .text{
+                            font-weight: normal;
+                            font-size: 14px;
+                            line-height: 20px;  
+                            color: var(--bs-gray-700);
+                            @media (max-width:992px) {
+                                text-align: left;
+                            }
+                          }
+                      }
+                  }
+              }
+          }
+          
+          @media screen and (max-width: 992px) {
+            table {
+              border: 0;
+            }
+            
+            table thead {
+              border: none;
+              clip: rect(0 0 0 0);
+              height: 1px;
+              margin: -1px;
+              overflow: hidden;
+              padding: 0;
+              position: absolute;
+              width: 1px;
+            }
+            
+            table tr {
+                border-radius: 4px;
+              border: 1px solid var(--bs-gray-100);
+              display: block;
+            }
+            
+            table td {
+              border-bottom: 1px solid #ddd;
+              display: block;
+              text-align: right;
+            }
+            
+            table td::before {
+              content: attr(data-label);
+              float: left;
+              font-weight: 500;
+              font-size: 12px;
+              text-transform: uppercase;
+              color: var(--bs-gray-700);
+            }
+            
+            table td:last-child {
+              border-bottom: 0;
+            }
+          }
+    }
+}
