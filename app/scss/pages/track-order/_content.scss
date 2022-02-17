@@ -1,13 +1,6 @@
-.trackorder-body{
-    padding-top: 48px;
-    padding-bottom: 80px;
+.trackorder-details-body{
+    padding: 60px 0;
     @media (min-width:992px) {
-        padding-bottom: 124px;
-    }
-    .section-title-block{
-        margin-bottom: 24px;
-        .title{
-            padding-bottom: 16px;
-        }
+        padding: 72px 0;
     }
 }
