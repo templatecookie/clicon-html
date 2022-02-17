@@ -1,0 +1,38 @@
+.check-out-success-body{
+    padding: 60px 0;
+    @media (min-width:992px) {
+        padding: 80px 0;
+    }
+    @media (min-width:992px) {
+        padding: 124px 0;
+    }
+    &__wrapper{
+        text-align: center;
+        .icon{
+            margin-bottom: 24px;
+        }
+        .button-group{
+            margin: 0 -12px;
+            margin-top: 32px;
+          .btn{
+              margin: 0 6px;
+              @media (max-width:480px) {
+                  width: 90%;
+              }
+              &.btn-1{
+                  @media (max-width:480px) {
+                      margin-bottom: 15px;
+                  }
+                 border-color: var(--bs-primary-100);
+                 svg{
+                     margin: 0;
+                     margin-right: 8px;
+                 }
+                 &:hover{
+                     border-color: var(--bs-primary-500);
+                 }
+              }
+          }  
+        }
+    }
+}
