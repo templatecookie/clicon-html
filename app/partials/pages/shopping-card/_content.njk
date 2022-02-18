@@ -1,0 +1,131 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+<div class="shopping-card-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-8">
+                <div class="shopping-card-body__wrapper">
+                    <h6 class="title">Shopping Card</h6>
+                    <div class="shopping-card-body__wrapper--table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Products</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Sub-Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="products" data-label="Products">
+                                        <span class="product-wrapper">
+                                            <button class="close-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                        stroke="#929FA5" stroke-width="1.5" stroke-miterlimit="10" />
+                                                    <path d="M15 9L9 15" stroke="#929FA5" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M15 15L9 9" stroke="#929FA5" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                            <img src="./image/product/wishlist-3.png" alt="wishlist">
+                                            <span class="text">Wired Over-Ear Gaming Headphones with USB</span>
+                                        </span>
+                                    </td>
+                                    <td class="price" data-label="Price">
+                                        <span class="price-wraper">
+                                            <del class="del-price text-14 text-gray-400">$99</del>
+                                            <span class="main-price text-14 text-gray-900">$70</span>
+                                        </span>
+                                    </td>
+                                    <td class="product-quantity" data-label="Quantity">
+                                        <div class="product-quantity-count">
+                                            <button class="button-count"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                            <input type="text" class="number-product" value="01">
+                                            <button class="button-count"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 2.5V13.5" stroke="#191C1F" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td class="sub-total" data-label="Sub-Total">
+                                        $70
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="products" data-label="Products">
+                                        <span class="product-wrapper">
+                                            <button class="close-btn">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                        stroke="#929FA5" stroke-width="1.5" stroke-miterlimit="10" />
+                                                    <path d="M15 9L9 15" stroke="#929FA5" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M15 15L9 9" stroke="#929FA5" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                            <img src="./image/product/wishlist-4.png" alt="wishlist">
+                                            <span class="text">Wired Over-Ear Gaming Headphones with USB</span>
+                                        </span>
+                                    </td>
+                                    <td class="price" data-label="Price">
+                                        <span class="price-wraper">
+                                            <span class="main-price text-14 text-gray-900">$250</span>
+                                        </span>
+                                    </td>
+                                    <td class="product-quantity" data-label="Quantity">
+                                        <div class="product-quantity-count">
+                                            <button class="button-count"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                            <input type="text" class="number-product" value="01">
+                                            <button class="button-count"><svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M8 2.5V13.5" stroke="#191C1F" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td class="sub-total" data-label="Sub-Total">
+                                        $250
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4">
+                <div class="shopping-card-body__card-total">
+                    {{MixtComponent.CardTotal()}}
+                </div>
+                <div class="shopping-card-body__coupon-code">
+                    {{MixtComponent.CouponCode()}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

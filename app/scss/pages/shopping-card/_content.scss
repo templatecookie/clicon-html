@@ -1,12 +1,10 @@
 @use "../../abstracts/mixins"as *;
 
-.wishlist-body {
+.shopping-card-body {
     padding: 60px 0;
-
     @media (min-width:575px) {
         padding: 72px 0;
     }
-
     &__wrapper {
         .title {
             text-align: center;
@@ -62,6 +60,19 @@
                     }
 
                     td {
+                        .close-btn {
+                            margin-right: 12px;
+                            border: 0;
+                            padding: 0;
+                            background: transparent;
+
+                            @media (max-width:992px) {
+                                position: absolute;
+                                top: 5px;
+                                right: 10px;
+                            }
+                        }
+
                         &.products {
                             @media (min-width:992px) {
                                 width: 579px;
@@ -98,9 +109,16 @@
                             }
                         }
 
-                        &.stock-status {
+                        &.product-quantity {
                             padding: 12px 24px;
-
+                            .product-quantity-count{
+                                margin-left: auto !important;
+                                height: 48px !important;
+                                max-width: 148px !important;
+                                @media (max-width:575px) {
+                                    margin: unset;
+                                }
+                            }
                             @media (max-width:480px) {
                                 padding: 12px 20px;
                             }
@@ -108,59 +126,15 @@
                             @media (min-width:992px) {
                                 width: 224px;
                             }
-
-                            span {
-                                text-transform: uppercase;
-                                font-weight: 600;
-                                font-size: 14px;
-                                line-height: 20px;
-                            }
                         }
 
-                        &.actions {
+                        &.sub-total {
                             padding: 12px 24px;
-
-                            .close-btn {
-                                margin-left: 15px;
-                                border: 0;
-                                padding: 0;
-                                background: transparent;
-
-                                @media (max-width:992px) {
-                                    position: absolute;
-                                    top: 5px;
-                                    right: 10px;
-                                }
-                            }
-
-                            .button-wrappr {
-                                .disable {
-                                    border-color: white !important;
-                                    cursor: auto;
-                                    color: white !important;
-                                    background: var(--bs-gray-300) !important;
-
-                                    svg {
-                                        path {
-                                            stroke: white !important;
-                                        }
-                                    }
-                                }
-                            }
-
                             @media (max-width:480px) {
                                 padding: 12px 20px;
                             }
-
                             @media (min-width:992px) {
-
                                 width: 266px;
-
-                                .button-wrappr {
-                                    display: flex;
-                                    align-items: center;
-
-                                }
                             }
                         }
 
@@ -255,6 +229,12 @@
                     border-bottom: 0;
                 }
             }
+        }
+    }
+    &__card-total{
+        margin-bottom: 24px;
+        @media (max-width:992px) {
+            margin-top: 35px;
         }
     }
 }

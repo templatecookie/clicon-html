@@ -995,7 +995,7 @@
           </div>
         </div>
         <div class="slider-content__button-group">
-          <div class="product-count">
+          <div class="product-quantity-count">
             <button class="button-count"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -1079,4 +1079,36 @@
     </div>
   </div>
 </div>
+{% endmacro %}
+{% macro CardTotal(args) %}
+  <div class="card-total-block">
+      <h6 class="title">Card Totals</h6>
+      <ul class="subtotal-list">
+        <li><span class="text">Sub-total</span><span class="ammount">$320</span></li>
+        <li><span class="text">Shipping</span><span class="ammount">Free</span></li>
+        <li><span class="text">Discount</span><span class="ammount">$24</span></li>
+        <li><span class="text">Tax</span><span class="ammount">$61.99</span></li>
+        <li class="line"></li>
+        <li><span class="total-text">Total</span><span class="total-ammount">$357.99 USD</span></li>
+      </ul>
+      <button class=" btn btn-primary w-100">Proceed to Checkout <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </button>
+  </div>
+{% endmacro %}
+{% macro CouponCode(args) %}
+  <div class="coupon-code-block">
+      <h6 class="title">Coupon Code</h6>
+      <div class="coupon-code-block__form">
+        <form action="#" method="get">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email address">
+            </div>
+          <button type="submit" class=" btn btn-secondary">Apply Coupon
+          </button>
+        </form>
+      </div>
+  </div>
 {% endmacro %}

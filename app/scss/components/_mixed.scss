@@ -2662,42 +2662,6 @@ blockquote {
             gap: 16px;
             width: 100% !important;
 
-            .product-count {
-                overflow: hidden;
-                height: 58px;
-                display: flex;
-                align-items: center;
-                max-width: 164px;
-                border: 2px solid #E4E7E9;
-                border-radius: 3px;
-
-                @media (max-width:575px) {
-                    margin: auto;
-                }
-
-                button {
-                    border: 0;
-                    background: transparent;
-                    padding: 20px;
-                }
-
-                .number-product {
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 24px;
-                    color: var(--bs-gray-700);
-                    border: 0;
-                    width: 100%;
-                    text-align: center;
-                    height: 100%;
-
-                    &:focus {
-                        outline: none;
-                        box-shadow: none;
-                    }
-                }
-            }
-
             .product-add-button {
                 width: 100%;
 
@@ -3173,6 +3137,141 @@ blockquote {
                     color: var(--bs-gray-500);
                   }
                 }
+            }
+        }
+    }
+}
+.product-quantity-count {
+    overflow: hidden;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    max-width: 164px;
+    border: 2px solid #E4E7E9;
+    border-radius: 3px;
+
+    @media (max-width:575px) {
+        margin: auto;
+    }
+
+    button {
+        border: 0;
+        background: transparent;
+        padding: 20px;
+    }
+
+    .number-product {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--bs-gray-700);
+        border: 0;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.card-total-block{
+    background: white;
+    border: 1px solid var(--bs-gray-100);
+    border-radius: 4px;
+    padding: 24px;
+    .title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        padding-bottom: 20px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            span{
+                font-size: 14px;
+                line-height: 20px; 
+                &.text{
+                    font-weight: normal;
+                    color: var(--bs-gray-600);
+                }
+                &.ammount{
+                    font-weight: 500;
+                    color: var(--bs-gray-900);
+                }
+                &.total-text{
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: var(--bs-gray-900);
+                }
+                &.total-ammount{
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: var(--bs-gray-900);  
+                }
+            }
+            &:not(&:last-child){
+               padding-bottom: 12px; 
+            }
+            &.line{
+                border-top: 1px solid var(--bs-gray-100);
+                padding: 0 !important;
+                margin: 4px 0 16px;
+            }
+        }
+    }
+    .btn{
+        margin-top: 24px;
+        @media (max-width:380px) {
+            font-size: 12px !important;
+        }
+    }
+}
+.coupon-code-block{
+    background: white;
+    .title{
+        padding: 20px;
+        border-radius: 4px 4px 0 0;
+        font-weight: 500;
+        border: 1px solid var(--bs-gray-100);
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &__form{
+        border: 1px solid var(--bs-gray-100);
+        border-top: 0;
+        border-radius: 0 0 4px 4px;
+        padding: 24px;
+        .form-group{
+          .form-control{
+            border: 1px solid var(--bs-gray-100);
+            border-radius: 2px;  
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            padding: 16px;
+            height:44px;
+            color: var(--bs-gray-900);
+            &::placeholder{
+                color: var(--bs-gray-500);
+            }
+          }  
+        }
+        .btn{
+            height: 48px;
+            margin-top: 16px;
+            @media (max-width:380px) {
+                font-size: 12px !important;
             }
         }
     }
