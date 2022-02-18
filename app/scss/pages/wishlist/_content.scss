@@ -18,6 +18,7 @@
 
             @media (min-width:992px) {
                 text-align: start;
+                border-radius: 4px 4px 0 0;
                 border: 1px solid var(--bs-gray-100);
                 border-bottom: 0;
             }
@@ -28,6 +29,7 @@
 
             table {
                 border: 1px solid var(--bs-gray-100);
+                border-radius: 0 0 4px 4px !important;
                 border-collapse: collapse;
                 margin: 0;
                 padding: 0;

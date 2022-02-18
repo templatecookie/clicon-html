@@ -109,19 +109,19 @@
     }
   }
   &.btn-outline-secondary{
-    border: 2px solid #DEE7EE;
-    color: #222D39;
+    border: 2px solid var(--bs-secondary-500);
+    color: var(--bs-secondary-500);
     transition: .3s;
     svg{
         margin-left: 15px;
         path{
-            stroke: #222D39;
+            stroke: var(--bs-secondary-500);
             transition: .3s;
         }
     }
     &:hover{
-        background: var(--bs-secondary) !important;
-        border-color:var(--bs-secondary);
+        background: var(--bs-secondary-500) !important;
+        border-color:var(--bs-secondary-500);
         color: white;
         svg{
             path{
