@@ -1,0 +1,25 @@
+.check-out-body{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 72px 0;
+    }
+    &__form{
+        &--billing-info{
+            margin-bottom: 30px;
+            @media (min-width:575px) {
+                margin-bottom: 40px;
+            }
+        }
+        &--payment-option{
+            margin-bottom: 30px;
+            @media (min-width:575px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    &__order-summery{
+        @media (max-width:992px) {
+            margin-bottom: 35px;
+        }
+    }
+}

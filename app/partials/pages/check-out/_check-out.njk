@@ -1,0 +1,27 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+<div class="check-out-body">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 order-lg-2">
+                <div class="check-out-body__order-summery">
+                    {{MixtComponent.OrderSummery()}}
+                </div>
+            </div>
+            <div class="col-lg-8 order-lg-1">
+                <div class="check-out-body__form">
+                    <div class="check-out-body__form--billing-info">
+                        {{MixtComponent.BillingInformation()}}
+                    </div>
+                    <div class="check-out-body__form--payment-option">
+                        {{MixtComponent.PaymentOption()}}
+                    </div>
+                    <div class="check-out-body__form--information">
+                        {{MixtComponent.AdditionalInformation()}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
