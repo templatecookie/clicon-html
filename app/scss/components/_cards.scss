@@ -149,6 +149,45 @@
       }
   }
 }
+.big-product-card-02{
+  padding: 32px;
+  border: 1px solid var(--bs-gray-100);
+  border-top: 0;
+  border-bottom: 0;
+  .close-button{
+    text-align: center;
+    margin-bottom: 16px;
+    .close-btn{
+      border: 0;
+      background: none;
+      padding: 0;
+    }
+  }
+  .content{
+    margin: 16px 0;
+    p{
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--bs-gray-900);
+    }
+  }
+  .add-button{
+    display: flex;
+    align-items: center;
+    gap: 0 12px;
+    justify-content: space-between;
+    .btn{
+      width: 212px;
+    }
+    .wishlist-button{
+      @include square(48px,2px);
+      @include flexAllCenter;
+      border: 1.5px solid var(--bs-primary-100);
+      background: white;
+    }
+  }
+}
 .card-product{
   padding: 16px;
   background: white;

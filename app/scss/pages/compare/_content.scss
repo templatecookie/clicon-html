@@ -1,0 +1,86 @@
+.compare-body{
+    padding: 60px 0;
+    @media (min-width:575px) {
+        padding: 72px 0;
+    }
+}
+.table-responsive {
+    border: 1px solid #E4E7E9;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.table-product-01{
+    thead{
+        tr{
+            th{
+                padding: 0 !important;
+            }  
+        } 
+    }
+    tbody{
+        tr{
+            &:nth-of-type(odd)>* {
+                background: var(--bs-gray-50)!important;
+            }
+            td{
+                box-shadow: none;
+               &.option{
+                   padding: 12px 32px 12px 24px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--bs-gray-700);
+               } 
+               &:not(&:last-child){
+                   border-right: 1px solid var(--bs-gray-100);
+               }
+               &.rating{
+                   padding: 12px 32px;
+                   ul{
+                       display: flex;
+                       align-items: center;
+                       margin: 0;
+                       padding: 0;
+                       list-style: none;
+                       li{
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 20px;
+                        &.text{
+                            color: var(--bs-gray-500);
+                            margin-left: 6px;
+                        }  
+                       }
+                   }
+               }
+               &.price{
+                padding: 12px 32px;
+                   p{
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: var(--bs-secondary-500);  
+                   }
+               }
+               &.type{
+                padding: 12px 32px;
+                p{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--bs-gray-900);
+                }
+               }
+               &.stock-status{
+                padding: 12px 32px;
+                p{
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+               }
+            }
+        }
+    }
+}
