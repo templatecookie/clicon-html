@@ -6,6 +6,9 @@
         padding-bottom: 72px;
     }
     &__side-nav{
+        @media (min-width:992px) {
+            margin-right: 45px;
+        }
         &--mobile{
             .filter-btn{
                 position: fixed;

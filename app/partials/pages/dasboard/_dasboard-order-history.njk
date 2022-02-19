@@ -1,0 +1,105 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+<div class="dasboard-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="dasboard-body__side-nav">
+                    <div class="dasboard-body__side-nav--desk d-none d-xl-block">
+                        {{MixtComponent.DashboardNav({"classNameTwo":true})}}
+                    </div>
+                    <div class="dasboard-body__side-nav--mobile d-xl-none">
+                        <button class="filter-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            {{MixtComponent.DashboardNav({"classNameOne":true})}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-12">
+                <div class="dasboard-body__content">
+                    <div class="recent-order-block">
+                        <div class="recent-order-block__head">
+                            <h6 class="title">Order HIstory</h6>
+                        </div>
+                        <div class="recent-order-block__table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Order ID</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Total</th>
+                                        <th scope="col">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="order-id" data-label="Order ID">#96459761</td>
+                                        <td class="status text-primary-500" data-label="Status">IN PROGRESS</td>
+                                        <td class="date" data-label="Date">Dec 30, 2019 05:18</td>
+                                        <td class="total" data-label="Total">$1,500 (5 Products)</td>
+                                        <td class="actions" data-label="Action">
+                                            <a href="#">View Details <svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 8H13.5" stroke="#2DA5F3" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9 3.5L13.5 8L9 12.5" stroke="#2DA5F3" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="order-id" data-label="Order ID">#96459761</td>
+                                        <td class="status text-success-500" data-label="Status">COMPLETED</td>
+                                        <td class="date" data-label="Date">Dec 30, 2019 05:18</td>
+                                        <td class="total" data-label="Total">$1,500 (5 Products)</td>
+                                        <td class="actions" data-label="Action">
+                                            <a href="#">View Details <svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 8H13.5" stroke="#2DA5F3" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9 3.5L13.5 8L9 12.5" stroke="#2DA5F3" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="order-id" data-label="Order ID">#673971743</td>
+                                        <td class="status text-danger-500" data-label="Status">CANCELED</td>
+                                        <td class="date" data-label="Date">Dec 30, 2019 05:18</td>
+                                        <td class="total" data-label="Total">$1,500 (5 Products)</td>
+                                        <td class="actions" data-label="Action">
+                                            <a href="#">View Details <svg width="16" height="16" viewBox="0 0 16 16"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M2.5 8H13.5" stroke="#2DA5F3" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M9 3.5L13.5 8L9 12.5" stroke="#2DA5F3" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        {{MixtComponent.PaginationOne()}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}
