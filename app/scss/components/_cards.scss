@@ -344,6 +344,33 @@
       }
     }
   }
+  &--05{
+    border: 0;
+    padding: 16px;
+    .card-image {
+      margin-bottom: 24px;
+      img{
+        width: 100%;
+      }
+    }
+    .rating{
+      margin: 0;
+      padding: 0;
+      margin-bottom: 8px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li{
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      &:last-child{
+        margin-left: 4px;
+        color: var(--bs-gray-400);
+      }
+      }
+    }
+  }
 }
 .card-news{
   background: white;
@@ -513,6 +540,167 @@ border-radius: 3px;
       font-size: 14px;
       line-height: 20px;
       color: var(--bs-gray-500);
+    }
+  }
+}
+.account-info-card{
+  border-radius: 4px;
+  border: 1px solid var(--bs-gray-100);
+  .title{
+    text-transform: uppercase;
+    font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+columns: var(--bs-gray-100);
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--bs-gray-100);
+  }
+  .card-body{
+    padding: 22px 24px 24px 24px;
+    &__head{
+      display: flex;align-items: center;
+      .client-img{
+        margin-right: 16px;
+        img{
+          @include square(48px,500px);
+          object-fit: cover;
+        }
+      }
+      .client-info{
+        h6{
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: var(--bs-gray-900);
+          padding-bottom: 4px;
+        }
+        p{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-600);
+        }
+      }
+    }
+    &__foot{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: 20px;
+      margin-bottom: 22px;
+      li{
+        &:not(&:last-child){
+          margin-bottom: 8px;
+        }
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900);
+        span{
+          color: var(--bs-gray-600);
+        }
+      }
+    }
+    .btn{
+      height: 48px;
+      border-color: var(--bs-secondary-100);
+      &:hover{
+        border-color: var(--bs-secondary-500);
+      }
+    }
+  }
+}
+.billing-address-card{
+  border-radius: 4px;
+  border: 1px solid var(--bs-gray-100);
+  .title{
+    text-transform: uppercase;
+    font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+columns: var(--bs-gray-100);
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--bs-gray-100);
+  }
+  .card-body{
+    padding: 22px 24px 24px 24px;
+    &__head{
+      display: flex;align-items: center;
+      .client-img{
+        margin-right: 16px;
+        img{
+          @include square(48px,500px);
+          object-fit: cover;
+        }
+      }
+      .client-info{
+        h6{
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: var(--bs-gray-900);
+          padding-bottom: 4px;
+        }
+        p{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-600);
+        }
+      }
+    }
+    &__foot{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: 8px;
+      margin-bottom: 22px;
+      li{
+        &:not(&:last-child){
+          margin-bottom: 8px;
+        }
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900);
+        span{
+          color: var(--bs-gray-600);
+        }
+      }
+    }
+    .btn{
+      height: 48px;
+      border-color: var(--bs-secondary-100);
+      &:hover{
+        border-color: var(--bs-secondary-500);
+      }
+    }
+  }
+}
+.fun-fact-card{
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding: 16px;
+  .icon{
+    @include square(56px,2px);
+    @include flexAllCenter;
+    background: white;
+    margin-right: 16px;
+  }
+  .content{
+    .title{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--bs-gray-900); 
+      margin-bottom: 4px;
+    }
+    .text{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--bs-gray-700); 
     }
   }
 }

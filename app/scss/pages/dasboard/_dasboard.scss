@@ -1,0 +1,170 @@
+@use "../../abstracts/mixins" as *;
+.dasboard-body{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    @media (min-width:575px) {
+        padding-bottom: 72px;
+    }
+    &__side-nav{
+        &--mobile{
+            .offcanvas{
+                border: 0;
+                justify-content: center;
+                background: none;
+                width: 264px;
+                .btn-close{
+                    position: relative;
+                    right: -30px;
+                    margin-left: auto;
+                    top: 25px;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        .dasboard-info,.recent-order-info{
+            margin-bottom: 24px;
+        }
+    }
+}
+.dasboard-head{
+    margin-bottom: 24px;
+    .title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: var(--bs-gray-900); 
+        margin-bottom: 12px;
+    }
+    p{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-700); 
+        a{
+            color: var(--bs-secondary-500) !important;
+        }
+    }
+}
+
+.browsing-history-block{
+    border-radius: 4px;
+    border: 1px solid var(--bs-gray-100);
+    &__head {
+        border-bottom: 1px solid var(--bs-gray-100);
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: var(--bs-gray-900);
+        }
+
+        .link-btn {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-primary-500);
+
+            svg {
+                margin-left: 8px;
+            }
+        }
+    }
+    .product-slider--04{
+        position: relative;
+        .single-slider{
+            position: relative;
+            @media (min-width:380px) {
+                &:not(&:nth-child(4)){
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: -3px;
+                        width: 1px;
+                        height: 100%;
+                        background: var(--bs-gray-100);
+                    }
+                }
+            }
+        }
+        .slick-slide {
+            margin: 0 4px;
+        }
+        .slick-dots {
+            padding: 0;
+            margin: 0;
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin: 0 6px;
+                
+                button {
+                    border: none;
+                    list-style: none;
+                    width: 10px;
+                    height: 10px;
+                    padding: 0;
+                    border-radius: 500px;
+                    background: var(--bs-primary-500)!important;
+                    opacity: 0.2;
+                    color: transparent;
+                    font-size: 0;
+                    
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                
+                &.slick-active {
+                    background: var(--bs-primary-500)!important;
+                    opacity: 1;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 500px;
+                }
+            }
+        }
+        &__control-buttons {
+            display: flex;
+            align-items: center;
+            @media (max-width:768px) {
+                display: none;
+            }
+            .button {
+                position: absolute;
+                bottom: 20px;
+                border: 2px solid var(--bs-primary-500);
+                @include square(48px, 500px);
+                @include flexAllCenter;
+                background: var(--bs-primary-500);
+            }
+
+            .button--prev {
+                left: 38%;
+                cursor: pointer;
+            }
+
+            .button--next {
+                right: 38%;
+                cursor: pointer;
+            }
+        }
+    }
+}

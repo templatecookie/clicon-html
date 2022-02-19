@@ -1,0 +1,224 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/product/product-45.png",
+        title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+        price:"$70",
+        count:"738"
+        },
+        {
+        id:2,
+        img:"./image/product/product-46.png",
+        title:"Samsung Electronics Samsung Galexy S21 5G",
+        price:"$2,300",
+        count:"536"
+        },
+        {
+        id:3,
+        img:"./image/product/product-47.png",
+        title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+        price:"$360",
+        count:"423"
+        },
+        {
+        id:4,
+        img:"./image/product/product-48.png",
+        title:"Portable Wshing Machine, 11lbs capacity Model 18NMF...",
+        price:"$80",
+        count:"816",
+        sOne:true
+        },
+        {
+            id:5,
+            img:"./image/product/product-46.png",
+            title:"Samsung Electronics Samsung Galexy S21 5G",
+            price:"$2,300",
+            count:"536"
+            }
+
+
+]%}
+<div class="dasboard-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="dasboard-body__side-nav">
+                    <div class="dasboard-body__side-nav--desk">
+                        {{MixtComponent.DashboardNav({"classNameOne":true})}}
+                    </div>
+                    <div class="dasboard-body__side-nav--mobile d-none">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body
+                            scrolling</button>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            {{MixtComponent.DashboardNav({"classNameOne":true})}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="dasboard-body__content">
+                    <div class="dasboard-info">
+                        <div class="dasboard-head">
+                            <h4 class="title">Hello, Kevin</h4>
+                            <p>From your account dashboard. you can easily check & view your <br> <a href="#">Recent Orders</a>, manage your <a href="#">Shipping and Billing Addresses</a> and <br> edit your <a href="#">Password</a> and <a href="#">Account Details.</a></p>
+                        </div>
+                        <div class="row card-row">
+                            <div class="col-xl-4">
+                                <div class="account-info-card">
+                                    <h6 class="title">Account Info</h6>
+                                    <div class="card-body">
+                                        <div class="card-body__head">
+                                            <div class="client-img">
+                                                <img src="./image/dasboard/client-1.png" alt="client">
+                                            </div>
+                                            <div class="client-info">
+                                                <h6>Kevin Gilbert</h6>
+                                                <p>Dhaka - 1207, Bangladesh</p>
+                                            </div>
+                                        </div>
+                                        <ul class="card-body__foot">
+                                            <li>Email: <span> kevin.gilbert@gmail.com</span></li>
+                                            <li>Sec Email: <span> kevin12345@gmail.com</span></li>
+                                            <li>Phone: <span> +1-202-555-0118</span></li>
+                                        </ul>
+                                        <button class="btn btn-outline-secondary">Edit Account</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="billing-address-card">
+                                    <h6 class="title">Billing address</h6>
+                                    <div class="card-body">
+                                        <div class="card-body__head">
+                                            <div class="client-info">
+                                                <h6>Kevin Gilbert</h6>
+                                                <p>East Tejturi Bazar, Word No. 04, Road No. 13/x, House no. 1320/C, Flat No. 5D, Dhaka - 1200, Bangladesh</p>
+                                            </div>
+                                        </div>
+                                        <ul class="card-body__foot">
+                                            <li>Phone: <span> +1-202-555-0118</span></li>
+                                            <li>Email: <span> kevin12345@gmail.com</span></li>
+                                        </ul>
+                                        <button class="btn btn-outline-secondary">Edit Address</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4">
+                                <div class="row card-row align-content-stretch">
+                                    <div class="col-12">
+                                        <div class="fun-fact-card bg-secondary-50">
+                                            <div class="icon">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.2" d="M9.2375 13.9258L5.3125 18.6258C5.21362 18.7411 5.14385 18.8785 5.10905 19.0264C5.07425 19.1743 5.07544 19.3284 5.1125 19.4758L6.65 26.4383C6.6871 26.6038 6.76569 26.7571 6.87837 26.8839C6.99105 27.0107 7.13412 27.1067 7.29412 27.1629C7.45413 27.2192 7.62581 27.2338 7.79303 27.2054C7.96024 27.1771 8.1175 27.1067 8.25 27.0008L12 24.0008C9.8 20.1758 9.0875 16.8133 9.2375 13.9258Z" fill="#2DA5F3"/>
+                                                    <path opacity="0.2" d="M22.6875 13.8379L26.6125 18.5504C26.7114 18.6658 26.7812 18.8031 26.816 18.9511C26.8508 19.099 26.8496 19.253 26.8125 19.4004L25.275 26.3504C25.2396 26.5169 25.1622 26.6717 25.0502 26.8C24.9382 26.9282 24.7953 27.0258 24.6351 27.0834C24.4749 27.141 24.3026 27.1567 24.1345 27.129C23.9665 27.1014 23.8083 27.0313 23.675 26.9254L19.925 23.9254C22.125 20.0879 22.8375 16.7254 22.6875 13.8379Z" fill="#2DA5F3"/>
+                                                    <path d="M18 28H14" stroke="#2DA5F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M15.375 2.47472C13 4.37472 5.06249 11.9747 12 23.9997H20C26.8 11.9747 18.975 4.38722 16.625 2.47472C16.4496 2.32827 16.2284 2.24805 16 2.24805C15.7715 2.24805 15.5503 2.32827 15.375 2.47472Z" stroke="#2DA5F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M9.2375 13.9258L5.3125 18.6258C5.21362 18.7411 5.14385 18.8785 5.10905 19.0264C5.07425 19.1743 5.07544 19.3284 5.1125 19.4758L6.65 26.4383C6.6871 26.6038 6.76569 26.7571 6.87837 26.8839C6.99105 27.0107 7.13412 27.1067 7.29412 27.1629C7.45413 27.2192 7.62581 27.2338 7.79303 27.2054C7.96024 27.1771 8.1175 27.1067 8.25 27.0008L12 24.0008" stroke="#2DA5F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M22.6875 13.8242L26.6875 18.6242C26.7864 18.7396 26.8561 18.877 26.8909 19.0249C26.9258 19.1728 26.9246 19.3269 26.8875 19.4742L25.35 26.4367C25.3129 26.6022 25.2343 26.7556 25.1216 26.8823C25.009 27.0091 24.8659 27.1051 24.7059 27.1614C24.5459 27.2176 24.3742 27.2323 24.207 27.2039C24.0398 27.1755 23.8825 27.1051 23.75 26.9992L20 23.9992" stroke="#2DA5F3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16 13.5C16.8284 13.5 17.5 12.8284 17.5 12C17.5 11.1716 16.8284 10.5 16 10.5C15.1716 10.5 14.5 11.1716 14.5 12C14.5 12.8284 15.1716 13.5 16 13.5Z" fill="#2DA5F3"/>
+                                                    </svg>                                                
+                                            </div>
+                                            <div class="content">
+                                                <h6 class="title"><span class="counter">154</span></h6>
+                                                <p class="text">Total Orders</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="fun-fact-card bg-primary-50">
+                                            <div class="icon">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.2" d="M4 26V7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H27C27.2652 6 27.5196 6.10536 27.7071 6.29289C27.8946 6.48043 28 6.73478 28 7V26L24 24L20 26L16 24L12 26L8 24L4 26Z" fill="#FA8232"/>
+                                                    <path d="M9.5 13H22.5" stroke="#FA8232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M9.5 17H22.5" stroke="#FA8232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M4 26V7C4 6.73478 4.10536 6.48043 4.29289 6.29289C4.48043 6.10536 4.73478 6 5 6H27C27.2652 6 27.5196 6.10536 27.7071 6.29289C27.8946 6.48043 28 6.73478 28 7V26L24 24L20 26L16 24L12 26L8 24L4 26Z" stroke="#FA8232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                                                                 
+                                            </div>
+                                            <div class="content">
+                                                <h6 class="title"><span class="counter">05</span></h6>
+                                                <p class="text">Pending Orders</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="fun-fact-card bg-success-50">
+                                            <div class="icon">
+                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path opacity="0.2" d="M4.1375 9.32422C4.04693 9.47979 3.99946 9.6567 4 9.83672V22.1617C4.00096 22.3397 4.04884 22.5144 4.13882 22.668C4.2288 22.8216 4.35769 22.9488 4.5125 23.0367L15.5125 29.2242C15.6608 29.309 15.8292 29.3521 16 29.3492L16.1125 15.9992L4.1375 9.32422Z" fill="#2DB324"/>
+                                                    <path d="M28 22.1627V9.83766C27.999 9.65963 27.9512 9.485 27.8612 9.33137C27.7712 9.17775 27.6423 9.05057 27.4875 8.96266L16.4875 2.77516C16.3393 2.68958 16.1711 2.64453 16 2.64453C15.8289 2.64453 15.6607 2.68958 15.5125 2.77516L4.5125 8.96266C4.35769 9.05057 4.22879 9.17775 4.13882 9.33137C4.04884 9.485 4.00096 9.65963 4 9.83766V22.1627C4.00096 22.3407 4.04884 22.5153 4.13882 22.6689C4.22879 22.8226 4.35769 22.9497 4.5125 23.0377L15.5125 29.2252C15.6607 29.3107 15.8289 29.3558 16 29.3558C16.1711 29.3558 16.3393 29.3107 16.4875 29.2252L27.4875 23.0377C27.6423 22.9497 27.7712 22.8226 27.8612 22.6689C27.9512 22.5153 27.999 22.3407 28 22.1627V22.1627Z" stroke="#2DB324" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M22.125 19.0625V12.5625L10 5.875" stroke="#2DB324" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M27.8625 9.32422L16.1125 15.9992L4.1375 9.32422" stroke="#2DB324" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M16.1125 16L16 29.35" stroke="#2DB324" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                                                                  
+                                            </div>
+                                            <div class="content">
+                                                <h6 class="title"><span class="counter">149</span></h6>
+                                                <p class="text">Completed Orders</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recent-order-info">
+                        {{MixtComponent.RecentOrder()}}
+                    </div>
+                    <div class="dasboard-body__content--slider">
+                        <div class="browsing-history-block">
+                            <div class="browsing-history-block__head">
+                                <h6 class="title">Recent Order</h6>
+                                <a class="link-btn" href="#">View All
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.125 10H16.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.25 4.375L16.875 10L11.25 15.625" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                </a>
+                            </div>
+                            <div class="position-relative mt-4">
+                                <div class="product-slider--04">
+                                    {% for item in cardData%}
+                                    <div class="single-slider">
+                                        {{Card.ProductCardFive({
+                                            img:item.img,
+                                            title:item.title,
+                                            price:item.price,
+                                            sOne:item.sOne,
+                                            count:item.count
+                                        })}}
+                                    </div>
+                                {% endfor %}
+                                </div>
+                                <div class="product-slider--04__control-buttons">
+                                    <button class="button button--prev bg-white">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.25 12H3.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                        
+                                    </button>
+                                    <button class="button button--next bg-white">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.75 12H20.25" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>                                        
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

@@ -141,6 +141,63 @@ if (jQuery(".product-slider--03__nav").length > 0) {
     ],
   });
 }
+if (jQuery(".product-slider--04").length > 0) {
+  $(".product-slider--04")
+    .not(".slick-initialized")
+    .slick({
+      dots: true,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: false,
+      prevArrow: $(".product-slider--04__control-buttons .button--prev"),
+      nextArrow: $(".product-slider--04__control-buttons .button--next"),
+      responsive: [
+        {
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            dots:true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 379,
+          settings: {
+            dots:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+      ],
+    });
+}
 // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //       Preloader Activation
 // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
