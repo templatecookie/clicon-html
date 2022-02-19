@@ -7,6 +7,27 @@
     }
     &__side-nav{
         &--mobile{
+            .filter-btn{
+                position: fixed;
+                right: 0;
+                border: 0;
+                z-index: 99;
+                background: white;
+                box-shadow: 0px 8px 40px rgb(0 0 0 / 13%);
+                border-radius: 4px;
+                @include square(40px,4px);
+                @media (min-width:575px) {
+                    @include square(48px,4px);
+                }
+                @include flexAllCenter;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    path{
+                        fill: var(--bs-gray-900);
+                    }
+                }
+            }
             .offcanvas{
                 border: 0;
                 justify-content: center;

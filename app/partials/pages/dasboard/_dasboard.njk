@@ -47,13 +47,16 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="dasboard-body__side-nav">
-                    <div class="dasboard-body__side-nav--desk">
+                    <div class="dasboard-body__side-nav--desk d-none d-xl-block">
                         {{MixtComponent.DashboardNav({"classNameOne":true})}}
                     </div>
-                    <div class="dasboard-body__side-nav--mobile d-none">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body
-                            scrolling</button>
+                    <div class="dasboard-body__side-nav--mobile d-xl-none">
+                        <button class="filter-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path>
+                              </svg>
+                            </button>
                         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
                             tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
@@ -63,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-9">
+            <div class="col-xl-9 col-lg-12">
                 <div class="dasboard-body__content">
                     <div class="dasboard-info">
                         <div class="dasboard-head">
@@ -71,7 +74,7 @@
                             <p>From your account dashboard. you can easily check & view your <br> <a href="#">Recent Orders</a>, manage your <a href="#">Shipping and Billing Addresses</a> and <br> edit your <a href="#">Password</a> and <a href="#">Account Details.</a></p>
                         </div>
                         <div class="row card-row">
-                            <div class="col-xl-4">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="account-info-card">
                                     <h6 class="title">Account Info</h6>
                                     <div class="card-body">
@@ -93,7 +96,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4">
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="billing-address-card">
                                     <h6 class="title">Billing address</h6>
                                     <div class="card-body">
@@ -111,7 +114,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4">
+                            <div class="col-lg-4">
                                 <div class="row card-row align-content-stretch">
                                     <div class="col-12">
                                         <div class="fun-fact-card bg-secondary-50">
