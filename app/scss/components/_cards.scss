@@ -704,3 +704,103 @@ columns: var(--bs-gray-100);
     }
   }
 }
+.bank-card{
+  border-radius: 4px;
+  height: 196px;
+  width: 295px;
+  padding: 24px;
+  &__head{
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card-amount{
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: white;
+    }
+    .card-option{
+      position: relative;
+      .option-dot{
+        border: 0;
+        background: none;
+        padding: 0;
+        span{
+          @include square(5px,500px);
+          background: white;
+          transition: .3s;
+          opacity: 0.5;
+        }
+        &:hover{
+          span{
+            opacity: 1;
+          }
+        }
+      }
+      &-list{
+        padding: 16px;
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 140px;
+        border-radius: 2px;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
+        background: white;
+        border: 1px solid var(--bs-gray-100);
+        button{
+          border: 0;
+          padding: 0;
+          background: none;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          color: var(--bs-gray-600);
+          &:not(&:last-child){
+            margin-bottom: 16px;
+          }
+        }
+      }
+    }
+  }
+  &__body{
+    h6{
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      opacity: 0.7;
+    }
+    .card-num{
+      display: flex;
+      align-items: center;
+      span{
+        &.num{
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 28px;
+          color: white;
+        }
+        &.clipboard{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &__foot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card-woner-name{
+      h6{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: white;
+      }
+    }
+  }
+}

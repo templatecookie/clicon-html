@@ -3963,3 +3963,38 @@ blockquote {
         margin: 24px 0 !important;
     }
 }
+.payment-option-card-block{
+    border: 1px solid var(--bs-gray-100);
+    border-radius: 4px;
+    &__head {
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--bs-gray-100);
+        .title {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: var(--bs-gray-900);
+        }
+        .link-btn {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-primary-500);
+
+            svg {
+                margin-left: 8px;
+            }
+        }
+    } 
+    &__main{
+        padding: 24px 21px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:18px;
+    }
+}
