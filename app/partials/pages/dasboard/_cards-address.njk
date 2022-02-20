@@ -1,0 +1,109 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+
+{% set cardData =[
+        {
+        id:1,
+        img:"./image/product/product-45.png",
+        title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+        price:"$70",
+        count:"738"
+        },
+        {
+        id:2,
+        img:"./image/product/product-46.png",
+        title:"Samsung Electronics Samsung Galexy S21 5G",
+        price:"$2,300",
+        count:"536"
+        },
+        {
+        id:3,
+        img:"./image/product/product-47.png",
+        title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+        price:"$360",
+        count:"423"
+        },
+        {
+        id:4,
+        img:"./image/product/product-48.png",
+        title:"Portable Wshing Machine, 11lbs capacity Model 18NMF...",
+        price:"$80",
+        count:"816",
+        sOne:true
+        },
+        {
+            id:5,
+            img:"./image/product/product-46.png",
+            title:"Samsung Electronics Samsung Galexy S21 5G",
+            price:"$2,300",
+            count:"536"
+            }
+
+
+]%}
+<div class="dasboard-body">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="dasboard-body__side-nav">
+                    <div class="dasboard-body__side-nav--desk d-none d-xl-block">
+                        {{MixtComponent.DashboardNav({"classNameSeven":true})}}
+                    </div>
+                    <div class="dasboard-body__side-nav--mobile d-xl-none">
+                        <button class="filter-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z"></path>
+                              </svg>
+                            </button>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            {{MixtComponent.DashboardNav({"classNameSeven":true})}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-12">
+                <div class="dasboard-body__content">
+                    <div class="dasboard-card">
+                    {{MixtComponent.BankCardOption()}}
+                    </div>
+                        <div class="row card-row">
+                            <div class="col-md-6">
+                                <div class="shipping-details-card">
+                                    <h4 class="title">Billing Address</h4>
+                                    <div class="content">
+                                        <h6>Kevin Gilbert</h6>
+                                        <p>East Tejturi Bazar, Word No. 04, Road No. 13/x, House no. 1320/C, Flat No. 5D, Dhaka - 1200, Bangladesh</p>
+                                        <ul class="list-group">
+                                            <li>Phone Number: <span> +1-202-555-0118</span></li>
+                                            <li>Email: <span> kevin.gilbert@gmail.com</span></li>
+                                        </ul>
+                                        <a class="btn btn-outline-secondary" href="#">Edit address</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="shipping-details-card">
+                                    <h4 class="title">Shipping Address</h4>
+                                    <div class="content">
+                                        <h6>Kevin Gilbert</h6>
+                                        <p>East Tejturi Bazar, Word No. 04, Road No. 13/x, House no. 1320/C, Flat No. 5D, Dhaka - 1200, Bangladesh</p>
+                                        <ul class="list-group">
+                                            <li>Phone Number: <span> +1-202-555-0118</span></li>
+                                            <li>Email: <span> kevin.gilbert@gmail.com</span></li>
+                                        </ul>
+                                        <a class="btn btn-outline-secondary" href="#">Edit address</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

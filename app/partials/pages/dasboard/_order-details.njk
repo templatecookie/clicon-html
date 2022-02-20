@@ -36,7 +36,7 @@
                                 </svg>
                                 Order Details
                         </h6>
-                    <button class="rating">Leave a Rating <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button  type="button" data-bs-toggle="modal" data-bs-target="#ratingModal">Leave a Rating <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.125 10H16.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M10 3.125V16.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
@@ -480,73 +480,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="billing-address-box">
-    <h6 class="title">Billing address</h6>
-    <div class="form">
-        <form action="#">
-            <div class="form-group">
-                <label class="form-label">Rating</label>
-                <div class="selectbox">
-                    <select class="custom">
-                      <option value="1">                            
-                        &#9733;	&#9733;	&#9733;	&#9733;	&#9733;	5 Star Rating
-                        </option>
-                      <option value="2">
-                        &#9733;	&#9733;	&#9733;	&#9733;	&#9734;	4 Star Rating
-                      <option value="3">
-                        &#9733;	&#9733;	&#9733;	&#9734;	&#9734;	3 Star Rating
-                    </option>
-                      <option value="4">
-                        &#9733;	&#9733;	&#9734;	&#9734;	&#9734;	2 Star Rating
-                    </option>
-                      <option value="5">
-                        &#9733;	&#9734;	&#9734;	&#9734;	&#9734;	1 Star Rating
-                    </option>
-                    </select>
-                  </div>
-            </div>
-            <div class="form-group">
-                <label class="form-label">Feedback</label>
-                <textarea class=" form-control" id="" cols="30" rows="10" placeholder="Write down your feedback about our product & services"></textarea>
-            </div>
-            <div class="form-button">
-                <button class="btn btn-primary" type="submit">Publish Review</button>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="add-new-card-box">
-    <h6 class="title">Billing address</h6>
-    <div class="form">
-        <form action="#">
-            <div class="form-group">
-                <label for="name" class="form-label">Rating</label>
-                <input id="name" type="text" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="card" class="form-label">Card Number</label>
-                <input id="card" type="text" class="form-control">
-            </div>
-            <div class="row gx-2">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="date" class="form-label">Expire Date</label>
-                        <input id="date" type="text" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="cvc" class="form-label">CVC</label>
-                        <input id="cvc" type="text" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="form-button">
-                <button class="btn btn-primary" type="submit">Add Card</button>
-            </div>
-        </form>
     </div>
 </div>
 {% endmacro %}

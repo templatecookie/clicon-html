@@ -134,3 +134,25 @@
       }
   }
 }
+.modal-three,.modal-four{  
+    .modal-dialog{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .modal-content{
+        border: 0;
+        border-radius: 0;
+        background: none;
+
+    }
+    .modal-dialog{
+        max-width:472px;
+    }
+}
+.modal-four{
+    .modal-dialog{
+        max-width: 424px;
+    }
+}

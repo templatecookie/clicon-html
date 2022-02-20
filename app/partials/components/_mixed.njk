@@ -1668,17 +1668,15 @@
 </div>
 {% endmacro %}
 
-{% macro PaymentOption(args) %}
+{% macro BankCardOption(args) %}
 <div class="payment-option-card-block">
   <div class="payment-option-card-block__head">
     <h6 class="title">Payment Option</h6>
-    <a class="link-btn" href="#">Add Card
-      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.125 10H16.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M11.25 4.375L16.875 10L11.25 15.625" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
-          stroke-linejoin="round" />
-      </svg>
-    </a>
+    <button class="link-btn bg-transparent border-0"  type="button" data-bs-toggle="modal" data-bs-target="#newCardModal">Add Card <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.125 10H16.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M11.25 4.375L16.875 10L11.25 15.625" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>      
+    </button>
   </div>
   <div class="payment-option-card-block__main">
       <div class="bank-card" style="background: radial-gradient(98.14% 214.97% at 0% 0%, #1B6392 0%, #124261 100%);">
@@ -1693,7 +1691,7 @@
               <span></span>
             </button>
             <div class="card-option-list">
-                <button>Edit Card</button>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#newCardModal">Edit Card</button>
                 <button>Delete Card</button>
             </div>
           </div>
@@ -1742,7 +1740,7 @@
               <span></span>
             </button>
             <div class="card-option-list">
-              <button>Edit Card</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#newCardModal">Edit Card</button>
               <button>Delete Card</button>
           </div>
           </div>

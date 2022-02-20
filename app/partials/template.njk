@@ -1,82 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>
-      {% if PAGE_INFO.page_title %}{{PAGE_INFO.page_title}}
-      {% else %}Clicon - eCommerce Html Template{% endif %}
-    </title>
-    <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    {% if PAGE_INFO.page_title %}{{PAGE_INFO.page_title}}
+    {% else %}Clicon - eCommerce Html Template{% endif %}
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
 
-    <!-- Bootstrap , fonts & icons  -->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css"/>
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
 
-    <!-- Plugin'stylesheets  -->
-    <link rel="stylesheet" href="./plugins/aos/aos.min.css">
-    <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
-    <link rel="stylesheet" href="./plugins/slick/slick.css">
-    <link rel="stylesheet" href="./plugins/range-slider/jquery-ui.css">
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.css">
+  <link rel="stylesheet" href="./plugins/range-slider/jquery-ui.css">
 
-    {% block plugincss %}{% endblock %}
-    <!-- Vendor stylesheets  -->
-    <link rel="stylesheet" href="./css/main.css"/>
+  {% block plugincss %}{% endblock %}
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
 
-  </head>
-  
-  <body>
-   
-    {# {% include "components/preloader.njk" %} #}
-    <div class="site-wrapper overflow-hidden">
-      {% block main %}{% endblock %}
+</head>
+
+<body>
+
+  {# {% include "components/preloader.njk" %} #}
+  <div class="site-wrapper overflow-hidden">
+    {% block main %}{% endblock %}
+  </div>
+  <!-- Product Modal-->
+  <div class="modal modal-one fade" id="productView" tabindex="-1" role="dialog" aria-labelledby="productViewLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        {% import "components/_mixed.njk" as MixtComponent %}
+        {{MixtComponent.ProductDetailSlider()}}
+      </div>
     </div>
-    <!-- Plugin's Scripts -->
-    <!-- Custom stylesheet -->
-    <script src="./js/vendor.min.js"></script>
-    <script>
-      /**
+  </div>
+  <!-- Newsletter Modal-->
+  {# <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-two">
+      <div class="modal-two__wrapper">
+        <div class="modal-image d-none d-lg-block">
+          <img src="./image/modal/newsleter-1.png" alt="newsleter" class="mw-100">
+        </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Subscribe to our newsletter</h5>
+            <p class="modal-text">Subscribe to the clicon eCommerce newsletter to receive timely updates &
+              discount from your favorite products.</p>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="Email address" class="form-control" placeholder="Email Address">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 7.5V15.625C2.5 15.7908 2.56585 15.9497 2.68306 16.0669C2.80027 16.1842 2.95924 16.25 3.125 16.25H16.875C17.0408 16.25 17.1997 16.1842 17.3169 16.0669C17.4342 15.9497 17.5 15.7908 17.5 15.625V7.5L10 2.5L2.5 7.5Z"
+                      stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.63281 11.875L2.69531 16.0703" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17.3047 16.0703L11.3672 11.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <path d="M17.5 7.5L11.3672 11.875H8.63281L2.5 7.5" stroke="#FA8232" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 ">Subscribe <svg width="21" height="20"
+                  viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                  <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Don’t show the popup again</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.75 5.25L5.25 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M18.75 18.75L5.25 5.25" stroke="white" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div> #}
+  <!-- Billing Address Modal -->
+  <div class="modal modal-three fade" id="ratingModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="billing-address-box">
+          <div class="billing-address-box__head">
+            <h6 class="title">Billing address</h6>
+            <button type="button" data-bs-dismiss="modal">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.625 4.375L4.375 15.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15.625 15.625L4.375 4.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </button>
+          </div>
+          <div class="form">
+            <form action="#">
+              <div class="form-group">
+                <label class="form-label">Rating</label>
+                <div class="selectbox">
+                  <select class="custom">
+                    <option value="1">
+                      &#9733; &#9733; &#9733; &#9733; &#9733; 5 Star Rating
+                    </option>
+                    <option value="2">
+                      &#9733; &#9733; &#9733; &#9733; &#9734; 4 Star Rating
+                    <option value="3">
+                      &#9733; &#9733; &#9733; &#9734; &#9734; 3 Star Rating
+                    </option>
+                    <option value="4">
+                      &#9733; &#9733; &#9734; &#9734; &#9734; 2 Star Rating
+                    </option>
+                    <option value="5">
+                      &#9733; &#9734; &#9734; &#9734; &#9734; 1 Star Rating
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Feedback</label>
+                <textarea class=" form-control" id="" cols="30" rows="10"
+                  placeholder="Write down your feedback about our product & services"></textarea>
+              </div>
+              <div class="form-button">
+                <button class="btn btn-primary" type="submit">Publish Review</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add New Card Modal -->
+  <div class="modal modal-four fade" id="newCardModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="add-new-card-box">
+          <div class="add-new-card-box__head">
+            <h6 class="title">Add New Card</h6>
+            <button type="button" data-bs-dismiss="modal">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.625 4.375L4.375 15.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M15.625 15.625L4.375 4.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </button>
+          </div>
+          <div class="form">
+            <form action="#">
+              <div class="form-group">
+                <label for="name" class="form-label">Rating</label>
+                <input id="name" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="card" class="form-label">Card Number</label>
+                <input id="card" type="text" class="form-control">
+              </div>
+              <div class="row gx-2">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="date" class="form-label">Expire Date</label>
+                    <input id="date" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="cvc" class="form-label">CVC</label>
+                    <input id="cvc" type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-button">
+                <button class="btn btn-primary" type="submit">Add Card</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
      * Replace all SVG images with inline SVG
      */
-      $(document).ready(function () {
-        $('img[class*="make-it-inline"]').each(function () {
-          var $img = jQuery(this);
-          var imgURL = $img.attr('src');
-          var attributes = $img.prop("attributes");
+    $(document).ready(function () {
+      $('img[class*="make-it-inline"]').each(function () {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
 
-          $.get(imgURL, function (data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
+        $.get(imgURL, function (data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
 
-            // Remove any invalid XML tags
-            $svg = $svg.removeAttr('xmlns:a');
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
 
-            // Loop through IMG attributes and apply on SVG
-            $.each(attributes, function () {
-              $svg.attr(this.name, this.value);
-            });
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function () {
+            $svg.attr(this.name, this.value);
+          });
 
-            // Replace IMG with SVG
-            $img.replaceWith($svg);
-          }, 'xml');
-        });
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
       });
-    </script>
-    <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
-    <script src="./plugins/aos/aos.min.js"></script>
-    <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
-    <script src="./plugins/counter-up/waypoints.min.js"></script>
-    <script src="./plugins/slick/slick.min.js"></script>
-    <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
-    <!-- Activation Script -->
-    <script src="js/custom.js"></script>
-    {% if not PAGE_INFO.menuHide %}
-      <script src="js/menu.js"></script>
-    {% endif %}
-    {% block pluginjs %}{% endblock %}
-  </body>
+    });
+  </script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  {% if not PAGE_INFO.menuHide %}
+  <script src="js/menu.js"></script>
+  {% endif %}
+  {% block pluginjs %}{% endblock %}
+</body>
 
 </html>
