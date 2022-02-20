@@ -1,0 +1,239 @@
+@use "../../abstracts/mixins" as *;
+.dasboard-setting {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    @media (min-width:575px) {
+        padding-bottom: 72px;
+    }
+    .account-setting{
+        margin-bottom: 24px;
+    }
+}
+.account-setting{
+    border-radius: 4px;
+    border: 1px solid var(--bs-gray-100);
+    .title{
+        border-bottom: 1px solid var(--bs-gray-100);
+        padding: 24px 16px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900)  
+    }
+    &__main{
+        display: flex;
+        align-items: flex-start;
+        gap: 0 24px;
+        padding: 24px;
+        @media (max-width:768px) {
+            padding: 20px;
+            flex-direction: column;
+        }
+        .avatar{
+            @media (max-width:768px) {
+                margin: 0;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+            @include square(176px,500px);
+            img{
+                object-fit: cover;
+            }
+        }
+        .form{
+            .form-group{
+                margin-bottom: 16px;
+                display: flow-root;
+                .form-label{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--bs-gray-900);
+                    margin-bottom: 8px;
+                }
+                .form-control{
+                    border-color: var(--bs-gray-100);
+                    border-radius: 2px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    height: 44px;
+                    color: var(--bs-gray-700);   
+                }
+                .selectbox {
+                    .nice-select {
+                        width: 100%;
+                        padding-left: 16px;
+                        border-color: var(--bs-gray-100);
+                        height: 44px;
+                        border-color: var(--bs-gray-100);
+                        border-radius: 2px;
+        
+                        .list {
+                            width: 100%;
+                            border-color: var(--bs-gray-100);
+                            border-radius: 2px;
+        
+                            li {
+                                &:first-child {
+                                    display: none;
+                                }
+        
+                                font-weight: normal;
+                                font-size: 14px;
+                                color: var(--bs-gray-700);
+                            }
+                        }
+        
+                        &::after {
+                            width: 8px;
+                            height: 8px;
+                            right: 16px;
+                        }
+                    }
+                }
+            }
+            .form-button{
+                margin-top:8px;
+                .btn{
+                    height: 48px;
+                }
+            }
+        }
+    }
+}
+.address-form{
+    margin-bottom: 24px;
+    border-radius: 4px;
+    border: 1px solid var(--bs-gray-100);
+    .title{
+        border-bottom: 1px solid var(--bs-gray-100);
+        padding: 24px 16px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900)  
+    }
+    .form{
+        padding: 24px;
+        @media (max-width:768px) {
+            padding: 20px;
+        }
+        .form-group{
+            margin-bottom: 16px;
+            display: flow-root;
+            .form-label{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--bs-gray-900);
+                margin-bottom: 8px;
+            }
+            .form-control{
+                border-color: var(--bs-gray-100);
+                border-radius: 2px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                height: 44px;
+                color: var(--bs-gray-700);   
+            }
+            .selectbox {
+                .nice-select {
+                    width: 100%;
+                    padding-left: 16px;
+                    border-color: var(--bs-gray-100);
+                    height: 44px;
+                    border-color: var(--bs-gray-100);
+                    border-radius: 2px;
+    
+                    .list {
+                        width: 100%;
+                        border-color: var(--bs-gray-100);
+                        border-radius: 2px;
+    
+                        li {
+                            &:first-child {
+                                display: none;
+                            }
+    
+                            font-weight: normal;
+                            font-size: 14px;
+                            color: var(--bs-gray-700);
+                        }
+                    }
+    
+                    &::after {
+                        width: 8px;
+                        height: 8px;
+                        right: 16px;
+                    }
+                }
+            }
+        }
+        .form-button{
+            margin-top:8px;
+            .btn{
+                height: 48px;
+            }
+        }
+    }
+}
+.passwoed-change-field{
+    border-radius: 4px;
+    border: 1px solid var(--bs-gray-100);
+    .title{
+        border-bottom: 1px solid var(--bs-gray-100);
+        padding: 24px 16px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900)  
+    }
+    .form{
+        padding: 24px;
+        @media (max-width:768px) {
+            padding: 20px;
+        }
+        .form-group{
+            margin-bottom: 16px;
+            display: flow-root;
+            .form-label{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--bs-gray-900);
+                margin-bottom: 8px;
+            }
+            .form-control{
+                border-color: var(--bs-gray-100);
+                border-radius: 2px;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                height: 44px;
+                color: var(--bs-gray-900);   
+                &::placeholder{
+                    color: var(--bs-gray-700);   
+                }
+            }
+            .pass-box {
+                position: relative;
+    
+                &--eye {
+                    position: absolute;
+                    right: 30px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                }
+            }
+        }
+        .form-button{
+            margin-top:8px;
+            .btn{
+                height: 48px;
+            }
+        }
+    }
+}

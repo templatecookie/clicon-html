@@ -1,0 +1,350 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+<div class="dasboard-setting">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="dasboard-body__side-nav">
+                    <div class="dasboard-body__side-nav--desk d-none d-lg-block">
+                        {{MixtComponent.DashboardNav({"classNameNine":true})}}
+                    </div>
+                    <div class="dasboard-body__side-nav--mobile d-lg-none">
+                        <button class="filter-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            {{MixtComponent.DashboardNav({"classNameNine":true})}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="account-setting">
+                    <h6 class="title">Account Setting</h6>
+                    <div class="account-setting__main">
+                        <div class="avatar">
+                            <img src="./image/avatar.png" alt="avatar" class='w-100'>
+                        </div>
+                        <div class="form w-100">
+                            <form action="#" method="get">
+                                <div class="row gx-3">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="name">Display name</label>
+                                            <input id="name" class="form-control" type="text" value="Kevin">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="name">Display name</label>
+                                            <input id="name" class="form-control" type="text" value="Kevin">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="fullname">Full Name</label>
+                                            <input id="fullname" class="form-control" type="text" value="Kevin Gilbert">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="email">Email</label>
+                                            <input id="email" class="form-control" type="text" value="Kevin.gilbert@gmail.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="emailtwo">Secondary Email</label>
+                                            <input id="emailtwo" class="form-control" type="text" value="Kevin Gilbert">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label" for="phoneNum">Phone Number</label>
+                                            <input id="phoneNum" class="form-control" type="text" value="+1-202-555-0118">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="form-label">Phone Number</label>
+                                            <div class="selectbox">
+                                                <select class="nice-select">
+                                                  <option data-display="Bangladesh">Bangladesh</option>
+                                                  <option value="1">India</option>
+                                                  <option value="2">Qatar</option>
+                                                </select>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label class="form-label">Phone Number</label>
+                                            <div class="selectbox">
+                                                <select class="nice-select">
+                                                  <option data-display="Dhaka">Dhaka</option>
+                                                  <option value="1">Manikganj</option>
+                                                  <option value="2">Uttara</option>
+                                                </select>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label class="form-label" for="zipcode">Zip Code</label>
+                                            <input id="zipcode" class="form-control" type="text" value="1207">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-button">
+                                            <button class="btn btn-primary" type="submit">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="address-form">
+                            <h6 class="title">Billing Address</h6>
+                            <div class="form">
+                                <form action="#" method="get">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="name">First Name</label>
+                                                <input id="name" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="lastname">Last Name</label>
+                                                <input id="lastname" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="companyname">Company Name <span class=" text-gray-600">(Optional)</span></label>
+                                                <input id="companyname" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="address">Address</label>
+                                                <input id="address" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Country</label>
+                                                <div class="selectbox">
+                                                    <select class="nice-select">
+                                                      <option data-display="Bangladesh">Bangladesh</option>
+                                                      <option value="1">India</option>
+                                                      <option value="2">Qatar</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Region/State</label>
+                                                <div class="selectbox">
+                                                    <select class="nice-select">
+                                                      <option data-display="Select...">Bangladesh</option>
+                                                      <option value="1">India</option>
+                                                      <option value="2">Qatar</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Region/State</label>
+                                                <div class="selectbox">
+                                                    <select class="nice-select">
+                                                      <option data-display="Dhaka">Dhaka</option>
+                                                      <option value="1">Manikganj</option>
+                                                      <option value="2">Uttara</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="zipcode" class="form-label">Zip Code</label>
+                                                <input id="zipcode" type="text"class="form-control" value="1207">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input id="email" type="email"class="form-control" value="kevin12345@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="num" class="form-label">Email</label>
+                                                <input id="num" type="text"class="form-control" value="+1-202-555-0118">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-button">
+                                                <button class="btn btn-primary" type="submit">Save Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="address-form">
+                            <h6 class="title">Shipping Address</h6>
+                            <div class="form">
+                                <form action="#" method="get">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="name">First Name</label>
+                                                <input id="name" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label" for="lastname">Last Name</label>
+                                                <input id="lastname" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="companyname">Company Name <span class=" text-gray-600">(Optional)</span></label>
+                                                <input id="companyname" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label" for="address">Address</label>
+                                                <input id="address" class="form-control" type="text" value="Kevin">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Country</label>
+                                                <div class="selectbox">
+                                                    <select class="nice-select">
+                                                      <option data-display="Bangladesh">Bangladesh</option>
+                                                      <option value="1">India</option>
+                                                      <option value="2">Qatar</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label class="form-label">Region/State</label>
+                                                <div class="selectbox">
+                                                    <select class="nice-select">
+                                                      <option data-display="Select...">Bangladesh</option>
+                                                      <option value="1">India</option>
+                                                      <option value="2">Qatar</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label class="form-label">Region/State</label>
+                                                <div class="selectbox">
+                                                    <select class="nice-select">
+                                                      <option data-display="Dhaka">Dhaka</option>
+                                                      <option value="1">Manikganj</option>
+                                                      <option value="2">Uttara</option>
+                                                    </select>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="zipcode" class="form-label">Zip Code</label>
+                                                <input id="zipcode" type="text"class="form-control" value="1207">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input id="email" type="email"class="form-control" value="kevin12345@gmail.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="num" class="form-label">Email</label>
+                                                <input id="num" type="text"class="form-control" value="+1-202-555-0118">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-button">
+                                                <button class="btn btn-primary" type="submit">Save Changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="passwoed-change-field">
+                    <h6 class="title">Change Password</h6>
+                    <div class="form">
+                        <form action="#" method="get">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Current Password</label>
+                                        <div class="pass-box">
+                                            <input class="form-control" id="passField" type="password">
+                                            <i id="eyeTwo" class="pass-box--eye far fa-eye-slash"></i>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">New Password</label>
+                                        <div class="pass-box">
+                                            <input class="form-control" placeholder="8+ characters" id="passField" type="password">
+                                            <i id="eyeTwo" class="pass-box--eye far fa-eye-slash"></i>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Confirm Password</label>
+                                        <div class="pass-box">
+                                            <input class="form-control" id="passField" type="password">
+                                            <i id="eyeTwo" class="pass-box--eye far fa-eye-slash"></i>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-button">
+                                        <button class="btn btn-primary" type="submit">Change Passowrd</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

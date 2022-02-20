@@ -1,0 +1,327 @@
+{% import "components/_mixed.njk" as MixtComponent %}
+{% macro render(args) %}
+{% import "components/cards.njk" as Card %}
+{% set cardDataOne =[
+    {
+    id:1,
+    img:"./image/product/product-45.png",
+    title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+    price:"$70",
+    count:"738"
+    },
+    {
+    id:2,
+    img:"./image/product/product-46.png",
+    title:"Samsung Electronics Samsung Galexy S21 5G",
+    price:"$2,300",
+    count:"536"
+    },
+    {
+    id:3,
+    img:"./image/product/product-47.png",
+    title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+    price:"$360",
+    count:"423"
+    },
+    {
+    id:4,
+    img:"./image/product/product-48.png",
+    title:"Portable Wshing Machine, 11lbs capacity Model 18NMF...",
+    price:"$80",
+    count:"816",
+    sOne:true
+    }
+
+
+]%}
+{% set cardDataTwo =[
+    {
+    id:1,
+    sOne:true,
+    img:"./image/product/product-45.png",
+    title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+    price:"$70",
+    count:"738"
+    },
+    {
+    id:2,
+    img:"./image/product/product-46.png",
+    title:"Samsung Electronics Samsung Galexy S21 5G",
+    price:"$2,300",
+    count:"536"
+    },
+    {
+    id:3,
+    img:"./image/product/product-47.png",
+    title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+    price:"$360",
+    count:"423"
+    }
+
+
+    ]%}
+{% set cardDataThree =[
+    {
+    id:1,
+    sOne:true,
+    img:"./image/product/product-45.png",
+    title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+    price:"$70",
+    count:"738"
+    },
+    {
+    id:2,
+    img:"./image/product/product-46.png",
+    title:"Samsung Electronics Samsung Galexy S21 5G",
+    price:"$2,300",
+    count:"536"
+    },
+    {
+    id:3,
+    img:"./image/product/product-47.png",
+    title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+    price:"$360",
+    count:"423"
+    },
+    {
+    id:4,
+    sOne:true,
+    img:"./image/product/product-45.png",
+    title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+    price:"$70",
+    count:"738"
+    },
+    {
+    id:5,
+    img:"./image/product/product-46.png",
+    title:"Samsung Electronics Samsung Galexy S21 5G",
+    price:"$2,300",
+    sOne:true,
+    count:"536"
+    }
+
+
+]%}
+{% set cardDataFour =[
+    {
+    id:1,
+    img:"./image/product/product-45.png",
+    title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+    price:"$70",
+    count:"738"
+    },
+    {
+    id:2,
+    img:"./image/product/product-46.png",
+    title:"Samsung Electronics Samsung Galexy S21 5G",
+    price:"$2,300",
+    del:"$1600",
+    count:"536"
+    },
+    {
+    id:3,
+    img:"./image/product/product-47.png",
+    title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
+    price:"$360",
+    count:"423"
+    },
+    {
+    id:4,
+    img:"./image/product/product-48.png",
+    title:"Portable Wshing Machine, 11lbs capacity Model 18NMF...",
+    price:"$80",
+    count:"816",
+    del:"$1600",
+    sOne:true
+    }
+
+
+]%}
+{% set cardDataFive =[
+    {
+    id:1,
+    sOne:true,
+    img:"./image/product/product-45.png",
+    title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
+    price:"$70",
+    count:"738"
+    }
+]%}
+<div class="browsing-history">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="dasboard-body__side-nav">
+                    <div class="dasboard-body__side-nav--desk d-none d-lg-block">
+                        {{MixtComponent.DashboardNav({"classNameEight":true})}}
+                    </div>
+                    <div class="dasboard-body__side-nav--mobile d-lg-none">
+                        <button class="filter-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                </path>
+                            </svg>
+                        </button>
+                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false"
+                            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                            {{MixtComponent.DashboardNav({"classNameEight":true})}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="browsing-history__head">
+                    <h2 class="title">Browsing History</h2>
+                    <div class="wrapper">
+                        <p>Turn Browsing History on/off</p>
+                        <div class="switcher">
+                            <input type="checkbox" name="exampleInput" class="input-switch" checked>
+                        </div>
+                    </div>
+                </div>
+                <div class="browsing-history__filter">
+                    <div class="search-input-field">
+                        <form action="#" method="get">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search in browsing history" class=" form-control">
+                                <div class="icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9.0625 15.625C12.6869 15.625 15.625 12.6869 15.625 9.0625C15.625 5.43813 12.6869 2.5 9.0625 2.5C5.43813 2.5 2.5 5.43813 2.5 9.0625C2.5 12.6869 5.43813 15.625 9.0625 15.625Z"
+                                            stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M13.7031 13.7031L17.5 17.5" stroke="#FA8232" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="date-input-field">
+                        <form action="#" method="get">
+                            <div class="form-group">
+                                <input type="text" placeholder="DD/MM/YYYY" id="datepicker" class=" form-control">
+                                <div class="icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.25 3.125H3.75C3.40482 3.125 3.125 3.40482 3.125 3.75V16.25C3.125 16.5952 3.40482 16.875 3.75 16.875H16.25C16.5952 16.875 16.875 16.5952 16.875 16.25V3.75C16.875 3.40482 16.5952 3.125 16.25 3.125Z"
+                                            stroke="#FA8232" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M13.75 1.875V4.375" stroke="#FA8232" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6.25 1.875V4.375" stroke="#FA8232" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3.125 6.875H16.875" stroke="#FA8232" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="product-history">
+                    <h6 class="date">17 Oct, 2020</h6>
+                    <div class="row justify-content-center justify-content-xs-start gx-lg-1 card-row product">
+                        {% for item in cardDataOne%}
+                        <div class="col-lg-3 col-md-4 col-xs-6 col-10">
+                            {{Card.ProductCardFive({
+                                img:item.img,
+                                title:item.title,
+                                price:item.price,
+                                sOne:item.sOne,
+                                count:item.count
+                            })}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="product-history">
+                    <h6 class="date">17 Oct, 2020</h6>
+                    <div class="row justify-content-center justify-content-xs-start gx-lg-1 card-row product">
+                        {% for item in cardDataTwo%}
+                        <div class="col-lg-3 col-md-4 col-xs-6 col-10">
+                            {{Card.ProductCardFive({
+                                img:item.img,
+                                title:item.title,
+                                price:item.price,
+                                sOne:item.sOne,
+                                count:item.count
+                            })}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="product-history">
+                    <h6 class="date">24 May, 2020</h6>
+                    <div class="row justify-content-center justify-content-xs-start gx-lg-1 card-row product">
+                        {% for item in cardDataThree%}
+                        <div class="col-lg-3 col-md-4 col-xs-6 col-10">
+                            {{Card.ProductCardFive({
+                                img:item.img,
+                                title:item.title,
+                                sOne:item.sOne,
+                                count:item.count
+                            })}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="product-history">
+                    <h6 class="date">24 May, 2020</h6>
+                    <div class="row justify-content-center justify-content-xs-start gx-lg-1 card-row product">
+                        {% for item in cardDataFour%}
+                        <div class="col-lg-3 col-md-4 col-xs-6 col-10">
+                            {{Card.ProductCardFive({
+                                img:item.img,
+                                title:item.title,
+                                price:item.price,
+                                del:item.del,
+                                sOne:item.sOne,
+                                count:item.count
+                            })}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="product-history">
+                    <h6 class="date">24 May, 2020</h6>
+                    <div class="row justify-content-center justify-content-xs-start gx-lg-1 card-row product">
+                        {% for item in cardDataFive%}
+                        <div class="col-lg-3 col-md-4 col-xs-6 col-10">
+                            {{Card.ProductCardFive({
+                                img:item.img,
+                                title:item.title,
+                                price:item.price,
+                                sOne:item.sOne,
+                                count:item.count
+                            })}}
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="load-btn">
+                    <button class="btn btn-outline-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 3V6" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3658 5.63477L16.2471 7.75352" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12H18" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.3658 18.3648L16.2471 16.2461" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 21V18" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.63477 18.3648L7.75352 16.2461" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 12H6" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.63477 5.63477L7.75352 7.75352" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Load more
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endmacro %}

@@ -172,7 +172,7 @@
             <li>({{obj.count}})</li>
         </ul>
         <h6 class="title">{{obj.title | safe}}</h6>
-        <p class="price-valu">{{obj.price}}</p>
+        <p class="price-valu">{% if obj.del %}<del>{{obj.del}}</del>{% endif %}{{obj.price}}</p>
     </div>
 </div>
 {% endmacro %}
