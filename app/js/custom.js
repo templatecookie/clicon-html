@@ -229,41 +229,45 @@ function passowrdVisibility(passwrodField, button) {
 }
 passowrdVisibility("#passField", "#eye");
 
-$(document).ready(function() {
-  $(".mainnav div").click(function() {
+$(".mainnav div").click(function() {
   $("ul").slideToggle();
   $("ul ul").css("display", "none");
   $(".mainnav .on").toggleClass("on");
-  });
-  $(".hasDD").click(function(e) {
+});
+$(".hasDD").click(function(e) {
   $(this)
-  .find("> ul")
-  .slideToggle();
+    .find("> ul")
+    .slideToggle();
   $(this)
-  .find("> ul ul")
-  .css("display", "none");
+    .find("> ul ul")
+    .css("display", "none");
   $(this)
-  .find("> ul li")
-  .removeClass("on");
+    .find("> ul li")
+    .removeClass("on");
   $(this).toggleClass("on");
   e.stopPropagation();
-  });
-  $('#countdown-01').countdown({
+});
+$('#countdown-01').countdown({
   year: 2022, // YYYY Format
   month: 3, // 1-12
   d: 28, // 1-31
   h: 0, // 24 hour format 0-23
   m: 0, // 0-59
   s: 0, // 0-59
-  });
+});
+$(document).ready(function() {
   $('#showHiddenMenuOne').click(function() {
-  $('#hiddenWidgetOne').slideToggle("slow");
+    $('#hiddenWidgetOne').slideToggle("slow");
   });
+});
+$(document).ready(function() {
   $('#showHiddenMenuTwo').click(function() {
-  $('#hiddenWidgetTwo').slideToggle("slow");
+    $('#hiddenWidgetTwo').slideToggle("slow");
   });
-  $(".selectall").click(function(){
+});
+
+
+$(".selectall").click(function(){
   $(".individual").prop("checked",$(this).prop("checked"));
   });
-  
-});
+

@@ -7,6 +7,9 @@
     }
     &__side-nav{
         @media (min-width:992px) {
+            margin-right: 25px;
+        }
+        @media (min-width:1400px) {
             margin-right: 45px;
         }
         &--mobile{
@@ -52,6 +55,15 @@
     &__content{
         .dasboard-info,.dasboard-card,.recent-order-info{
             margin-bottom: 24px;
+        }
+    }
+    .shipping-all-details{
+        padding: 24px;
+        border: 1px solid var(--bs-gray-100);
+        border-radius: 4px;
+        @media (min-width:992px) {
+            border-top: 0;
+            border-radius: 0 0 4px 4px;
         }
     }
 }
@@ -191,4 +203,16 @@
             }
         }
     }
+}
+.order-activity-wrapper-b-modifi{
+    @media (min-width:992px) {
+        border-bottom: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+}
+.t-l-r-0{
+border-top-left-radius: 0 !important;
+} .t-r-r-0{
+border-top-right-radius: 0 !important;
 }

@@ -2961,14 +2961,13 @@ blockquote {
             display: flex;
             align-items: center;
 
-            @media (min-width:992px) {
-                margin: 0 45px;
-            }
-
             .next-step-item {
-                min-width: 234px;
                 position: relative;
-
+                min-width: 200px;
+                @media (min-width:992px) {
+                    min-width: auto;
+                    width: 234px;
+                }
                 &:not(&:last-child) {
                     .next-step-item-tail {
                         position: absolute;
@@ -3997,4 +3996,236 @@ blockquote {
         flex-wrap: wrap;
         gap:18px;
     }
+}
+.shipping-all-details{
+    @media (max-width:992px) {
+        margin-top: 24px;
+        border-radius: 4px;
+        border: 1px solid var(--bs-gray-100);
+    }
+    &__address{
+        .title{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: var(--bs-gray-900);  
+            margin-bottom: 10px;
+            @media (min-width:992px) {
+                margin-bottom: 24px;
+                
+            }
+        }
+        .content{
+           h6{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-900);
+            padding-bottom: 8px;
+           } 
+           p{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-600);
+           }
+           .list-group{
+               margin: 0;
+               padding: 0;
+               list-style: none;
+               margin-top: 12px;
+               li{
+                   &:not(&:last-child){
+                       margin-bottom: 12px;
+                   }
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px; 
+                color: var(--bs-gray-900);
+                span{
+                    color: var(--bs-gray-600);
+                }
+               }
+           }
+        }
+    }
+    &__note{
+        .title{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: var(--bs-gray-900);  
+            margin-bottom: 10px;
+            @media (min-width:992px) {
+                margin-bottom: 24px;
+                
+            }
+        }
+        p{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-600);   
+        }
+    }
+    .col-lg-4{
+        position: relative;
+        @media (min-width:992px) {
+            &:not(&:last-child){
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 1px;
+                    height: 88%;
+                    background: var(--bs-gray-100);
+                }
+            }
+        }
+    }
+}
+.order-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--bs-gray-100);
+    border-radius: 4px 4px 0 0;
+    border-bottom: 0;
+    padding: 10px 24px;
+    h6{
+        display: flex;
+        align-items: center;
+        svg{
+            margin-right:12px ;
+        }
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900);   
+    }
+    button{
+        background: none;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+font-size: 14px;
+line-height: 20px;
+border: 0;
+color: var(--bs-primary-500);
+        svg{
+           margin-left: 8px;
+        }
+    }
+}
+.billing-address-box{
+    width: 472px;
+    background: #FFFFFF;
+    border: 1px solid #E4E7E9;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    .title{
+        padding: 16px 24px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900);   
+        border-bottom: 1px solid var(--bs-gray-100);
+    }
+    .form{
+        padding: 24px;
+        .form-group{
+            margin-bottom: 16px;
+            display: flow-root;
+          .form-label{
+              display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-900);
+            margin-bottom: 8px;  
+          }  
+          .form-control{
+              border-radius: 2px;
+              border-color: var(--bs-gray-100);
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+              padding: 16px;
+            height: 124px;  
+            color: var(--bs-gray-900);
+            &::placeholder{
+                color: var(--bs-gray-400);
+            }
+          }
+        }
+        .selectbox{
+            .nice-select{
+                height: 44px;
+                border-radius: 2px;
+                width: 100%;
+                border-color: var(--bs-gray-100);
+                padding-left: 16px;
+                span{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: var(--bs-gray-700) !important;
+                }
+                &::after{
+                    width: 8px;
+                    height: 8px;
+                    right: 16px;
+                }
+                .list{
+                    width: 100%;
+                }
+                }
+        }
+        .form-button{
+            margin-top: 24px;
+            .btn{
+                height: 56px;
+            }
+        }
+    }
+}
+.add-new-card-box{
+    width: 424px;
+    background: #FFFFFF;
+    border: 1px solid #E4E7E9;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    .title{
+        padding: 16px 24px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--bs-gray-900);   
+        border-bottom: 1px solid var(--bs-gray-100);
+    }
+    .form{
+        padding: 24px;
+        .form-group{
+            margin-bottom: 16px;
+          .form-label{
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--bs-gray-900);
+            margin-bottom: 8px;  
+          } 
+          .form-control{
+              height: 44px;
+              border-radius: 2px;
+            border: 1px solid var(--bs-gray-100);  
+          } 
+        }
+        .form-button{
+            margin-top: 8px;
+            .btn{
+                height: 56px;
+            }
+        }
+    }  
 }
