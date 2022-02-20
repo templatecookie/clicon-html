@@ -229,6 +229,7 @@ function passowrdVisibility(passwrodField, button) {
 }
 passowrdVisibility("#passField", "#eye");
 
+// Bottom Nav 
 $(".mainnav div").click(function() {
   $("ul").slideToggle();
   $("ul ul").css("display", "none");
@@ -247,11 +248,14 @@ $(".hasDD").click(function(e) {
   $(this).toggleClass("on");
   e.stopPropagation();
 });
+
+// ShowHidenMenu Home Page
 $(document).ready(function() {
   $('#showHiddenMenuOne').click(function() {
     $('#hiddenWidgetOne').slideToggle("slow");
   });
 });
+// ShowHidenMenu Home Page
 $(document).ready(function() {
   $('#showHiddenMenuTwo').click(function() {
     $('#hiddenWidgetTwo').slideToggle("slow");
@@ -259,10 +263,12 @@ $(document).ready(function() {
 });
 
 
+// Catagory all Slectall Shope Page
 $(".selectall").click(function(){
   $(".individual").prop("checked",$(this).prop("checked"));
 });
 
+// Porduct Countdown Home Page
 $('#countdown-01').countdown({
   year: 2022, // YYYY Format
   month: 5, // 1-12

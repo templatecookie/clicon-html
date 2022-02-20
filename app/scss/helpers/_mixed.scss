@@ -72,3 +72,15 @@ span{
 .g-7, .gx-7 {
     --bs-gutter-x: 3rem !important;
 }
+.badge{
+    display: table;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+.d-inherit{
+    display: inherit !important;
+}

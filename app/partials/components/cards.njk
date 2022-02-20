@@ -31,6 +31,7 @@
 </a>
 {% endmacro %}
 {% macro ProductCardOne(obj) %}
+<a href="#" class="d-inherit">
 <div class="card-product {{obj.modifier}}">
     <div class="card-image {{obj.bgWrapper}}">
         <img src="{{obj.img}}" alt="card" class="mw-100">
@@ -39,7 +40,11 @@
         <h6 class="title">{{obj.title | safe}}</h6>
         <p class="price-valu">{% if obj.del %}<del>{{obj.del}}</del>{% endif %}{{obj.price}}</p>
     </div>
-</div>
+    {% if obj.offerTage %}
+        <p class="{{obj.className}} badge">{{obj.badge}}</p>
+    {% endif %}
+</div>  
+</a>
 {% endmacro %}
 {% macro ProductCardTwo(obj) %}
 <div class="card-product card-product--02 {{obj.modifier}}">

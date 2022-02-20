@@ -19,6 +19,9 @@
         img:"./image/product/product-3.png",
         title:"4K UHD LED Smart TV with Chromecast Built-in",
         del:"$865",
+        offerTage:true,
+        badge:"19% OFF",
+        className:"bg-warning-400 text-gray-900",
         price:"$1,50"
         },
         {
@@ -38,6 +41,9 @@
         img:"./image/product/product-6.png",
         title:"Dell Optiplex 7000x7480 All-in-One Computer Monitor",
         del:"$865.99",
+        offerTage:true,
+        badge:"HOT",
+        className:"bg-danger-500 text-white",
         price:"$70"
         },
         {
@@ -141,6 +147,10 @@
                                     </svg>
                                 </a>
                         </div>
+                        <div class="offer-tag">
+                            <p class="bg-warning-500 text-gray-900 badge mb-2">32% OFF</p>
+                            <p class="bg-danger-500 text-white badge">HOT</p>
+                        </div>
                     </div>
                 </div>
                 <div class="best-deal-section-01__product-area--small-product">
@@ -149,6 +159,9 @@
                             img:item.img,
                             title:item.title,
                             del:item.del,
+                            badge:item.badge,
+                            offerTage:item.offerTage,
+                            className:item.className,
                             price:item.price
                         })}}
                 {% endfor %}
