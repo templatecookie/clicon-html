@@ -15,81 +15,79 @@ $(".counter").counterUp({
   delay: 10,
   time: 1000,
 });
-$(document).ready(function(){
-  $("#myModal").modal('show');
+$(document).ready(function () {
+  $("#myModal").modal("show");
 });
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
       Slick Slider Activation
   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  $(".slick-slider").slick();
-  if (jQuery(".product-slider-01").length > 0) {
-    $(".product-slider-01")
-      .not(".slick-initialized")
-      .slick({
-        dots: true,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-      });
-  }
-  if (jQuery(".product-slider-02").length > 0) {
-    $(".product-slider-02")
-      .not(".slick-initialized")
-      .slick({
-        dots: false,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: false,
-        prevArrow: $(".product-slider-02__control-buttons .button--prev"),
-        nextArrow: $(".product-slider-02__control-buttons .button--next"),
-        responsive: [
-          {
-            breakpoint: 1399,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1,
-            },
+$(".slick-slider").slick();
+if (jQuery(".product-slider-01").length > 0) {
+  $(".product-slider-01").not(".slick-initialized").slick({
+    dots: true,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+  });
+}
+if (jQuery(".product-slider-02").length > 0) {
+  $(".product-slider-02")
+    .not(".slick-initialized")
+    .slick({
+      dots: false,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: false,
+      prevArrow: $(".product-slider-02__control-buttons .button--prev"),
+      nextArrow: $(".product-slider-02__control-buttons .button--next"),
+      responsive: [
+        {
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2,
-            },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
           },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 575,
-            settings: {
-              dots:true,
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 379,
-            settings: {
-              dots:true,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 379,
+          settings: {
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
           },
-        ],
-      });
-  }
+        },
+      ],
+    });
+}
 
 if (jQuery(".product-slider--03").length > 0) {
   $(".product-slider--03").not(".slick-initialized").slick({
@@ -137,7 +135,7 @@ if (jQuery(".product-slider--03__nav").length > 0) {
           slidesToShow: 3,
           slidesToScroll: 1,
         },
-      }
+      },
     ],
   });
 }
@@ -180,7 +178,7 @@ if (jQuery(".product-slider--04").length > 0) {
         {
           breakpoint: 575,
           settings: {
-            dots:true,
+            dots: true,
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows: false,
@@ -189,7 +187,7 @@ if (jQuery(".product-slider--04").length > 0) {
         {
           breakpoint: 379,
           settings: {
-            dots:true,
+            dots: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -229,47 +227,41 @@ function passowrdVisibility(passwrodField, button) {
 }
 passowrdVisibility("#passField", "#eye");
 
-// Bottom Nav 
-$(".mainnav div").click(function() {
+// Bottom Nav
+$(".mainnav div").click(function () {
   $("ul").slideToggle();
   $("ul ul").css("display", "none");
   $(".mainnav .on").toggleClass("on");
 });
-$(".hasDD").click(function(e) {
-  $(this)
-    .find("> ul")
-    .slideToggle();
-  $(this)
-    .find("> ul ul")
-    .css("display", "none");
-  $(this)
-    .find("> ul li")
-    .removeClass("on");
-  $(this).toggleClass("on");
-  e.stopPropagation();
-});
+// $(".hasDD").click(function (e) {
+//   $(this).find("> ul").slideToggle();
+//   $(this).find("> ul ul").css("display", "none");
+//   $(this).find("> ul li").removeClass("on");
+//   $(this).toggleClass("on");
+//   e.stopPropagation();
+// });
 
 // ShowHidenMenu Home Page
-$(document).ready(function() {
-  $('#showHiddenMenuOne').click(function() {
-    $('#hiddenWidgetOne').slideToggle("slow");
-  });
-});
-// ShowHidenMenu Home Page
-$(document).ready(function() {
-  $('#showHiddenMenuTwo').click(function() {
-    $('#hiddenWidgetTwo').slideToggle("slow");
+$(document).ready(function () {
+  $("#showHiddenMenuOne").click(function () {
+    $("#hiddenWidgetOne").slideToggle("slow");
   });
 });
 
+// ShowHidenMenu Home Page
+$(document).ready(function () {
+  $("#showHiddenMenuTwo").click(function () {
+    $("#hiddenWidgetTwo").slideToggle("slow");
+  });
+});
 
 // Catagory all Slectall Shope Page
-$(".selectall").click(function(){
-  $(".individual").prop("checked",$(this).prop("checked"));
+$(".selectall").click(function () {
+  $(".individual").prop("checked", $(this).prop("checked"));
 });
 
 // Porduct Countdown Home Page
-$('#countdown-01').countdown({
+$("#countdown-01").countdown({
   year: 2022, // YYYY Format
   month: 5, // 1-12
   d: 28, // 1-31
