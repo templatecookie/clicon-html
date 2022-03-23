@@ -290,7 +290,6 @@
   
   });/*End document ready*/
   
-  
   $(window).on("resize", function(){
   
   }); // end window resize
@@ -308,3 +307,4 @@
   
   
   
+

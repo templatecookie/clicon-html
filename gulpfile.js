@@ -46,7 +46,7 @@ const path = {
   _partial: "./app/partials/",
   php: "./app/php/**/*.php",
   fonts: "./app/fonts/**/*.*",
-  js: "./app/js/*.*",
+  js: "./app/js/*.js",
   scss: "./app/scss/**/*.scss",
   escScss: "!./app/scss/bootstrap/**.scss",
   img: "./app/image/**/*.+(png|jpg|gif|ico|svg|webp)",
@@ -315,8 +315,8 @@ function sassCopy() {
 function watchFiles() {
   gulp.watch(path.html, html);
   gulp.watch(path._partial, html);
-  gulp.watch([path.plugin.js, path.js, path.fonts, path.img], copyAssets);
-  gulp.watch([path.js], javascript);
+  gulp.watch([path.plugin.js, path.fonts, path.img], copyAssets);
+  gulp.watch(path.js, javascript);
   gulp.watch(path.scss, css);
   gulp.watch(path.root, gulp.series(clean, build));
 }
