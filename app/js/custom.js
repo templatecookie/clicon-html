@@ -1,4 +1,5 @@
 "use strict";
+
 $(document).ready(function () {
   $("select").niceSelect();
 
@@ -255,13 +256,18 @@ $(document).ready(function() {
     $('#hiddenWidgetOne').slideToggle("slow");
   });
 });
-// ShowHidenMenu Home Page
-$(document).ready(function() {
-  $('#showHiddenMenuTwo').click(function() {
-    $('#hiddenWidgetTwo').slideToggle("slow");
-  });
-});
+// ShowHidenMenu Home Page$(document).ready(function() {
+// const signUpPopup = document.getElementById('hiddenWidgetTwo');
+// document.addEventListener('click', function(event) {
+//   if((signUpPopup.style.display == '' || signUpPopup.style.display == "block") && !signUpPopup.contains(event.target)) {
+//     signUpPopup.style.display = 'none';
+//   }
+// });
 
+$('#showHiddenMenuTwo').on('click', function(e) {
+    // signUpPopup.style.display = 'block';
+    $('#hiddenWidgetTwo').slideToggle("slow");
+});
 
 // Catagory all Slectall Shope Page
 $(".selectall").click(function(){
