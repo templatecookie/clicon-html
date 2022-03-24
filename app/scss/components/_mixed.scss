@@ -1277,6 +1277,10 @@
   width: 424px;
   z-index: 99;
   padding: 32px;
+  display: none;
+  &.active {
+    display: block;
+  }
 
   .title {
     font-weight: 600;

@@ -261,14 +261,9 @@
   // });
   
   // ShowHidenMenu Home Page
-    $("#showHiddenMenuOne").click(function () {
-      $("#hiddenWidgetOne").slideToggle("slow");
-    });
+    
   
   // ShowHidenMenu Home Page
-    $("#showHiddenMenuTwo").click(function () {
-      $("#hiddenWidgetTwo").slideToggle("slow");
-    });
   
   // Catagory all Slectall Shope Page
   $(".selectall").click(function () {
@@ -290,21 +285,32 @@
   
   });/*End document ready*/
   
-  $(window).on("resize", function(){
+  // $(window).on("resize", function(){
+  // }); // end window resize
   
-  }); // end window resize
-  
-  $(window).on("load" ,function(){
-  
-  }); // End window LODE
-  
-  
-  })(jQuery);
-  
-  
-  
-  
-  
-  
-  
+  // $(window).on("load" ,function(){
+  // }); // End window LODE
+})(jQuery);
 
+// Example
+const selector = '#hiddenWidgetTwo';
+const button = document.querySelector('showHiddenMenuTwo')
+const box = document.querySelector(selector);
+button.addEventListener('click', toggle(box));
+
+const toggle = (event, box) => {
+  event.stopPropagation();
+  
+  if (!event.target.closest(selector)) {
+    box.style.display = box.style.display == 'block' ? 'none' : 'block'
+    box.style.display == 'block'
+     ? document.addEventListener('click', toggle) 
+     : document.removeEventListener('click', toggle);
+  }
+}
+
+
+const selector1 = '#hiddenWidgetOne';
+const button2 = document.querySelector('showHiddenMenuOne')
+const box2 = document.querySelector(selector1);
+button2.addEventListener('click', toggle(box2));
