@@ -1,44 +1,36 @@
-(function($) {
+(function ($) {
   "use strict";
-  
+
   /*------------------------------------------------------------------
   [Table of contents]
   -------------------------------------------------------------------*/
-  
-  /*--------------------------------------------------------------
-  CUSTOM PRE DEFINE FUNCTION
-  ------------------------------------------------------------*/
-  /* is_exist() */
-  jQuery.fn.is_exist = function(){
+
+  jQuery.fn.is_exist = function () {
     return this.length;
   }
-  
-  $(function () {
-    
-    $("select").niceSelect();
-  
-    AOS.init({
-      once: true,
-    });
-    window.addEventListener("load", AOS.refresh);
-  
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        Counter Up Activation
-    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+  $("select").niceSelect();
+
+  AOS.init({
+    once: true,
+  });
+  window.addEventListener("load", AOS.refresh);
+
+  // Counter Up Activation
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
   });
+
+  // Newsletter Modal
   $("#myModal").modal("show");
   
-  /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-        Slick Slider Activation
-    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  // Slick Slider Activation
   $(".slick-slider").slick();
-  
+
   var product_slider_01 = $('.product-slider-01');
   if (product_slider_01.is_exist()) {
-      product_slider_01.not(".slick-initialized").slick({
+    product_slider_01.not(".slick-initialized").slick({
       dots: true,
       infinite: true,
       speed: 800,
@@ -48,65 +40,64 @@
       fade: true,
     });
   }
-  
+
   var product_slider_02 = $('.product-slider-02');
   if (product_slider_02.is_exist()) {
-      product_slider_02.not(".slick-initialized")
-      .slick({
-        dots: false,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: false,
-        prevArrow: $(".product-slider-02__control-buttons .button--prev"),
-        nextArrow: $(".product-slider-02__control-buttons .button--next"),
-        responsive: [
-          {
-            breakpoint: 1399,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1,
-            },
+    product_slider_02.not(".slick-initialized")
+    .slick({
+      dots: false,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: false,
+      prevArrow: $(".product-slider-02__control-buttons .button--prev"),
+      nextArrow: $(".product-slider-02__control-buttons .button--next"),
+      responsive: [{
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2,
-            },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
           },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 575,
-            settings: {
-              dots: true,
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 379,
-            settings: {
-              dots: true,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
+        },
+        {
+          breakpoint: 379,
+          settings: {
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
           },
-        ],
-      });
+        },
+      ],
+    });
   }
-  
+
   var product_slider_03 = $('.product-slider--03');
   if (product_slider_03.is_exist()) {
-      product_slider_03.not(".slick-initialized").slick({
+    product_slider_03.not(".slick-initialized").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
@@ -117,10 +108,10 @@
       asNavFor: ".product-slider--03__nav",
     });
   }
-  
+
   var product_slider_03__nav = $('.product-slider--03__nav');
-  if ( product_slider_03__nav.is_exist()) {
-      product_slider_03__nav.slick({
+  if (product_slider_03__nav.is_exist()) {
+    product_slider_03__nav.slick({
       slidesToShow: 6,
       slidesToScroll: 1,
       asNavFor: ".product-slider--03",
@@ -131,8 +122,7 @@
       arrows: true,
       prevArrow: $(".product-slider--03__control-buttons .button--prev"),
       nextArrow: $(".product-slider--03__control-buttons .button--next"),
-      responsive: [
-        {
+      responsive: [{
           breakpoint: 991,
           settings: {
             slidesToShow: 5,
@@ -157,76 +147,65 @@
       ],
     });
   }
-  
+
   var product_slider_04 = $('.product-slider--04');
   if (product_slider_04.is_exist()) {
-      product_slider_04.not(".slick-initialized")
-      .slick({
-        dots: true,
-        infinite: true,
-        speed: 800,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        arrows: true,
-        fade: false,
-        prevArrow: $(".product-slider--04__control-buttons .button--prev"),
-        nextArrow: $(".product-slider--04__control-buttons .button--next"),
-        responsive: [
-          {
-            breakpoint: 1399,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 1,
-            },
+    product_slider_04.not(".slick-initialized")
+    .slick({
+      dots: true,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: false,
+      prevArrow: $(".product-slider--04__control-buttons .button--prev"),
+      nextArrow: $(".product-slider--04__control-buttons .button--next"),
+      responsive: [{
+          breakpoint: 1399,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
           },
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 2,
-            },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
           },
-          {
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              arrows: false,
-            },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
           },
-          {
-            breakpoint: 575,
-            settings: {
-              dots: true,
-              slidesToShow: 2,
-              slidesToScroll: 1,
-              arrows: false,
-            },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            dots: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
           },
-          {
-            breakpoint: 379,
-            settings: {
-              dots: true,
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              arrows: false,
-            },
+        },
+        {
+          breakpoint: 379,
+          settings: {
+            dots: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
           },
-        ],
-      });
+        },
+      ],
+    });
   }
-  // /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-  //       Preloader Activation
-  // <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-  
-  // $(window).load(function () {
-  //   setTimeout(function () {
-  //     $("#loader").fadeOut(500);
-  //   }, 1000);
-  //   setTimeout(function () {
-  //     $("#loader").remove();
-  //   }, 2000);
-  // });
+
+  // Password Visibility
   function passowrdVisibility(passwrodField, button) {
     let passField = document.querySelector(passwrodField);
     let icon = document.querySelector(button);
@@ -245,72 +224,67 @@
     }
   }
   passowrdVisibility("#passField", "#eye");
-  
+
   // Bottom Nav
   $(".mainnav div").click(function () {
     $("ul").slideToggle();
     $("ul ul").css("display", "none");
     $(".mainnav .on").toggleClass("on");
   });
-  // $(".hasDD").click(function (e) {
-  //   $(this).find("> ul").slideToggle();
-  //   $(this).find("> ul ul").css("display", "none");
-  //   $(this).find("> ul li").removeClass("on");
-  //   $(this).toggleClass("on");
-  //   e.stopPropagation();
-  // });
-  
-  // ShowHidenMenu Home Page
-    
-  
-  // ShowHidenMenu Home Page
-  
+
   // Catagory all Slectall Shope Page
   $(".selectall").click(function () {
     $(".individual").prop("checked", $(this).prop("checked"));
   });
-  
+
   // Porduct Countdown Home Page
   var countdown_01 = $('#countdown-01');
   if (countdown_01.is_exist()) {
     countdown_01.countdown({
-    year: 2022, // YYYY Format
-    month: 5, // 1-12
-    d: 28, // 1-31
-    h: 0, // 24 hour format 0-23
-    m: 0, // 0-59
-    s: 0, // 0-59
+      year: 2022, // YYYY Format
+      month: 5, // 1-12
+      d: 28, // 1-31
+      h: 0, // 24 hour format 0-23
+      m: 0, // 0-59
+      s: 0, // 0-59
     });
   }
-  
-  });/*End document ready*/
-  
-  // $(window).on("resize", function(){
-  // }); // end window resize
-  
-  // $(window).on("load" ,function(){
-  // }); // End window LODE
 })(jQuery);
 
 // Example
-const selector = '#hiddenWidgetTwo';
-const button = document.querySelector('showHiddenMenuTwo')
-const box = document.querySelector(selector);
-button.addEventListener('click', toggle(box));
-
-const toggle = (event, box) => {
+const toggle = (event, element, selector) => {
   event.stopPropagation();
-  
+
   if (!event.target.closest(selector)) {
-    box.style.display = box.style.display == 'block' ? 'none' : 'block'
-    box.style.display == 'block'
-     ? document.addEventListener('click', toggle) 
-     : document.removeEventListener('click', toggle);
+    element.style.display = element.style.display == 'block' ? 'none' : 'block'
+    element.style.display == 'block' ?
+      document.addEventListener('click', function (event) {
+        toggle(event, element, selector)
+      }) :
+      document.removeEventListener('click', function (event) {
+        toggle(event, element, selector)
+      });
   }
 }
 
+// ShowHidenMenu Home Page
+const selector = '#hiddenWidgetTwo';
+const box = document.querySelector(selector);
+const button = document.querySelector('#showHiddenMenuTwo')
 
+if(button){
+  button.addEventListener('click', function (event) {
+    toggle(event, box, selector)
+  });
+}
+
+// ShowHidenMenu Home Page
 const selector1 = '#hiddenWidgetOne';
-const button2 = document.querySelector('showHiddenMenuOne')
 const box2 = document.querySelector(selector1);
-button2.addEventListener('click', toggle(box2));
+const button2 = document.querySelector('#showHiddenMenuOne')
+
+if(button2){
+  button2.addEventListener('click', function (event) {
+    toggle(event, box2, selector1)
+  });
+}
