@@ -23,7 +23,8 @@
   });
 
   // Newsletter Modal
-  $("#myModal").modal("show");
+  // console.log($("#myModal"));
+  // $("#myModal").modal("show");
   
   // Slick Slider Activation
   $(".slick-slider").slick();
@@ -293,5 +294,23 @@ const button2 = document.querySelector('#showHiddenMenuOne')
 if(button2){
   button2.addEventListener('click', function (event) {
     toggle(event, box2, selector1)
+  });
+}
+
+// Product Quantity
+const input = document.querySelector('.product-quantity');
+const increaseQty = document.querySelector('.quantity-increase');
+const decreaseQty = document.querySelector('.quantity-decrease');
+
+if(input){
+  const inputVal = parseInt(input.value);
+  increaseQty.addEventListener('click', function(){
+    input.value =inputVal + 1;
+  });
+  
+  decreaseQty.addEventListener('click', function(){
+    if(inputVal > 1){
+      input.value =inputVal - 1;
+    }
   });
 }
