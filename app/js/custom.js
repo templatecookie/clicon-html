@@ -108,7 +108,14 @@
       asNavFor: ".product-slider--03__nav",
     });
   }
+  $('.modal').on('shown.bs.modal', function (e) {
+    $('.product-slider--03').slick('setPosition');
+  })
 
+  $('.modal').on('shown.bs.modal', function (e) {
+    $('.product-slider--03__nav').slick('setPosition');
+  })
+  
   var product_slider_03__nav = $('.product-slider--03__nav');
   if (product_slider_03__nav.is_exist()) {
     product_slider_03__nav.slick({
@@ -240,14 +247,14 @@
   // Porduct Countdown Home Page
   var countdown_01 = $('#countdown-01');
   if (countdown_01.is_exist()) {
-    countdown_01.countdown({
+      countdown_01.countdown({
       year: 2022, // YYYY Format
       month: 5, // 1-12
       d: 28, // 1-31
       h: 0, // 24 hour format 0-23
       m: 0, // 0-59
       s: 0, // 0-59
-    });
+      });
   }
 })(jQuery);
 
