@@ -304,6 +304,9 @@
 
       .user {
         position: relative;
+        svg{
+          cursor: pointer;
+        }
       }
     }
   }
@@ -1158,7 +1161,12 @@
     }
   }
 }
-
+.is-active{
+  .shopping-cart-popup{
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .shopping-cart-popup {
   position: absolute;
   top: 45px;
@@ -1171,6 +1179,9 @@
   border-radius: 4px;
   width: 424px;
   z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
 
   .card-header {
     padding: 16px 24px;
@@ -1271,7 +1282,12 @@
     }
   }
 }
-
+.is-active{
+  .signin-popup{
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .signin-popup {
   position: absolute;
   top: 45px;
@@ -1285,7 +1301,9 @@
   width: 424px;
   z-index: 99;
   padding: 32px;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
   &.active {
     display: block;
   }

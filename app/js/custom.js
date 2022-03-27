@@ -276,26 +276,42 @@ const toggle = (event, element, selector) => {
 }
 
 // ShowHidenMenu Home Page
-const selector = '#hiddenWidgetTwo';
-const box = document.querySelector(selector);
-const button = document.querySelector('#showHiddenMenuTwo')
+// const selector = '#hiddenWidgetTwo';
+// const box = document.querySelector(selector);
+// const button = document.querySelector('#showHiddenMenuTwo')
 
-if(button){
-  button.addEventListener('click', function (event) {
-    toggle(event, box, selector)
-  });
-}
+// if(button){
+//   button.addEventListener('click', function (event) {
+//     toggle(event, box, selector)
+//   });
+// }
 
-// ShowHidenMenu Home Page
-const selector1 = '#hiddenWidgetOne';
-const box2 = document.querySelector(selector1);
-const button2 = document.querySelector('#showHiddenMenuOne')
+// show & hide cart Home Page
+const $cart = $('.cart-hide_show');
+$(document).mouseup(e => {
+   if (!$cart.is(e.target) // if the target of the click isn't the container...
+   && $cart.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $cart.removeClass('is-active');
+  }
+ });
+$('#showHiddenMenuOne').on('click', () => {
+  $cart.toggleClass('is-active');
+});
 
-if(button2){
-  button2.addEventListener('click', function (event) {
-    toggle(event, box2, selector1)
-  });
-}
+// show & hide user Home Page
+const $user = $('.user-hide_show');
+$(document).mouseup(e => {
+   if (!$user.is(e.target) // if the target of the click isn't the container...
+   && $user.has(e.target).length === 0) // ... nor a descendant of the container
+   {
+     $user.removeClass('is-active');
+  }
+ });
+$('#showHiddenMenuTwo').on('click', () => {
+  $user.toggleClass('is-active');
+});
+
 
 // Product Quantity
 const input = document.querySelector('.product-quantity');
@@ -318,13 +334,13 @@ if(input){
 
 // visa card
 const copyNumber = document.getElementById('copynumber')
-copyNumber.addEventListener("click", () => {
+copyNumber.addEventListener("click", function() {
   navigator.clipboard.writeText('*** *** ***  3814')
   alert('Successfully Copy')
 })
 
 const copyNumber2 = document.getElementById('copynumber2')
-copyNumber2.addEventListener("click", () => {
+copyNumber2.addEventListener("click", function() {
   navigator.clipboard.writeText('*** *** ***  1767')
   alert('Successfully Copy')
 })
