@@ -333,14 +333,21 @@ if(input){
 
 
 // visa card
-const copyNumber = document.getElementById('copynumber')
-copyNumber.addEventListener("click", function() {
-  navigator.clipboard.writeText('*** *** ***  3814')
-  alert('Successfully Copy')
-})
 
-const copyNumber2 = document.getElementById('copynumber2')
-copyNumber2.addEventListener("click", function() {
-  navigator.clipboard.writeText('*** *** ***  1767')
-  alert('Successfully Copy')
-})
+function myCardNumber1(){
+  const copyNumber = document.getElementById('copynumber')
+  copyNumber.addEventListener("click", function() {
+    navigator.clipboard.writeText('*** *** ***  3814')
+    alert('Successfully Copy')
+  })
+}
+myCardNumber1()
+
+function myCardNumber2(){
+  const copyNumber2 = document.getElementById('copynumber2')
+  copyNumber2.addEventListener("click", function() {
+    navigator.clipboard.writeText('*** *** ***  1767')
+    alert('Successfully Copy')
+  })
+}
+myCardNumber2()
