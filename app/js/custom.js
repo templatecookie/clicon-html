@@ -314,3 +314,17 @@ if(input){
     }
   });
 }
+
+
+// visa card
+const copyNumber = document.getElementById('copynumber')
+copyNumber.addEventListener("click", () => {
+  navigator.clipboard.writeText('*** *** ***  3814')
+  alert('Successfully Copy')
+})
+
+const copyNumber2 = document.getElementById('copynumber2')
+copyNumber2.addEventListener("click", () => {
+  navigator.clipboard.writeText('*** *** ***  1767')
+  alert('Successfully Copy')
+})
