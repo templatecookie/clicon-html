@@ -411,7 +411,9 @@
           border-radius: 3px !important;
           padding: 12px 0;
           z-index: 999;
-          display: none;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.4s;
           li {
             a {
               padding: 8px 16px;
@@ -444,7 +446,7 @@
                   transition: 0.3s;
 
                   .featured-itme-01 {
-                    transition: 0.3s;
+                    transition: 0.4s;
                     opacity: 0;
                     visibility: hidden;
                   }
@@ -493,6 +495,7 @@
                     .featured-itme-01 {
                       opacity: 1;
                       visibility: visible;
+                      transition: all 0.4s;
                     }
                   }
                 }
@@ -509,6 +512,9 @@
             border-radius: 3px;
             padding: 20px;
             padding-right: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.4s;
 
             li {
               position: relative;
@@ -529,6 +535,9 @@
               top: 0;
               left: 100%;
               min-width: 684px;
+              opacity: 0;
+              visibility: hidden;
+              transition: all 0.4s;
             }
           }
         }
@@ -4306,7 +4315,34 @@ blockquote {
 
 // catagory menu niye joto kahani
 .mainnav {
-  .sub-one {
-    display: block;
+  &:hover .sub-one {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+li.hasDD.category-nav{
+  &:hover{
+    .sub-one {
+      opacity: 1!important;
+      visibility: visible!important;
+    }
+  }
+}
+li.hasDD.hasDDtwo{
+  &:hover{
+    .sub-two{
+      opacity: 1!important;
+      visibility: visible!important;
+    }
+  }
+}
+
+.sub-two li{
+  &:hover{
+    .featured-itme-01{
+      opacity: 1!important;
+      visibility: visible!important;
+    }
   }
 }
