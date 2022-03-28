@@ -214,24 +214,24 @@
   }
 
   // Password Visibility
-  function passowrdVisibility(passwrodField, button) {
-    let passField = document.querySelector(passwrodField);
-    let icon = document.querySelector(button);
-    if (icon !== null && passField !== null) {
-      icon.addEventListener("click", () => {
-        if (passField.type === "password") {
-          passField.type = "text";
-          icon.classList.add("fa-eye");
-          icon.classList.remove("fa-eye-slash");
-        } else {
-          passField.type = "password";
-          icon.classList.remove("fa-eye");
-          icon.classList.add("fa-eye-slash");
-        }
-      });
-    }
-  }
-  passowrdVisibility("#passField", "#eye");
+  // function passowrdVisibility(passwrodField, button) {
+  //   let passField = document.querySelector(passwrodField);
+  //   let icon = document.querySelector(button);
+  //   if (icon !== null && passField !== null) {
+  //     icon.addEventListener("click", () => {
+  //       if (passField.type === "password") {
+  //         passField.type = "text";
+  //         icon.classList.add("fa-eye");
+  //         icon.classList.remove("fa-eye-slash");
+  //       } else {
+  //         passField.type = "password";
+  //         icon.classList.remove("fa-eye");
+  //         icon.classList.add("fa-eye-slash");
+  //       }
+  //     });
+  //   }
+  // }
+  // passowrdVisibility("#passField", "#eye");
 
   // Bottom Nav
   $(".mainnav div").click(function () {
@@ -402,10 +402,79 @@ $('#showHiddenMenuTwo').on('click', () => {
       quantityTwo.value = quantity2;
     });
   }
- 
+
+
+//  password hide & show function
+function showPassword(input, icon) {
+  icon.addEventListener("click", (e) => {
+    // todo 1:  toggle eye show / hide
+    icon.classList.toggle("fa-eye-slash");
+
+    // todo 2: input type
+    input.type === "password"
+      ? (input.type = "text")
+      : (input.type = "password");
+  });
+}
+
+  // password hide & show
+  const finputOne = document.querySelector("#password-hide_show1");
+  const ficonOne = document.querySelector(".select-icon__one i");
+
+  const finputTwo = document.querySelector("#password-hide_show2");
+  const ficonTwo = document.querySelector(".select-icon__two i");
+
+  const finputThree = document.querySelector("#password-hide_show3");
+  const ficonThree = document.querySelector(".select-icon__three i");
+
+  const finputFour = document.querySelector("#password-hide_show4");
+  const ficonFour = document.querySelector(".select-icon__four i");
+
+  const finputFive = document.querySelector("#password-hide_show5");
+  const ficonFive = document.querySelector(".select-icon__five i");
+
+  const finputSix = document.querySelector("#password-hide_show6");
+  const ficonSix = document.querySelector(".select-icon__six i");
+
+  const finputSeven = document.querySelector("#password-hide_show7");
+  const ficonSeven = document.querySelector(".select-icon__seven i");
+
+  const finputEight = document.querySelector("#password-hide_show8");
+  const ficonEight = document.querySelector(".select-icon__eight i");
+
+  if (finputOne || ficonOne) {
+    showPassword(finputOne, ficonOne );
+  }
+
+  if (finputTwo || ficonTwo) {
+    showPassword(finputTwo, ficonTwo);
+  }
+
+  if (finputThree || ficonThree) {
+    showPassword(finputThree, ficonThree);
+  }
+
+  if (finputFour || ficonFour) {
+    showPassword(finputFour, ficonFour);
+  }
   
+  if (finputFive || ficonFive) {
+    showPassword(finputFive, ficonFive);
+  }
 
+  if (finputSix || ficonSix) {
+    showPassword(finputSix, ficonSix);
+  }
 
+  if (finputSeven || ficonSeven) {
+    showPassword(finputSeven, ficonSeven);
+  }
+
+  if (finputEight || ficonEight) {
+    showPassword(finputEight, ficonEight);
+  }
+  
+  
 
 
 
