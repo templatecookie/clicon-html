@@ -314,40 +314,98 @@ $('#showHiddenMenuTwo').on('click', () => {
 
 
 // Product Quantity
-const input = document.querySelector('.product-quantity');
-const increaseQty = document.querySelector('.quantity-increase');
-const decreaseQty = document.querySelector('.quantity-decrease');
+// const input = document.querySelector('.product-quantity');
+// const increaseQty = document.querySelector('.quantity-increase');
+// const decreaseQty = document.querySelector('.quantity-decrease');
 
-if(input){
-  const inputVal = parseInt(input.value);
-  increaseQty.addEventListener('click', function(){
-    input.value =inputVal + 1;
-  });
+// if(input){
+//   const inputVal = parseInt(input.value);
+//   increaseQty.addEventListener('click', function(){
+//     input.value =inputVal + 1;
+//   });
   
-  decreaseQty.addEventListener('click', function(){
-    if(inputVal > 1){
-      input.value =inputVal - 1;
-    }
-  });
-}
-
+//   decreaseQty.addEventListener('click', function(){
+//     if(inputVal > 1){
+//       input.value =inputVal - 1;
+//     }
+//   });
+// }
 
 // visa card
 
-function myCardNumber1(){
   const copyNumber = document.getElementById('copynumber')
-  copyNumber.addEventListener("click", function() {
-    navigator.clipboard.writeText('*** *** ***  3814')
-    alert('Successfully Copy')
-  })
-}
-myCardNumber1()
-
-function myCardNumber2(){
+  if(copyNumber){
+    copyNumber.addEventListener("click", () => {
+      navigator.clipboard.writeText('*** *** ***  3814')
+      alert('Successfully Copy')
+    })
+  }
+  
   const copyNumber2 = document.getElementById('copynumber2')
-  copyNumber2.addEventListener("click", function() {
-    navigator.clipboard.writeText('*** *** ***  1767')
-    alert('Successfully Copy')
-  })
-}
-myCardNumber2()
+  if(copyNumber2){
+    copyNumber2.addEventListener("click", () => {
+      navigator.clipboard.writeText('*** *** ***  1767')
+      alert('Successfully Copy')
+    })
+  }
+
+ 
+// // Product Quantity of product details page
+  const minus = document.querySelector(".quantity-decrease");
+  const plus = document.querySelector(".quantity-increase");
+  const quantityOne = document.querySelector(".quantity-one");
+
+  if(quantityOne){
+    var quantity = 1;
+    quantityOne.value = quantity;
+  }
+
+  if(minus){
+    minus.addEventListener('click', () => {
+      if (quantity > 1) {
+          quantity --;
+        quantityOne.value = quantity;
+      }
+    });
+  }
+
+  if(plus){
+    plus.addEventListener('click', () => {
+      quantity ++;
+      quantityOne.value = quantity;
+    });
+  }
+
+
+// // Product Quantity of shopping card page
+  const minusTwo = document.querySelector(".quantity-decrease-two");
+  const plusTwo = document.querySelector(".quantity-increase-two");
+  const quantityTwo = document.querySelector(".quantity-two");
+
+  if(quantityTwo){
+    var quantity2 = 1;
+    quantityTwo.value = quantity2;
+  }
+  
+  if(minusTwo){
+    minusTwo.addEventListener('click', () => {
+      if (quantity2 > 1) {
+          quantity2 --;
+        quantityTwo.value = quantity2;
+      }
+    });
+  }
+  
+  if(plusTwo){
+    plusTwo.addEventListener('click', () => {
+      quantity2 ++;
+      quantityTwo.value = quantity2;
+    });
+  }
+ 
+  
+
+
+
+
+
