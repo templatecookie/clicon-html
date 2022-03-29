@@ -24,7 +24,9 @@
 
   // Newsletter Modal
   // console.log($("#myModal"));
+
   // $("#myModal").modal("show");
+  
   
   // Slick Slider Activation
   $(".slick-slider").slick();
