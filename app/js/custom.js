@@ -3,14 +3,17 @@
 
   /*------------------------------------------------------------------
   [Table of contents]
+  
   -------------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+CUSTOM PRE DEFINE FUNCTION
+------------------------------------------------------------*/
   jQuery.fn.is_exist = function () {
     return this.length;
   }
 
   $("select").niceSelect();
-
   AOS.init({
     once: true,
   });
@@ -33,7 +36,7 @@
 
   var product_slider_01 = $('.product-slider-01');
   if (product_slider_01.is_exist()) {
-    product_slider_01.not(".slick-initialized").slick({
+      product_slider_01.not(".slick-initialized").slick({
       dots: true,
       infinite: true,
       speed: 800,
@@ -46,8 +49,7 @@
 
   var product_slider_02 = $('.product-slider-02');
   if (product_slider_02.is_exist()) {
-    product_slider_02.not(".slick-initialized")
-    .slick({
+      product_slider_02.not(".slick-initialized").slick({
       dots: false,
       infinite: true,
       speed: 800,
@@ -100,7 +102,7 @@
 
   var product_slider_03 = $('.product-slider--03');
   if (product_slider_03.is_exist()) {
-    product_slider_03.not(".slick-initialized").slick({
+      product_slider_03.not(".slick-initialized").slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
@@ -121,7 +123,7 @@
   
   var product_slider_03__nav = $('.product-slider--03__nav');
   if (product_slider_03__nav.is_exist()) {
-    product_slider_03__nav.slick({
+      product_slider_03__nav.slick({
       slidesToShow: 6,
       slidesToScroll: 1,
       asNavFor: ".product-slider--03",
@@ -160,8 +162,7 @@
 
   var product_slider_04 = $('.product-slider--04');
   if (product_slider_04.is_exist()) {
-    product_slider_04.not(".slick-initialized")
-    .slick({
+      product_slider_04.not(".slick-initialized").slick({
       dots: true,
       infinite: true,
       speed: 800,
@@ -215,26 +216,6 @@
     });
   }
 
-  // Password Visibility
-  // function passowrdVisibility(passwrodField, button) {
-  //   let passField = document.querySelector(passwrodField);
-  //   let icon = document.querySelector(button);
-  //   if (icon !== null && passField !== null) {
-  //     icon.addEventListener("click", () => {
-  //       if (passField.type === "password") {
-  //         passField.type = "text";
-  //         icon.classList.add("fa-eye");
-  //         icon.classList.remove("fa-eye-slash");
-  //       } else {
-  //         passField.type = "password";
-  //         icon.classList.remove("fa-eye");
-  //         icon.classList.add("fa-eye-slash");
-  //       }
-  //     });
-  //   }
-  // }
-  // passowrdVisibility("#passField", "#eye");
-
   // Bottom Nav
   $(".mainnav div").click(function () {
     $("ul").slideToggle();
@@ -276,18 +257,6 @@ const toggle = (event, element, selector) => {
       });
   }
 }
-
-// ShowHidenMenu Home Page
-// const selector = '#hiddenWidgetTwo';
-// const box = document.querySelector(selector);
-// const button = document.querySelector('#showHiddenMenuTwo')
-
-// if(button){
-//   button.addEventListener('click', function (event) {
-//     toggle(event, box, selector)
-//   });
-// }
-
 // show & hide cart Home Page
 const $cart = $('.cart-hide_show');
 $(document).mouseup(e => {
@@ -313,25 +282,6 @@ $(document).mouseup(e => {
 $('#showHiddenMenuTwo').on('click', () => {
   $user.toggleClass('is-active');
 });
-
-
-// Product Quantity
-// const input = document.querySelector('.product-quantity');
-// const increaseQty = document.querySelector('.quantity-increase');
-// const decreaseQty = document.querySelector('.quantity-decrease');
-
-// if(input){
-//   const inputVal = parseInt(input.value);
-//   increaseQty.addEventListener('click', function(){
-//     input.value =inputVal + 1;
-//   });
-  
-//   decreaseQty.addEventListener('click', function(){
-//     if(inputVal > 1){
-//       input.value =inputVal - 1;
-//     }
-//   });
-// }
 
 // visa card
 
