@@ -1,10 +1,27 @@
 (function ($) {
   "use strict";
 
-  /*------------------------------------------------------------------
-  [Table of contents]
-  
-  -------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+[Table of contents]
+----------------------------------------
+1.NICE SELECT JS INIT
+2.COUNTER UP JS INIT
+3.NEWSLETTER MODAL JS INIT
+4.PRODUCT SLIDER 01 JS INIT
+5.PRODUCT SLIDER 02 JS INIT
+6.PRODUCT SLIDER 03 JS INIT
+7.PRODUCT SLIDER 04 JS INIT
+8.BOTTOM NAV JS INIT
+9.CATEGORY ALL SLECT  JS INIT SHOP PAGE
+10.PRODUCT COUNTDOWN JS INIT HOME PAGE
+11.EXAMPLE JS INIT
+12.SHOW & HIDE CART JS INIT HOME PAGE
+13.SHOW & HIDE USER JS INIT HOME PAGE
+14.VISA CARD NUMBER COPY JS INIT
+15.PRODUCT QUANTITY JS INIT
+16.PASSWORD HIDE & SHOW JS INIT
+
+-------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 CUSTOM PRE DEFINE FUNCTION
@@ -13,25 +30,35 @@ CUSTOM PRE DEFINE FUNCTION
     return this.length;
   }
 
+/*--------------------------------------------------------------
+1.NICE SELECT JS INIT
+--------------------------------------------------------------*/
   $("select").niceSelect();
   AOS.init({
     once: true,
   });
   window.addEventListener("load", AOS.refresh);
 
-  // Counter Up Activation
+/*--------------------------------------------------------------
+2.COUNTER UP JS INIT
+--------------------------------------------------------------*/
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
   });
 
+/*--------------------------------------------------------------
+3.NEWSLETTER MODAL JS INIT
+--------------------------------------------------------------*/
   // Newsletter Modal
   // console.log($("#myModal"));
 
   // $("#myModal").modal("show");
   
   
-  // Slick Slider Activation
+/*--------------------------------------------------------------
+4.PRODUCT SLIDER 01 JS INIT
+--------------------------------------------------------------*/
   $(".slick-slider").slick();
 
   var product_slider_01 = $('.product-slider-01');
@@ -46,7 +73,9 @@ CUSTOM PRE DEFINE FUNCTION
       fade: true,
     });
   }
-
+/*--------------------------------------------------------------
+5.PRODUCT SLIDER 02 JS INIT
+--------------------------------------------------------------*/
   var product_slider_02 = $('.product-slider-02');
   if (product_slider_02.is_exist()) {
       product_slider_02.not(".slick-initialized").slick({
@@ -100,6 +129,9 @@ CUSTOM PRE DEFINE FUNCTION
     });
   }
 
+/*--------------------------------------------------------------
+6.PRODUCT SLIDER 03 JS INIT
+--------------------------------------------------------------*/
   var product_slider_03 = $('.product-slider--03');
   if (product_slider_03.is_exist()) {
       product_slider_03.not(".slick-initialized").slick({
@@ -160,6 +192,9 @@ CUSTOM PRE DEFINE FUNCTION
     });
   }
 
+/*--------------------------------------------------------------
+7.PRODUCT SLIDER 04 JS INIT
+--------------------------------------------------------------*/
   var product_slider_04 = $('.product-slider--04');
   if (product_slider_04.is_exist()) {
       product_slider_04.not(".slick-initialized").slick({
@@ -215,19 +250,26 @@ CUSTOM PRE DEFINE FUNCTION
       ],
     });
   }
-
-  // Bottom Nav
+/*--------------------------------------------------------------
+8.BOTTOM NAV JS INIT
+--------------------------------------------------------------*/
   $(".mainnav div").click(function () {
     $("ul").slideToggle();
     $("ul ul").css("display", "none");
     $(".mainnav .on").toggleClass("on");
   });
 
+/*--------------------------------------------------------------
+9.CATEGORY ALL SLECT  JS INIT SHOP PAGE
+--------------------------------------------------------------*/
   // Catagory all Slectall Shope Page
   $(".selectall").click(function () {
     $(".individual").prop("checked", $(this).prop("checked"));
   });
 
+/*--------------------------------------------------------------
+10.PRODUCT COUNTDOWN JS INIT HOME PAGE
+--------------------------------------------------------------*/
   // Porduct Countdown Home Page
   var countdown_01 = $('#countdown-01');
   if (countdown_01.is_exist()) {
@@ -242,7 +284,9 @@ CUSTOM PRE DEFINE FUNCTION
   }
 })(jQuery);
 
-// Example
+/*--------------------------------------------------------------
+11.EXAMPLE JS INIT
+--------------------------------------------------------------*/
 const toggle = (event, element, selector) => {
   event.stopPropagation();
 
@@ -257,7 +301,9 @@ const toggle = (event, element, selector) => {
       });
   }
 }
-// show & hide cart Home Page
+/*--------------------------------------------------------------
+12.SHOW & HIDE CART JS INIT HOME PAGE
+--------------------------------------------------------------*/
 const $cart = $('.cart-hide_show');
 $(document).mouseup(e => {
    if (!$cart.is(e.target) // if the target of the click isn't the container...
@@ -269,8 +315,9 @@ $(document).mouseup(e => {
 $('#showHiddenMenuOne').on('click', () => {
   $cart.toggleClass('is-active');
 });
-
-// show & hide user Home Page
+/*--------------------------------------------------------------
+13.SHOW & HIDE USER JS INIT HOME PAGE
+--------------------------------------------------------------*/
 const $user = $('.user-hide_show');
 $(document).mouseup(e => {
    if (!$user.is(e.target) // if the target of the click isn't the container...
@@ -283,8 +330,9 @@ $('#showHiddenMenuTwo').on('click', () => {
   $user.toggleClass('is-active');
 });
 
-// visa card
-
+/*--------------------------------------------------------------
+14.VISA CARD NUMBER COPY JS INIT
+--------------------------------------------------------------*/
   const copyNumber = document.getElementById('copynumber')
   if(copyNumber){
     copyNumber.addEventListener("click", () => {
@@ -301,7 +349,9 @@ $('#showHiddenMenuTwo').on('click', () => {
     })
   }
 
- 
+ /*--------------------------------------------------------------
+15.PRODUCT QUANTITY JS INIT
+--------------------------------------------------------------*/
 // // Product Quantity of product details page
   const minus = document.querySelector(".quantity-decrease");
   const plus = document.querySelector(".quantity-increase");
@@ -355,20 +405,21 @@ $('#showHiddenMenuTwo').on('click', () => {
     });
   }
 
+/*--------------------------------------------------------------
+16.PASSWORD HIDE & SHOW JS INIT
+--------------------------------------------------------------*/
+  //  password hide & show function
+  function showPassword(input, icon) {
+    icon.addEventListener("click", (e) => {
+      // todo 1:  toggle eye show / hide
+      icon.classList.toggle("fa-eye-slash");
 
-//  password hide & show function
-function showPassword(input, icon) {
-  icon.addEventListener("click", (e) => {
-    // todo 1:  toggle eye show / hide
-    icon.classList.toggle("fa-eye-slash");
-
-    // todo 2: input type
-    input.type === "password"
-      ? (input.type = "text")
-      : (input.type = "password");
-  });
-}
-
+      // todo 2: input type
+      input.type === "password"
+        ? (input.type = "text")
+        : (input.type = "password");
+    });
+  }
   // password hide & show
   const finputOne = document.querySelector("#password-hide_show1");
   const ficonOne = document.querySelector(".select-icon__one i");
