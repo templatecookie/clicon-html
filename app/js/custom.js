@@ -51,10 +51,9 @@ CUSTOM PRE DEFINE FUNCTION
 3.NEWSLETTER MODAL JS INIT
 --------------------------------------------------------------*/
   // Newsletter Modal
-  // console.log($("#myModal"));
-
-  // $("#myModal").modal("show");
-  
+  // $(document).ready(function () {
+  //   $("#myModal").modal("show");
+  // });
   
 /*--------------------------------------------------------------
 4.PRODUCT SLIDER 01 JS INIT
@@ -445,6 +444,9 @@ $('#showHiddenMenuTwo').on('click', () => {
   const finputEight = document.querySelector("#password-hide_show8");
   const ficonEight = document.querySelector(".select-icon__eight i");
 
+  const finputNine = document.querySelector("#password-hide_show9");
+  const ficonNine = document.querySelector(".select-icon__nine i");
+
   if (finputOne || ficonOne) {
     showPassword(finputOne, ficonOne );
   }
@@ -475,6 +477,10 @@ $('#showHiddenMenuTwo').on('click', () => {
 
   if (finputEight || ficonEight) {
     showPassword(finputEight, ficonEight);
+  }
+
+  if (finputNine || ficonNine) {
+    showPassword(finputNine, ficonNine);
   }
   
   
