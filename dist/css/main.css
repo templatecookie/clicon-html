@@ -8049,7 +8049,7 @@ li.hasDD.hasDDtwo:hover .sub-two {
 .products-section-02 {
   padding: 72px 0;
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .products-section-02__add-wrapper {
     display: flex;
     align-items: center;
