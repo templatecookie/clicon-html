@@ -77,7 +77,6 @@
         className:"bg-success-500 text-white"
         }
 
-
 ]%}
 <div class="products-section-01">
     <div class="container">
@@ -96,29 +95,29 @@
                         <div class="button-group">
                             <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                                    <button class="nav-link active" id="pills-all-2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-all-2" type="button" role="tab" aria-controls="pills-all-2"
                                         aria-selected="true">All Product</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-key-mouse-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-key-mouse" type="button" role="tab"
-                                        aria-controls="pills-key-mouse" aria-selected="false">Keyboard & Mouse</button>
+                                    <button class="nav-link" id="pills-smart-phone-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-smart-phone" type="button" role="tab"
+                                        aria-controls="pills-smart-phone" aria-selected="false">Smart Phone</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-headphon-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-headphon" type="button" role="tab" aria-controls="pills-headphon"
+                                    <button class="nav-link" id="pills-laptop-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-laptop" type="button" role="tab" aria-controls="pills-laptop"
+                                        aria-selected="false">Laptop</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-headphone-2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-headphone-2" type="button" role="tab" aria-controls="pills-headphone-2"
                                         aria-selected="false">Headphone</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-webcam-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-webcam" type="button" role="tab" aria-controls="pills-webcam"
-                                        aria-selected="false">Webcam</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-printer-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-printer" type="button" role="tab" aria-controls="pills-printer"
-                                        aria-selected="false">Printer</button>
+                                    <button class="nav-link" id="pills-tv-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-tv" type="button" role="tab" aria-controls="pills-tv"
+                                        aria-selected="false">TV</button>
                                 </li>
                             </ul>
                             <div class="all-product-button">
@@ -136,8 +135,8 @@
                         </div>
                     </div>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
-                            aria-labelledby="pills-all-tab">
+                        <div class="tab-pane fade show active" id="pills-all-2" role="tabpanel"
+                            aria-labelledby="pills-all-2-tab">
                             <div class="products-section-01__wrappper--product">
                                 {% for item in cardData%}
                                 {{Card.ProductCardThree({
@@ -154,8 +153,8 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-key-mouse" role="tabpanel"
-                            aria-labelledby="pills-key-mouse-tab">
+                        <div class="tab-pane fade" id="pills-smart-phone" role="tabpanel"
+                            aria-labelledby="pills-smart-phone-tab">
                             <div class="products-section-01__wrappper--product">
                                 {% for item in cardData%}
                                 {{Card.ProductCardThree({
@@ -172,8 +171,8 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-headphon" role="tabpanel"
-                            aria-labelledby="pills-headphon-tab">
+                        <div class="tab-pane fade" id="pills-laptop" role="tabpanel"
+                            aria-labelledby="pills-laptop-tab">
                             <div class="products-section-01__wrappper--product">
                                 {% for item in cardData%}
                                 {{Card.ProductCardThree({
@@ -190,7 +189,7 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-webcam" role="tabpanel" aria-labelledby="pills-webcam-tab">
+                        <div class="tab-pane fade" id="pills-headphone-2" role="tabpanel" aria-labelledby="pills-headphone-2-tab">
                             <div class="products-section-01__wrappper--product">
                                 {% for item in cardData%}
                                 {{Card.ProductCardThree({
@@ -207,8 +206,8 @@
                                 {% endfor %}
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="pills-printer" role="tabpanel"
-                            aria-labelledby="pills-printer-tab">
+                        <div class="tab-pane fade" id="pills-tv" role="tabpanel"
+                            aria-labelledby="pills-tv-tab">
                             <div class="products-section-01__wrappper--product">
                                 {% for item in cardData%}
                                 {{Card.ProductCardThree({

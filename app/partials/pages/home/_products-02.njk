@@ -94,32 +94,57 @@
                     </div>
                 </div>
                 <div class="col-xxl-9 order-xxl-1">
-                    <div class="products-section-02__wrappper">
-                        <div class="products-section-02__wrappper--content">
-                            <div class="section-title">
-                                <h2 class="title">Computer Accessories</h2>
-                            </div>
-                            <div class="button-group">
-                                <div class="filter-buttton">
-                                    <button class="active">All Product</button>
-                                    <button>Keyboard & Mouse</button>
-                                    <button>Headphone</button>
-                                    <button>Webcam</button>
-                                    <button>Printer</button>
-                                </div>
-                                <div class="all-product-button">
-                                    <a class="text-btn" href="#">Browse All Product
-                                    
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3.125 10H16.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M11.25 4.375L16.875 10L11.25 15.625" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-
-                                    </a>
-                                </div>
-                            </div>
+                <div class="products-section-02__wrappper">
+                    <div class="products-section-02__wrappper--content">
+                        <div class="section-title">
+                            <h2 class="title">Featured Products</h2>
                         </div>
-                        <div class="products-section-02__wrappper--product">
+                        <div class="button-group">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
+                                        aria-selected="true">All Product</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-key-mouse-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-key-mouse" type="button" role="tab"
+                                        aria-controls="pills-key-mouse" aria-selected="false">Keyboard & Mouse</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-headphon-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-headphon" type="button" role="tab" aria-controls="pills-headphon"
+                                        aria-selected="false">Headphone</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-webcam-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-webcam" type="button" role="tab" aria-controls="pills-webcam"
+                                        aria-selected="false">Webcam</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-printer-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-printer" type="button" role="tab" aria-controls="pills-printer"
+                                        aria-selected="false">Printer</button>
+                                </li>
+                            </ul>
+                            <div class="all-product-button">
+                                <a class="text-btn" href="#">Browse All Product
+    
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.125 10H16.875" stroke="#FA8232" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M11.25 4.375L16.875 10L11.25 15.625" stroke="#FA8232"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+    
+                            </a></div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                            aria-labelledby="pills-all-tab">
+                            <div class="products-section-02__wrappper--product">
                             {% for item in cardData%}
                                 {{Card.ProductCardThree({
                                     img:item.img,
@@ -133,8 +158,81 @@
                                     className:item.className
                                 })}}
                             {% endfor %}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-key-mouse" role="tabpanel"
+                            aria-labelledby="pills-key-mouse-tab">
+                            <div class="products-section-02__wrappper--product">
+                            {% for item in cardData%}
+                                {{Card.ProductCardThree({
+                                    img:item.img,
+                                    title:item.title,
+                                    del:item.del,
+                                    count:item.count,
+                                    price:item.price,
+                                    sOne:item.sOne,
+                                    badge:item.badge,
+                                    offerTage:item.offerTage,
+                                    className:item.className
+                                })}}
+                            {% endfor %}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-headphon" role="tabpanel"
+                            aria-labelledby="pills-headphon-tab">
+                            <div class="products-section-02__wrappper--product">
+                            {% for item in cardData%}
+                                {{Card.ProductCardThree({
+                                    img:item.img,
+                                    title:item.title,
+                                    del:item.del,
+                                    count:item.count,
+                                    price:item.price,
+                                    sOne:item.sOne,
+                                    badge:item.badge,
+                                    offerTage:item.offerTage,
+                                    className:item.className
+                                })}}
+                            {% endfor %}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-webcam" role="tabpanel" aria-labelledby="pills-webcam-tab">
+                            <div class="products-section-02__wrappper--product">
+                            {% for item in cardData%}
+                                {{Card.ProductCardThree({
+                                    img:item.img,
+                                    title:item.title,
+                                    del:item.del,
+                                    count:item.count,
+                                    price:item.price,
+                                    sOne:item.sOne,
+                                    badge:item.badge,
+                                    offerTage:item.offerTage,
+                                    className:item.className
+                                })}}
+                            {% endfor %}
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-printer" role="tabpanel"
+                            aria-labelledby="pills-printer-tab">
+                            <div class="products-section-02__wrappper--product">
+                            {% for item in cardData%}
+                                {{Card.ProductCardThree({
+                                    img:item.img,
+                                    title:item.title,
+                                    del:item.del,
+                                    count:item.count,
+                                    price:item.price,
+                                    sOne:item.sOne,
+                                    badge:item.badge,
+                                    offerTage:item.offerTage,
+                                    className:item.className
+                                })}}
+                            {% endfor %}
+                            </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
