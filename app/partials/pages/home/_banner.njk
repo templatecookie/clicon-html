@@ -2,8 +2,8 @@
 {% macro render(args) %}
     <div class="banner-area">
         <div class="container">
-            <div class="row align-items-stretch">
-                <div class="col-xl-8">
+            <div class="row">
+                <div class="col-xxl-8">
                     <div class="banner-area__slider">
                         <div class="product-slider-01">
                             <div class="single-slider">
@@ -75,12 +75,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
-                    <div class="banner-area__add-one">
-                        {{MixtComponent.AddOne()}}
-                    </div>
-                    <div class="banner-area__add-two">
-                        {{MixtComponent.AddTwo()}}
+                <div class="col-xxl-4">
+                    <div class="banner-area__add">
+                        <div class="one">
+                            {{MixtComponent.AddOne()}}
+                        </div>
+                        <div class="two">
+                            {{MixtComponent.AddTwo()}}
+                        </div>
                     </div>
                 </div>
             </div>

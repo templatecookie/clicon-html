@@ -607,8 +607,13 @@
   padding: 40px 46px;
   background: var(--bs-gray-900);
   border-radius: 6px;
-
+  @media (max-width:992px) {
+    padding: 50px 46px;
+  }
   .add-content {
+    @media (max-width:480px) {
+      text-align: center;
+    }
     .subtitle {
       text-transform: uppercase;
       font-weight: 500;
@@ -646,6 +651,9 @@
   }
 
   .add-image {
+    @media (max-width:480px) {
+      display: none;
+    }
     bottom: 0;
     position: absolute;
     right: 0;
@@ -669,11 +677,20 @@
   padding: 40px 40px 40px 32px;
   background: var(--bs-gray-50);
   display: grid;
-  grid-template-columns: auto auto;
   gap: 20px;
   border-radius: 6px;
-
+  @media (min-width:480px) {
+    grid-template-columns: auto auto;
+  }
+  .add-image{
+    @media (max-width:480px) {
+      display: none;
+    }
+  }
   .add-content {
+    @media (max-width:480px) {
+      text-align: center;
+    }
     .title {
       color: var(--bs-gray-900);
       font-weight: 600;

@@ -3743,6 +3743,16 @@ button:focus {
   background: var(--bs-gray-900);
   border-radius: 6px;
 }
+@media (max-width: 992px) {
+  .add-block-01 {
+    padding: 50px 46px;
+  }
+}
+@media (max-width: 480px) {
+  .add-block-01 .add-content {
+    text-align: center;
+  }
+}
 .add-block-01 .add-content .subtitle {
   text-transform: uppercase;
   font-weight: 500;
@@ -3779,6 +3789,11 @@ button:focus {
   position: absolute;
   right: 0;
 }
+@media (max-width: 480px) {
+  .add-block-01 .add-image {
+    display: none;
+  }
+}
 .add-block-01 .add-image .badge {
   position: absolute;
   top: -20px;
@@ -3796,9 +3811,23 @@ button:focus {
   padding: 40px 40px 40px 32px;
   background: var(--bs-gray-50);
   display: grid;
-  grid-template-columns: auto auto;
   gap: 20px;
   border-radius: 6px;
+}
+@media (min-width: 480px) {
+  .add-block-02 {
+    grid-template-columns: auto auto;
+  }
+}
+@media (max-width: 480px) {
+  .add-block-02 .add-image {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .add-block-02 .add-content {
+    text-align: center;
+  }
 }
 .add-block-02 .add-content .title {
   color: var(--bs-gray-900);
@@ -7358,17 +7387,39 @@ li.hasDD.hasDDtwo:hover .sub-two {
   padding: 24px 0;
 }
 .banner-area__slider {
+  height: 100%;
   background: var(--bs-gray-50);
   border-radius: 6px;
-  padding: 51px 56px;
+  padding: 60px 56px;
 }
 @media (max-width: 480px) {
   .banner-area__slider {
     padding: 51px 20px;
   }
 }
-.banner-area__add-one {
-  margin-bottom: 24px;
+.banner-area__add {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+@media (max-width: 992px) {
+  .banner-area__add {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1400px) {
+  .banner-area__add {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+.banner-area__add .one, .banner-area__add .two {
+  width: 100%;
+}
+.banner-area__add .one .add-block-01,
+.banner-area__add .one .add-block-02, .banner-area__add .two .add-block-01,
+.banner-area__add .two .add-block-02 {
+  height: 100%;
 }
 
 .banner-slider-content-01 {
