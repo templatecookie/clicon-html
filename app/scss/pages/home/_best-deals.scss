@@ -76,12 +76,32 @@
             margin-top: 15px;
         }
         .btn-text{
+            position: relative;
+            padding: 8px 0;
            display: flex;
            align-items: center;
            color: var(--bs-secondary-500);
            svg{
             margin-left: 8px;
            } 
+           &::before{
+            content: "";
+            position: absolute;
+            background: var(--bs-secondary-500);
+            height: 2px;
+            width: 0%;
+            transition: .3s;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+            &:hover{
+                &::before{
+                    visibility: visible;
+                    opacity: 1;
+                    width: 100%;
+                }
+            }
         }
     }
     &__product-area{

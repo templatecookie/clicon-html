@@ -4020,6 +4020,26 @@ button:focus {
   bottom: 0;
   right: 0;
 }
+.add-block-05 .add-image .price-tag {
+  position: absolute;
+  top: -20px;
+  right: 30px;
+}
+.add-block-05 .add-image .price-tag span {
+  background: var(--bs-secondary-500);
+  min-width: 88px;
+  max-width: 88px;
+  max-height: 88px;
+  min-height: 88px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: white;
+  border-radius: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 1200px) {
   .add-block-05 .add-image {
     width: 44%;
@@ -7615,12 +7635,30 @@ li.hasDD.hasDDtwo:hover .sub-two {
   }
 }
 .best-deal-section-01__top-button .btn-text {
+  position: relative;
+  padding: 8px 0;
   display: flex;
   align-items: center;
   color: var(--bs-secondary-500);
 }
 .best-deal-section-01__top-button .btn-text svg {
   margin-left: 8px;
+}
+.best-deal-section-01__top-button .btn-text::before {
+  content: "";
+  position: absolute;
+  background: var(--bs-secondary-500);
+  height: 2px;
+  width: 0%;
+  transition: 0.3s;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.best-deal-section-01__top-button .btn-text:hover::before {
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
 }
 .best-deal-section-01__product-area {
   display: flex;

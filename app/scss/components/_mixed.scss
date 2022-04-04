@@ -905,7 +905,26 @@
     position: absolute;
     bottom: 0;
     right: 0;
-
+    .price-tag{
+      position: absolute;
+      top: -20px;
+      right: 30px;
+      span{
+        background: var(--bs-secondary-500);
+        min-width: 88px;
+        max-width: 88px;
+        max-height: 88px;
+        min-height: 88px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 28px;
+        color: white;
+        border-radius: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
     @media (min-width: 1200px) {
       width: 44%;
     }
