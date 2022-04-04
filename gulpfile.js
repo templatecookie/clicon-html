@@ -1,10 +1,10 @@
-var gulp = require("gulp"),
+var gulp = require("gulp"), 
   Fiber = require('fibers'),
   autoPrefixer = require("gulp-autoprefixer"),
   argv = require("minimist")(process.argv.slice(2)),
   browserSync = require("browser-sync").create(),
   reload = browserSync.reload,
-  sass = require("gulp-sass")(require('sass')),
+  sass = require("gulp-sass"),
   cleanCSS = require("gulp-clean-css"),
   merge = require("gulp-merge-json"),
   csso = require("gulp-csso"),
@@ -44,8 +44,9 @@ const path = {
   htmlElem: "./app/components/**/*.+(html|njk)",
   _partialFiles: "./app/partials/**/*.+(htm|njk)",
   _partial: "./app/partials/",
+  php: "./app/php/**/*.php",
   fonts: "./app/fonts/**/*.*",
-  js: "./app/js/*.js",
+  js: "./app/js/*.*",
   scss: "./app/scss/**/*.scss",
   escScss: "!./app/scss/bootstrap/**.scss",
   img: "./app/image/**/*.+(png|jpg|gif|ico|svg|webp)",
@@ -58,13 +59,14 @@ const path = {
   pluginJs: "./app/plugins/**/*.js",
   plugin: { js: "./app/plugin/js/*.js", css: "./app/plugin/css/*.css" },
 };
-// const folders = [path.js,path.plugins];
+// const folders = [path.php,path.js,path.plugins];
 
 const dest = {
   css: destination + "css/",
   scss: destination + "scss/",
   js: destination + "js/",
   fonts: destination + "fonts/",
+  php: destination + "php/",
   img: destination + "image/",
   plugins: destination + "plugins/",
   temp: destination + "temp/",
@@ -72,7 +74,7 @@ const dest = {
   bundle: { css: "bundled/css/", js: "bundled/js/" },
 };
 
-// const watchSrc = [path.html, path.js, path.img, path.fonts, path.plugin.css,path.plugin.css,path.plugin];
+// const watchSrc = [path.html, path.js, path.php, path.img, path.fonts, path.plugin.css,path.plugin.css,path.plugin];
 
 /* =====================================================
    BrowserSync
@@ -220,7 +222,20 @@ function sassCopy() {
 //             stream: true
 //         }));
 // }
-
+/* =====================================================
+    PHP file
+===================================================== */
+function php() {
+  return gulp
+    .src([path.php])
+    .pipe(changed(dest.php))
+    .pipe(gulp.dest(dest.php))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
+}
 /* =====================================================
     Plugins Folder
 ===================================================== */
@@ -288,7 +303,7 @@ const javascript = gulp.parallel(customscript, pluginscript);
 /* =====================================================
     fonts Folder Copy
 ===================================================== */
-const copyAssets = gulp.parallel(plugins, fonts, image);
+const copyAssets = gulp.parallel(php, plugins, fonts, image);
 
 // /* =====================================================
 //     Purge Css
@@ -300,13 +315,13 @@ function sassCopy() {
 function watchFiles() {
   gulp.watch(path.html, html);
   gulp.watch(path._partial, html);
-  gulp.watch([path.plugin.js, path.fonts, path.img], copyAssets);
-  gulp.watch(path.js, javascript);
+  gulp.watch([path.plugin.js, path.js, path.fonts, path.img], copyAssets);
+  gulp.watch([path.js], javascript);
   gulp.watch(path.scss, css);
   gulp.watch(path.root, gulp.series(clean, build));
 }
 
-// const copyAssets = gulp.parallel(javascript, sassCopy, plugins,imgmin);
+// const copyAssets = gulp.parallel(fonts,php, javascript, sassCopy, plugins,imgmin);
 const build = gulp.series(
   clean,
   html,

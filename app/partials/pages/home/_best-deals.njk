@@ -6,7 +6,10 @@
         id:1,
         img:"./image/product/product-1.png",
         title:"Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear..",
-        price:"$2,300"
+        price:"$2,300",
+        offerTage:true,
+        badge:"SOLD OUT",
+        className:"bg-gray-400 text-white"
         },
         {
         id:2,
@@ -41,23 +44,26 @@
         img:"./image/product/product-6.png",
         title:"Dell Optiplex 7000x7480 All-in-One Computer Monitor",
         del:"$865.99",
-        offerTage:true,
-        badge:"HOT",
-        className:"bg-danger-500 text-white",
         price:"$70"
         },
         {
         id:7,
         img:"./image/product/product-7.png",
         title:"Portable Wshing Machine, 11lbs capacity Model 18NMFIAM",
-        price:"$1,50"
+        price:"$1,50",
+        offerTage:true,
+        badge:"hot",
+        className:"bg-danger-500 text-white"
         },
         {
         id:8,
         img:"./image/product/product-8.png",
         title:"2-Barrel Carburetor Carb 2100 Engine Increase Horsepower",
         del:"$360",
-        price:"$250"
+        price:"$250",
+        offerTage:true,
+        badge:"32% OFF",
+        className:"bg-warning-400 text-gray-900"
         }
 
 
@@ -156,6 +162,7 @@
                 <div class="best-deal-section-01__product-area--small-product">
                     {% for item in cardData%}
                         {{Card.ProductCardOne({
+                            modifier:"card-product--01",
                             img:item.img,
                             title:item.title,
                             del:item.del,

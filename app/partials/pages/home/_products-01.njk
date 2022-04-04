@@ -8,7 +8,10 @@
         img:"./image/product/product-15.png",
         title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
         price:"$2,300",
-        count:"738"
+        count:"738",
+        offerTage:true,
+        badge:"hot",
+        className:"bg-danger-500 text-white"
         },
         {
         id:2,
@@ -23,7 +26,10 @@
         title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
         del:"$865",
         price:"$1,50",
-        count:"423"
+        count:"423",
+                offerTage:true,
+        badge:"BEST DEALS",
+        className:"bg-secondary-500 text-white"
         },
         {
         id:4,
@@ -47,7 +53,10 @@
         del:"$865.99",
         price:"$70",
         count:"877",
-        sOne:true
+        sOne:true,
+                                offerTage:true,
+        badge:"25% OFF",
+        className:"bg-warning-500 text-gray-900"
         },
         {
         id:7,
@@ -62,7 +71,10 @@
         title:"4K UHD LED Smart TV with Chromecast Built-in",
         del:"$360",
         price:"$250",
-        count:"583"
+        count:"583",
+                        offerTage:true,
+        badge:"SALE",
+        className:"bg-success-500 text-white"
         }
 
 
@@ -82,7 +94,13 @@
                                 <h2 class="title">Featured Products</h2>
                             </div>
                             <div class="button-group">
-                          
+                                <div class="filter-buttton">
+                                    <button class="active">All Product</button>
+                                    <button>Keyboard & Mouse</button>
+                                    <button>Headphone</button>
+                                    <button>Webcam</button>
+                                    <button>Printer</button>
+                                </div>
                                 <div class="all-product-button">
                                     <a class="text-btn" href="#">Browse All Product
                                     
@@ -103,7 +121,10 @@
                                     del:item.del,
                                     count:item.count,
                                     price:item.price,
-                                    sOne:item.sOne
+                                    sOne:item.sOne,
+                                    badge:item.badge,
+                                    offerTage:item.offerTage,
+                                    className:item.className
                                 })}}
                             {% endfor %}
                         </div>

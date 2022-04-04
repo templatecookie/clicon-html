@@ -1,5 +1,8 @@
 @use "../../abstracts/mixins" as *;
 .shop-category-section-01{
+    .section-title-block{
+        margin-bottom: 40px;
+    }
     &__slider{
         @media (max-width:480px) {
             margin: 0 30px;

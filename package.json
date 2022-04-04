@@ -1,6 +1,6 @@
 {
-  "name": "gulp-setup",
-  "version": "1.0.1",
+  "name": "gulp-setup", 
+  "version": "1.0.5",
   "description": "html-starter",
   "main": "gulpfile.js",
   "author": "Zakirsoft (info@zakirsoft.com)",
@@ -41,7 +41,6 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "bootstrap": "^5.0.1",
     "fibers": "^5.0.0",
-    "font-awesome": "^4.7.0",
     "gulp-nunjucks-render": "^2.2.2",
     "gulp-util": "^3.0.8",
     "jquery": "^3.5.1",

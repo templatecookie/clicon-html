@@ -77,6 +77,7 @@
                 }
                 &:hover{
                     a{
+                        color: white;
                         padding-left: 32px;
                         &::before{
                             width: 24px;
@@ -84,7 +85,9 @@
                     }
                 }
                 &.text-btn{
-                  a{
+                    position: relative;
+                    display: inline-block;
+                    a{
                         color: var(--bs-warning-500) !important;
                         svg{
                             margin-left: 8px;
@@ -92,12 +95,27 @@
                     &::before{
                     display: none;
                     }
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        background: var(--bs-warning-500);
+                        height: 1px;
+                        width: 0%;
+                        transition: 0.3s;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
                     }  
                     &:hover{
+                        &::before{
+                            width: 100%;
+                        }
                         a{
                             padding-left: 0 !important;
                         }
                     }
+
                 }
             }
         }
@@ -134,18 +152,7 @@
                     line-height: 20px;
                 color: white;}
                 &:hover{
-                    background: var(--bs-primary-100);
-                    .text-one{
-                        color: var(--bs-gray-900);
-                    }
-                    .text-two{
-                        color: var(--bs-gray-900);
-                    }
-                    svg{
-                        path{
-                            fill: var(--bs-gray-900);
-                        }
-                    }
+                    background: var(--bs-primary-500);
                 }
             }
             .app-play-btn{
@@ -179,18 +186,7 @@
                 line-height: 20px;
             color: white;} 
             &:hover{
-                background: var(--bs-primary-100);
-                .text-one{
-                    color: var(--bs-gray-900);
-                }
-                .text-two{
-                    color: var(--bs-gray-900);
-                }
-                svg{
-                    path{
-                        fill: var(--bs-gray-900);
-                    }
-                }
+                background: var(--bs-primary-500);
             }
             }
         }

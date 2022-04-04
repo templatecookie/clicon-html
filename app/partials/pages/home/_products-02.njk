@@ -9,7 +9,10 @@
         title:"TOZO T6 True Wireless Earbuds Bluetooth Headphon...",
         price:"$36",
         count:"994",
-        sOne:true
+        sOne:true,
+                        offerTage:true,
+        badge:"BEST DEALS",
+        className:"bg-secondary-500 text-white"
         },
         {
         id:2,
@@ -23,7 +26,10 @@
         img:"./image/product/product-25.png",
         title:"Amazon Basics High-Speed HDMI Cable (18 Gbps, 4K/6...",
         price:"$70",
-         count:"600"
+         count:"600",
+                 offerTage:true,
+        badge:"hot",
+        className:"bg-danger-500 text-white"
         },
         {
         id:4,
@@ -46,7 +52,10 @@
         title:"Polaroid 57-Inch Photo/Video Tripod Deluxe Tripod Ca...",
         price:"$220",
         count:"556",
-        sOne:true
+        sOne:true,
+                                offerTage:true,
+        badge:"SALE",
+        className:"bg-success-500 text-white"
         },
         {
         id:7,
@@ -63,7 +72,10 @@
         del:"$360",
         price:"$250",
         count:"583",
-        sOne:true
+        sOne:true,
+                                        offerTage:true,
+        badge:"25% OFF",
+        className:"bg-warning-500 text-gray-900"
         }
 
 
@@ -115,7 +127,10 @@
                                     del:item.del,
                                     count:item.count,
                                     price:item.price,
-                                    sOne:item.sOne
+                                    sOne:item.sOne,
+                                    badge:item.badge,
+                                    offerTage:item.offerTage,
+                                    className:item.className
                                 })}}
                             {% endfor %}
                         </div>

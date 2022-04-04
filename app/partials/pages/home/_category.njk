@@ -42,15 +42,18 @@
 ]%}
     <div class="shop-category-section-01">
         <div class="container">
+            <div class="section-title-block text-center">
+                <h2 class="title">Shop with Categories</h2>
+            </div>
             <div class="shop-category-section-01__slider">
                 <div class="product-slider-02">
                     {% for item in cardData %}
-                        <div class="single-item">
+                        <a href="#" class="single-item">
                             {{Card.ProductCardTwo({
                                 img:item.img,
                                 title:item.title
                             })}}
-                        </div>
+                        </a>
                     {% endfor %}
                 </div>
                 <div class="product-slider-02__control-buttons">
