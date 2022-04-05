@@ -3630,10 +3630,10 @@ button:focus {
 .bottom-nav .left-sidebar .mainnav ul li.single-list a span svg path {
   transition: 0.3s;
 }
-.bottom-nav .left-sidebar .mainnav ul li.single-list:hover a span {
+.bottom-nav .left-sidebar .mainnav ul li.single-list.active a span, .bottom-nav .left-sidebar .mainnav ul li.single-list:hover a span {
   color: var(--bs-primary-500);
 }
-.bottom-nav .left-sidebar .mainnav ul li.single-list:hover a span svg path {
+.bottom-nav .left-sidebar .mainnav ul li.single-list.active a span svg path, .bottom-nav .left-sidebar .mainnav ul li.single-list:hover a span svg path {
   stroke: var(--bs-primary-500);
 }
 .bottom-nav .tell {
