@@ -3015,6 +3015,7 @@ button:focus {
   line-height: 24px;
   padding-bottom: 12px;
   color: white;
+  text-transform: uppercase;
 }
 .footer-section-01 .footer-widget .footer-list-group {
   margin: 0;
@@ -4858,6 +4859,7 @@ button:focus {
 .accout-wrapper .form-group .forgot-btn {
   font-weight: 500;
   color: var(--bs-secondary-500);
+  font-size: 14px;
 }
 .accout-wrapper .form-group .pass-box {
   position: relative;
@@ -11155,7 +11157,7 @@ li.hasDD.hasDDtwo:hover .sub-two {
 }
 .account-setting .title {
   border-bottom: 1px solid var(--bs-gray-100);
-  padding: 24px 16px;
+  padding: 16px 24px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -11251,7 +11253,7 @@ li.hasDD.hasDDtwo:hover .sub-two {
 }
 .address-form .title {
   border-bottom: 1px solid var(--bs-gray-100);
-  padding: 24px 16px;
+  padding: 16px 24px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -11324,7 +11326,7 @@ li.hasDD.hasDDtwo:hover .sub-two {
 }
 .passwoed-change-field .title {
   border-bottom: 1px solid var(--bs-gray-100);
-  padding: 24px 16px;
+  padding: 16px 24px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
