@@ -1,6 +1,5 @@
 (function ($) {
   "use strict";
-
 /*------------------------------------------------------------------
 [Table of contents]
 ----------------------------------------
@@ -33,7 +32,7 @@ CUSTOM PRE DEFINE FUNCTION
 /*--------------------------------------------------------------
 1.NICE SELECT JS INIT
 --------------------------------------------------------------*/
-  $("select").niceSelect();
+  $(".nice-select").niceSelect();
   AOS.init({
     once: true,
   });
@@ -482,8 +481,3 @@ $('#showHiddenMenuTwo').on('click', () => {
   if (finputNine || ficonNine) {
     showPassword(finputNine, ficonNine);
   }
-  
-  
-
-
-

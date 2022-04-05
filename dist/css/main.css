@@ -3322,7 +3322,7 @@ button:focus {
   display: flex;
   align-items: center;
 }
-.top-nav__wrapper--content .switcher .selector.nice-select {
+.top-nav__wrapper--content .switcher .nice-select {
   background: transparent;
   border: 0;
   padding-left: 24px;
@@ -3330,16 +3330,16 @@ button:focus {
   line-height: 1.6;
   font-weight: 400;
 }
-.top-nav__wrapper--content .switcher .selector.nice-select .current {
+.top-nav__wrapper--content .switcher .nice-select .current {
   color: white;
 }
-.top-nav__wrapper--content .switcher .selector.nice-select::after {
+.top-nav__wrapper--content .switcher .nice-select::after {
   border-color: white;
   width: 8px;
   height: 8px;
   margin-top: -5px;
 }
-.top-nav__wrapper--content .switcher .selector.nice-select .list {
+.top-nav__wrapper--content .switcher .nice-select .list {
   border: 1px solid #e4e7e9;
   margin: 0;
   padding: 8px 0;
@@ -3347,7 +3347,7 @@ button:focus {
   border-radius: 3px;
   top: 120%;
 }
-.top-nav__wrapper--content .switcher .selector.nice-select .list li {
+.top-nav__wrapper--content .switcher .nice-select .list li {
   padding: 8px 16px;
   font-weight: 500;
   min-height: auto;
@@ -3357,44 +3357,23 @@ button:focus {
   display: flex;
   align-items: center;
 }
-.top-nav__wrapper--content .switcher .selector.nice-select .list li:hover {
+.top-nav__wrapper--content .switcher .nice-select .list li:hover {
   background: var(--bs-gray-50);
 }
-.top-nav__wrapper--content .switcher .selector.nice-select .list li.selected {
+.top-nav__wrapper--content .switcher .nice-select .list li.selected {
   background: transparent;
 }
-.top-nav__wrapper--content .switcher .selector.nice-select .list li.selected::after {
+.top-nav__wrapper--content .switcher .nice-select .list li.selected::after {
   padding-left: 51px;
   content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.5 4.5L6.5 11.5L3 8' stroke='%23FA8232' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
-.top-nav__wrapper--content .switcher__language .selector.nice-select .list {
-  left: -132%;
-}
-.top-nav__wrapper--content .switcher__language .selector.nice-select .list li {
-  color: var(--bs-gray-600);
-}
-.top-nav__wrapper--content .switcher__language .selector.nice-select .list li:nth-child(1)::before {
-  content: url(../../image/logo/usa.png);
-  margin-right: 12px;
-}
-.top-nav__wrapper--content .switcher__language .selector.nice-select .list li:nth-child(2)::before {
-  content: url(../../image/logo/man.png);
-  margin-right: 12px;
-}
-.top-nav__wrapper--content .switcher__language .selector.nice-select .list li:nth-child(3)::before {
-  content: url(../../image/logo/rus.png);
-  margin-right: 12px;
-}
-.top-nav__wrapper--content .switcher__language .selector.nice-select .list li.selected {
-  color: var(--bs-gray-900);
-}
-.top-nav__wrapper--content .switcher__currency .selector.nice-select .list {
+.top-nav__wrapper--content .switcher__currency .nice-select .list {
   left: 28%;
 }
-.top-nav__wrapper--content .switcher__currency .selector.nice-select .list li {
+.top-nav__wrapper--content .switcher__currency .nice-select .list li {
   color: var(--bs-gray-600);
 }
-.top-nav__wrapper--content .switcher__currency .selector.nice-select .list li.selected {
+.top-nav__wrapper--content .switcher__currency .nice-select .list li.selected {
   color: var(--bs-primary-500);
 }
 
@@ -4772,12 +4751,12 @@ button:focus {
 .pagination-block-01 li .page-link svg path {
   transition: 0.3s;
 }
-.pagination-block-01 li .page-link:hover {
+.pagination-block-01 li.active a, .pagination-block-01 li:hover a {
   border-color: var(--bs-primary-500);
   background: var(--bs-primary-500);
   color: white;
 }
-.pagination-block-01 li .page-link:hover svg path {
+.pagination-block-01 li.active a svg path, .pagination-block-01 li:hover a svg path {
   stroke: white;
 }
 
@@ -4829,6 +4808,7 @@ button:focus {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+  text-align: center;
 }
 .accout-wrapper__form {
   padding: 32px;
