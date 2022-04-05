@@ -344,3 +344,117 @@
         }
     }
 }
+.review-content{
+    padding: 30px;
+    @media (max-width:575px) {
+        padding: 30px 20px;
+    }
+    @media (min-width:1200px) {
+        padding: 40px;
+    }
+    &__rating{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        @media (max-width:992px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+      .customer-rating{
+          text-align: center;
+          padding: 30px 20px;
+          background: var(--bs-warning-100);
+          border-radius: 4px;
+          @media (min-width:480px) {
+              padding: 48px;
+          }
+          .title{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 1.142857142857143;
+            @media (min-width:575px) {
+                font-size: 46px;
+            }
+            @media (min-width:992px) {
+                font-size: 56px;
+            }
+          }
+          .star{
+            margin-bottom: 12px;
+          }
+          .text{
+              white-space: pre;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--bs-gray-900);
+          }
+      }  
+    }
+    &__feedback{
+        margin-top: 32px;
+        @media (min-width:992px) {
+            margin-top: 40px;
+            width: 60%;
+        }
+    }
+}
+.rating-bar{
+    &__item{
+        display: flex;
+        align-items: center;
+        &:not(&:last-child){
+            margin-bottom: 16px;
+        }
+        .star{
+            display: flex;
+            align-items: center;
+            margin: 0 -2px;
+            margin-right: 10px;
+            @media (min-width:480px) {
+                margin-right: 16px;
+            }
+            i{
+                margin: 0 2px;
+            }
+        }
+        .rating-name{
+            h5{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px; 
+                color: var(--bs-black);
+            }
+        }
+        .rating-bar{
+            width: 35%;
+            height: 4px;
+            border-radius: 30px;
+            background: var(--bs-gray-100);
+            margin-right: 10px;
+            @media (min-width:480px) {
+                margin-right: 16px;
+            }
+            .rating-per{
+                height: 4px;
+                border-radius: 30px;
+                background: var(--bs-primary-500);
+                animation: fillbars 8s 1;
+            }
+        }
+        .rating-bar-count{
+            h6{
+                white-space: pre;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: var(--bs-gray-900);  
+                span{
+                    margin-left: 3px;
+                    font-weight: 400;
+                    color: var(--bs-gray-500);
+                }
+            }
+        }
+    }
+}
