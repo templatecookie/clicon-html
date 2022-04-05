@@ -1952,6 +1952,9 @@
       span {
         color: var(--bs-gray-700) !important;
       }
+      &:hover{
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+      }
     }
   }
 
@@ -3841,12 +3844,15 @@ input[type=number] {
           color: white;
         }
       }
-
       a {
         svg {
           margin-right: 12px;
+          path{
+            transition: .3s;
+          }
         }
-
+        
+        transition: .3s;
         color: var(--bs-gray-600);
         display: flex;
         align-items: center;
@@ -3855,6 +3861,17 @@ input[type=number] {
         font-weight: normal;
         font-size: 14px;
         line-height: 20px;
+      }
+      &:hover{
+        a{
+          background: var(--bs-gray-100);
+          color: var(--bs-gray-900);
+          svg {
+            path {
+              stroke: var(--bs-danger-900);
+            }
+          }
+        }
       }
     }
   }

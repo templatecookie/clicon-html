@@ -50,6 +50,7 @@
                         width: 12px;
                         height: 12px;
                         margin: 4px;
+                        margin-left: 5px;
                         background-color: #FFFFFF;
                         border-radius: 100%;
                         transition: all 0.3s ease-in-out;
@@ -59,7 +60,7 @@
                         background-color: var(--bs-primary-500);
 
                         &:before {
-                            transform: translateX(+100%);
+                            transform: translateX(+110%);
                         }
                     }
 

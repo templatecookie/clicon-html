@@ -4931,6 +4931,9 @@ button:focus {
 .accout-wrapper .form-otherlogin .btn span {
   color: var(--bs-gray-700) !important;
 }
+.accout-wrapper .form-otherlogin .btn:hover {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
 .accout-wrapper .form-check {
   margin: 0;
   padding: 0;
@@ -6595,6 +6598,7 @@ input[type=number] {
   stroke: white;
 }
 .dashboard-nav-block uL li a {
+  transition: 0.3s;
   color: var(--bs-gray-600);
   display: flex;
   align-items: center;
@@ -6606,6 +6610,16 @@ input[type=number] {
 }
 .dashboard-nav-block uL li a svg {
   margin-right: 12px;
+}
+.dashboard-nav-block uL li a svg path {
+  transition: 0.3s;
+}
+.dashboard-nav-block uL li:hover a {
+  background: var(--bs-gray-100);
+  color: var(--bs-gray-900);
+}
+.dashboard-nav-block uL li:hover a svg path {
+  stroke: var(--bs-danger-900);
 }
 
 @media (min-width: 992px) {
@@ -10993,6 +11007,7 @@ li.hasDD.hasDDtwo:hover .sub-two {
   width: 12px;
   height: 12px;
   margin: 4px;
+  margin-left: 5px;
   background-color: #FFFFFF;
   border-radius: 100%;
   transition: all 0.3s ease-in-out;
@@ -11001,7 +11016,7 @@ li.hasDD.hasDDtwo:hover .sub-two {
   background-color: var(--bs-primary-500);
 }
 .browsing-history__head .wrapper .switcher input[type=checkbox].input-switch:checked:before {
-  transform: translateX(100%);
+  transform: translateX(110%);
 }
 .browsing-history__head .wrapper .switcher input[type=checkbox].input-switch:disabled {
   cursor: not-allowed;
