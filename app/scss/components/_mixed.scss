@@ -157,11 +157,47 @@
               }
             }
           }
+        &__language {
+            .nice-select {
+              .list {
+                left: -132%;
+
+                li {
+                  color: var(--bs-gray-600);
+
+                  &:nth-child(1) {
+                    &::before {
+                      content: url(../../image/logo/usa.png);
+                      margin-right: 12px;
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    &::before {
+                      content: url(../../image/logo/man.png);
+                      margin-right: 12px;
+                    }
+                  }
+
+                  &:nth-child(3) {
+                    &::before {
+                      content: url(../../image/logo/rus.png);
+                      margin-right: 12px;
+                    }
+                  }
+
+                  &.selected {
+                    color: var(--bs-gray-900);
+                  }
+                }
+              }
+            }
+        }
+
         &__currency {
             .nice-select {
               .list {
                 left: 28%;
-
                 li {
                   color: var(--bs-gray-600);
 
