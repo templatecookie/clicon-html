@@ -13,7 +13,7 @@
 
   <!-- Bootstrap , fonts & icons  -->
   <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css" />
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
 
   <!-- Plugin'stylesheets  -->
   <link rel="stylesheet" href="./plugins/aos/aos.min.css">
@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body data-theme-mode-panel-active data-theme="light">
 
   {# {% include "components/preloader.njk" %} #}
   <div class="site-wrapper overflow-hidden">
@@ -241,6 +241,7 @@
   <script src="./plugins/counter-up/waypoints.min.js"></script>
   <script src="./plugins/slick/slick.min.js"></script>
   <script src="./plugins/countdown/jquery.countdown.min.js"></script>
+      <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
   <!-- Activation Script -->
   <script src="js/custom.js"></script>
   {% if not PAGE_INFO.menuHide %}

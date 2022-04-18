@@ -107,6 +107,28 @@
           animation: sonarWave 2s linear infinite;
 }
 
+.loading {
+  -webkit-animation: rotation 5s infinite linear;
+          animation: rotation 5s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
 @media (min-width: 1400px) {
   .pr-xxl-88 {
     padding-right: 88px !important;
@@ -11385,6 +11407,171 @@ li.hasDD.hasDDtwo:hover .sub-two {
 }
 .passwoed-change-field .form .form-button .btn {
   height: 48px;
+}
+
+/*=== Media Query ===*/
+.theme-mode-panel-open .mode-switcher-panel-wrapper {
+  transform: translate(0);
+}
+
+.mode-switcher-panel-wrapper {
+  transition: 0.4s;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.mode-switcher-panel {
+  padding: 25px 0 30px;
+  background: #fff;
+  border-radius: 0 2px 2px 0;
+}
+.mode-switcher-panel .panel-group {
+  padding: 0 30px;
+}
+.mode-switcher-panel .panel-group .panel-title {
+  position: relative;
+  margin-bottom: 12px;
+  z-index: 0;
+}
+.mode-switcher-panel .panel-group .panel-title .title {
+  display: inline-block;
+  padding-right: 10px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  background: #fff;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.mode-switcher-panel .panel-group .panel-title .title::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 10px;
+  height: 1px;
+  width: 100%;
+  background: #ebebeb;
+  z-index: -1;
+}
+.mode-switcher-panel .panel-group .color-skin {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -7px -7px 13px;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item {
+  display: inline-block;
+  position: relative;
+  flex: 1 0 calc(25% - 14px);
+  margin: 7px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: calc(50% - 5px);
+  height: 7px;
+  width: 12px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.active::after {
+  opacity: 1;
+  visibility: visible;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.red {
+  background: #f51e46;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.blue {
+  background: #0068e1;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.bondi-blue {
+  background: #0095b6;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.cornflower {
+  background: #6453f7;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.violet {
+  background: #723881;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.yellow {
+  background: #fa9928;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.orange {
+  background: #f8008c;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.green {
+  background: #fd6602;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.pink {
+  background: #59b210;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.black {
+  background: #ff749f;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.indigo {
+  background: #2a3447;
+}
+.mode-switcher-panel .panel-group .color-skin .color-item.magenta {
+  background: #4b0082;
+}
+
+.mode-switcher-panel .buttons button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.mode-switcher-panel .buttons button.active {
+  background-color: #ced4e7;
+}
+
+.mode-switcher-panel .switcher-minimize-button {
+  position: absolute;
+  font-size: 24px;
+  top: 30px;
+  border: 0;
+  left: -45px;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #0068e1;
+  color: var(--color-primary);
+  background: #fff;
+  border-radius: 50% 0 0 50%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: -1;
+}
+
+.mode-switcher-panel .switcher-minimize-button i {
+  font-size: inherit;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.mode-switcher-panel .switcher-minimize-button:focus {
+  outline: none;
+}
+
+.position-fixed-right {
+  position: fixed;
+  right: 0;
+  transform: translateX(100%);
+  top: 30%;
+  z-index: 99;
 }
 
 /*********** CSS TABLE OF CONTENTS *******************

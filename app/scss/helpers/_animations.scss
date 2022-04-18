@@ -37,3 +37,15 @@
     animation: sonarWave 2s linear infinite;
   }
 }
+.loading {
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
