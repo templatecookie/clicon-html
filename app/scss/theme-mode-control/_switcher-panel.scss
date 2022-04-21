@@ -1,6 +1,6 @@
 /*=== Media Query ===*/
 .theme-mode-panel-open .mode-switcher-panel-wrapper {
-  transform: translate(0);
+  transform: translateX(0) translateY(-50%);
 }
 
 .mode-switcher-panel-wrapper {
@@ -165,7 +165,7 @@
 .position-fixed-right {
   position: fixed;
   right: 0;
-  transform: translateX(100%);
-  top: 30%;
+  transform: translateY(-50%) translateX(100%);
+  top: 50%;
   z-index: 99;
 }
