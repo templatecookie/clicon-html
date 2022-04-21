@@ -63,6 +63,7 @@
 .top-nav {
   padding: 14px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  background-color: var(--main-nav-bg);
 
   &__wrapper {
     display: flex;
@@ -71,6 +72,9 @@
 
     @media (max-width: 575px) {
       flex-direction: column;
+    }
+    &--text {
+        color: var(--main-nav-txt);
     }
 
     &--content {
@@ -91,10 +95,11 @@
 
           li {
             padding-right: 12px;
+            color: var(--main-nav-txt);
 
             a {
               font-size: 16px;
-              color: white;
+              color: var(--main-nav-txt);
             }
 
             &:last-child {
@@ -116,11 +121,11 @@
             font-weight: 400;
 
             .current {
-              color: white;
+              color: var(--main-nav-txt);
             }
 
             &::after {
-              border-color: white;
+              border-color: var(--main-nav-txt);
               width: 8px;
               height: 8px;
               margin-top: -5px;
@@ -214,6 +219,7 @@
 }
 .desk-nav {
   padding: 20px 0;
+  background-color: var(--main-nav-bg);
 
   &__wrapper {
     display: flex;
@@ -257,11 +263,13 @@
     &--widget {
       display: flex;
       align-items: center;
+      color: var(--main-nav-txt);
       button.plain-btn {
         padding: 0;
         border: 0;
         background: transparent;
         outline: none;
+        color: var(--main-nav-txt);
       }
 
       .cart {
@@ -273,7 +281,7 @@
           position: absolute;
           top: -3px;
           right: -3px;
-          background: white;
+          background: var(--main-nav-txt);
           @include square(20px, 500px);
           @include flexAllCenter;
 
@@ -281,7 +289,7 @@
             font-weight: 600;
             font-size: 12px;
             line-height: 16px;
-            color: var(--bs-secondary-700);
+            color: var(--bs-white);
           }
         }
       }
