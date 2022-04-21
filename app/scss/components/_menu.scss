@@ -92,7 +92,7 @@ $primary: inherit;
 	.sub-menu {
 		position: absolute;
 		z-index: 500;
-		background-color: #fff;
+		background-color: var(--bs-white);
 		box-shadow: -2px 2px 70px -25px rgba(0, 0, 0, 0.3);
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -192,7 +192,7 @@ $primary: inherit;
 
 	.sub-menu.megamenu {
 		@media (min-width:992px) {
-			background-color: $white;
+			background-color: var(--bs-white);
 			padding-top: 30px;
 			padding-bottom: 15px;
 			padding-left: 40px;
@@ -315,7 +315,7 @@ $primary: inherit;
 			font-size: 16px;
 			font-weight: 700;
 			transition: 0.4s;
-			color: #000;
+			color: var(--black);
 
 			@media (min-width: 320px) and (max-width:992px){
 				color: var(--color-headings);
@@ -424,7 +424,7 @@ li.nav-item-has-children {
 
 	.dark-mode-texts {
 		.mobile-menu-trigger span {
-			background-color: $white;
+			background-color: var(--bs-white);
 		}
 	}
 
@@ -432,7 +432,7 @@ li.nav-item-has-children {
 
 		.mobile-menu-trigger span:before,
 		.mobile-menu-trigger span:after {
-			background-color: $white;
+			background-color: var(--bs-white);
 		}
 	}
 
@@ -451,7 +451,7 @@ li.nav-item-has-children {
 	.site-header .menu-block {
 		position: fixed;
 		width: 320px;
-		background-color: #ffffff;
+		background-color: var(--bs-white);
 		left: 0;
 		top: 0;
 		height: 100%;
@@ -508,7 +508,7 @@ li.nav-item-has-children {
 		position: relative;
 		z-index: 501;
 		position: sticky;
-		background-color: #ffffff;
+		background-color: var(--bs-white);
 		top: 0;
 	}
 
@@ -519,7 +519,7 @@ li.nav-item-has-children {
 		cursor: pointer;
 		line-height: 50px;
 		text-align: center;
-		color: #000000;
+		color: var(--black);
 		font-size: 16px;
 		display: none;
 	}
@@ -531,7 +531,7 @@ li.nav-item-has-children {
 	.site-header .menu-block .mobile-menu-head .current-menu-title {
 		font-size: 15px;
 		font-weight: 500;
-		color: #000000;
+		color: var(--black);
 		visibility: hidden;
 	}
 
@@ -546,7 +546,7 @@ li.nav-item-has-children {
 		cursor: pointer;
 		line-height: 50px;
 		text-align: center;
-		color: #000000;
+		color: var(--black);
 		font-size: 25px;
 	}
 
