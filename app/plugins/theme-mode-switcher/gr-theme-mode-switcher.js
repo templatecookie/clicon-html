@@ -133,15 +133,11 @@ $(document).ready(function(){
   const colorPickers = [
     {
       selector: '.primary-color',
-      variable: '--bs-primary'
+      variable: '--bs-primary-500'
     },
     {
       selector: '.secondary-color',
-      variable: '--bs-secondary'
-    },
-    {
-      selector: '.secondary-color',
-      variable: '--bs-secondary'
+      variable: '--bs-secondary-500'
     },
     {
       selector: '.menu-text',
