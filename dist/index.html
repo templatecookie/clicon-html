@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Clicon - eCommerce Html Template
+  </title>
+  <link rel="shortcut icon" href="./image/favicon.png" type="image/x-icon" />
+  <!-- Bootstrap , fonts & icons  -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.min.css" />
+  <!-- Plugin'stylesheets  -->
+  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
+  <link rel="stylesheet" href="./plugins/nice-select/nice-select.min.css">
+  <link rel="stylesheet" href="./plugins/slick/slick.css">
+  <!-- Vendor stylesheets  -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body data-theme-mode-panel-active data-theme="light">
+  <div class="site-wrapper overflow-hidden">
+    <!-- <div class="container">
+  <div class="d-flex flex-wrap">
+    <div class="box" style="width: 50px; height: 50px; background-color: red; margin: 5px;"></div>
+  </div>
+</div> -->
+    <div class=" d-flex flex-wrap pt-7 container">
+      <div style="width: 50%;">
+        <h3 class="mb-3">Pages</h3>
+        <ul>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="home.html">Home</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="shop.html">Shop</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="product-detail.html">Product Detail</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="about-us.html">About us</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="404.html">404</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="faq.html">Faq</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="support.html">Support</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="blog.html">Blog</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="blog-detail.html">Blog Detail</a></li>
+        </ul>
+      </div>
+      <div style="width: 50%;">
+        <h3 class="mb-3">Product Details</h3>
+        <ul>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="track-order.html">Track Order</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="track-order-details.html">Track Order Details</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="check-out.html">Check Out</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="check-out-success.html">Check Out Success</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="wishlist.html">Wishlist</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="shopping-card.html">Shopping Card</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="compare.html">Compare</a></li>
+        </ul>
+      </div>
+      <div style="width: 50%;">
+        <h3 class="mb-3">Authentication</h3>
+        <ul>
+          <li><a class=" text-24 d-block pb-3" target="-blank" href="sign-in.html">Sign in</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="sign-up.html">Sign up</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="reset.html">Reset</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="verify.html">Verify</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="forgot.html">Forgot</a></li>
+        </ul>
+      </div>
+      <div style="width: 50%;">
+        <h3 class="mb-3">Account</h3>
+        <ul>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="dasboard.html">Dasboard</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="dasboard-order-history.html">Dasboard Order History</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="dasboard-order-detail.html">Dasboard Order Detail</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="dasboard-cards-address.html">Dasboard Cards & Address</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="browsing-history.html">Browsing History</a></li>
+          <li><a class=" text-24 d-block pb-3" target="_blank" href="setting.html">Setting</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Product Modal-->
+  <div class="modal modal-one fade" id="productView" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+      <div class="modal-content">
+        <div class="product-detail-slider">
+          <div class="row">
+            <div class="col-xl-6">
+              <div class="slider-area">
+                <div class="product-slider--03">
+                  <div class="single-slider">
+                    <img src="./image/product/mac.png" alt="mac">
+                  </div>
+                  <div class="single-slider">
+                    <img src="./image/product/mac.png" alt="mac">
+                  </div>
+                  <div class="single-slider">
+                    <img src="./image/product/mac.png" alt="mac">
+                  </div>
+                  <div class="single-slider">
+                    <img src="./image/product/mac.png" alt="mac">
+                  </div>
+                  <div class="single-slider">
+                    <img src="./image/product/mac.png" alt="mac">
+                  </div>
+                  <div class="single-slider">
+                    <img src="./image/product/mac.png" alt="mac">
+                  </div>
+                  <div class="single-slider">
+                    <img src="./image/product/mac.png" alt="mac">
+                  </div>
+                </div>
+                <div class="silde-wrap">
+                  <div class="product-slider--03__nav">
+                    <div class="single-slide">
+                      <div class="small-prduct">
+                        <img src="./image/product/gallery/01.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="single-slide">
+                      <div class="small-prduct">
+                        <img src="./image/product/gallery/02.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="single-slide">
+                      <div class="small-prduct">
+                        <img src="./image/product/gallery/03.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="single-slide">
+                      <div class="small-prduct">
+                        <img src="./image/product/gallery/04.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="single-slide">
+                      <div class="small-prduct">
+                        <img src="./image/product/gallery/05.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="single-slide">
+                      <div class="small-prduct">
+                        <img src="./image/product/gallery/06.png" alt="product">
+                      </div>
+                    </div>
+                    <div class="single-slide">
+                      <div class="small-prduct">
+                        <img src="./image/product/gallery/02.png" alt="product">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-slider--03__control-buttons">
+                    <button class="button button--prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.25 12H3.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <button class="button button--next">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.75 12H20.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <div class="slider-content">
+                <div class="slider-content__ratting">
+                  <ul>
+                    <li>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z" fill="#FA8232" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z" fill="#FA8232" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z" fill="#FA8232" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z" fill="#FA8232" />
+                      </svg>
+                    </li>
+                    <li>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3434 14.8985L14.2809 17.3985C14.7887 17.7188 15.4137 17.2422 15.2653 16.6563L14.1246 12.1719C14.0938 12.0476 14.0987 11.9171 14.1388 11.7955C14.1789 11.6738 14.2525 11.566 14.3512 11.4844L17.8824 8.53908C18.3434 8.15627 18.109 7.38283 17.5074 7.34377L12.8981 7.04689C12.7723 7.03958 12.6514 6.99578 12.5501 6.92086C12.4488 6.84594 12.3716 6.74314 12.3278 6.62502L10.609 2.29689C10.5635 2.17182 10.4806 2.06377 10.3716 1.98742C10.2626 1.91107 10.1327 1.87012 9.99963 1.87012C9.86654 1.87012 9.73667 1.91107 9.62765 1.98742C9.51863 2.06377 9.43575 2.17182 9.39026 2.29689L7.67151 6.62502C7.6277 6.74314 7.55044 6.84594 7.44916 6.92086C7.34787 6.99578 7.22696 7.03958 7.10119 7.04689L2.49182 7.34377C1.89026 7.38283 1.65588 8.15627 2.11682 8.53908L5.64807 11.4844C5.74677 11.566 5.8204 11.6738 5.86049 11.7955C5.90057 11.9171 5.90547 12.0476 5.87463 12.1719L4.81994 16.3281C4.64026 17.0313 5.39026 17.6016 5.99182 17.2188L9.65588 14.8985C9.75863 14.8331 9.87787 14.7984 9.99963 14.7984C10.1214 14.7984 10.2406 14.8331 10.3434 14.8985Z" fill="#FA8232" />
+                      </svg>
+                    </li>
+                    <li class="rating-text">4.7 Star Rating</li>
+                    <li class="feedback-text">(21,671 User feedback)</li>
+                  </ul>
+                </div>
+                <div class="slider-content__title">
+                  <h6>2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray</h6>
+                </div>
+                <div class="slider-content__fact">
+                  <ul>
+                    <li>Sku: <span>A264671</span></li>
+                    <li>Availability: <span class="stock">In Stock</span></li>
+                    <li>Brand: <span>Apple</span></li>
+                    <li>Category: <span>Electronics Devices</span></li>
+                  </ul>
+                </div>
+                <div class="slider-content__price-block">
+                  <div class="price">
+                    <span>$1699</span>
+                    <del>$1999.00</del>
+                  </div>
+                  <div class="offer-badge">
+                    <span class="badge">21% OFF</span>
+                  </div>
+                </div>
+                <div class="slider-content__form">
+                  <div class="slider-content__form--color">
+                    <h6 class="title">Color</h6>
+                    <div class="choose-color">
+                      <div class="form-check">
+                        <input class="form-check-input space-gray" type="radio" name="flexRadioDefault" checked>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input sliver" type="radio" name="flexRadioDefault">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-content__form--size">
+                    <h6 class="title">Size</h6>
+                    <div class="selectbox">
+                      <select class="nice-select">
+                        <option data-display="14-inch Liquid Retina XDR display">14-inch Liquid Retina XDR display</option>
+                        <option value="1">13-inch Liquid Retina XDR display</option>
+                        <option value="2">16-inch Liquid Retina XDR display</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="slider-content__form--memory">
+                    <h6 class="title">Memory</h6>
+                    <div class="selectbox">
+                      <select class="nice-select">
+                        <option data-display="16GB unified memory">16GB unified memory</option>
+                        <option value="1">32GB unified memory</option>
+                        <option value="2">64GB unified memory</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="slider-content__form--storage">
+                    <h6 class="title">Storage</h6>
+                    <div class="selectbox">
+                      <select class="nice-select">
+                        <option data-display="1TV SSD Storage">1TV SSD Storage</option>
+                        <option value="1">2TV SSD Storage</option>
+                        <option value="2">4TV SSD Storage</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-content__button-group">
+                  <div class="product-quantity-count">
+                    <button class="button-count quantity-decrease">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <input type="number" class="number-product quantity-one">
+                    <button class="button-count quantity-increase">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 8H13.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M8 2.5V13.5" stroke="#191C1F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="product-add-button">
+                    <a class="btn btn-primary" href="#">Add to card<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.75 20.25C8.75 20.6642 8.41421 21 8 21C7.58579 21 7.25 20.6642 7.25 20.25C7.25 19.8358 7.58579 19.5 8 19.5C8.41421 19.5 8.75 19.8358 8.75 20.25Z" fill="white" stroke="white" stroke-width="1.5" />
+                        <path d="M18.5 20.25C18.5 20.6642 18.1642 21 17.75 21C17.3358 21 17 20.6642 17 20.25C17 19.8358 17.3358 19.5 17.75 19.5C18.1642 19.5 18.5 19.8358 18.5 20.25Z" fill="white" stroke="white" stroke-width="1.5" />
+                        <path d="M4.46562 6.75H21.2844L18.8094 15.4125C18.7211 15.7269 18.532 16.0036 18.2711 16.2C18.0103 16.3965 17.6922 16.5019 17.3656 16.5H8.38437C8.05783 16.5019 7.7397 16.3965 7.47886 16.2C7.21803 16.0036 7.02893 15.7269 6.94062 15.4125L3.54688 3.54375C3.50203 3.38696 3.4073 3.24905 3.27704 3.15093C3.14677 3.05282 2.98808 2.99983 2.825 3H1.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </a>
+                  </div>
+                  <div class="product-buy-button">
+                    <a class="btn btn-outline-primary" href="#">Buy now
+                    </a>
+                  </div>
+                </div>
+                <div class="slider-content__content">
+                  <div class="content-one">
+                    <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 20.25C12 20.25 2.625 15 2.625 8.62501C2.625 7.49803 3.01546 6.40585 3.72996 5.53431C4.44445 4.66277 5.43884 4.0657 6.54393 3.84468C7.64903 3.62366 8.79657 3.79235 9.79131 4.32204C10.7861 4.85174 11.5665 5.70972 12 6.75001C12.4335 5.70972 13.2139 4.85174 14.2087 4.32204C15.2034 3.79235 16.351 3.62366 17.4561 3.84468C18.5612 4.0657 19.5555 4.66277 20.27 5.53431C20.9845 6.40585 21.375 7.49803 21.375 8.62501C21.375 15 12 20.25 12 20.25Z" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Add to Wishlist</a>
+                    <a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.5186 9.34692H21.0186V4.84692" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6.16895 6.16885C6.93431 5.40236 7.84329 4.79429 8.84387 4.37941C9.84445 3.96453 10.917 3.75098 12.0002 3.75098C13.0834 3.75098 14.1559 3.96453 15.1565 4.37941C16.1571 4.79429 17.0661 5.40236 17.8314 6.16885L21.0189 9.34698" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.48145 14.6531H2.98145V19.1531" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M17.8314 17.8312C17.0661 18.5977 16.1571 19.2058 15.1565 19.6206C14.1559 20.0355 13.0834 20.2491 12.0002 20.2491C10.917 20.2491 9.84445 20.0355 8.84387 19.6206C7.84329 19.2058 6.93431 18.5977 6.16895 17.8312L2.98145 14.6531" stroke="#475156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      Add to Compare</a>
+                  </div>
+                  <div class="content-two">
+                    <ul>
+                      <li class="text">Share product:</li>
+                      <li class="copy"><a href="#">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.75 15.75H20.25V3.75H8.25V8.25" stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.75 8.25H3.75V20.25H15.75V8.25Z" stroke="#5F6C72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </a></li>
+                      <li class="fb"><a href="#"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path class="fill-1" fill-rule="evenodd" clip-rule="evenodd" d="M8 0C12.4183 0 16 3.58173 16 8C16 12.4183 12.4183 16 8 16C3.58173 16 0 12.4183 0 8C0 3.58173 3.58173 0 8 0Z" fill="#5F6C72" />
+                            <path class="fill-2" d="M9.04119 15.933V9.75237H10.7847L11.0158 7.5771H9.04119L9.04412 6.48827C9.04412 5.92091 9.09805 5.61705 9.91348 5.61705H11.0035V3.44141H9.25968C7.16499 3.44141 6.42783 4.4966 6.42783 6.27136V7.57726H5.12207V9.75274H6.42783V15.8453C6.93653 15.9466 7.46243 16.0001 8.00089 16.0001C8.34875 16.0001 8.69623 15.9777 9.04119 15.933Z" fill="white" />
+                          </svg>
+                        </a></li>
+                      <li><a href="#">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.03184 14.5024C11.0699 14.5024 14.3718 9.49713 14.3718 5.15673C14.3718 5.01458 14.3689 4.87308 14.3625 4.73217C15.005 4.26699 15.5595 3.69103 16 3.03128C15.4118 3.29294 14.7789 3.46904 14.1149 3.54844C14.7926 3.14181 15.3129 2.49851 15.5584 1.73169C14.914 2.11419 14.2091 2.38382 13.4739 2.52898C12.8749 1.89052 12.0221 1.49121 11.0778 1.49121C9.26494 1.49121 7.79489 2.96219 7.79489 4.7754C7.79489 5.03319 7.82374 5.28385 7.88006 5.52436C5.15177 5.38699 2.73252 4.07995 1.11343 2.09252C0.821818 2.59379 0.668434 3.16349 0.668943 3.74345C0.668943 4.88304 1.24846 5.88903 2.12976 6.47759C1.60846 6.46166 1.0986 6.32077 0.643057 6.06676C0.642569 6.08055 0.642569 6.09399 0.642569 6.10872C0.642569 7.69944 1.77408 9.02759 3.27613 9.32854C2.99402 9.40542 2.70292 9.44428 2.41054 9.44411C2.19938 9.44411 1.99359 9.42333 1.79359 9.38491C2.21151 10.69 3.42335 11.6397 4.86013 11.6663C3.73659 12.5474 2.32127 13.0723 0.783024 13.0723C0.521349 13.0725 0.259888 13.0573 0 13.0267C1.45281 13.9585 3.17789 14.5022 5.032 14.5022" fill="#5F6C72" />
+                          </svg>
+                        </a></li>
+                      <li><a href="#">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_678_19086)">
+                              <path d="M7.02406 0.0530204C4.3652 0.349837 1.71572 2.50098 1.60636 5.57382C1.53762 7.45001 2.07033 8.85755 3.85592 9.25278C4.63077 7.88586 3.60597 7.58436 3.44663 6.59549C2.79207 2.54316 8.12072 -0.220364 10.9092 2.60877C12.8386 4.56776 11.5685 10.5947 8.45659 9.96827C5.47592 9.36995 9.91568 4.57245 7.53646 3.63045C5.60246 2.86497 4.57453 5.97218 5.49154 7.51563C4.95415 10.1698 3.79656 12.6709 4.26522 15.9999C5.78524 14.897 6.29764 12.7849 6.71787 10.5822C7.48178 11.0462 7.88951 11.5289 8.86432 11.6039C12.4589 11.882 14.4664 8.01553 13.9758 4.44904C13.54 1.28715 10.3843 -0.321906 7.02406 0.0530204Z" fill="#5F6C72" />
+                            </g>
+                          </svg>
+                        </a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="slider-content__payment-method">
+                  <p>100% Guarantee Safe Checkout</p>
+                  <img src="./image/payment-method.png" alt="payment-method.png">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Newsletter Modal-->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog modal-two">
+      <div class="modal-two__wrapper">
+        <div class="modal-image d-none d-lg-block">
+          <img src="./image/modal/newsleter-1.png" alt="newsleter" class="mw-100">
+        </div>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Subscribe to our newsletter</h5>
+            <p class="modal-text">Subscribe to the clicon eCommerce newsletter to receive timely updates &
+              discount from your favorite products.</p>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Address">
+                <div class="icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.5 7.5V15.625C2.5 15.7908 2.56585 15.9497 2.68306 16.0669C2.80027 16.1842 2.95924 16.25 3.125 16.25H16.875C17.0408 16.25 17.1997 16.1842 17.3169 16.0669C17.4342 15.9497 17.5 15.7908 17.5 15.625V7.5L10 2.5L2.5 7.5Z" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.63281 11.875L2.69531 16.0703" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.3047 16.0703L11.3672 11.875" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.5 7.5L11.3672 11.875H8.63281L2.5 7.5" stroke="#FA8232" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 ">Subscribe <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.625 10H17.375" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M11.75 4.375L17.375 10L11.75 15.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </button>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Don’t show the popup again</label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.75 5.25L5.25 18.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M18.75 18.75L5.25 5.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Billing Address Modal -->
+  <div class="modal modal-three fade" id="ratingModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="billing-address-box">
+          <div class="billing-address-box__head">
+            <h6 class="title">Billing address</h6>
+            <button type="button" data-bs-dismiss="modal">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.625 4.375L4.375 15.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.625 15.625L4.375 4.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="form">
+            <form action="#">
+              <div class="form-group">
+                <label class="form-label">Rating</label>
+                <div class="selectbox">
+                  <select class="nice-select">
+                    <option value="1">
+                      &#9733; &#9733; &#9733; &#9733; &#9733; 5 Star Rating
+                    </option>
+                    <option value="2">
+                      &#9733; &#9733; &#9733; &#9733; &#9734; 4 Star Rating
+                    <option value="3">
+                      &#9733; &#9733; &#9733; &#9734; &#9734; 3 Star Rating
+                    </option>
+                    <option value="4">
+                      &#9733; &#9733; &#9734; &#9734; &#9734; 2 Star Rating
+                    </option>
+                    <option value="5">
+                      &#9733; &#9734; &#9734; &#9734; &#9734; 1 Star Rating
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Feedback</label>
+                <textarea class="form-control" cols="30" rows="10" placeholder="Write down your feedback about our product & services"></textarea>
+              </div>
+              <div class="form-button">
+                <button class="btn btn-primary" type="submit">Publish Review</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Add New Card Modal -->
+  <div class="modal modal-four fade" id="newCardModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="add-new-card-box">
+          <div class="add-new-card-box__head">
+            <h6 class="title">Add New Card</h6>
+            <button type="button" data-bs-dismiss="modal">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.625 4.375L4.375 15.625" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.625 15.625L4.375 4.375" stroke="#929FA5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <div class="form">
+            <form action="#">
+              <div class="form-group">
+                <label for="name" class="form-label">Rating</label>
+                <input id="name" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="card" class="form-label">Card Number</label>
+                <input id="card" type="text" class="form-control">
+              </div>
+              <div class="row gx-2">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="date" class="form-label">Expire Date</label>
+                    <input id="date" type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label for="cvc" class="form-label">CVC</label>
+                    <input id="cvc" type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-button">
+                <button class="btn btn-primary" type="submit">Add Card</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Plugin's Scripts -->
+  <!-- Custom stylesheet -->
+  <script src="./js/vendor.min.js"></script>
+  <script>
+    /**
+     * Replace all SVG images with inline SVG
+     */
+    $(document).ready(function() {
+      $('img[class*="make-it-inline"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+          // Get the SVG tag, ignore the rest
+          var $svg = jQuery(data).find('svg');
+
+          // Remove any invalid XML tags
+          $svg = $svg.removeAttr('xmlns:a');
+
+          // Loop through IMG attributes and apply on SVG
+          $.each(attributes, function() {
+            $svg.attr(this.name, this.value);
+          });
+
+          // Replace IMG with SVG
+          $img.replaceWith($svg);
+        }, 'xml');
+      });
+    });
+  </script>
+  <script src="./plugins/nice-select/jquery.nice-select.min.js"></script>
+  <script src="./plugins/aos/aos.min.js"></script>
+  <script src="./plugins/counter-up/jquery.counterup.min.js"></script>
+  <script src="./plugins/counter-up/waypoints.min.js"></script>
+  <script src="./plugins/slick/slick.min.js"></script>
+  <script src="./plugins/countdown/jquery.countdown.min.js"></script>
+  <script src="plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>
+  <!-- Activation Script -->
+  <script src="js/custom.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+
+</html>
