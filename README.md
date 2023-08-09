@@ -1,16 +1,16 @@
 # [Templatecookie](https://templatecookie.com)
 Templatecookie.com creates quality templates and php scripts. Templatecookie has many free HTML & Figma templates available for professional use. Templatecookie is famous for its premium PHP Scripts available on [Codeanyon Marketplace](https://codecanyon.net/user/templatecookie). Browse [Templatecookie](https://templatecookie.com) today and discover awesome digital products.
 
-# [Shopery - an organic eCommerce HTML Template](https://www.templatecookie.com/products)
+# [Clicon - an eCommerce HTML Template](https://www.templatecookie.com/products)
 
-> Shopery is an eCommerce HTML template. In this template, you found everything that needs for an eCommerce website like add-to-cart, wishlist, order tracking, user dashboard, settings, checkout page, etc.
+> Clicon is an eCommerce HTML template. In this template, you found everything that needs for an eCommerce website like add-to-cart, wishlist, order tracking, user dashboard, settings, checkout page, etc.
 
-Check the [Live Demo here](https://shopery.netlify.app/).
+Check the [Live Demo here](https://clicon-html.netlify.app/).
 
 ![](screenshot.png)
 
 ## Pages List
-- 5 unique Home (Landing Page)
+- Home (Landing Page)
 - Shop (Product Page)
 - Product Details
 - About
@@ -29,7 +29,7 @@ Check the [Live Demo here](https://shopery.netlify.app/).
 - bootstrap
 - jQuery
 - nouislider
-- paralax
+- parallax
 - venobox
 
 ## Credits
